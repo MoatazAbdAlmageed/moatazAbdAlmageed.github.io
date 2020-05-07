@@ -29,7 +29,7 @@ const IndexPage = () => (
             {config.socialLinks.map(social => {
               const { icon, url } = social;
               return (
-                <a key={url} href={url}>
+                <a key={url} href={url} target="_blank">
                   <i className={`fab ${icon}`}></i>
                 </a>
               );
@@ -53,7 +53,7 @@ const IndexPage = () => (
               <div key={url} className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
                 <div className="resume-content">
                   <h3 className="mb-0">{occupation}</h3>
-                  <div className="subheading mb-3"><a href={url}>@{company}</a></div>
+                  <div className="subheading mb-3"><a href={url} target="_blank">@{company}</a></div>
                   <p>
                     {description}
                   </p>
@@ -84,7 +84,7 @@ const IndexPage = () => (
               <div key={url} className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
                 <div className="resume-content">
                   <h3 className="mb-0">{place}</h3>
-                  <div className="subheading mb-3"><a href={url}>{title}</a></div>
+                  <div className="subheading mb-3"><a href={url} target="_blank">{title}</a></div>
                 </div>
                 <div className="resume-date text-md-right">
                   <span className="text-primary">{fromTO}</span>
@@ -169,7 +169,7 @@ const IndexPage = () => (
               return (
                 <li key={Math.random()}>
                   <i className="fa-li fa fa-trophy text-warning"></i>
-                  <a href={url}>{title}</a> | {place}
+                  <a href={url} target="_blank">{title}</a> | {place}
                   <div className="text-md-right">
                     <span className="text-primary">{issued}</span>
                   </div>
