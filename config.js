@@ -15,38 +15,27 @@ module.exports = {
     {
       company: "Wuilt",
       url: "http://wuilt.com/",
-      begin: {
-        month: 'Jan',
-        year: '2020'
-      },
       fromTO: 'Jan 2020 - Present',
-      occupation: "Full-Stack PHP Developer",
+      occupation: "Full-Stack Web Developer",
+      responsibilities: [
+        "Develop new user-facing features",
+        "Build reusable code and libraries for future use",
+        "Collaborate with other team members and stakeholders",
+      ],
       description: "",
       projects: [
-        {
-          name: 'wuilt.com',
-          url: "http://wuilt.com/",
-          img: "mockup.jpg",
-          type: "freelance",
-          skills: [
-            'HTML',
-            'CSS',
-            'JS',
-            'reactJS',
-            'PHP',
-            'Laravel',],
-        },
-      ],
+      ]
 
     },
 
     {
       company: "camelCase",
+      responsibilities: [
+        "Develop new user-facing features",
+        "Build reusable code and libraries for future use",
+        "Designing and managing the website back-end including database and server integration.",
+      ],
       url: "https://camelcasetech.com/",
-      begin: {
-        month: 'May',
-        year: '2018'
-      },
       fromTO: 'May 2018 - Dec 2019',
       occupation: "Full-Stack PHP Developer",
       description: "",
@@ -54,8 +43,8 @@ module.exports = {
         {
           name: 'skilledmatrix.com',
           url: "http://skilledmatrix.com/",
-          img: "mockup.jpg",
-          type: "freelance",
+
+
           skills: [
             'HTML',
             'CSS',
@@ -67,8 +56,8 @@ module.exports = {
         {
           name: 'skillsbuilderpro.com',
           url: "http://skillsbuilderpro.com/",
-          img: "mockup.jpg",
-          type: "freelance",
+
+
           skills: [
             'HTML',
             'CSS',
@@ -78,8 +67,8 @@ module.exports = {
         }, {
           name: 'knowledgeworkerspro.com',
           url: "http://knowledgeworkerspro.com/",
-          img: "mockup.jpg",
-          type: "freelance",
+
+
           skills: [
             'HTML',
             'CSS',
@@ -95,19 +84,20 @@ module.exports = {
     {
       company: "Nile Bits",
       url: "https://www.nilebits.com/",
-      begin: {
-        month: 'Jan',
-        year: '2017'
-      },
       fromTO: 'Jan 2017 - Apr 2018',
       occupation: "Front-End developer",
+      responsibilities: [
+        "Develop new user-facing features",
+        "Build reusable code and libraries for future use",
+        "Collaborate with other team members and stakeholders",
+      ],
       description: "",
       projects: [
         {
           name: 'netscribe',
           url: "https://viqsolutions.com/solutions/netscribe/",
-          img: "mockup.jpg",
-          type: "freelance",
+
+
           skills: [
             'HTML',
             'CSS',
@@ -123,12 +113,13 @@ module.exports = {
     {
       company: "TIE",
       url: "http://tie.com.eg/",
-      begin: {
-        month: 'Sep',
-        year: '2016'
-      },
       fromTO: 'Sep 2016 - Jan 2017',
       occupation: "WordPress developer",
+      responsibilities: [
+        "Generating WordPress themes and plugins.",
+        "Troubleshooting content issues.",
+        "Conducting website performance tests.",
+      ],
       description: "",
       projects: [],
 
@@ -138,12 +129,12 @@ module.exports = {
     {
       company: "EgyCoders",
       url: "http://www.egycoders.com/",
-      begin: {
-        month: 'Mar',
-        year: '2016'
-      },
       fromTO: 'Mar 2016 - Jun 2016',
       occupation: "Front-End developer",
+      responsibilities: [
+        "Develop new user-facing features",
+        "Assure that all user input is validated before submitting to back-end"
+      ],
       description: "",
       projects: [],
 
@@ -151,19 +142,20 @@ module.exports = {
     }, {
       company: "Orchtech",
       url: "https://www.orchtech.com/",
-      begin: {
-        month: 'Dec',
-        year: '2015'
-      },
       fromTO: 'Dec 2015 - May 2016',
       occupation: "WordPress Developer",
+      responsibilities: [
+        "Generating WordPress themes and plugins.",
+        "Troubleshooting content issues.",
+        "Conducting website performance tests.",
+      ],
       description: "",
       projects: [
         {
           name: 'sevensprings.ch',
           url: "https://sevensprings.ch/",
-          img: "mockup.jpg",
-          owner: "freelance",
+
+
           skills: [
             'HTML',
             'CSS',
@@ -175,8 +167,7 @@ module.exports = {
         {
           name: 'shapwasco.com',
           url: "http://shapwasco.com.eg",
-          img: "mockup.jpg",
-          owner: "freelance",
+
           skills: [
             'HTML',
             'CSS',
@@ -188,8 +179,8 @@ module.exports = {
         {
           name: 'uacciap.org',
           url: "http://uacciap.org",
-          img: "mockup.jpg",
-          owner: "freelance",
+
+
           skills: [
             'HTML',
             'CSS',
@@ -203,12 +194,13 @@ module.exports = {
     }, {
       company: "Leogami",
       url: "http://leogami.com/",
-      begin: {
-        month: 'Oct',
-        year: '2015'
-      },
       fromTO: 'Oct 2015 - Nov 2015',
       occupation: "WordPress Developer",
+      responsibilities: [
+        "Designing and building the website front-end.",
+        "Creating the website architecture.",
+        "Generating WordPress themes and plugins.",
+      ],
       description: "",
       projects: [],
 
@@ -276,33 +268,48 @@ module.exports = {
     {
       place: "Freecodecamp",
       title: "Responsive Web Design",
+      description: "Developer Certification, representing approximately 300 hours of coursework",
       url: "https://www.freecodecamp.org/certification/fcc319f679c/responsive-web-design",
       issued: 'June 14, 2018'
     },
     {
       place: "Udacity",
       title: "Front End Development Track",
+      description: "One Million Arab Coders",
       url: "https://s3-us-west-2.amazonaws.com/udacity-printer/production/certificates/8274026e-a9af-49ba-b82b-66b5824b65fe.pdf",
       issued: 'May 2019'
     }
     ,
     {
       place: "Sololearn",
-      title: "HTML Fundamentals course HTML",
+      title: "HTML Fundamentals course",
       url: "https://www.sololearn.com/Certificate/1014-1342830/pdf/",
       issued: '06 January, 2017'
     }, ,
     {
       place: "Sololearn",
-      title: "PHP Fundamentals course HTML",
+      title: "PHP Fundamentals course",
       url: "https://www.sololearn.com/Certificate/1059-1342830/pdf/",
       issued: '17 July, 2016'
     }, ,
     {
       place: "Sololearn",
-      title: "JavaScript Fundamentals course HTML",
+      title: "JavaScript Fundamentals course",
       url: "https://www.sololearn.com/Certificate/1024-1342830/pdf/",
       issued: '15 September, 2016'
+    }, {
+      place: "futurelearn.com",
+      title: "BASIC ENGLISH 1: ELEMENTARY KING'S COLLEGE LONDON",
+      description: "This course helped you develop your use of English in a range of everyday situations and built your confidence by improving your listening skills. You’ve heard people talking in a number of different situations and have had an opportunity to review the language through a series of quizzes.",
+      url: "https://www.futurelearn.com/certificates/tl15gwi",
+      issued: '2019'
+    },
+    {
+      place: "futurelearn.com",
+      title: "BASIC ENGLISH 2: PRE-INTERMEDIATE KING'S COLLEGE LONDON",
+      description: "This online course helped you to demonstrate understanding of language that can help you progress along the path to studying at a university.",
+      url: "https://www.futurelearn.com/certificates/d829clk",
+      issued: '2019'
     },
   ],
   email: 'moataz.mohammady@gmail.com',
