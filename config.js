@@ -203,8 +203,8 @@ module.exports = {
       ],
 
     }, {
-      company: "http://leogami.com/",
-      url: "http://skilledmatrix.com/",
+      company: "LeoGami",
+      url: "http://leogami.com/",
       begin: {
         month: 'Oct',
         year: '2015'
