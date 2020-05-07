@@ -19,7 +19,7 @@ const IndexPage = () => (
             <span className="text-primary">{config.lastName}</span>
           </h1>
           <div className="subheading mb-5">
-            {config.address} · <a href={`tel:${config.phone}`}>{config.phone}</a> ·
+            <i className="fa fa-map-marker"></i>  &nbsp; <a href={config.location} target="_blank">  {config.address} </a> ·  <i className="fa fa-mobile"> </i>  &nbsp; <a href={`tel:${config.phone}`}>{config.phone}</a> ·  <i className="fa fa-envelope"></i>  &nbsp;
             <a href={`mailto:${config.email}`}>{config.email}</a>
           </div>
           <p className="lead mb-5">
@@ -45,7 +45,7 @@ const IndexPage = () => (
         id="experience"
       >
         <div className="w-100">
-          <h2 className="mb-5">Experience</h2>
+          <h2 className="mb-5"><i className="fa fa-briefcase"></i> Experience</h2>
 
           {config.jobs.map(job => {
             const { company, url, occupation, description, fromTO, responsibilities } = job;
@@ -88,7 +88,7 @@ const IndexPage = () => (
         id="skills"
       >
         <div className="w-100">
-          <h2 className="mb-5">Skills</h2>
+          <h2 className="mb-5"><i className="fa fa-code"></i> Skills</h2>
 
           <div className="subheading mb-3">
             Programming Languages &amp; Tools
@@ -123,37 +123,16 @@ const IndexPage = () => (
 
       <section
         className="resume-section p-3 p-lg-5 d-flex align-items-center"
-        id="interests"
-      >
-        <div className="w-100">
-          <h2 className="mb-5">Interests</h2>
-          <p>Apart from being a web developer, I enjoy</p>
-          <ul>
-            {config.interests.map(interest => {
-              return (
-                <li key={Math.random()}>
-                  {interest}
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-      </section>
-
-      <hr className="m-0" />
-
-      <section
-        className="resume-section p-3 p-lg-5 d-flex align-items-center"
         id="awards"
       >
         <div className="w-100">
-          <h2 className="mb-5">Awards &amp; Certifications</h2>
+          <h2 className="mb-5"><i className="fa fa-trophy"></i> Awards &amp; Certifications</h2>
           <ul className="fa-ul mb-0">
             {config.certifications.map(certification => {
               const { place, url, title, issued, description } = certification;
               return (
                 <li key={Math.random()}>
-                  <i className="fa-li fa fa-trophy text-warning"></i>
+                  <i className="fa-li fa fa-star text-warning"></i>
                   <a href={url} target="_blank">{title}</a> | {place}
 
                   <p>{description}</p>
@@ -171,10 +150,33 @@ const IndexPage = () => (
 
       <section
         className="resume-section p-3 p-lg-5 d-flex align-items-center"
+        id="interests"
+      >
+        <div className="w-100">
+          <h2 className="mb-5"><i className="fa fa-heart"></i> Interests</h2>
+          <p>Apart from being a web developer, I enjoy</p>
+          <ul>
+            {config.interests.map(interest => {
+              return (
+                <li key={Math.random()}>
+                  {interest}
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      </section>
+
+
+
+      <hr className="m-0" />
+
+      <section
+        className="resume-section p-3 p-lg-5 d-flex align-items-center"
         id="education"
       >
         <div className="w-100">
-          <h2 className="mb-5">Education</h2>
+          <h2 className="mb-5"><i className="fa fa-graduation-cap"></i> Education</h2>
 
           {config.education.map(education => {
             const { place, url, title, fromTO } = education;

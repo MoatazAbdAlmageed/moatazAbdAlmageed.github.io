@@ -10,7 +10,123 @@ module.exports = {
   pathPrefix: '', // This path is subpath of your hosting https://domain/portfolio
   firstName: 'Moataz',
   lastName: 'Mohammady',
-  description: `👋 Hi! this is Moataz, I am Web Developer, tech addicted, open-source lover. I blog about things related to web that I find worth sharing with the community. I also share my side projects and stuff that I am currently working on. Thanks for dropping by!`,
+  description: `Full stack Web Developer with 4+ years of experience leveraging PHP & JavaScript to build responsive websites, and interactive features that drive business growth and improve UX.`,
+  education: [
+    {
+      place: "Cairo University",
+      url: "https://cu.edu.eg/Home",
+      title: "Bachelor's Degree in Commerce",
+      fromTO: '2008 - 2013',
+    }
+  ],
+  skills: [
+    'html5',
+    'css3-alt',
+    'js-square',
+    'react',
+    'node-js',
+    'sass',
+    'less',
+    'php',
+    'wordpress',
+    'gulp',
+    'grunt',
+    'npm',
+    'linux',
+    'git',
+  ],
+  workflow: [
+    'Mobile-First, Responsive Design',
+    'Cross Browser Testing & Debugging',
+    'Cross Functional Teams',
+    'Agile Development & Scrum',
+  ]
+  , interests: [
+    'Running',
+    'Reading',
+    'Cooking',
+  ],
+  // social
+  socialLinks: [
+    {
+      icon: 'fa-github',
+      name: 'Github',
+      url: 'https://github.com/MoatazAbdAlmageed',
+    },
+    {
+      icon: 'fa-linkedin-in',
+      name: 'Linkedin',
+      url: 'https://www.linkedin.com/in/moatazabdelmageed',
+    },
+    {
+      icon: 'fa-behance',
+      name: 'Behance',
+      url: 'https://www.behance.net/moatazmohammady',
+    },
+    {
+      icon: 'fa-twitter',
+      name: 'Twitter',
+      url: 'https://twitter.com/MoatazMohammady',
+    },
+    {
+      icon: 'fa-facebook-f',
+      name: 'Facebook',
+      url: 'https://www.facebook.com/moataz.mohammady.3',
+    },
+
+  ],
+  certifications: [
+    {
+      place: "Freecodecamp",
+      title: "Responsive Web Design",
+      description: "Developer Certification, representing approximately 300 hours of coursework",
+      url: "https://www.freecodecamp.org/certification/fcc319f679c/responsive-web-design",
+      issued: 'June 14, 2018'
+    },
+    {
+      place: "Udacity",
+      title: "Front End Development Track",
+      description: "One Million Arab Coders",
+      url: "https://s3-us-west-2.amazonaws.com/udacity-printer/production/certificates/8274026e-a9af-49ba-b82b-66b5824b65fe.pdf",
+      issued: 'May 2019'
+    }
+    ,
+    {
+      place: "Sololearn",
+      title: "HTML Fundamentals course",
+      url: "https://www.sololearn.com/Certificate/1014-1342830/pdf/",
+      issued: '06 January, 2017'
+    }, ,
+    {
+      place: "Sololearn",
+      title: "PHP Fundamentals course",
+      url: "https://www.sololearn.com/Certificate/1059-1342830/pdf/",
+      issued: '17 July, 2016'
+    }, ,
+    {
+      place: "Sololearn",
+      title: "JavaScript Fundamentals course",
+      url: "https://www.sololearn.com/Certificate/1024-1342830/pdf/",
+      issued: '15 September, 2016'
+    }, {
+      place: "futurelearn.com",
+      title: "BASIC ENGLISH 1: ELEMENTARY KING'S COLLEGE LONDON",
+      description: "This course helped you develop your use of English in a range of everyday situations and built your confidence by improving your listening skills. You’ve heard people talking in a number of different situations and have had an opportunity to review the language through a series of quizzes.",
+      url: "https://www.futurelearn.com/certificates/tl15gwi",
+      issued: '2019'
+    },
+    {
+      place: "futurelearn.com",
+      title: "BASIC ENGLISH 2: PRE-INTERMEDIATE KING'S COLLEGE LONDON",
+      description: "This online course helped you to demonstrate understanding of language that can help you progress along the path to studying at a university.",
+      url: "https://www.futurelearn.com/certificates/d829clk",
+      issued: '2019'
+    },
+  ],
+  email: 'moataz.mohammady@gmail.com',
+  phone: '+201150064746',
+  address: 'Mansouria,Giza,Egypt',
+  location: 'https://goo.gl/maps/QHh4H4eYJMByuneC8',
   jobs: [
     {
       company: "Wuilt",
@@ -27,7 +143,6 @@ module.exports = {
       ]
 
     },
-
     {
       company: "camelCase",
       responsibilities: [
@@ -43,9 +158,7 @@ module.exports = {
         {
           name: 'skilledmatrix.com',
           url: "http://skilledmatrix.com/",
-
-
-          skills: [
+          technologies: [
             'HTML',
             'CSS',
             'JS',
@@ -58,8 +171,7 @@ module.exports = {
           name: 'skillsbuilderpro.com',
           url: "http://skillsbuilderpro.com/",
 
-
-          skills: [
+          technologies: [
             'HTML',
             'CSS',
             'JS',
@@ -70,7 +182,7 @@ module.exports = {
           url: "http://knowledgeworkerspro.com/",
 
 
-          skills: [
+          technologies: [
             'HTML',
             'CSS',
             'JS',
@@ -88,7 +200,7 @@ module.exports = {
       fromTO: 'Jan 2017 - Apr 2018',
       occupation: "Front-End developer",
       responsibilities: [
-        "Develop new user-facing features",
+        "Created custom AngularJS components for internal framework",
         "Build reusable code and libraries for future use",
         "Collaborate with other team members and stakeholders",
       ],
@@ -99,7 +211,7 @@ module.exports = {
           url: "https://viqsolutions.com/solutions/netscribe/",
 
 
-          skills: [
+          technologies: [
             'HTML',
             'CSS',
             'JS',
@@ -157,7 +269,7 @@ module.exports = {
           url: "https://sevensprings.ch/",
 
 
-          skills: [
+          technologies: [
             'HTML',
             'CSS',
             'JS',
@@ -169,7 +281,7 @@ module.exports = {
           name: 'shapwasco.com',
           url: "http://shapwasco.com.eg",
 
-          skills: [
+          technologies: [
             'HTML',
             'CSS',
             'JS',
@@ -182,7 +294,7 @@ module.exports = {
           url: "http://uacciap.org",
 
 
-          skills: [
+          technologies: [
             'HTML',
             'CSS',
             'JS',
@@ -209,117 +321,5 @@ module.exports = {
     },
     /* ... */
   ],
-  // social
-  socialLinks: [
-    {
-      icon: 'fa-github',
-      name: 'Github',
-      url: 'https://github.com/MoatazAbdAlmageed',
-    },
-    {
-      icon: 'fa-linkedin-in',
-      name: 'Linkedin',
-      url: 'https://www.linkedin.com/in/moatazabdelmageed',
-    },
-    {
-      icon: 'fa-behance',
-      name: 'Behance',
-      url: 'https://www.behance.net/moatazmohammady',
-    },
-    {
-      icon: 'fa-twitter',
-      name: 'Twitter',
-      url: 'https://twitter.com/MoatazMohammady',
-    },
-    {
-      icon: 'fa-facebook-f',
-      name: 'Facebook',
-      url: 'https://www.facebook.com/moataz.mohammady.3',
-    },
 
-  ],
-  education: [
-    {
-      place: "Cairo University",
-      url: "https://cu.edu.eg/Home",
-      title: "Bachelor's Degree in Commerce",
-      fromTO: '2008 - 2013',
-    }
-  ],
-  skills: [
-    'html5',
-    'css3-alt',
-    'js-square',
-    'react',
-    'node-js',
-    'sass',
-    'less',
-    'php',
-    'wordpress',
-    'gulp',
-    'grunt',
-    'npm',
-  ],
-  workflow: [
-    'Mobile-First, Responsive Design',
-    'Cross Browser Testing & Debugging',
-    'Cross Functional Teams',
-    'Agile Development & Scrum',
-  ]
-  , interests: [
-    'Running',
-    'Reading',
-    'Cooking',
-  ],
-  certifications: [
-    {
-      place: "Freecodecamp",
-      title: "Responsive Web Design",
-      description: "Developer Certification, representing approximately 300 hours of coursework",
-      url: "https://www.freecodecamp.org/certification/fcc319f679c/responsive-web-design",
-      issued: 'June 14, 2018'
-    },
-    {
-      place: "Udacity",
-      title: "Front End Development Track",
-      description: "One Million Arab Coders",
-      url: "https://s3-us-west-2.amazonaws.com/udacity-printer/production/certificates/8274026e-a9af-49ba-b82b-66b5824b65fe.pdf",
-      issued: 'May 2019'
-    }
-    ,
-    {
-      place: "Sololearn",
-      title: "HTML Fundamentals course",
-      url: "https://www.sololearn.com/Certificate/1014-1342830/pdf/",
-      issued: '06 January, 2017'
-    }, ,
-    {
-      place: "Sololearn",
-      title: "PHP Fundamentals course",
-      url: "https://www.sololearn.com/Certificate/1059-1342830/pdf/",
-      issued: '17 July, 2016'
-    }, ,
-    {
-      place: "Sololearn",
-      title: "JavaScript Fundamentals course",
-      url: "https://www.sololearn.com/Certificate/1024-1342830/pdf/",
-      issued: '15 September, 2016'
-    }, {
-      place: "futurelearn.com",
-      title: "BASIC ENGLISH 1: ELEMENTARY KING'S COLLEGE LONDON",
-      description: "This course helped you develop your use of English in a range of everyday situations and built your confidence by improving your listening skills. You’ve heard people talking in a number of different situations and have had an opportunity to review the language through a series of quizzes.",
-      url: "https://www.futurelearn.com/certificates/tl15gwi",
-      issued: '2019'
-    },
-    {
-      place: "futurelearn.com",
-      title: "BASIC ENGLISH 2: PRE-INTERMEDIATE KING'S COLLEGE LONDON",
-      description: "This online course helped you to demonstrate understanding of language that can help you progress along the path to studying at a university.",
-      url: "https://www.futurelearn.com/certificates/d829clk",
-      issued: '2019'
-    },
-  ],
-  email: 'moataz.mohammady@gmail.com',
-  phone: '+201150064746',
-  address: 'Mansouria,Giza,Egypt',
 };
