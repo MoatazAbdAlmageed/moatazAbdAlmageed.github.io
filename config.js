@@ -50,7 +50,8 @@ module.exports = {
             'CSS',
             'JS',
             'PHP',
-            'Laravel',],
+            'Laravel',
+          ],
         },
 
         {
@@ -221,6 +222,11 @@ module.exports = {
       url: 'https://www.linkedin.com/in/moatazabdelmageed',
     },
     {
+      icon: 'fa-behance',
+      name: 'Behance',
+      url: 'https://www.behance.net/moatazmohammady',
+    },
+    {
       icon: 'fa-twitter',
       name: 'Twitter',
       url: 'https://twitter.com/MoatazMohammady',
@@ -230,6 +236,7 @@ module.exports = {
       name: 'Facebook',
       url: 'https://www.facebook.com/moataz.mohammady.3',
     },
+
   ],
   education: [
     {
