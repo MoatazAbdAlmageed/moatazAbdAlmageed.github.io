@@ -144,7 +144,7 @@ module.exports = {
         month: 'Mar',
         year: '2016'
       },
-      fromTO: 'Mar 2016 - JUN 2016',
+      fromTO: 'Mar 2016 - Jun 2016',
       occupation: "Front-End developer",
       description: "",
       projects: [],
@@ -203,7 +203,7 @@ module.exports = {
       ],
 
     }, {
-      company: "LeoGami",
+      company: "Leogami",
       url: "http://leogami.com/",
       begin: {
         month: 'Oct',
@@ -239,6 +239,72 @@ module.exports = {
       icon: 'fa-facebook-f',
       name: 'Facebook',
       url: 'https://www.facebook.com/moataz.mohammady.3',
+    },
+  ],
+  education: [
+    {
+      place: "Cairo University",
+      url: "https://cu.edu.eg/Home",
+      title: "Bachelor's Degree in Commerce",
+      fromTO: '2008 - 2013',
+    }
+  ],
+  skills: [
+    'html5',
+    'css3-alt',
+    'js-square',
+    'react',
+    'node-js',
+    'sass',
+    'less',
+    'php',
+    'wordpress',
+    'gulp',
+    'grunt',
+    'npm',
+  ],
+  workflow: [
+    'Mobile-First, Responsive Design',
+    'Cross Browser Testing & Debugging',
+    'Cross Functional Teams',
+    'Agile Development & Scrum',
+  ]
+  , interests: [
+    'Running',
+    'Reading',
+    'Cooking',
+  ],
+  certifications: [
+    {
+      place: "Freecodecamp",
+      title: "Responsive Web Design",
+      url: "https://www.freecodecamp.org/certification/fcc319f679c/responsive-web-design",
+      issued: 'June 14, 2018'
+    },
+    {
+      place: "Udacity",
+      title: "Front End Development Track",
+      url: "https://s3-us-west-2.amazonaws.com/udacity-printer/production/certificates/8274026e-a9af-49ba-b82b-66b5824b65fe.pdf",
+      issued: 'May 2019'
+    }
+    ,
+    {
+      place: "Sololearn",
+      title: "HTML Fundamentals course HTML",
+      url: "https://www.sololearn.com/Certificate/1014-1342830/pdf/",
+      issued: '06 January, 2017'
+    }, ,
+    {
+      place: "Sololearn",
+      title: "PHP Fundamentals course HTML",
+      url: "https://www.sololearn.com/Certificate/1059-1342830/pdf/",
+      issued: '17 July, 2016'
+    }, ,
+    {
+      place: "Sololearn",
+      title: "JavaScript Fundamentals course HTML",
+      url: "https://www.sololearn.com/Certificate/1024-1342830/pdf/",
+      issued: '15 September, 2016'
     },
   ],
   email: 'moataz.mohammady@gmail.com',
