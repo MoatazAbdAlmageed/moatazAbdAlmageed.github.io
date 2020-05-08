@@ -6,9 +6,9 @@ import Sidebar from '../components/Sidebar';
 const IndexPage = () => (
     <Layout>
         <Sidebar />
-        <div className="container">
+        <div className="container-fluid">
             <section
-                className="resume-section p-3 p-lg-5 d-flex align-items-center"
+                className="resume-section p-3  d-flex align-items-center"
                 id="about"
             >
                 <div className="w-100">
@@ -39,7 +39,7 @@ const IndexPage = () => (
             <hr className="m-0" />
 
             <section
-                className="resume-section p-3 p-lg-5 d-flex justify-content-center"
+                className="resume-section p-3  d-flex justify-content-center"
                 id="experience"
             >
                 <div className="w-100">
@@ -80,7 +80,7 @@ const IndexPage = () => (
             <hr className="m-0" />
 
             <section
-                className="resume-section p-3 p-lg-5 d-flex align-items-center"
+                className="resume-section p-3  d-flex align-items-center"
                 id="skills"
             >
                 <div className="w-100">
@@ -118,7 +118,7 @@ const IndexPage = () => (
             <hr className="m-0" />
 
             <section
-                className="resume-section p-3 p-lg-5 d-flex align-items-center"
+                className="resume-section p-3  d-flex align-items-center"
                 id="awards"
             >
                 <div className="w-100">
@@ -145,7 +145,7 @@ const IndexPage = () => (
             <hr className="m-0" />
 
             <section
-                className="resume-section p-3 p-lg-5 d-flex align-items-center"
+                className="resume-section p-3  d-flex align-items-center"
                 id="interests"
             >
                 <div className="w-100">
@@ -168,7 +168,7 @@ const IndexPage = () => (
             <hr className="m-0" />
 
             <section
-                className="resume-section p-3 p-lg-5 d-flex align-items-center"
+                className="resume-section p-3  d-flex align-items-center"
                 id="education"
             >
                 <div className="w-100">
