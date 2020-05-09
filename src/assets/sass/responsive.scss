@@ -1,4 +1,19 @@
 @media (min-width: 768px) {
+    section.resume-section {
+        min-height: 100vh;
+        .resume-item {
+            .resume-date {
+                min-width: 18rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    section.resume-section {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
     h1 {
         font-size: 4rem;
         line-height: 5.5rem;
@@ -21,22 +36,5 @@
         font-weight: 500;
         @include heading-font;
         font-size: 1.2rem;
-    }
-
-    section.resume-section {
-        min-height: 100vh;
-
-        .resume-item {
-            .resume-date {
-                min-width: 18rem;
-            }
-        }
-    }
-}
-
-@media (min-width: 992px) {
-    section.resume-section {
-        padding-top: 3rem !important;
-        padding-bottom: 3rem !important;
     }
 }

@@ -2,7 +2,7 @@ module.exports = {
     siteTitle: 'Moataz Mohammady Resume', // <title>
     manifestName: 'Resume',
     manifestShortName: 'Moataz Mohammady', // max 12 characters
-    manifestStartUrl: '/',
+    manifestStartUrl: 'https://moatazabdalmageed.github.io/',
     manifestBackgroundColor: '#28a745',
     manifestThemeColor: '#28a745',
     manifestDisplay: 'standalone',
