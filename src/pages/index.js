@@ -16,14 +16,13 @@ const IndexPage = () => (
                         {config.firstName}
                         <span className="text-primary">{config.lastName}</span>
                     </h1>
-                    <div className="subheading mb-5">
-                        <i className="fa fa-map-marker"></i>  &nbsp; <a href={config.location} target="_blank">  {config.address} </a> ·  <i className="fa fa-mobile"> </i>  &nbsp; <a href={`tel:${config.phone}`}>{config.phone}</a> ·  <i className="fa fa-envelope"></i>  &nbsp;
-            <a href={`mailto:${config.email}`}>{config.email}</a>
-                    </div>
-                    <p className="lead mb-5">
+
+                    <p className="lead">
                         {config.description}
                     </p>
-                    <div className="social-icons">
+
+
+                    <div className="social-icons mt-5">
                         {config.socialLinks.map(social => {
                             const { icon, url } = social;
                             return (
@@ -33,6 +32,14 @@ const IndexPage = () => (
                             );
                         })}
                     </div>
+
+                    <ul className="subheading mt-5">
+                        <li><i className="fa fa-map-marker"></i>  &nbsp; <a href={config.location} target="_blank">  {config.address} </a> </li>
+                        <li><i className="fa fa-mobile"> </i>  &nbsp; <a href={`tel:${config.phone}`}>{config.phone}</a> </li>
+                        <li><i className="fa fa-envelope"></i>  &nbsp;
+            <a href={`mailto:${config.email}`}>{config.email}</a></li>
+                    </ul>
+
                 </div>
             </section>
 
