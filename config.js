@@ -3,8 +3,8 @@ module.exports = {
     manifestName: 'Resume',
     manifestShortName: 'Moataz Mohammady', // max 12 characters
     manifestStartUrl: 'https://moatazabdalmageed.github.io/',
-    manifestBackgroundColor: '#bd5d38',
-    manifestThemeColor: '#bd5d38',
+    manifestBackgroundColor: '#007bff',
+    manifestThemeColor: '#007bff',
     manifestDisplay: 'standalone',
     manifestIcon: 'src/assets/img/website-icon.png',
     pathPrefix: '', // This path is subpath of your hosting https://domain/portfolio
@@ -34,6 +34,11 @@ module.exports = {
         'npm',
         'linux',
         'git',
+    ], volunteerActivities: [
+        {
+            'title': 'Resala Charity Organization | جمعية رسالة للأعمال الخيرية',
+            'url': 'https://resala.org/'
+        }
     ],
     workflow: [
         'Mobile-First, Responsive Design',

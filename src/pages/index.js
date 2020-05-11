@@ -107,18 +107,6 @@ const IndexPage = () => (
                         })}
 
                     </ul>
-
-                    <div className="subheading mb-3">Workflow</div>
-                    <ul className="fa-ul mb-0">
-                        {config.workflow.map(step => {
-                            return (
-                                <li key={Math.random()}>
-                                    <i className="fa-li fa fa-check"></i>
-                                    {step}
-                                </li>
-                            );
-                        })}
-                    </ul>
                 </div>
             </section>
 
@@ -149,6 +137,29 @@ const IndexPage = () => (
                 </div>
             </section>
 
+
+
+            <hr className="m-0" />
+
+            <section
+                className="resume-section p-3  d-flex align-items-center"
+                id="volunteering"
+            >
+                <div className="w-100">
+                    <h2 className="mb-5"><i className="fa fa-smile"></i> Volunteering</h2>
+                    <ul>
+                        {config.volunteerActivities.map(activity => {
+                            return (
+                                <li key={Math.random()}>
+                                    <a href={activity.url} target="_blank">{activity.title}</a>
+                                </li>
+                            );
+                        })}
+                    </ul>
+                </div>
+            </section>
+
+
             <hr className="m-0" />
 
             <section
@@ -169,11 +180,7 @@ const IndexPage = () => (
                     </ul>
                 </div>
             </section>
-
-
-
             <hr className="m-0" />
-
             <section
                 className="resume-section p-3  d-flex align-items-center"
                 id="education"
