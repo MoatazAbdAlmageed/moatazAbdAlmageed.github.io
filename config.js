@@ -220,7 +220,18 @@ module.exports = {
 				'Conducting website performance tests.'
 			],
 			description: '',
-			projects: []
+			projects: [
+				{
+					name: 'la creation',
+					url: 'https://www.picuki.com/profile/la__creation',
+					technologies: [ 'PHP', 'Wordpress' ]
+				},
+				{
+					name: 'Transportation project',
+					url: '#',
+					technologies: [ 'Ruby on Rails', 'angularjs' ]
+				}
+			]
 		},
 
 		{
@@ -233,7 +244,13 @@ module.exports = {
 				'Assure that all user input is validated before submitting to back-end'
 			],
 			description: '',
-			projects: []
+			projects: [
+				{
+					name: 'hotel reservation project',
+					url: '#',
+					technologies: [ 'angularjs' ]
+				}
+			]
 		},
 		{
 			company: 'Orchtech',
