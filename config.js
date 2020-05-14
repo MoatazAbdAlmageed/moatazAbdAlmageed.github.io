@@ -96,7 +96,7 @@ module.exports = {
       description:
         'This course helped you develop your use of English in a range of everyday situations and built your confidence by improving your listening skills. You’ve heard people talking in a number of different situations and have had an opportunity to review the language through a series of quizzes.',
       url: 'https://www.futurelearn.com/certificates/tl15gwi',
-      issued: '2019',
+      issued: 'December 2018',
     },
     {
       place: 'futurelearn.com',
@@ -104,7 +104,7 @@ module.exports = {
       description:
         'This online course helped you to demonstrate understanding of language that can help you progress along the path to studying at a university.',
       url: 'https://www.futurelearn.com/certificates/d829clk',
-      issued: '2019',
+      issued: 'January 2020',
     },
     {
       place: 'Freecodecamp',
@@ -113,7 +113,7 @@ module.exports = {
         'Developer Certification, representing approximately 300 hours of coursework',
       url:
         'https://www.freecodecamp.org/certification/fcc319f679c/responsive-web-design',
-      issued: 'June 14, 2018',
+      issued: 'June 2018',
     },
 
     ,
@@ -121,21 +121,21 @@ module.exports = {
       place: 'Sololearn',
       title: 'HTML Fundamentals course',
       url: 'https://www.sololearn.com/Certificate/1014-1342830/pdf/',
-      issued: '06 January, 2017',
+      issued: 'January 2017',
     },
     ,
     {
       place: 'Sololearn',
       title: 'PHP Fundamentals course',
       url: 'https://www.sololearn.com/Certificate/1059-1342830/pdf/',
-      issued: '17 July, 2016',
+      issued: 'July 2016',
     },
     ,
     {
       place: 'Sololearn',
       title: 'JavaScript Fundamentals course',
       url: 'https://www.sololearn.com/Certificate/1024-1342830/pdf/',
-      issued: '15 September, 2016',
+      issued: 'September 2016',
     },
   ],
   email: 'moataz.mohammady@gmail.com',
