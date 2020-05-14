@@ -11,10 +11,10 @@ section.resume-section {
 .position {
   font-size: 1.5em;
   font-weight: bolder;
-  color: $primary;
 }
 
 .text-primary,
-.fa {
+.fa,
+.position {
   color: $secondary !important;
 }
