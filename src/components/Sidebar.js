@@ -5,7 +5,7 @@ import Scroll from './Scroll';
 import avatar from '../assets/images/avatar.jpg';
 import config from '../../config';
 
-export class Sidebar extends Component {
+class Sidebar extends Component {
   constructor(props) {
     super(props);
     this.state = {

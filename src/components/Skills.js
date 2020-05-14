@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import config from '../../config';
 
-export class Skills extends Component {
+class Skills extends Component {
   render() {
     const { skills } = config;
 

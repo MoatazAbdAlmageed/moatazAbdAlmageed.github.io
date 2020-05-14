@@ -2,7 +2,7 @@ import React from 'react';
 
 import Layout from '../components/Layout';
 import Sidebar from '../components/Sidebar';
-import Hero from '../components/Hero';
+import About from '../components/About';
 import Experience from '../components/Experience';
 import Skills from '../components/Skills';
 import Certifications from '../components/Certifications';
@@ -15,9 +15,9 @@ const IndexPage = () => {
     <Layout>
       <Sidebar />
       <div className="container-fluid">
-        <Hero />
-        <Experience />
+        <About />
         <Skills />
+        <Experience />
         <Certifications />
         <Interests />
         <Volunteering />

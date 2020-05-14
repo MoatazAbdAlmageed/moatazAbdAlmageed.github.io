@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import avatar from '../assets/images/avatar.jpg';
 import config from '../../config';
 
-export class Hero extends Component {
+class About extends Component {
   render() {
     const {
       firstName,
@@ -78,4 +78,4 @@ export class Hero extends Component {
   }
 }
 
-export default Hero;
+export default About;

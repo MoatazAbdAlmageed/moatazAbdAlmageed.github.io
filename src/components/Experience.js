@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import config from '../../config';
 
-export class Experience extends Component {
+class Experience extends Component {
   render() {
     const { jobs } = config;
 
