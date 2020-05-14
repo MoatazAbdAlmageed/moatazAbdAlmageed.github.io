@@ -87,3 +87,27 @@ h4 {
 .position {
   color: $secondary !important;
 }
+section {
+  border-bottom: 1px dashed $secondary;
+}
+.projects {
+  a {
+    float: left;
+  }
+  p {
+    margin: 5px 0 0 0;
+  }
+}
+.technologies {
+  li {
+    display: inline-block;
+    padding: 0 5px;
+  }
+}
+
+.resume-content {
+  flex: 1 1 auto;
+}
+.badge {
+  background: $secondary;
+}
