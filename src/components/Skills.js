@@ -23,7 +23,7 @@ class Skills extends Component {
             {skills.map(skill => {
               return (
                 <li key={Math.random()} className="list-inline-item">
-                  <i className={'fab fa-' + skill} />
+                  <i title={skill} className={'fab fa-' + skill} />
                 </li>
               );
             })}
