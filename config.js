@@ -30,6 +30,7 @@ module.exports = {
     'less',
     'php',
     'wordpress',
+    'laravel',
     'gulp',
     'grunt',
     'npm',
