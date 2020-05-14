@@ -63,13 +63,15 @@ h1 {
   }
 }
 
-#about .fa {
-  color: $gray-700;
-}
-
 .subheading {
   padding: 0 10px;
   li {
     list-style: none;
   }
+}
+
+.text-primary,
+.fa,
+.position {
+  color: $secondary !important;
 }

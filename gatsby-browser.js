@@ -5,9 +5,18 @@ const $ = require('jquery');
 
 export const onInitialClientRender = () => {
   $(document).ready(function() {
-    $('.navbar-collapse a').click(function(e) {
-      $('.navbar-collapse').collapse('toggle');
+    $(window).on('resize', function(e) {
+      checkScreenSize();
     });
+    checkScreenSize();
+    function checkScreenSize() {
+      $('.navbar-collapse a').unbind('click');
+      if ($(window).width() < 992) {
+        $('.navbar-collapse a').click(function(e) {
+          $('.navbar-collapse').collapse('toggle');
+        });
+      }
+    }
   });
 };
 
