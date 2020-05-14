@@ -48,7 +48,11 @@ module.exports = {
     'Cross Functional Teams',
     'Agile Development & Scrum',
   ],
-  interests: ['Running', 'Reading'],
+  interests: [
+    'Walking in the countryside with my family or friends.',
+    'Running.',
+    'Reading.',
+  ],
   socialLinks: [
     {
       icon: 'fa-github',

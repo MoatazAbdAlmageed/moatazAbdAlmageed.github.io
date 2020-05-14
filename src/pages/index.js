@@ -127,7 +127,7 @@ const IndexPage = () => {
                     {projects.length ? (
                       <div>
                         <h5>Projects</h5>
-                        <ul className="projects">
+                        <ol className="projects">
                           {projects.map(project => {
                             return (
                               <li>
@@ -147,7 +147,7 @@ const IndexPage = () => {
                               </li>
                             );
                           })}
-                        </ul>
+                        </ol>
                       </div>
                     ) : (
                       ''
