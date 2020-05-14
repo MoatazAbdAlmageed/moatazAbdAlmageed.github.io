@@ -1,26 +1,21 @@
 .bg-primary {
-    background-color: $primary !important;
-}
-
-.text-primary,
-.fa {
-    color: $primary !important;
+  background-color: $primary !important;
 }
 
 a {
-    color: $primary;
-
-    &:hover,
-    &:focus,
-    &:active {
-        color: darken($primary, 15%);
-    }
+  color: $primary;
+  text-decoration: none !important;
+  &:hover,
+  &:focus,
+  &:active {
+    color: $secondary;
+  }
 }
 
 .navbar-toggler {
-    display: none;
+  display: none;
 }
 
 .p-lg-5 {
-    padding: 0 1.5em !important;
+  padding: 0 1.5em !important;
 }

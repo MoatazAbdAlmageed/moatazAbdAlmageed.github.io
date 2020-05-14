@@ -1,11 +1,20 @@
 section.resume-section {
   padding-top: 5rem !important;
   padding-bottom: 5rem !important;
-  max-width: 75rem;
   .resume-item {
-    .resume-content {}
     .resume-date {
       min-width: none;
     }
   }
+}
+
+.position {
+  font-size: 1.5em;
+  font-weight: bolder;
+  color: $primary;
+}
+
+.text-primary,
+.fa {
+  color: $secondary !important;
 }

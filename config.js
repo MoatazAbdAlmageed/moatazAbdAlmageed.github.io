@@ -10,7 +10,8 @@ module.exports = {
 	pathPrefix: '', // This path is subpath of your hosting https://domain/portfolio
 	firstName: 'Moataz',
 	lastName: 'Mohammady',
-	description: `Full stack Web Developer with 4+ years of experience leveraging PHP & JavaScript to build responsive websites, and interactive features that drive business growth and improve UX.`,
+	position: 'Full stack Web Developer',
+	description: `With 4+ years of experience leveraging PHP & JavaScript to build responsive websites, and interactive features that drive business growth and improve UX.`,
 	education: [
 		{
 			place: 'Cairo University',
@@ -47,8 +48,7 @@ module.exports = {
 		'Cross Functional Teams',
 		'Agile Development & Scrum'
 	],
-	interests: [ 'Running', 'Reading', 'Cooking' ],
-	// social
+	interests: [ 'Running', 'Reading' ],
 	socialLinks: [
 		{
 			icon: 'fa-github',
