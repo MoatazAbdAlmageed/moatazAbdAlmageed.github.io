@@ -50,9 +50,10 @@ module.exports = {
         'Agile Development & Scrum',
     ],
     interests: [
-        'Walking in the countryside with my family or friends.',
-        'Running.',
-        'Reading.',
+        { "url": "https://moatazworld.wordpress.com/", "title": "Blogining" },
+        { "url": "https://www.goodreads.com/user/show/92723087-moataz-mohammady", "title": "Reading" },
+        { "url": "#", "title": "Running" },
+        { "url": "#", "title": "Walking in the countryside with my family or friends." },
     ],
     socialLinks: [
         {
