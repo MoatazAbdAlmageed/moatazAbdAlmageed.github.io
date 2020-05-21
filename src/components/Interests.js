@@ -12,10 +12,11 @@ class Interests extends Component {
         id="interests"
       >
         <div className="w-100">
+          <p>Apart from being a web developer, I enjoy</p>
+
           <h2 className="mb-5">
             <i className="fa fa-heart" /> Interests
           </h2>
-          <p>Apart from being a web developer, I enjoy</p>
           <ul>
             {interests.map(interest => {
               return (
