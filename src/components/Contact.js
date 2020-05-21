@@ -20,34 +20,55 @@ export default class Contact extends React.Component {
           <h2 className="mb-5">
             <i className="fa fa-envelope-open" /> Contact
           </h2>
-          <form
-            onSubmit={this.submitForm}
-            action="https://formspree.io/xgenoded"
-            method="POST"
-          >
-            <div class="form-group">
-              <label>Email</label>
-              <input
-                class="form-control"
-                type="email"
-                name="email"
-                placeholder="Enter email"
-              />
-            </div>
-            <div class="form-group">
-              <label>Message</label>
 
-              <textarea
-                class="form-control"
-                name="message"
-                rows="3"
-                placeholder="Enter message"
-              ></textarea>
-            </div>
+          {status === 'SUCCESS' ? (
+            <p className="text-success">Thank you for contacting!</p>
+          ) : (
+            <>
+              <h4>Question or query?, help is at hand</h4>
+              <form
+                onSubmit={this.submitForm}
+                action="https://formspree.io/xgenoded"
+                method="POST"
+              >
+                <div className="form-group">
+                  <label>Name</label>
+                  <input
+                    className="form-control"
+                    type="text"
+                    name="name"
+                    placeholder="Enter Name"
+                  />
+                </div>
 
-            {status === 'SUCCESS' ? <p>Thanks!</p> : <button>Submit</button>}
-            {status === 'ERROR' && <p>Ooops! There was an error.</p>}
-          </form>
+                <div className="form-group">
+                  <label>Email</label>
+                  <input
+                    className="form-control"
+                    type="email"
+                    name="email"
+                    placeholder="Enter email"
+                  />
+                </div>
+                <div className="form-group">
+                  <label>Message</label>
+
+                  <textarea
+                    className="form-control"
+                    name="message"
+                    rows="3"
+                    placeholder="Enter message"
+                  ></textarea>
+                </div>
+                <div className="form-group">
+                  <button className="btn btn-lg btn-success">Submit</button>
+                </div>
+              </form>
+            </>
+          )}
+          {status === 'ERROR' && (
+            <p className="text-danger">Ooops! There was an error.</p>
+          )}
         </div>
       </section>
     );
