@@ -6,7 +6,6 @@ import About from '../components/About';
 import Experience from '../components/Experience';
 import Skills from '../components/Skills';
 import Certifications from '../components/Certifications';
-import Volunteering from '../components/Volunteering';
 import Interests from '../components/Interests';
 import Education from '../components/Education';
 import Contact from '../components/Contact';
@@ -21,7 +20,6 @@ const IndexPage = () => {
         <Experience />
         <Certifications />
         <Interests />
-        <Volunteering />
         <Education />
         <Contact />
       </div>

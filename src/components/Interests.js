@@ -12,12 +12,10 @@ class Interests extends Component {
         id="interests"
       >
         <div className="w-100">
-          <p>Apart from being a web developer, I enjoy</p>
-
-          <h2 className="mb-5">
+          <h2>
             <i className="fa fa-heart" /> Interests
           </h2>
-          <ul>
+          <ul className="mb-5">
             {interests.map(interest => {
               return (
                 <li key={Math.random()}>
@@ -32,10 +30,8 @@ class Interests extends Component {
               );
             })}
           </ul>
-        </div>
 
-        <div className="w-100">
-          <h2 className="mb-5">
+          <h2>
             <i className="fa fa-smile" /> Volunteering
           </h2>
           <ul>
