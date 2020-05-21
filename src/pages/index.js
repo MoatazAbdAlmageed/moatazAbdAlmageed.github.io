@@ -9,6 +9,7 @@ import Certifications from '../components/Certifications';
 import Volunteering from '../components/Volunteering';
 import Interests from '../components/Interests';
 import Education from '../components/Education';
+import Contact from '../components/Contact';
 
 const IndexPage = () => {
   return (
@@ -22,6 +23,7 @@ const IndexPage = () => {
         <Interests />
         <Volunteering />
         <Education />
+        <Contact />
       </div>
     </Layout>
   );
