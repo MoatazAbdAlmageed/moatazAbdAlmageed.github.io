@@ -50,15 +50,33 @@ module.exports = {
     'Agile Development & Scrum',
   ],
   interests: [
-    { url: 'https://moatazworld.wordpress.com/', title: 'Blogining' },
+    {
+      url: '#',
+      title: 'Blogining',
+
+      sites: [
+        {
+          url: 'https://moatazworld.wordpress.com/',
+          title: 'moatazworld',
+        },
+        {
+          url: 'https://caramellaapp.com/moatazmohammady',
+          title: 'caramellaapp',
+        },
+        {
+          url: 'https://dev.to/moatazabdalmageed',
+          title: 'dev.to',
+        },
+      ],
+    },
+
     {
       url: 'https://www.goodreads.com/user/show/92723087-moataz-mohammady',
       title: 'Reading',
     },
-    { url: '#', title: 'Running' },
     {
       url: '#',
-      title: 'Walking in the countryside with my family or friends.',
+      title: 'Running && Walking in the countryside with my family or friends.',
     },
   ],
   socialLinks: [
@@ -79,7 +97,7 @@ module.exports = {
     },
     {
       icon: 'fa-wordpress',
-      name: 'Wordpress',
+      name: 'Wordpress Blog',
       url: 'https://profiles.wordpress.org/moataz-mohammady/',
     },
     {

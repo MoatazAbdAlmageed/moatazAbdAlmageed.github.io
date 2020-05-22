@@ -41,11 +41,12 @@ class About extends Component {
 
           <div className="social-icons mt-5">
             {socialLinks.map(social => {
-              const { icon, url } = social;
+              const { icon, url, name } = social;
               return (
                 <a
                   key={url}
                   href={url}
+                  title={name}
                   target="_blank"
                   rel="noopener noreferrer"
                 >

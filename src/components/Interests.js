@@ -17,15 +17,34 @@ class Interests extends Component {
           </h2>
           <ul className="mb-5">
             {interests.map(interest => {
+              const { url, title, sites } = interest;
               return (
                 <li key={Math.random()}>
-                  <a
-                    href={interest.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {interest.title}
-                  </a>
+                  {url == '#' ? (
+                    <p>{title}</p>
+                  ) : (
+                    <a href={url} target="_blank" rel="noopener noreferrer">
+                      {title}
+                    </a>
+                  )}
+
+                  {sites && (
+                    <ul>
+                      {sites.map(site => {
+                        return (
+                          <li key={Math.random()}>
+                            <a
+                              href={site.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              {site.title}
+                            </a>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  )}
                 </li>
               );
             })}
