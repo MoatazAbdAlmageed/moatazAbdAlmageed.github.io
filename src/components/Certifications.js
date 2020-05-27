@@ -4,9 +4,7 @@ import config from '../../config';
 
 class Certifications extends Component {
   render() {
-    const { certifications, integration } = config;
-    console.log(integration);
-
+    const { certifications } = config;
     return (
       <section
         className="resume-section p-3  d-flex align-items-center"

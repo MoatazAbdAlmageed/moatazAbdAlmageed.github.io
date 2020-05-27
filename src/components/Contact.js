@@ -11,6 +11,8 @@ export default class Contact extends React.Component {
 
   render() {
     const { status } = this.state;
+    console.log(status);
+
     return (
       <section
         className="resume-section p-3  d-flex align-items-center"

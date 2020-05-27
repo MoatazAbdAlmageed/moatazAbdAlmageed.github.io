@@ -22,7 +22,7 @@ class About extends Component {
         id="about"
       >
         <div className="w-100">
-          <p>Hi!, my name is</p>
+          <p className="lead">Hi!, my name is</p>
           <h1 className="mb-0">
             {firstName}
             <span className="text-primary">{lastName}</span>
