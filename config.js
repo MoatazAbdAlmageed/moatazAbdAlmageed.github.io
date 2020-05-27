@@ -14,7 +14,7 @@ module.exports = {
   position: 'Full stack Web Developer',
   description: `With 4+ years of experience leveraging PHP & JavaScript to build responsive websites, and interactive features that drive business growth and improve UX.`,
   integration: {
-    trackingId: process.env.trackingId,
+    TRACKING_ID: process.env.TRACKING_ID,
     GITHUB_TOKEN: process.env.GITHUB_TOKEN,
   },
   education: [
