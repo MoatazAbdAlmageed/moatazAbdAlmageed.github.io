@@ -9,6 +9,7 @@ import Interests from '../components/Interests';
 import Layout from '../components/Layout';
 import Sidebar from '../components/Sidebar';
 import Skills from '../components/Skills';
+import Repositories from '../components/Repositories';
 
 const IndexPage = () => {
   return (
@@ -17,6 +18,7 @@ const IndexPage = () => {
       <div className="container-fluid">
         <About />
         <Skills />
+        <Repositories />
         <Experience />
         <Certifications />
         <Interests />

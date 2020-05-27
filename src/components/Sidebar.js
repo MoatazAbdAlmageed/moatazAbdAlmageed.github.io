@@ -12,6 +12,7 @@ class Sidebar extends Component {
       tabs: [
         { content: 'About', href: 'about' },
         { content: 'Skills', href: 'skills' },
+        { content: 'Repositories', href: 'repositories' },
         { content: 'Experience', href: 'experience' },
         { content: 'Awards', href: 'awards' },
         { content: 'Interests & VOLUNTEERING', href: 'interests' },
@@ -23,6 +24,7 @@ class Sidebar extends Component {
 
   render() {
     const { tabs } = this.state;
+    const { firstName, lastName } = config;
     return (
       <nav
         className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
@@ -30,7 +32,7 @@ class Sidebar extends Component {
       >
         <a className="navbar-brand" href="#page-top">
           <span className="d-block d-lg-none">
-            {config.firstName} {config.lastName}
+            {firstName} {lastName}
           </span>
           <span className="d-none d-lg-block">
             <img

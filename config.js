@@ -10,8 +10,13 @@ module.exports = {
   pathPrefix: '', // This path is subpath of your hosting https://domain/portfolio
   firstName: 'Moataz',
   lastName: 'Mohammady',
+  githubUsername: 'MoatazAbdAlmageed',
   position: 'Full stack Web Developer',
   description: `With 4+ years of experience leveraging PHP & JavaScript to build responsive websites, and interactive features that drive business growth and improve UX.`,
+  integration: {
+    trackingId: process.env.trackingId,
+    GITHUB_TOKEN: process.env.GITHUB_TOKEN,
+  },
   education: [
     {
       place: 'Cairo University',

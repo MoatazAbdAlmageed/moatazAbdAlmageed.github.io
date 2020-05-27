@@ -4,7 +4,8 @@ import config from '../../config';
 
 class Certifications extends Component {
   render() {
-    const { certifications } = config;
+    const { certifications, integration } = config;
+    console.log(integration);
 
     return (
       <section
