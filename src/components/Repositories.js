@@ -1,5 +1,4 @@
 import React from 'react';
-import jsonFetch from 'simple-json-fetch';
 import styled from 'styled-components';
 import config from '../../config';
 import Loader from './Loader';
@@ -14,11 +13,15 @@ class Repositories extends React.Component {
       status: 'loading',
     };
   }
-  async componentDidMount() {
-    const repos = await jsonFetch(endpoint);
-    if (repos.json && repos.json.length) {
-      this.setState({ repos: repos.json, status: 'ready' });
-    }
+  componentDidMount() {
+    fetch(endpoint, {
+      credentials: 'same-origin', // Useful for including session ID (and, IIRC, authorization headers)
+    })
+      .then(response => response.json())
+      .then(data => {
+        this.setState({ repos: data, status: 'ready' });
+      })
+      .catch(error => console.error(error));
   }
   render() {
     const { status } = this.state;
