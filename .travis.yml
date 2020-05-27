@@ -1,23 +1,23 @@
 language: node_js
 node_js:
-  - "10"
+  - '10'
 cache:
   directories:
-  - node_modules
+    - node_modules
 deploy:
   provider: pages
   skip-cleanup: true
   github-token: $GITHUB_TOKEN
-  trackingId: $trackingId
+  tracking-id: $trackingId
   local_dir: public
   keep-history: true
   target-branch: master
   on:
     branch: develop
 before_script:
-  - "npm i -g gatsby"
-  - "npm i"
+  - 'npm i -g gatsby'
+  - 'npm i'
 script:
-  - "npm run test"
+  - 'npm run test'
 after_success:
-  - "npm run deploy"
+  - 'npm run deploy'
