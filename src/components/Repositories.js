@@ -40,28 +40,40 @@ class Repositories extends React.Component {
             {status === 'ready' && this.state.repos && (
               <React.Fragment>
                 <div className="repositories__content">
-                  {this.state.repos.map(repo => (
-                    <React.Fragment key={repo.name}>
-                      <div className="repositories__repo">
-                        <a
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="repositories__repo-link"
-                          href={repo.html_url}
-                        >
-                          <strong>{repo.name}</strong>
-                        </a>
-                        <div>{repo.description}</div>
-                        <div className="repositories__repo-date">
-                          Updated: {new Date(repo.updated_at).toUTCString()}
+                  {this.state.repos.map(repo => {
+                    const {
+                      name,
+                      html_url,
+                      description,
+                      updated_at,
+                      stargazers_count,
+                    } = repo;
+
+                    return (
+                      <React.Fragment key={name}>
+                        <div className="repositories__repo">
+                          <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="repositories__repo-link"
+                            href={html_url}
+                          >
+                            <strong>{name}</strong>
+                          </a>
+                          <div>{description}</div>
+                          <div className="repositories__repo-date">
+                            <span className="badge badge-dark">
+                              Updated: {new Date(updated_at).toUTCString()}
+                            </span>
+                          </div>
+                          <div className="repositories__repo-star">
+                            ★ {stargazers_count}
+                          </div>
                         </div>
-                        <div className="repositories__repo-star">
-                          ★ {repo.stargazers_count}
-                        </div>
-                      </div>
-                      <hr />
-                    </React.Fragment>
-                  ))}
+                        <hr />
+                      </React.Fragment>
+                    );
+                  })}
                 </div>
               </React.Fragment>
             )}
@@ -85,11 +97,6 @@ export default styled(Repositories)`
   .repositories__repo-link {
     text-decoration: none;
     color: #402d2d;
-  }
-
-  .repositories__repo-date {
-    color: #bbb;
-    font-size: 10px;
   }
 
   .repositories__repo-star {
