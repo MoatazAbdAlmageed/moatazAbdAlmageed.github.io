@@ -19,3 +19,24 @@ a {
 .p-lg-5 {
   padding: 0 1.5em !important;
 }
+
+.form-control:focus {
+  border-color: #bcbf54;
+  box-shadow: 0 0 0 0.2rem #bcbf5440;
+}
+
+.form-control,
+.form-group {
+  color: #bcbf54;
+}
+.badge {
+  background: $secondary;
+}
+
+.btn {
+  background-color: #bcbf54 !important;
+  border-color: #969a05 !important;
+}
+.text-success {
+  color: #bcbf54 !important;
+}

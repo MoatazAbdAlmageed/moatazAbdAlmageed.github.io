@@ -41,7 +41,7 @@ class Experience extends Component {
                   <h5>Responsibilities</h5>
                   <ul>
                     {responsibilities.map(responsibility => {
-                      return <li>{responsibility}</li>;
+                      return <li key={Math.random()}>{responsibility}</li>;
                     })}
                   </ul>
                   {projects.length ? (
@@ -50,7 +50,7 @@ class Experience extends Component {
                       <ol className="projects">
                         {projects.map(project => {
                           return (
-                            <li>
+                            <li key={Math.random()}>
                               <a
                                 href={project.url}
                                 target="_blank"
@@ -62,7 +62,7 @@ class Experience extends Component {
                               <ul className="technologies">
                                 {project.technologies.map(tech => {
                                   return (
-                                    <li>
+                                    <li key={Math.random()}>
                                       <span className="badge badge-dark">
                                         {tech}
                                       </span>

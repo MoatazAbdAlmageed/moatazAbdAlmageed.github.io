@@ -20,7 +20,7 @@ class Interests extends Component {
               const { url, title, sites } = interest;
               return (
                 <li key={Math.random()}>
-                  {url == '#' ? (
+                  {url === '#' ? (
                     <p>{title}</p>
                   ) : (
                     <a href={url} target="_blank" rel="noopener noreferrer">

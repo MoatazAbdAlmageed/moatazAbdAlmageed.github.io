@@ -1,14 +1,14 @@
 import React from 'react';
 
+import About from '../components/About';
+import Certifications from '../components/Certifications';
+import Contact from '../components/Contact';
+import Education from '../components/Education';
+import Experience from '../components/Experience';
+import Interests from '../components/Interests';
 import Layout from '../components/Layout';
 import Sidebar from '../components/Sidebar';
-import About from '../components/About';
-import Experience from '../components/Experience';
 import Skills from '../components/Skills';
-import Certifications from '../components/Certifications';
-import Interests from '../components/Interests';
-import Education from '../components/Education';
-import Contact from '../components/Contact';
 
 const IndexPage = () => {
   return (
