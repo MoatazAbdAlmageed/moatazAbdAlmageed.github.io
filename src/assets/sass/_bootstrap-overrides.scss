@@ -31,13 +31,14 @@ a {
 }
 
 .badge {
-  background: $secondary;
-  color: #ffffff;
+  background: $yellow;
+  color: #252526;
   white-space: normal;
 }
 
 .badge-primary {
   background: $primary;
+  color: $white;
 }
 
 .btn {
