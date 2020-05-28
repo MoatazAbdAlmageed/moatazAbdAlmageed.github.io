@@ -18,15 +18,20 @@ class Certifications extends Component {
             {certifications.map(certification => {
               const { place, url, title, issued, description } = certification;
               return (
-                <li key={Math.random()}>
-                  <i className="fa-li fa fa-star text-warning" />
-                  <a href={url} target="_blank" rel="noopener noreferrer">
-                    {title}
-                  </a>{' '}
-                  | {place}
-                  <p>{description}</p>
-                  <div className="text-md-right">
-                    <span className="badge badge-dark">{issued}</span>
+                <li key={Math.random()} className="row">
+                  <div className="col-10">
+                    <i className="fa-li fa fa-star text-warning" />
+                    <a href={url} target="_blank" rel="noopener noreferrer">
+                      {title}
+                    </a>{' '}
+                    <span className="badge">{place}</span>
+                    <p>{description}</p>
+                  </div>
+
+                  <div className="col-2">
+                    <div className="text-md-right">
+                      <span className="badge badge-primary">{issued}</span>
+                    </div>
                   </div>
                 </li>
               );

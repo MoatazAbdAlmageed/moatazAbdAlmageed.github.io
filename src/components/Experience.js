@@ -38,52 +38,58 @@ class Experience extends Component {
                       @{company}
                     </a>
                   </div>
-                  <h5>Responsibilities</h5>
-                  <ul>
-                    {responsibilities.map(responsibility => {
-                      return <li key={Math.random()}>{responsibility}</li>;
-                    })}
-                  </ul>
-                  {projects.length ? (
-                    <div>
-                      <h5>Projects</h5>
-                      <ol className="projects">
-                        {projects.map(project => {
-                          return (
-                            <li key={Math.random()}>
-                              <a
-                                href={project.url}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                              >
-                                {project.name}
-                              </a>
 
-                              <ul className="technologies">
-                                {project.technologies.map(tech => {
-                                  return (
-                                    <li key={Math.random()}>
-                                      <span className="badge badge-dark">
-                                        {tech}
-                                      </span>
-                                    </li>
-                                  );
-                                })}
-                              </ul>
-                            </li>
-                          );
+                  <div className="row">
+                    <div className="col-10">
+                      <h5>Responsibilities</h5>
+                      <ul>
+                        {responsibilities.map(responsibility => {
+                          return <li key={Math.random()}>{responsibility}</li>;
                         })}
-                      </ol>
+                      </ul>
+                      {projects.length ? (
+                        <div>
+                          <h5>Projects</h5>
+                          <ol className="projects">
+                            {projects.map(project => {
+                              return (
+                                <li key={Math.random()}>
+                                  <a
+                                    href={project.url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                  >
+                                    {project.name}
+                                  </a>
+
+                                  <ul className="technologies">
+                                    {project.technologies.map(tech => {
+                                      return (
+                                        <li key={Math.random()}>
+                                          <span className="badge">{tech}</span>
+                                        </li>
+                                      );
+                                    })}
+                                  </ul>
+                                </li>
+                              );
+                            })}
+                          </ol>
+                        </div>
+                      ) : (
+                        ''
+                      )}
+                      <p>{description}</p>
                     </div>
-                  ) : (
-                    ''
-                  )}
-                  <p>{description}</p>
-                </div>
-                <div className="resume-date text-md-right">
-                  <span className="text-primary">
-                    <span className="badge badge-dark">{fromTO}</span>
-                  </span>
+
+                    <div className="col-2">
+                      <div className="resume-date">
+                        <span className="text-primary">
+                          <span className="badge badge-primary">{fromTO}</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             );

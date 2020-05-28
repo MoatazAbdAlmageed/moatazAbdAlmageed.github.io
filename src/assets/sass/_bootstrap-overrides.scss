@@ -21,22 +21,29 @@ a {
 }
 
 .form-control:focus {
-  border-color: #bcbf54;
-  box-shadow: 0 0 0 0.2rem #bcbf5440;
+  border-color: $secondary;
+  box-shadow: 0 0 0 0.2rem lighten($secondary, 80%);
 }
 
 .form-control,
 .form-group {
-  color: #bcbf54;
+  color: $secondary;
 }
+
 .badge {
   background: $secondary;
+  color: #ffffff;
+  white-space: normal;
+}
+
+.badge-primary {
+  background: $primary;
 }
 
 .btn {
-  background-color: #bcbf54 !important;
-  border-color: #969a05 !important;
+  background-color: $secondary !important;
+  border-color: lighten($secondary, 80%) !important;
 }
 .text-success {
-  color: #bcbf54 !important;
+  color: $secondary !important;
 }
