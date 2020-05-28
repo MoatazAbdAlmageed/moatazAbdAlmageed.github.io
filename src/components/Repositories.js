@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import config from '../../config';
 import Loader from './Loader';
 
-const endpoint = `https://api.github.com/users/${config.githubUsername}/repos?type=owner&sort=updated&per_page=5&page=1`;
+const endpoint = `https://api.github.com/users/${config.githubUsername}/repos?type=owner&sort=updated&type=public&per_page=5&page=1`;
 
 class Repositories extends React.Component {
   constructor(props) {
@@ -18,8 +18,10 @@ class Repositories extends React.Component {
       credentials: 'same-origin', // Useful for including session ID (and, IIRC, authorization headers)
     })
       .then(response => response.json())
-      .then(data => {
-        this.setState({ repos: data, status: 'ready' });
+      .then(repos => {
+        console.log(repos);
+
+        this.setState({ repos, status: 'ready' });
       })
       .catch(error => console.error(error));
   }
@@ -32,7 +34,7 @@ class Repositories extends React.Component {
       >
         <div className="w-100">
           <h2 className="mb-5">
-            <i className="fab fa-github" /> Latest Github repositories
+            <i className="fab fa-github" /> Github repositories
           </h2>
           <div className={this.props.className}>
             {status === 'loading' && (
@@ -51,7 +53,7 @@ class Repositories extends React.Component {
                       updated_at,
                       stargazers_count,
                     } = repo;
-
+                    const showStargazersCount = false; // Todo make it true later when have start
                     return (
                       <React.Fragment key={name}>
                         <div className="repositories__repo">
@@ -69,9 +71,13 @@ class Repositories extends React.Component {
                               Updated: {new Date(updated_at).toUTCString()}
                             </span>
                           </div>
-                          <div className="repositories__repo-star">
-                            ★ {stargazers_count}
-                          </div>
+                          {showStargazersCount ? (
+                            <div className="repositories__repo-star">
+                              ★ {stargazers_count}
+                            </div>
+                          ) : (
+                            ''
+                          )}
                         </div>
                         <hr />
                       </React.Fragment>

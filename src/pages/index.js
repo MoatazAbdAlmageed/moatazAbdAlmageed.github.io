@@ -17,9 +17,9 @@ const IndexPage = () => {
       <Sidebar />
       <div className="container-fluid">
         <About />
+        <Experience />
         <Skills />
         <Repositories />
-        <Experience />
         <Certifications />
         <Interests />
         <Education />
