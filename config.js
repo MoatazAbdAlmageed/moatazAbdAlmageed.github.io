@@ -3,8 +3,8 @@ module.exports = {
   manifestName: 'Resume',
   manifestShortName: 'Moataz Mohammady', // max 12 characters
   manifestStartUrl: 'https://moatazabdalmageed.github.io/',
-  manifestBackgroundColor: '#1e1e1e',
-  manifestThemeColor: '#1e1e1e',
+  manifestBackgroundColor: '#252526',
+  manifestThemeColor: '#252526',
   manifestDisplay: 'standalone',
   manifestIcon: 'src/assets/img/website-icon.png',
   pathPrefix: '', // This path is subpath of your hosting https://domain/portfolio
