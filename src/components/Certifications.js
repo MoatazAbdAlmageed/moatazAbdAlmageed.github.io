@@ -22,7 +22,7 @@ class Certifications extends Component {
                   <div className="col-10">
                     <i className="fa-li fa fa-star text-warning" />
                     <a href={url} target="_blank" rel="noopener noreferrer">
-                      {title}
+                      <b> {title}</b>
                     </a>{' '}
                     <span className="badge">{place}</span>
                     <p>{description}</p>

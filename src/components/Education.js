@@ -32,7 +32,7 @@ class Education extends Component {
                   </div>
                 </div>
                 <div className="resume-date text-md-right">
-                  <span className="text-primary">{period}</span>
+                  <span className="badge">{period}</span>
                 </div>
               </div>
             );

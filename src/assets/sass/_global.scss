@@ -83,6 +83,7 @@ h4 {
 
 .text-primary,
 .fa,
+#repositories .fab,
 .position {
   color: $secondary !important;
 }
@@ -106,4 +107,50 @@ section {
 
 .resume-content {
   flex: 1 1 auto;
+}
+
+a {
+  background-image: linear-gradient(
+    to left,
+    transparent,
+    transparent 50%,
+    $primary 50%,
+    $primary
+  );
+  background-position: 100% 0;
+  background-size: 200% 100%;
+  transition: all 0.25s ease-in;
+}
+
+a:hover {
+  background-position: 0 0;
+  background-image: linear-gradient(
+    to left,
+    transparent 50%,
+    transparent 50%,
+    $secondary 50%,
+    $secondary
+  );
+  color: $gray-100 !important;
+}
+#sideNav a:hover {
+  background-position: 0 0;
+  background-image: linear-gradient(
+    to left,
+    transparent 50%,
+    transparent 50%,
+    #ffbc01 50%,
+    #ffbc01
+  );
+}
+
+#about a:hover {
+  background-position: 0 0;
+  background-image: linear-gradient(
+    to left,
+    transparent 50%,
+    transparent 50%,
+    $primary 50%,
+    $primary
+  );
 }
