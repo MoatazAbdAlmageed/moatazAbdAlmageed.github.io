@@ -15,7 +15,7 @@ class Sidebar extends Component {
         { content: 'Skills', href: 'skills' },
         { content: 'Repositories', href: 'repositories' },
         { content: 'Awards', href: 'awards' },
-        { content: 'Interests & VOLUNTEERING', href: 'interests' },
+        { content: 'Interests', href: 'interests' },
         { content: 'Education', href: 'education' },
         { content: 'Contact', href: 'contact' },
       ],

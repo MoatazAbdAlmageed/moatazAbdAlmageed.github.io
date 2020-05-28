@@ -21,7 +21,6 @@ h5,
 h6 {
   @include heading-font;
   font-weight: 700;
-  text-transform: uppercase;
   color: $gray-800;
 }
 
