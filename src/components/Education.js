@@ -17,7 +17,7 @@ class Education extends Component {
           </h2>
 
           {education.map(education => {
-            const { place, url, title, fromTO } = education;
+            const { place, url, title, period } = education;
             return (
               <div
                 key={url}
@@ -32,7 +32,7 @@ class Education extends Component {
                   </div>
                 </div>
                 <div className="resume-date text-md-right">
-                  <span className="text-primary">{fromTO}</span>
+                  <span className="text-primary">{period}</span>
                 </div>
               </div>
             );

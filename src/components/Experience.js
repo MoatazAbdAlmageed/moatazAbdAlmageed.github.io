@@ -22,7 +22,7 @@ class Experience extends Component {
               url,
               occupation,
               description,
-              fromTO,
+              period,
               responsibilities,
               projects,
             } = job;
@@ -32,15 +32,14 @@ class Experience extends Component {
                 className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
               >
                 <div className="resume-content">
-                  <h3 className="mb-0">{occupation}</h3>
-                  <div className="subheading mb-3">
-                    <a href={url} target="_blank" rel="noopener noreferrer">
-                      @{company}
-                    </a>
-                  </div>
-
                   <div className="row">
                     <div className="col-10">
+                      <h3 className="mb-0">{occupation}</h3>
+                      <div className="subheading mb-3">
+                        <a href={url} target="_blank" rel="noopener noreferrer">
+                          @{company}
+                        </a>
+                      </div>
                       <h5>Responsibilities</h5>
                       <ul>
                         {responsibilities.map(responsibility => {
@@ -81,13 +80,8 @@ class Experience extends Component {
                       )}
                       <p>{description}</p>
                     </div>
-
                     <div className="col-2">
-                      <div className="resume-date">
-                        <span className="text-primary">
-                          <span className="badge badge-primary">{fromTO}</span>
-                        </span>
-                      </div>
+                      <span className="badge badge-primary">{period}</span>
                     </div>
                   </div>
                 </div>

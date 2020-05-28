@@ -22,7 +22,7 @@ module.exports = {
       place: 'Cairo University',
       url: 'https://cu.edu.eg/Home',
       title: "Bachelor's Degree in Commerce",
-      fromTO: '2008 - 2013',
+      period: '2008 - 2013',
     },
   ],
   skills: [
@@ -191,7 +191,7 @@ module.exports = {
     {
       company: 'Wuilt',
       url: 'http://wuilt.com/',
-      fromTO: 'Jan 2020 - Present',
+      period: 'Jan 2020 - Present',
       occupation: 'Full-Stack Web Developer',
       responsibilities: [
         'Develop new user-facing features',
@@ -222,7 +222,7 @@ module.exports = {
         'Designing and managing the website back-end including database and server integration.',
       ],
       url: 'https://camelcasetech.com/',
-      fromTO: 'May 2018 - Dec 2019',
+      period: 'May 2018 - Dec 2019',
       occupation: 'Full-Stack PHP Developer',
       description: '',
       projects: [
@@ -250,7 +250,7 @@ module.exports = {
     {
       company: 'Nile Bits',
       url: 'https://www.nilebits.com/',
-      fromTO: 'Jan 2017 - Apr 2018',
+      period: 'Jan 2017 - Apr 2018',
       occupation: 'Front-End developer',
       responsibilities: [
         'Created custom AngularJS components for internal framework',
@@ -271,7 +271,7 @@ module.exports = {
     {
       company: 'TIE',
       url: 'http://tie.com.eg/',
-      fromTO: 'Sep 2016 - Jan 2017',
+      period: 'Sep 2016 - Jan 2017',
       occupation: 'WordPress developer',
       responsibilities: [
         'Generating WordPress themes and plugins.',
@@ -296,7 +296,7 @@ module.exports = {
     {
       company: 'EgyCoders',
       url: 'http://www.egycoders.com/',
-      fromTO: 'Mar 2016 - Jun 2016',
+      period: 'Mar 2016 - Jun 2016',
       occupation: 'Front-End developer',
       responsibilities: [
         'Develop new user-facing features',
@@ -314,7 +314,7 @@ module.exports = {
     {
       company: 'Orchtech',
       url: 'https://www.orchtech.com/',
-      fromTO: 'Dec 2015 - May 2016',
+      period: 'Dec 2015 - May 2016',
       occupation: 'WordPress Developer',
       responsibilities: [
         'Generating WordPress themes and plugins.',
@@ -346,7 +346,7 @@ module.exports = {
     {
       company: 'Leogami',
       url: 'http://leogami.com/',
-      fromTO: 'Oct 2015 - Nov 2015',
+      period: 'Oct 2015 - Nov 2015',
       occupation: 'WordPress Developer',
       responsibilities: [
         'Designing and building the website front-end.',
