@@ -96,6 +96,11 @@ module.exports = {
       url: 'https://www.linkedin.com/in/moatazabdelmageed',
     },
     {
+      icon: 'fa-stack-overflow',
+      name: 'stackoverflow',
+      url: 'https://stackoverflow.com/users/2524043/moataz-mohammady',
+    },
+    {
       icon: 'fa-behance',
       name: 'Behance',
       url: 'https://www.behance.net/moatazmohammady',
