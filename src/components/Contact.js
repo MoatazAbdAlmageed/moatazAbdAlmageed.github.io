@@ -11,7 +11,6 @@ export default class Contact extends React.Component {
 
   render() {
     const { status } = this.state;
-    console.log(status);
 
     return (
       <section

@@ -19,8 +19,6 @@ class Repositories extends React.Component {
     })
       .then(response => response.json())
       .then(repos => {
-        console.log(repos);
-
         this.setState({ repos, status: 'ready' });
       })
       .catch(error => console.error(error));

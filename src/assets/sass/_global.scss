@@ -109,7 +109,7 @@ section {
   flex: 1 1 auto;
 }
 
-a {
+a:not(.navbar-brand) {
   background-image: linear-gradient(
     to left,
     transparent,
@@ -122,7 +122,7 @@ a {
   transition: all 0.25s ease-in;
 }
 
-a:hover {
+a:not(.navbar-brand):hover {
   background-position: 0 0;
   background-image: linear-gradient(
     to left,
@@ -133,7 +133,7 @@ a:hover {
   );
   color: $gray-100 !important;
 }
-#sideNav a:hover {
+#sideNav a.nav-link:hover {
   background-position: 0 0;
   background-image: linear-gradient(
     to left,
