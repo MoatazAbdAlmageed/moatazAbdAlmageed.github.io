@@ -114,8 +114,8 @@ a:not(.navbar-brand) {
     to left,
     transparent,
     transparent 50%,
-    $primary 50%,
-    $primary
+    $secondary 50%,
+    $yellow
   );
   background-position: 100% 0;
   background-size: 200% 100%;
@@ -129,28 +129,7 @@ a:not(.navbar-brand):hover {
     transparent 50%,
     transparent 50%,
     $secondary 50%,
-    $secondary
+    $yellow
   );
   color: $gray-100 !important;
-}
-#sideNav a.nav-link:hover {
-  background-position: 0 0;
-  background-image: linear-gradient(
-    to left,
-    transparent 50%,
-    transparent 50%,
-    #ffbc01 50%,
-    #ffbc01
-  );
-}
-
-#about a:hover {
-  background-position: 0 0;
-  background-image: linear-gradient(
-    to left,
-    transparent 50%,
-    transparent 50%,
-    $primary 50%,
-    $primary
-  );
 }
