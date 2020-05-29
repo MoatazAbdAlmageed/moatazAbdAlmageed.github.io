@@ -12,6 +12,8 @@ deploy:
   on:
     branch: develop
 before_script:
+  - 'rm -rf node_modules'
+  - 'rm -rf package-lock.json'
   - 'npm i -g gatsby'
   - 'npm i'
 script:
