@@ -99,6 +99,10 @@ module.exports = {
       icon: 'fa-stack-overflow',
       name: 'stackoverflow',
       url: 'https://stackoverflow.com/users/2524043/moataz-mohammady',
+    },  {
+      icon: 'fa-codepen',
+      name: 'codepen',
+      url: 'https://codepen.io/Moataz-Mohammady',
     },
     {
       icon: 'fa-behance',
