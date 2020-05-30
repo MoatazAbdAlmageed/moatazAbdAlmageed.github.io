@@ -102,7 +102,7 @@ module.exports = {
     },  {
       icon: 'fa-codepen',
       name: 'codepen',
-      url: 'https://codepen.io/Moataz-Mohammady',
+      url: 'https://codepen.io/Moataz-Mohammady/pens/public',
     },
     {
       icon: 'fa-behance',
