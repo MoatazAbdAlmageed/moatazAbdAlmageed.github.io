@@ -3,7 +3,7 @@ import config from '../../config';
 
 class Skills extends Component {
   render() {
-    const { skills, skillsAdImag } = config;
+    const { skills } = config;
 
     return (
       <section
@@ -14,24 +14,24 @@ class Skills extends Component {
           <h2 className="mb-5">
             <i className="fa fa-code" /> Skills
           </h2>
-
-          <ul className="list-inline dev-icons">
-            {skills.map(skill => {
-              return (
-                <li key={Math.random()}>
-                  <i title={skill.title} className={'fab fa-' + skill.icon} />{' '}
-                  {skill.title}
-                </li>
-              );
-            })}{' '}
-            {skillsAdImag.map(skill => {
-              return (
-                <li key={Math.random()}>
-                  <img alt={skill.title} src={skill.img} />
-                </li>
-              );
-            })}
-          </ul>
+          {skills.map(type => {
+            return (
+              <div key={Math.random()}>
+                <h4>{type.title}</h4>
+                <ul className="list-inline dev-icons">
+                  {type.skills.map(skill => (
+                    <li key={Math.random()}>
+                      <i
+                        title={skill.title}
+                        className={'fab fa-' + skill.icon}
+                      />{' '}
+                      {skill.title}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            );
+          })}{' '}
         </div>
       </section>
     );
