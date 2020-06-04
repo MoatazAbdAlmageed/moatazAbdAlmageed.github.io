@@ -25,7 +25,7 @@ class Skills extends Component {
                         title={skill.title}
                         className={'fab fa-' + skill.icon}
                       />{' '}
-                      {skill.title}
+                      <a href={skill.url}>{skill.title}</a>
                     </li>
                   ))}
                 </ul>

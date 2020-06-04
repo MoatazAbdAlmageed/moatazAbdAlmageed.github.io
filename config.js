@@ -33,22 +33,27 @@ module.exports = {
         {
           title: 'HTML',
           icon: 'html5',
+          url: '#',
         },
         {
           title: 'CSS',
           icon: 'css3-alt',
-        },
-        {
-          title: 'Javascript',
-          icon: 'js-square',
-        },
-        {
-          title: 'ReactJS',
-          icon: 'react',
+          url: '#',
         },
         {
           title: 'Sass',
           icon: 'sass',
+          url: '#',
+        },
+        {
+          title: 'Javascript',
+          icon: 'js-square',
+          url: '#',
+        },
+        {
+          title: 'ReactJS',
+          icon: 'react',
+          url: '#',
         },
       ],
     },
@@ -58,14 +63,17 @@ module.exports = {
         {
           title: 'NodeJS',
           icon: 'node-js',
+          url: '#',
         },
         {
           title: 'Php',
           icon: 'php',
+          url: '#',
         },
         {
           title: 'Laravel',
           icon: 'laravel',
+          url: '#',
         },
       ],
     },
@@ -75,6 +83,7 @@ module.exports = {
         {
           title: 'React Native',
           icon: 'react',
+          url: '#',
         },
       ],
     },
@@ -84,22 +93,32 @@ module.exports = {
         {
           title: 'Wordpress',
           icon: 'wordpress',
+          url: '#',
         },
         {
           title: 'Gatsby',
           icon: 'rocket fa',
+          url: '#',
+        },
+        {
+          title: 'ElectronJs',
+          icon: 'desktop fa',
+          url: 'https://www.electronjs.org/',
         },
         {
           title: 'Linux',
           icon: 'linux',
+          url: '#',
         },
         {
           title: 'Git',
           icon: 'git',
+          url: '#',
         },
         {
           title: 'Photoshop',
           icon: 'adobe',
+          url: '#',
         },
       ],
     },

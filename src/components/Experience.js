@@ -58,6 +58,11 @@ class Experience extends Component {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                   >
+                                    <i
+                                      className="fa fa-globe"
+                                      aria-hidden="true"
+                                    ></i>
+                                    &nbsp;
                                     {project.name}
                                   </a>
 
@@ -65,7 +70,9 @@ class Experience extends Component {
                                     {project.technologies.map(tech => {
                                       return (
                                         <li key={Math.random()}>
-                                          <span className="badge badge-secondary">{tech}</span>
+                                          <span className="badge badge-secondary">
+                                            {tech}
+                                          </span>
                                         </li>
                                       );
                                     })}
@@ -81,7 +88,9 @@ class Experience extends Component {
                       <p>{description}</p>
                     </div>
                     <div className="col-2">
-                      <span className="badge badge-secondary badge badge-secondary-primary">{period}</span>
+                      <span className="badge badge-secondary badge badge-secondary-primary">
+                        {period}
+                      </span>
                     </div>
                   </div>
                 </div>
