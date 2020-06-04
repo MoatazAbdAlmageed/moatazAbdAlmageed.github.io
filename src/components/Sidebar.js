@@ -37,11 +37,12 @@ class Sidebar extends Component {
       { primary: '#1E1E1E', secondary: '#D5A06B' },
       { primary: '#D5D274', secondary: '#196537' },
       { primary: '#C43C9A', secondary: '#FFE005' },
-      { primary: '#7AC3B1', secondary: '#7AC3B1' },
       { primary: '#D01B3B', secondary: '#4104C6' },
       { primary: '#1FBBB4', secondary: '#1979A1' },
       { primary: '#316072', secondary: '#F67D80' },
       { primary: '#252526', secondary: '#007acc' },
+      { primary: '#54BABF', secondary: '#ADDBD9' },
+      { primary: '#99BC44', secondary: '#DB2977' },
     ];
     let randomElement = colors[Math.floor(Math.random() * colors.length)];
 
