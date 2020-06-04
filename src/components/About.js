@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import avatar from '../assets/images/avatar.jpg';
+import avatar from '../assets/img/avatar.jpg';
 import config from '../../config';
 
 class About extends Component {

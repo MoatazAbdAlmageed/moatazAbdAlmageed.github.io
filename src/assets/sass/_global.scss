@@ -133,3 +133,9 @@ a:not(.navbar-brand):hover {
   );
   color: $gray-100 !important;
 }
+
+#skills {
+  img {
+    height: 32px;
+  }
+}

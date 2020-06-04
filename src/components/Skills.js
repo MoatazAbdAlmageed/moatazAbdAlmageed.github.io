@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-
 import config from '../../config';
 
 class Skills extends Component {
   render() {
-    const { skills } = config;
+    const { skills, skillsAdImag } = config;
 
     return (
       <section
@@ -24,6 +23,13 @@ class Skills extends Component {
               return (
                 <li key={Math.random()} className="list-inline-item">
                   <i title={skill} className={'fab fa-' + skill} />
+                </li>
+              );
+            })}{' '}
+            {skillsAdImag.map(img => {
+              return (
+                <li key={Math.random()} className="list-inline-item">
+                  <img alt="skill" src={img} />
                 </li>
               );
             })}
