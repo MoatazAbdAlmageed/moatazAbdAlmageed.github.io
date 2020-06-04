@@ -15,21 +15,19 @@ class Skills extends Component {
             <i className="fa fa-code" /> Skills
           </h2>
 
-          <div className="subheading mb-3">
-            Programming Languages &amp; Tools
-          </div>
           <ul className="list-inline dev-icons">
             {skills.map(skill => {
               return (
-                <li key={Math.random()} className="list-inline-item">
-                  <i title={skill} className={'fab fa-' + skill} />
+                <li key={Math.random()}>
+                  <i title={skill.title} className={'fab fa-' + skill.icon} />{' '}
+                  {skill.title}
                 </li>
               );
             })}{' '}
-            {skillsAdImag.map(img => {
+            {skillsAdImag.map(skill => {
               return (
-                <li key={Math.random()} className="list-inline-item">
-                  <img alt="skill" src={img} />
+                <li key={Math.random()}>
+                  <img alt={skill.title} src={skill.img} />
                 </li>
               );
             })}

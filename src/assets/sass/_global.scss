@@ -65,9 +65,9 @@ h4 {
 }
 
 .dev-icons {
-  font-size: 3rem;
+  font-size: 1.2rem;
 
-  .list-inline-item i {
+  li {
     &:hover {
       color: $primary;
     }
@@ -136,6 +136,6 @@ a:not(.navbar-brand):hover {
 
 #skills {
   img {
-    height: 32px;
+    height: 1em;
   }
 }
