@@ -33,27 +33,27 @@ module.exports = {
         {
           title: 'HTML',
           icon: 'html5',
-          url: '#',
+          url: 'https://en.wikipedia.org/wiki/HTML',
         },
         {
           title: 'CSS',
           icon: 'css3-alt',
-          url: '#',
+          url: 'https://en.wikipedia.org/wiki/CSS',
         },
         {
           title: 'Sass',
           icon: 'sass',
-          url: '#',
+          url: 'https://sass-lang.com/#',
         },
         {
           title: 'Javascript',
           icon: 'js-square',
-          url: '#',
+          url: 'https://www.javascript.com/',
         },
         {
           title: 'ReactJS',
           icon: 'react',
-          url: '#',
+          url: 'https://reactjs.org/',
         },
       ],
     },
@@ -63,17 +63,32 @@ module.exports = {
         {
           title: 'NodeJS',
           icon: 'node-js',
-          url: '#',
+          url: 'https://nodejs.org/en/',
         },
         {
           title: 'Php',
           icon: 'php',
-          url: '#',
+          url: 'https://www.php.net/',
         },
         {
           title: 'Laravel',
           icon: 'laravel',
-          url: '#',
+          url: 'https://laravel.com/',
+        },
+      ],
+    },
+    {
+      title: 'Database',
+      skills: [
+        {
+          title: 'MySQL',
+          icon: 'database fa',
+          url: 'https://www.mysql.com/',
+        },
+        {
+          title: 'MongoDB',
+          icon: 'database fa',
+          url: 'https://www.mongodb.com/',
         },
       ],
     },
@@ -83,7 +98,7 @@ module.exports = {
         {
           title: 'React Native',
           icon: 'react',
-          url: '#',
+          url: 'https://reactnative.dev/',
         },
       ],
     },
@@ -93,12 +108,12 @@ module.exports = {
         {
           title: 'Wordpress',
           icon: 'wordpress',
-          url: '#',
+          url: 'https://wordpress.org/',
         },
         {
           title: 'Gatsby',
           icon: 'rocket fa',
-          url: '#',
+          url: 'https://www.gatsbyjs.org/',
         },
         {
           title: 'ElectronJs',
@@ -108,17 +123,17 @@ module.exports = {
         {
           title: 'Linux',
           icon: 'linux',
-          url: '#',
+          url: 'https://www.linux.org/',
         },
         {
           title: 'Git',
           icon: 'git',
-          url: '#',
+          url: 'https://git-scm.com/',
         },
         {
           title: 'Photoshop',
           icon: 'adobe',
-          url: '#',
+          url: 'https://www.adobe.com/mena_en/products/photoshopfamily.html',
         },
       ],
     },
