@@ -41,8 +41,8 @@ class Sidebar extends Component {
       { primary: '#D01B3B', secondary: '#4104C6' },
       { primary: '#1FBBB4', secondary: '#1979A1' },
       { primary: '#316072', secondary: '#F67D80' },
+      { primary: '#252526', secondary: '#007acc' },
     ];
-
     let randomElement = colors[Math.floor(Math.random() * colors.length)];
 
     document.documentElement.style.setProperty(
@@ -108,8 +108,8 @@ class Sidebar extends Component {
             })}
           </Scrollspy>
         </div>
-        <button className="btn btn-secondary" onClick={this.changeColor}>
-          Change Color
+        <button className="btn btn-sm btn-secondary" onClick={this.changeColor}>
+          Colors <i class="fas fa-palette"></i>
         </button>
       </nav>
     );
