@@ -77,6 +77,9 @@ class Sidebar extends Component {
             />
           </span>
         </a>
+        <button className="btn btn-sm btn-secondary" onClick={this.changeColor}>
+          <i class="fas fa-palette"></i>
+        </button>
         <button
           className="navbar-toggler"
           type="button"
@@ -88,6 +91,7 @@ class Sidebar extends Component {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
+
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <Scrollspy
             items={tabs.map(s => s.href)}
@@ -109,9 +113,6 @@ class Sidebar extends Component {
             })}
           </Scrollspy>
         </div>
-        <button className="btn btn-sm btn-secondary" onClick={this.changeColor}>
-          Colors <i class="fas fa-palette"></i>
-        </button>
       </nav>
     );
   }

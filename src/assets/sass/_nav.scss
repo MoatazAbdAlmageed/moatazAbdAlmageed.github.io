@@ -3,11 +3,19 @@
     font-weight: 800;
     letter-spacing: 0.05rem;
   }
-  .navbar-toggler {
-    &:focus {
-      // outline-color: lighten($primary, 15%);
+  .btn {
+    background-color: $secondary !important;
+    border-radius: 50%;
+    i {
+      color: $primary;
     }
   }
+
+  // .navbar-toggler {
+  //   &:focus {
+  //     outline-color: lighten($primary, 15%);
+  //   }
+  // }
 }
 
 @media (min-width: 992px) {
