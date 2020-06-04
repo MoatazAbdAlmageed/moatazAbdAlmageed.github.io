@@ -86,8 +86,8 @@ module.exports = {
           icon: 'wordpress',
         },
         {
-          title: 'gatsbyjs',
-          icon: 'star fa',
+          title: 'Gatsby',
+          icon: 'rocket fa',
         },
         {
           title: 'Linux',

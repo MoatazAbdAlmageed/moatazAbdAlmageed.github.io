@@ -64,16 +64,6 @@ h4 {
   }
 }
 
-.dev-icons {
-  font-size: 1.2rem;
-  margin: 0 2rem;
-  li {
-    &:hover {
-      color: $primary;
-    }
-  }
-}
-
 .subheading {
   padding: 0 10px;
   li {
@@ -133,9 +123,24 @@ a:not(.navbar-brand):hover {
   );
   color: $gray-100 !important;
 }
-
 #skills {
-  img {
-    height: 1em;
+  .items {
+    margin-top: 2rem;
+    display: inline-grid;
+    h4 {
+      text-align: center;
+    }
+  }
+  .dev-icons {
+    font-size: 1.2rem;
+    i {
+      font-size: 2rem;
+    }
+    margin: 0 2rem;
+    li {
+      &:hover {
+        color: $primary;
+      }
+    }
   }
 }

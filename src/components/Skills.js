@@ -16,7 +16,7 @@ class Skills extends Component {
           </h2>
           {skills.map(type => {
             return (
-              <div key={Math.random()}>
+              <div key={Math.random()} className="items">
                 <h4>{type.title}</h4>
                 <ul className="list-inline dev-icons">
                   {type.skills.map(skill => (
