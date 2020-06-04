@@ -13,6 +13,7 @@ module.exports = {
   githubUsername: 'MoatazAbdAlmageed',
   position: 'Full stack Web Developer',
   description: `With 4+ years of experience leveraging PHP & JavaScript to build responsive websites, and interactive features that drive business growth and improve UX.`,
+  keywords: 'Full stack Web Developer',
   integration: {
     TRACKING_ID: process.env.TRACKING_ID,
     GITHUB_TOKEN: process.env.GITHUB_TOKEN,
@@ -47,12 +48,6 @@ module.exports = {
       title: 'Resala Charity Organization | جمعية رسالة للأعمال الخيرية',
       url: 'https://resala.org/',
     },
-  ],
-  workflow: [
-    'Mobile-First, Responsive Design',
-    'Cross Browser Testing & Debugging',
-    'Cross Functional Teams',
-    'Agile Development & Scrum',
   ],
   interests: [
     {
@@ -99,7 +94,8 @@ module.exports = {
       icon: 'fa-stack-overflow',
       name: 'stackoverflow',
       url: 'https://stackoverflow.com/users/2524043/moataz-mohammady',
-    },  {
+    },
+    {
       icon: 'fa-codepen',
       name: 'codepen',
       url: 'https://codepen.io/Moataz-Mohammady/pens/public',

@@ -3,6 +3,9 @@ const config = require('./config');
 const {
   pathPrefix,
   siteTitle,
+  description,
+  keywords,
+  skills,
   manifestName,
   manifestShortName,
   manifestBackgroundColor,
@@ -16,6 +19,8 @@ module.exports = {
   pathPrefix: pathPrefix,
   siteMetadata: {
     title: siteTitle,
+    description: description,
+    keywords: `${keywords} ${skills}`,
   },
   plugins: [
     'gatsby-plugin-react-helmet',
