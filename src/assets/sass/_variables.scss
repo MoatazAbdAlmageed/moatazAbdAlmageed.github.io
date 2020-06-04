@@ -1,3 +1,7 @@
+:root {
+  --primary: #252526;
+  --secondary: #007acc;
+}
 // Variables
 
 // Restate Bootstrap Variables
@@ -25,8 +29,8 @@ $green: #28a745 !default;
 $teal: #20c997 !default;
 $cyan: #17a2b8 !default;
 
-$primary: #252526;
-$secondary: #007acc;
+$primary: var(--primary);
+$secondary: var(--secondary);
 $success: $green !default;
 $info: $cyan !default;
 $warning: $yellow !default;

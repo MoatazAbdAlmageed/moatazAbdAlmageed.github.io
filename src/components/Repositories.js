@@ -65,7 +65,7 @@ class Repositories extends React.Component {
                           </a>
                           <div>{description}</div>
                           <div className="repositories__repo-date">
-                            <span className="badge badge-dark">
+                            <span className="badge badge-secondary badge badge-secondary-dark">
                               Updated: {new Date(updated_at).toUTCString()}
                             </span>
                           </div>

@@ -22,7 +22,7 @@ a {
 
 .form-control:focus {
   border-color: $secondary;
-  box-shadow: 0 0 0 0.2rem lighten($secondary, 80%);
+  // box-shadow: 0 0 0 0.2rem lighten($secondary, 80%);
 }
 
 .form-control,
@@ -31,19 +31,12 @@ a {
 }
 
 .badge {
-  background: $yellow;
-  color: #252526;
   white-space: normal;
-}
-
-.badge-primary {
-  background: $primary;
-  color: $white;
 }
 
 .btn {
   background-color: $secondary !important;
-  border-color: lighten($secondary, 80%) !important;
+  // border-color: lighten($secondary, 80%) !important;
 }
 .text-success {
   color: $secondary !important;

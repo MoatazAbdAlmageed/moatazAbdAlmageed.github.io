@@ -24,13 +24,15 @@ class Certifications extends Component {
                     <a href={url} target="_blank" rel="noopener noreferrer">
                       <b> {title}</b>
                     </a>{' '}
-                    <span className="badge">{place}</span>
+                    <span className="badge badge-secondary">{place}</span>
                     <p>{description}</p>
                   </div>
 
                   <div className="col-2">
                     <div className="text-md-right">
-                      <span className="badge badge-primary">{issued}</span>
+                      <span className="badge badge-secondary badge badge-secondary-primary">
+                        {issued}
+                      </span>
                     </div>
                   </div>
                 </li>

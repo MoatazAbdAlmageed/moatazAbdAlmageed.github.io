@@ -115,7 +115,7 @@ a:not(.navbar-brand) {
     transparent,
     transparent 50%,
     $secondary 50%,
-    $yellow
+    $primary
   );
   background-position: 100% 0;
   background-size: 200% 100%;
@@ -129,7 +129,7 @@ a:not(.navbar-brand):hover {
     transparent 50%,
     transparent 50%,
     $secondary 50%,
-    $yellow
+    $primary
   );
   color: $gray-100 !important;
 }

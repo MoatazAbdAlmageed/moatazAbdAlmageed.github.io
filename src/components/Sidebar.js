@@ -20,7 +20,41 @@ class Sidebar extends Component {
         { content: 'Contact', href: 'contact' },
       ],
     };
+    this.changeColor = this.changeColor.bind(this);
   }
+  changeColor = () => {
+    var colors = [
+      { primary: '#DC2167', secondary: '#0F1237' },
+      { primary: '#CD2731', secondary: '#96CBBB' },
+      { primary: '#E9C121', secondary: '#010101' },
+      { primary: '#EEC710', secondary: '#0D1239' },
+      { primary: '#1D3D59', secondary: '#FE6F42' },
+      { primary: '#DFB891', secondary: '#1D817F' },
+      { primary: '#CE9CAA', secondary: '#1769A4' },
+      { primary: '#782049', secondary: '#1E2963' },
+      { primary: '#7F307F', secondary: '#6781B3' },
+      { primary: '#1D3B45', secondary: '#C65F1D' },
+      { primary: '#1E1E1E', secondary: '#D5A06B' },
+      { primary: '#D5D274', secondary: '#196537' },
+      { primary: '#C43C9A', secondary: '#FFE005' },
+      { primary: '#7AC3B1', secondary: '#7AC3B1' },
+      { primary: '#D01B3B', secondary: '#4104C6' },
+      { primary: '#1FBBB4', secondary: '#1979A1' },
+      { primary: '#316072', secondary: '#F67D80' },
+    ];
+
+    let randomElement = colors[Math.floor(Math.random() * colors.length)];
+
+    document.documentElement.style.setProperty(
+      '--primary',
+      randomElement.primary
+    );
+
+    document.documentElement.style.setProperty(
+      '--secondary',
+      randomElement.secondary
+    );
+  };
 
   render() {
     const { tabs } = this.state;
@@ -74,6 +108,9 @@ class Sidebar extends Component {
             })}
           </Scrollspy>
         </div>
+        <button className="btn btn-secondary" onClick={this.changeColor}>
+          Change Color
+        </button>
       </nav>
     );
   }
