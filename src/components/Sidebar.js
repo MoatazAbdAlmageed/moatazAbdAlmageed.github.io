@@ -45,7 +45,8 @@ class Sidebar extends Component {
       { primary: '#99BC44', secondary: '#DB2977' },
     ];
     let randomElement = colors[Math.floor(Math.random() * colors.length)];
-
+    //todo set in localStorage
+    console.log(randomElement);
     document.documentElement.style.setProperty(
       '--primary',
       randomElement.primary
@@ -78,7 +79,7 @@ class Sidebar extends Component {
           </span>
         </a>
         <button className="btn btn-sm btn-secondary" onClick={this.changeColor}>
-          <i class="fas fa-palette"></i>
+          <i className="fas fa-palette"></i>
         </button>
         <button
           className="navbar-toggler"
