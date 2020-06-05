@@ -2,6 +2,7 @@ const config = require('./config');
 
 const {
   pathPrefix,
+  site_img,
   siteTitle,
   description,
   keywords,
@@ -18,6 +19,8 @@ const {
 module.exports = {
   pathPrefix: pathPrefix,
   siteMetadata: {
+    manifestStartUrl,
+    site_img: site_img,
     title: siteTitle,
     description: description,
     keywords: `${keywords} ${skills}`,

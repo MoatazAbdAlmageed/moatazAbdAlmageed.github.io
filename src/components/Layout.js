@@ -17,6 +17,8 @@ class Layout extends Component {
                 title
                 description
                 keywords
+                site_img
+                manifestStartUrl
               }
             }
           }
@@ -31,6 +33,47 @@ class Layout extends Component {
                   content: data.site.siteMetadata.description,
                 },
                 { name: 'keywords', content: data.site.siteMetadata.keywords },
+                {
+                  name: 'twitter:card',
+                  content: 'summary_large_image',
+                },
+                {
+                  name: 'twitter:image',
+                  content: data.site.siteMetadata.site_img,
+                },
+                {
+                  name: 'og:title',
+                  content: data.site.siteMetadata.title,
+                },
+                {
+                  name: 'og:site_name',
+                  content: data.site.siteMetadata.title,
+                },
+                ,
+                {
+                  name: 'og:type',
+                  content: 'website',
+                },
+                ,
+                {
+                  name: 'og:description',
+                  content: data.site.siteMetadata.description,
+                },
+                ,
+                {
+                  name: 'og:image',
+                  content: data.site.siteMetadata.site_img,
+                },
+                ,
+                {
+                  name: 'og:url',
+                  content: data.site.siteMetadata.manifestStartUrl,
+                },
+                ,
+                {
+                  name: 'og:image:alt',
+                  content: data.site.siteMetadata.site_img,
+                },
               ]}
             >
               <html lang="en" />
