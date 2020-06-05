@@ -1,4 +1,5 @@
 import React from 'react';
+import config from '../../config';
 
 export default class Contact extends React.Component {
   constructor(props) {
@@ -11,6 +12,7 @@ export default class Contact extends React.Component {
 
   render() {
     const { status } = this.state;
+    const { FORMSPREE } = config;
 
     return (
       <section
@@ -29,7 +31,7 @@ export default class Contact extends React.Component {
               <h4>Question or query?, help is at hand</h4>
               <form
                 onSubmit={this.submitForm}
-                action="https://formspree.io/xgenoded"
+                action={`https://formspree.io/${FORMSPREE}`}
                 method="POST"
               >
                 <div className="form-group">

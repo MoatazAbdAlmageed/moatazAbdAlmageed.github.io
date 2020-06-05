@@ -14,10 +14,9 @@ module.exports = {
   position: 'Full stack Web Developer',
   description: `With 4+ years of experience leveraging PHP & JavaScript to build responsive websites, and interactive features that drive business growth and improve UX.`,
   keywords: 'developer,web,code,programming,',
-  integration: {
-    TRACKING_ID: process.env.TRACKING_ID,
-    GITHUB_TOKEN: process.env.GITHUB_TOKEN,
-  },
+  TRACKING_ID: process.env.TRACKING_ID,
+  GITHUB_TOKEN: process.env.GITHUB_TOKEN,
+  FORMSPREE: 'xgenoded',
   education: [
     {
       place: 'Cairo University',
