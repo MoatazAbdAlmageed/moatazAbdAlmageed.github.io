@@ -115,6 +115,11 @@ module.exports = {
           url: 'https://www.gatsbyjs.org/',
         },
         {
+          title: 'GraphQL',
+          icon: 'graphql fa',
+          url: 'https://graphql.org/',
+        },
+        {
           title: 'ElectronJs',
           icon: 'desktop fa',
           url: 'https://www.electronjs.org/',
