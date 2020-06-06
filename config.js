@@ -114,16 +114,16 @@ module.exports = {
         },
       ],
     },
-    {
-      title: 'Mobile',
-      skills: [
-        {
-          title: 'React Native',
-          icon: 'react',
-          url: 'https://reactnative.dev/',
-        },
-      ],
-    },
+    // {
+    //   title: 'Mobile',
+    //   skills: [
+    //     {
+    //       title: 'React Native',
+    //       icon: 'react',
+    //       url: 'https://reactnative.dev/',
+    //     },
+    //   ],
+    // },
     {
       title: 'Other',
       skills: [
