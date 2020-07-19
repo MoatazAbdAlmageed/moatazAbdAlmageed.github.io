@@ -175,7 +175,7 @@ module.exports = {
   interests: [
     {
       url: '#',
-      title: 'Blogining',
+      title: 'Blogging',
 
       sites: [
         {
