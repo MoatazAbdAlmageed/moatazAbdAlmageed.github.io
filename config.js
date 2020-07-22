@@ -73,6 +73,11 @@ module.exports = {
           url: 'https://www.javascript.com/',
         },
         {
+          title: 'Typescript',
+          icon: 'ts',
+          url: 'https://www.typescriptlang.org/',
+        },
+        {
           title: 'ReactJS',
           icon: 'react',
           url: 'https://reactjs.org/',
@@ -247,6 +252,11 @@ module.exports = {
       icon: 'fa-facebook-f',
       name: 'Facebook',
       url: 'https://www.facebook.com/moataz.mohammady.3',
+    },
+    {
+      icon: 'fa-twitter',
+      name: 'Twitter',
+      url: 'https://twitter.com/MoatazMohammady',
     },
   ],
   certifications: [
