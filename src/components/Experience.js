@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import config from '../../config';
 
 class Experience extends Component {
@@ -13,7 +12,7 @@ class Experience extends Component {
       >
         <div className="w-100">
           <h2 className="mb-5">
-            <i className="fa fa-briefcase" /> Experience
+            <i className="fa fa-keyboard" /> Experience
           </h2>
 
           {jobs.map(job => {
@@ -34,10 +33,13 @@ class Experience extends Component {
                 <div className="resume-content">
                   <div className="row">
                     <div className="col-10">
-                      <h3 className="mb-0">{occupation}</h3>
+                      <h3 className="mb-0">
+                        {' '}
+                        <i className="fa fa-keyboard" /> {occupation}
+                      </h3>
                       <div className="subheading mb-3">
                         <a href={url} target="_blank" rel="noopener noreferrer">
-                          @{company}
+                          <i className="fa fa-building"></i> @{company}
                         </a>
                       </div>
                       <h5>Responsibilities</h5>

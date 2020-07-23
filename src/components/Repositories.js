@@ -3,7 +3,9 @@ import styled from 'styled-components';
 import config from '../../config';
 import Loader from './Loader';
 
-const endpoint = `https://api.github.com/users/${config.githubUsername}/repos?type=owner&sort=updated&type=public&per_page=5&page=1`;
+const endpoint = `https://api.github.com/users/${config.githubUsername}/repos?type=owner&sort=updated&type=public&per_page=10&page=1`;
+
+const repositoriesLink = `https://github.com/${config.githubUsername}?tab=repositories`;
 
 class Repositories extends React.Component {
   constructor(props) {
@@ -33,6 +35,12 @@ class Repositories extends React.Component {
         <div className="w-100">
           <h2 className="mb-5">
             <i className="fa fa-github" /> Github repositories
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="repositories__repo-link"
+              href={repositoriesLink}
+            ></a>
           </h2>
           <div className={this.props.className}>
             {status === 'loading' && (
@@ -61,10 +69,11 @@ class Repositories extends React.Component {
                             className="repositories__repo-link"
                             href={html_url}
                           >
+                            <i className="fa fa-github" />{' '}
                             <strong>{name}</strong>
                           </a>
                           <div>{description}</div>
-                          <div className="repositories__repo-date">
+                          <div className="repositories__repo-date text-right">
                             <span className="badge badge-secondary badge badge-secondary-dark">
                               Updated: {new Date(updated_at).toUTCString()}
                             </span>

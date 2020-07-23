@@ -73,6 +73,11 @@ module.exports = {
           url: 'https://www.javascript.com/',
         },
         {
+          title: 'Typescript',
+          icon: 'ts',
+          url: 'https://www.typescriptlang.org/',
+        },
+        {
           title: 'ReactJS',
           icon: 'react',
           url: 'https://reactjs.org/',
@@ -143,7 +148,7 @@ module.exports = {
           url: 'https://graphql.org/',
         },
         {
-          title: 'ElectronJs',
+          title: 'ElectronJS',
           icon: 'desktop fa',
           url: 'https://www.electronjs.org/',
         },
@@ -175,7 +180,7 @@ module.exports = {
   interests: [
     {
       url: '#',
-      title: 'Blogining',
+      title: 'Blogging',
 
       sites: [
         {
@@ -209,7 +214,7 @@ module.exports = {
       url: 'https://github.com/MoatazAbdAlmageed',
     },
     {
-      icon: 'fa-linkedin-in',
+      icon: 'fa-linkedin',
       name: 'Linkedin',
       url: 'https://www.linkedin.com/in/moatazabdelmageed',
     },
@@ -234,7 +239,7 @@ module.exports = {
       url: 'https://profiles.wordpress.org/moataz-mohammady/',
     },
     {
-      icon: 'fa-goodreads',
+      icon: 'fa-book',
       name: 'Goodreads',
       url: 'https://www.goodreads.com/user/show/92723087-moataz-mohammady',
     },
@@ -247,6 +252,11 @@ module.exports = {
       icon: 'fa-facebook-f',
       name: 'Facebook',
       url: 'https://www.facebook.com/moataz.mohammady.3',
+    },
+    {
+      icon: 'fa-twitter',
+      name: 'Twitter',
+      url: 'https://twitter.com/MoatazMohammady',
     },
   ],
   certifications: [
