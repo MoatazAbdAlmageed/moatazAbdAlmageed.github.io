@@ -93,7 +93,7 @@ module.exports = {
           url: 'https://nodejs.org/en/',
         },
         {
-          title: 'Php',
+          title: 'PHP',
           icon: 'php',
           url: 'https://www.php.net/',
         },
