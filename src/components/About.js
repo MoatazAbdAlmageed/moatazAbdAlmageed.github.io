@@ -50,7 +50,7 @@ class About extends Component {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i className={`fab ${icon}`} />
+                  <i className={`fa ${icon}`} />
                 </a>
               );
             })}
@@ -71,6 +71,10 @@ class About extends Component {
             <li>
               <i className="fa fa-envelope" /> &nbsp;
               <a href={`mailto:${email}`}>{email}</a>
+            </li>{' '}
+            <li>
+              <i className="fa fa-whatsapp" /> &nbsp;
+              <a href={`https://wa.me/:${phone}`}>{phone}</a>
             </li>
           </ul>
         </div>

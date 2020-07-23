@@ -23,7 +23,7 @@ class Skills extends Component {
                     <li key={Math.random()}>
                       <i
                         title={skill.title}
-                        className={'fab fa-' + skill.icon}
+                        className={'fa fa-' + skill.icon}
                       />{' '}
                       <a
                         target="_blank"

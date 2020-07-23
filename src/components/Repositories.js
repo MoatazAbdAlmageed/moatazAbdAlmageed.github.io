@@ -32,7 +32,7 @@ class Repositories extends React.Component {
       >
         <div className="w-100">
           <h2 className="mb-5">
-            <i className="fab fa-github" /> Github repositories
+            <i className="fa fa-github" /> Github repositories
           </h2>
           <div className={this.props.className}>
             {status === 'loading' && (
