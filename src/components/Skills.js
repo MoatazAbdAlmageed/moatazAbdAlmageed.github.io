@@ -21,10 +21,7 @@ class Skills extends Component {
                 <ul className="list-inline dev-icons">
                   {type.skills.map(skill => (
                     <li key={Math.random()}>
-                      <i
-                        title={skill.title}
-                        className={'fab fa-' + skill.icon}
-                      />{' '}
+                      <i title={skill.title} className="fa fa-square-o" />{' '}
                       <a
                         target="_blank"
                         rel="noopener noreferrer"

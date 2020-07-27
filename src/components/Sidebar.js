@@ -59,7 +59,7 @@ class Sidebar extends Component {
           </span>
         </a>
         <button className="btn btn-sm btn-secondary" onClick={this.changeColor}>
-          <i className="fas fa-palette"></i>
+          <i className="fa fa-paint-brush"></i>
         </button>
         <button
           className="navbar-toggler"

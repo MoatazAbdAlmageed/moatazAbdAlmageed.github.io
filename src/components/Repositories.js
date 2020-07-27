@@ -34,14 +34,13 @@ class Repositories extends React.Component {
       >
         <div className="w-100">
           <h2 className="mb-5">
+            <i className="fa fa-github" /> Github repositories
             <a
               target="_blank"
               rel="noopener noreferrer"
               className="repositories__repo-link"
               href={repositoriesLink}
-            >
-              <i className="fab fa-github" /> Github repositories
-            </a>
+            ></a>
           </h2>
           <div className={this.props.className}>
             {status === 'loading' && (
@@ -70,7 +69,7 @@ class Repositories extends React.Component {
                             className="repositories__repo-link"
                             href={html_url}
                           >
-                            <i className="fab fa-github" />{' '}
+                            <i className="fa fa-github" />{' '}
                             <strong>{name}</strong>
                           </a>
                           <div>{description}</div>

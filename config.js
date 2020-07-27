@@ -152,7 +152,7 @@ module.exports = {
           url: 'https://graphql.org/',
         },
         {
-          title: 'ElectronJs',
+          title: 'ElectronJS',
           icon: 'desktop fa',
           url: 'https://www.electronjs.org/',
         },
@@ -218,7 +218,7 @@ module.exports = {
       url: 'https://github.com/MoatazAbdAlmageed',
     },
     {
-      icon: 'fa-linkedin-in',
+      icon: 'fa-linkedin',
       name: 'Linkedin',
       url: 'https://www.linkedin.com/in/moatazabdelmageed',
     },
@@ -243,7 +243,7 @@ module.exports = {
       url: 'https://profiles.wordpress.org/moataz-mohammady/',
     },
     {
-      icon: 'fa-goodreads',
+      icon: 'fa-book',
       name: 'Goodreads',
       url: 'https://www.goodreads.com/user/show/92723087-moataz-mohammady',
     },
