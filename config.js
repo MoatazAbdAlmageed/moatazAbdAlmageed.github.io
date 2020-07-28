@@ -14,7 +14,7 @@ module.exports = {
   position: 'Full stack Web Developer',
   site_img:
     'https://avatars2.githubusercontent.com/u/17373050?s=460&u=b26d5f5d825283b7b067e10a46add610b512cb26&v=4',
-  description: `With 4+ years of experience leveraging PHP & JavaScript to build responsive websites, and interactive features that drive business growth and improve UX.`,
+  description: `With 4+ years of experience leveraging PHP & JavaScript to build responsive websites.`,
   keywords: 'developer,web,code,programming,',
   TRACKING_ID: process.env.TRACKING_ID,
   GITHUB_TOKEN: process.env.GITHUB_TOKEN,
