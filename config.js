@@ -266,6 +266,14 @@ module.exports = {
   certifications: [
     {
       place: 'Udacity',
+      title: 'Web Development Professional',
+      description: 'Nanodegree',
+      url:
+        'https://graduation-api.udacity.com/api/certificate/A57FXWSR/download',
+      issued: 'Aug 2020',
+    },
+    {
+      place: 'Udacity',
       title: 'Front End Development Track',
       description: 'One Million Arab Coders',
       url:
