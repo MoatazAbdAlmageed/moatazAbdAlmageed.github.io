@@ -7,38 +7,42 @@ module.exports = {
   manifestThemeColor: '#FE6F42',
   manifestDisplay: 'standalone',
   manifestIcon: 'src/assets/img/website-icon.png',
-  pathPrefix: '', // This path is subpath of your hosting https://domain/portfolio
+  pathPrefix: '/', // This path is subpath of your hosting https://domain/portfolio
   firstName: 'Moataz',
   lastName: 'Mohammady',
   githubUsername: 'MoatazAbdAlmageed',
   position: 'Full stack Web Developer',
   site_img:
     'https://avatars2.githubusercontent.com/u/17373050?s=460&u=b26d5f5d825283b7b067e10a46add610b512cb26&v=4',
-  description: `With 4+ years of experience leveraging PHP & JavaScript to build responsive websites, and interactive features that drive business growth and improve UX.`,
+  description: `With 4+ years of experience leveraging PHP & JavaScript to build responsive websites.`,
   keywords: 'developer,web,code,programming,',
   TRACKING_ID: process.env.TRACKING_ID,
   GITHUB_TOKEN: process.env.GITHUB_TOKEN,
   FORMSPREE: 'xgenoded', // create your form from => https://formspree.io
   colors: [
-    { primary: '#DC2167', secondary: '#0F1237' },
-    { primary: '#CD2731', secondary: '#96CBBB' },
-    { primary: '#E9C121', secondary: '#010101' },
-    { primary: '#EEC710', secondary: '#0D1239' },
-    { primary: '#1D3D59', secondary: '#FE6F42' },
-    { primary: '#DFB891', secondary: '#1D817F' },
-    { primary: '#CE9CAA', secondary: '#1769A4' },
-    { primary: '#782049', secondary: '#1E2963' },
-    { primary: '#7F307F', secondary: '#6781B3' },
-    { primary: '#1D3B45', secondary: '#C65F1D' },
-    { primary: '#1E1E1E', secondary: '#D5A06B' },
-    { primary: '#D5D274', secondary: '#196537' },
-    { primary: '#C43C9A', secondary: '#FFE005' },
-    { primary: '#D01B3B', secondary: '#4104C6' },
-    { primary: '#1FBBB4', secondary: '#1979A1' },
-    { primary: '#316072', secondary: '#F67D80' },
-    { primary: '#252526', secondary: '#007acc' },
-    { primary: '#54BABF', secondary: '#ADDBD9' },
-    { primary: '#99BC44', secondary: '#DB2977' },
+    { primary: '#252526', secondary: '#007acc' }, //vscode
+    { primary: '#4b4b4b', secondary: '#f09733' }, //sublime
+    { primary: '#4d4d4d', secondary: '#22a3dc' }, //brackets
+    { primary: '#24292e', secondary: '#2ea44f' }, //github
+    { primary: '#000000', secondary: '#e16259' }, //notion
+    // { primary: '#DC2167', secondary: '#0F1237' },
+    // { primary: '#CD2731', secondary: '#96CBBB' },
+    // { primary: '#E9C121', secondary: '#010101' },
+    // { primary: '#EEC710', secondary: '#0D1239' },
+    // { primary: '#1D3D59', secondary: '#FE6F42' },
+    // { primary: '#DFB891', secondary: '#1D817F' },
+    // { primary: '#CE9CAA', secondary: '#1769A4' },
+    // { primary: '#782049', secondary: '#1E2963' },
+    // { primary: '#7F307F', secondary: '#6781B3' },
+    // { primary: '#1D3B45', secondary: '#C65F1D' },
+    // { primary: '#1E1E1E', secondary: '#D5A06B' },
+    // { primary: '#D5D274', secondary: '#196537' },
+    // { primary: '#C43C9A', secondary: '#FFE005' },
+    // { primary: '#D01B3B', secondary: '#4104C6' },
+    // { primary: '#1FBBB4', secondary: '#1979A1' },
+    // { primary: '#316072', secondary: '#F67D80' },
+    // { primary: '#54BABF', secondary: '#ADDBD9' },
+    // { primary: '#99BC44', secondary: '#DB2977' },
   ],
   education: [
     {
@@ -260,6 +264,14 @@ module.exports = {
     },
   ],
   certifications: [
+    {
+      place: 'Udacity',
+      title: 'Web Development Professional',
+      description: 'Nanodegree',
+      url:
+        'https://graduation-api.udacity.com/api/certificate/A57FXWSR/download',
+      issued: 'Aug 2020',
+    },
     {
       place: 'Udacity',
       title: 'Front End Development Track',
