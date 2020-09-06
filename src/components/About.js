@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import avatar from '../assets/img/avatar.jpg';
 import config from '../../config';
+import avatar from '../assets/img/avatar.jpg';
+import SkillsIcons from '../components/SkillsIcons';
 
 class About extends Component {
   render() {
@@ -38,6 +39,8 @@ class About extends Component {
 
           <p className="position">I am a {position}</p>
           <p className="lead">{description}</p>
+
+          <SkillsIcons />
 
           <div className="social-icons mt-5">
             {socialLinks.map(social => {

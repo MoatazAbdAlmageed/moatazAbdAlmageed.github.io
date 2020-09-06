@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import Scrollspy from 'react-scrollspy';
-import Scroll from './Scroll';
-
-import avatar from '../assets/img/avatar.jpg';
 import config from '../../config';
+import avatar from '../assets/img/avatar.jpg';
+import Scroll from './Scroll';
 
 class Sidebar extends Component {
   constructor(props) {
@@ -12,7 +11,7 @@ class Sidebar extends Component {
       tabs: [
         { content: 'About', href: 'about' },
         { content: 'Experience', href: 'experience' },
-        { content: 'Skills', href: 'skills' },
+        // { content: 'Skills', href: 'skills' },
         { content: 'Repositories', href: 'repositories' },
         { content: 'Awards', href: 'awards' },
         { content: 'Interests', href: 'interests' },

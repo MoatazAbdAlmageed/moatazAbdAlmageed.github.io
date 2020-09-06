@@ -14,27 +14,28 @@ class Skills extends Component {
           <h2 className="mb-5">
             <i className="fa fa-code" /> Skills
           </h2>
-          {skills.map(type => {
-            return (
-              <div key={Math.random()} className="items">
-                <h4>{type.title}</h4>
-                <ul className="list-inline dev-icons">
-                  {type.skills.map(skill => (
-                    <li key={Math.random()}>
-                      <i title={skill.title} className="fa fa-square-o" />{' '}
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href={skill.url}
-                      >
-                        {skill.title}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            );
-          })}{' '}
+          {false &&
+            skills.map(type => {
+              return (
+                <div key={Math.random()} className="items">
+                  <h4>{type.title}</h4>
+                  <ul className="list-inline dev-icons">
+                    {type.skills.map(skill => (
+                      <li key={Math.random()}>
+                        <i title={skill.title} className="fa fa-square-o" />{' '}
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href={skill.url}
+                        >
+                          {skill.title}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              );
+            })}{' '}
         </div>
       </section>
     );
