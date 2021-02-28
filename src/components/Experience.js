@@ -42,12 +42,6 @@ class Experience extends Component {
                           <i className="fa fa-building"></i> @{company}
                         </a>
                       </div>
-                      <h5>Responsibilities</h5>
-                      <ul>
-                        {responsibilities.map(responsibility => {
-                          return <li key={Math.random()}>{responsibility}</li>;
-                        })}
-                      </ul>
                       {projects.length ? (
                         <div>
                           <h5>Projects</h5>

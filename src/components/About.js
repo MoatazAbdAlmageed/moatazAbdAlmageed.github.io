@@ -5,17 +5,7 @@ import SkillsIcons from '../components/SkillsIcons';
 
 class About extends Component {
   render() {
-    const {
-      firstName,
-      lastName,
-      position,
-      description,
-      socialLinks,
-      location,
-      address,
-      phone,
-      email,
-    } = config;
+    const { firstName, lastName, position, description, socialLinks } = config;
 
     return (
       <section
@@ -44,7 +34,10 @@ class About extends Component {
 
           <div className="social-icons mt-5">
             {socialLinks.map(social => {
-              const { icon, url, name } = social;
+              const { icon, url, name, show } = social;
+              if (!show) {
+                return;
+              }
               return (
                 <a
                   key={url}
@@ -58,34 +51,6 @@ class About extends Component {
               );
             })}
           </div>
-
-          <ul className="subheading mt-5">
-            <li>
-              <i className="fa fa-map-marker" /> &nbsp;{' '}
-              <a href={location} target="_blank" rel="noopener noreferrer">
-                {' '}
-                {address}{' '}
-              </a>{' '}
-            </li>
-            <li>
-              <i className="fa fa-mobile"> </i> &nbsp;{' '}
-              <a href={`tel:${phone}`}>{phone}</a>{' '}
-            </li>
-            <li>
-              <i className="fa fa-whatsapp" /> &nbsp;
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href={`https://wa.me/${phone}`}
-              >
-                {phone}
-              </a>
-            </li>
-            <li>
-              <i className="fa fa-envelope" /> &nbsp;
-              <a href={`mailto:${email}`}>{email}</a>
-            </li>{' '}
-          </ul>
         </div>
       </section>
     );

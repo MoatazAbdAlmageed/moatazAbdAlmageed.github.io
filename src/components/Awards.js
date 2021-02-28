@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import config from '../../config';
 
-class Certifications extends Component {
+class Awards extends Component {
   render() {
     const { certifications } = config;
     return (
@@ -14,6 +14,10 @@ class Certifications extends Component {
           <h2 className="mb-5">
             <i className="fa fa-trophy" /> Awards &amp; Certifications
           </h2>
+          <p>
+            All my life I have been driven by my strong belief that education is
+            important. I try to learn something new every single day.
+          </p>
           <ul className="fa-ul mb-0">
             {certifications.map(certification => {
               const { place, url, title, issued, description } = certification;
@@ -45,4 +49,4 @@ class Certifications extends Component {
   }
 }
 
-export default Certifications;
+export default Awards;

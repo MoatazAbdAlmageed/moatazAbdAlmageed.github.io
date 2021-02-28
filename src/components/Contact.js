@@ -12,7 +12,7 @@ export default class Contact extends React.Component {
 
   render() {
     const { status } = this.state;
-    const { FORMSPREE } = config;
+    const { phone, email, FORMSPREE } = config;
 
     return (
       <section
@@ -24,11 +24,36 @@ export default class Contact extends React.Component {
             <i className="fa fa-envelope-open" /> Contact
           </h2>
 
+          <ul className="subheading mt-5">
+            <li>
+              <i className="fa fa-mobile"> </i> &nbsp;{' '}
+              <a href={`tel:${phone}`}>{phone}</a>{' '}
+            </li>
+            <li>
+              <i className="fa fa-whatsapp" /> &nbsp;
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href={`https://wa.me/${phone}`}
+              >
+                {phone}
+              </a>
+            </li>
+            <li>
+              <i className="fa fa-envelope" /> &nbsp;
+              <a href={`mailto:${email}`}>{email}</a>
+            </li>{' '}
+          </ul>
+
           {status === 'SUCCESS' ? (
             <p className="text-success">Thank you for contacting!</p>
           ) : (
             <>
-              <h4>Question or query?, help is at hand</h4>
+              <p>
+                Are you working on something great? I would love to help make it
+                happen! Drop me a letter and start your project right now! Just
+                do it.
+              </p>
               <form
                 onSubmit={this.submitForm}
                 action={`https://formspree.io/${FORMSPREE}`}
