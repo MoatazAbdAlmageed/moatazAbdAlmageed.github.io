@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+import { UnorderedList, ListItem } from '@chakra-ui/react';
+
 class SkillsIcons extends Component {
   // TODO:add icons to config file and use map
   render() {
     return (
-      <div className="icons">
-        <code>
+      <UnorderedList styleType="none" className="icons">
+        <ListItem float="left">
           {' '}
           <img
             alt="javascript"
@@ -12,8 +14,8 @@ class SkillsIcons extends Component {
             height="50"
             src="https://www.vectorlogo.zone/logos/javascript/javascript-horizontal.svg"
           />
-        </code>{' '}
-        <code>
+        </ListItem>{' '}
+        <ListItem float="left">
           {' '}
           <img
             alt="nodejs"
@@ -21,8 +23,8 @@ class SkillsIcons extends Component {
             height="50"
             src="https://www.vectorlogo.zone/logos/nodejs/nodejs-horizontal.svg"
           />
-        </code>{' '}
-        <code>
+        </ListItem>{' '}
+        <ListItem float="left">
           {' '}
           <img
             alt="expressjs"
@@ -30,8 +32,8 @@ class SkillsIcons extends Component {
             height="50"
             src="https://www.vectorlogo.zone/logos/expressjs/expressjs-ar21.svg"
           />
-        </code>{' '}
-        <code>
+        </ListItem>{' '}
+        <ListItem float="left">
           {' '}
           <img
             alt="mongodb"
@@ -39,16 +41,16 @@ class SkillsIcons extends Component {
             height="50"
             src="https://www.vectorlogo.zone/logos/mongodb/mongodb-ar21.svg"
           />
-        </code>{' '}
-        <code>
+        </ListItem>{' '}
+        <ListItem float="left">
           {' '}
           <img
             title="reactjs"
             height="50"
             src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg"
           />
-        </code>{' '}
-        <code>
+        </ListItem>{' '}
+        <ListItem float="left">
           {' '}
           <img
             alt="graphql"
@@ -56,8 +58,8 @@ class SkillsIcons extends Component {
             height="50"
             src="https://www.vectorlogo.zone/logos/graphql/graphql-icon.svg"
           />{' '}
-        </code>{' '}
-        <code>
+        </ListItem>{' '}
+        <ListItem float="left">
           {' '}
           <img
             alt="typescript"
@@ -65,8 +67,8 @@ class SkillsIcons extends Component {
             height="50"
             src="https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-icon.svg"
           />
-        </code>{' '}
-        <code>
+        </ListItem>{' '}
+        <ListItem float="left">
           {' '}
           <img
             alt="PHP"
@@ -74,8 +76,8 @@ class SkillsIcons extends Component {
             height="50"
             src="https://www.vectorlogo.zone/logos/php/php-horizontal.svg"
           />
-        </code>{' '}
-        <code>
+        </ListItem>{' '}
+        <ListItem float="left">
           {' '}
           <img
             alt="mysql"
@@ -83,8 +85,8 @@ class SkillsIcons extends Component {
             height="50"
             src="https://www.vectorlogo.zone/logos/mysql/mysql-horizontal.svg"
           />
-        </code>{' '}
-        <code>
+        </ListItem>{' '}
+        <ListItem float="left">
           {' '}
           <img
             alt="Laravel"
@@ -92,8 +94,8 @@ class SkillsIcons extends Component {
             height="50"
             src="https://www.vectorlogo.zone/logos/laravel/laravel-ar21.svg"
           />
-        </code>{' '}
-        <code>
+        </ListItem>{' '}
+        <ListItem float="left">
           {' '}
           <img
             alt="wordpress"
@@ -101,8 +103,8 @@ class SkillsIcons extends Component {
             height="50"
             src="https://www.vectorlogo.zone/logos/wordpress/wordpress-icon.svg"
           />
-        </code>{' '}
-        <code>
+        </ListItem>{' '}
+        <ListItem float="left">
           {' '}
           <img
             alt="git"
@@ -110,8 +112,8 @@ class SkillsIcons extends Component {
             height="50"
             src="https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg"
           />
-        </code>{' '}
-        <code>
+        </ListItem>{' '}
+        <ListItem float="left">
           {' '}
           <img
             alt="linux"
@@ -119,8 +121,8 @@ class SkillsIcons extends Component {
             height="50"
             src="https://www.vectorlogo.zone/logos/linux/linux-ar21.svg"
           />
-        </code>{' '}
-        <code>
+        </ListItem>{' '}
+        <ListItem float="left">
           {' '}
           <img
             alt="Bash"
@@ -128,8 +130,8 @@ class SkillsIcons extends Component {
             height="50"
             src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-ar21.svg"
           />
-        </code>{' '}
-        <code>
+        </ListItem>{' '}
+        <ListItem float="left">
           {' '}
           <img
             alt="gatsbyjs"
@@ -137,8 +139,8 @@ class SkillsIcons extends Component {
             height="50"
             src="https://www.vectorlogo.zone/logos/gatsbyjs/gatsbyjs-ar21.svg"
           />
-        </code>{' '}
-        <code>
+        </ListItem>{' '}
+        <ListItem float="left">
           {' '}
           <img
             alt="electronjs"
@@ -146,8 +148,8 @@ class SkillsIcons extends Component {
             height="50"
             src="https://www.vectorlogo.zone/logos/electronjs/electronjs-ar21.svg"
           />
-        </code>
-        <code>
+        </ListItem>
+        <ListItem float="left">
           {' '}
           <img
             alt="docker"
@@ -155,8 +157,8 @@ class SkillsIcons extends Component {
             height="50"
             src="https://www.vectorlogo.zone/logos/docker/docker-official.svg"
           />
-        </code>{' '}
-        <code>
+        </ListItem>{' '}
+        <ListItem float="left">
           {' '}
           <img
             alt="sass"
@@ -164,8 +166,8 @@ class SkillsIcons extends Component {
             height="50"
             src="https://www.vectorlogo.zone/logos/sass-lang/sass-lang-ar21.svg"
           />{' '}
-        </code>{' '}
-        <code>
+        </ListItem>{' '}
+        <ListItem float="left">
           {' '}
           <img
             alt="HTML"
@@ -173,8 +175,8 @@ class SkillsIcons extends Component {
             height="50"
             src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg"
           />{' '}
-        </code>{' '}
-        <code>
+        </ListItem>{' '}
+        <ListItem float="left">
           {' '}
           <img
             alt="CSS"
@@ -182,8 +184,8 @@ class SkillsIcons extends Component {
             height="50"
             src="https://www.vectorlogo.zone/logos/netlifyapp_watercss/netlifyapp_watercss-ar21.svg"
           />{' '}
-        </code>{' '}
-        <code>
+        </ListItem>{' '}
+        <ListItem float="left">
           {' '}
           <img
             alt="bootstrap"
@@ -191,8 +193,8 @@ class SkillsIcons extends Component {
             height="50"
             src="https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-ar21.svg"
           />{' '}
-        </code>{' '}
-      </div>
+        </ListItem>{' '}
+      </UnorderedList>
     );
   }
 }

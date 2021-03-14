@@ -26,6 +26,7 @@ module.exports = {
     keywords: `${keywords} ${skills}`,
   },
   plugins: [
+    `@chakra-ui/gatsby-plugin`,
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,

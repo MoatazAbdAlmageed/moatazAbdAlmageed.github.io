@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import Scrollspy from 'react-scrollspy';
+import { Box, Heading, Link } from '@chakra-ui/react';
 import config from '../../config';
 import avatar from '../assets/img/avatar.jpg';
 import Scroll from './Scroll';
-
+import ThemeToggle from './toggle-theme';
 class Sidebar extends Component {
   constructor(props) {
     super(props);
@@ -46,6 +47,9 @@ class Sidebar extends Component {
           <span className="d-block d-lg-none">
             {firstName} {lastName}
           </span>
+
+          <ThemeToggle />
+
           <span className="d-none d-lg-block">
             <img
               className="img-fluid img-profile rounded-circle mx-auto mb-2"

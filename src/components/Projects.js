@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import config from '../../config';
+import Project from './Project';
+import { Heading } from '@chakra-ui/react';
 
 class Projects extends Component {
   render() {
@@ -13,30 +15,16 @@ class Projects extends Component {
         id="projects"
       >
         <div className="w-100">
-          <h2 className="mb-5">
+          <Heading as="h1" size="4xl" isTruncated>
             <i className="fa fa-keyboard" /> Projects
-          </h2>
-
+          </Heading>
           <div>
             {projects
               .filter(({ show }) => show == true)
               .sort((a, b) => b.year - a.year)
-              .map(({ title, url, type, icon, year }) => {
-                return (
-                  <p>
-                    <a
-                      key={url}
-                      href={url}
-                      title={title}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <i className={`fa ${icon}`} /> <span>&nbsp;</span> {title}{' '}
-                      - {year}
-                    </a>
-                  </p>
-                );
-              })}
+              .map(project => (
+                <Project project={project} />
+              ))}
           </div>
 
           <div>

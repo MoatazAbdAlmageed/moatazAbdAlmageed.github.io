@@ -2,6 +2,7 @@ import 'jquery/dist/jquery.min.js';
 import 'popper.js/dist/popper.min';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import 'jquery.easing/jquery.easing.min.js';
+import { wrapPageElement as wrap } from './src/woot-wapper';
 
 const $ = require('jquery');
 
@@ -52,3 +53,4 @@ export const onServiceWorkerUpdateReady = () => {
     window.location.reload();
   }
 };
+export const wrapPageElement = wrap;

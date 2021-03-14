@@ -6,7 +6,6 @@ import SkillsIcons from '../components/SkillsIcons';
 class About extends Component {
   render() {
     const { firstName, lastName, position, description, socialLinks } = config;
-
     return (
       <section
         className="resume-section p-3  d-flex align-items-center"

@@ -347,6 +347,7 @@ const projects = [
     icon: 'fa-globe',
     year: '2021',
     show: true,
+    description: 'Simple website for list Youtube channels (Arabic,English)',
   },
   {
     title: 'Moataz Diary',

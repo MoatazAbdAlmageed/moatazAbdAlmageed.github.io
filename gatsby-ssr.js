@@ -1,3 +1,6 @@
+import { wrapPageElement as wrap } from './src/woot-wapper';
+
+export const wrapPageElement = wrap;
 /**
  * Implement Gatsby's SSR (Server Side Rendering) APIs in this file.
  *
