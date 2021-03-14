@@ -19,6 +19,7 @@ class Projects extends Component {
 
           <div>
             {projects
+              .filter(({ show }) => show == true)
               .sort((a, b) => b.year - a.year)
               .map(({ title, url, type, icon, year }) => {
                 return (
@@ -40,7 +41,7 @@ class Projects extends Component {
 
           <div>
             <p>
-              Kindly check <span>&nbsp;</span>
+              For more projects kindly check <span>&nbsp;</span>
               <i className={`fa ${icon}`} />{' '}
               <a
                 key={url}
@@ -51,7 +52,6 @@ class Projects extends Component {
               >
                 <span>&nbsp;</span> {url}{' '}
               </a>{' '}
-              for more projects.
             </p>
           </div>
         </div>

@@ -327,10 +327,11 @@ const colors = [
 const projects = [
   {
     title: 'RTC Neklawy',
-    url: 'hthttp://rtc-neklawy.com/',
+    url: 'https://rtc-neklawy.com/',
     type: 'WordPress',
     icon: 'fa-wordpress',
     year: '2020',
+    show: true,
   },
   {
     title: 'Az-Translation',
@@ -338,18 +339,21 @@ const projects = [
     type: 'WordPress',
     icon: 'fa-wordpress',
     year: '2017',
+    show: false,
   },
   {
     title: 'Youtube Channels',
     url: 'https://arabicyoutubechannels.herokuapp.com/',
     icon: 'fa-globe',
     year: '2021',
+    show: true,
   },
   {
     title: 'Moataz Diary',
     url: 'https://moatazdiary.herokuapp.com/',
     icon: 'fa-globe',
     year: '2021',
+    show: true,
   },
 ];
 const jobs = [
