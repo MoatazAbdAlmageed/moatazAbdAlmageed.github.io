@@ -7,7 +7,7 @@ export const wrapPageElement = ({ element }) => {
   return (
     <ChakraProvider resetCSS>
       <Layout>{element}</Layout>
-      <Footer />
+      {/* <Footer /> */}
     </ChakraProvider>
   );
 };
