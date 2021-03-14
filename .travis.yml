@@ -8,7 +8,7 @@ deploy:
   tracking-id: $TRACKING_ID
   local_dir: public
   keep-history: true
-  target-branch: gh-pages
+  target-branch: master
   on:
     branch: develop
 before_script:
