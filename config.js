@@ -332,6 +332,7 @@ const projects = [
     icon: 'fa-wordpress',
     year: '2020',
     show: true,
+    description: 'WordPress website for RTC Neklawy company',
   },
   {
     title: 'Az-Translation',
@@ -340,6 +341,7 @@ const projects = [
     icon: 'fa-wordpress',
     year: '2017',
     show: false,
+    description: 'WordPress website for Az-Translation company',
   },
   {
     title: 'Youtube Channels',
@@ -355,6 +357,7 @@ const projects = [
     icon: 'fa-globe',
     year: '2021',
     show: true,
+    description: 'simple diary application with frontity',
   },
 ];
 const jobs = [
