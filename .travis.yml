@@ -1,22 +1,25 @@
 language: node_js
+cache:
+  directories:
+    - ~/.npm
+notifications:
+  email:
+    recipients:
+      - moataz.mohammady@gmai.com
+    on_success: always
+    on_failure: always
 node_js:
-  - '10'
+  - '12.13.1'
+git:
+  depth: 3
+script:
+  - npm run build
 deploy:
   provider: pages
-  skip-cleanup: true
-  github-token: $GITHUB_TOKEN
+  skip_cleanup: true
+  keep_history: true
+  github_token: $GITHUB_TOKEN
   tracking-id: $TRACKING_ID
   local_dir: public
-  keep-history: true
-  target-branch: master
   on:
     branch: develop
-before_script:
-  - 'rm -rf node_modules'
-  - 'rm -rf package-lock.json'
-  - 'npm i -g gatsby'
-  - 'npm i'
-script:
-  - 'npm run test'
-after_success:
-  - 'npm run deploy'
