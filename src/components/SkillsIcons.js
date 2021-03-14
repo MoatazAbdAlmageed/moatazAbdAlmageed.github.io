@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { UnorderedList, ListItem } from '@chakra-ui/react';
+import { UnorderedList, ListItem, Image } from '@chakra-ui/react';
 
 class SkillsIcons extends Component {
   // TODO:add icons to config file and use map
@@ -8,7 +8,7 @@ class SkillsIcons extends Component {
       <UnorderedList styleType="none" className="icons">
         <ListItem float="left">
           {' '}
-          <img
+          <Image
             alt="javascript"
             title="javascript"
             height="50"
@@ -17,7 +17,7 @@ class SkillsIcons extends Component {
         </ListItem>{' '}
         <ListItem float="left">
           {' '}
-          <img
+          <Image
             alt="nodejs"
             title="nodejs"
             height="50"
@@ -26,7 +26,7 @@ class SkillsIcons extends Component {
         </ListItem>{' '}
         <ListItem float="left">
           {' '}
-          <img
+          <Image
             alt="expressjs"
             title="expressjs"
             height="50"
@@ -35,7 +35,7 @@ class SkillsIcons extends Component {
         </ListItem>{' '}
         <ListItem float="left">
           {' '}
-          <img
+          <Image
             alt="mongodb"
             title="mongodb"
             height="50"
@@ -44,7 +44,7 @@ class SkillsIcons extends Component {
         </ListItem>{' '}
         <ListItem float="left">
           {' '}
-          <img
+          <Image
             title="reactjs"
             height="50"
             src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg"
@@ -52,7 +52,7 @@ class SkillsIcons extends Component {
         </ListItem>{' '}
         <ListItem float="left">
           {' '}
-          <img
+          <Image
             alt="graphql"
             title="graphql"
             height="50"
@@ -61,7 +61,7 @@ class SkillsIcons extends Component {
         </ListItem>{' '}
         <ListItem float="left">
           {' '}
-          <img
+          <Image
             alt="typescript"
             title="typescript"
             height="50"
@@ -70,7 +70,7 @@ class SkillsIcons extends Component {
         </ListItem>{' '}
         <ListItem float="left">
           {' '}
-          <img
+          <Image
             alt="PHP"
             title="PHP"
             height="50"
@@ -79,7 +79,7 @@ class SkillsIcons extends Component {
         </ListItem>{' '}
         <ListItem float="left">
           {' '}
-          <img
+          <Image
             alt="mysql"
             title="mysql"
             height="50"
@@ -88,7 +88,7 @@ class SkillsIcons extends Component {
         </ListItem>{' '}
         <ListItem float="left">
           {' '}
-          <img
+          <Image
             alt="Laravel"
             title="Laravel"
             height="50"
@@ -97,7 +97,7 @@ class SkillsIcons extends Component {
         </ListItem>{' '}
         <ListItem float="left">
           {' '}
-          <img
+          <Image
             alt="wordpress"
             title="wordpress"
             height="50"
@@ -106,7 +106,7 @@ class SkillsIcons extends Component {
         </ListItem>{' '}
         <ListItem float="left">
           {' '}
-          <img
+          <Image
             alt="git"
             title="git"
             height="50"
@@ -115,7 +115,7 @@ class SkillsIcons extends Component {
         </ListItem>{' '}
         <ListItem float="left">
           {' '}
-          <img
+          <Image
             alt="linux"
             title="linux"
             height="50"
@@ -124,7 +124,7 @@ class SkillsIcons extends Component {
         </ListItem>{' '}
         <ListItem float="left">
           {' '}
-          <img
+          <Image
             alt="Bash"
             title="Bash"
             height="50"
@@ -133,7 +133,7 @@ class SkillsIcons extends Component {
         </ListItem>{' '}
         <ListItem float="left">
           {' '}
-          <img
+          <Image
             alt="gatsbyjs"
             title="gatsbyjs"
             height="50"
@@ -142,7 +142,7 @@ class SkillsIcons extends Component {
         </ListItem>{' '}
         <ListItem float="left">
           {' '}
-          <img
+          <Image
             alt="electronjs"
             title="electronjs"
             height="50"
@@ -151,7 +151,7 @@ class SkillsIcons extends Component {
         </ListItem>
         <ListItem float="left">
           {' '}
-          <img
+          <Image
             alt="docker"
             title="docker"
             height="50"
@@ -160,7 +160,7 @@ class SkillsIcons extends Component {
         </ListItem>{' '}
         <ListItem float="left">
           {' '}
-          <img
+          <Image
             alt="sass"
             title="sass"
             height="50"
@@ -169,7 +169,7 @@ class SkillsIcons extends Component {
         </ListItem>{' '}
         <ListItem float="left">
           {' '}
-          <img
+          <Image
             alt="HTML"
             title="HTML"
             height="50"
@@ -178,7 +178,7 @@ class SkillsIcons extends Component {
         </ListItem>{' '}
         <ListItem float="left">
           {' '}
-          <img
+          <Image
             alt="CSS"
             title="CSS"
             height="50"
@@ -187,7 +187,7 @@ class SkillsIcons extends Component {
         </ListItem>{' '}
         <ListItem float="left">
           {' '}
-          <img
+          <Image
             alt="bootstrap"
             title="bootstrap"
             height="50"
