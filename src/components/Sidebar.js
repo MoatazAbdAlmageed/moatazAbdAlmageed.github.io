@@ -11,6 +11,7 @@ class Sidebar extends Component {
       tabs: [
         { content: 'About', href: 'about' },
         { content: 'Experience', href: 'experience' },
+        { content: 'Projects', href: 'projects' },
         { content: 'Awards', href: 'awards' },
         { content: 'Contact', href: 'contact' },
       ],

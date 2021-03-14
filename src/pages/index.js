@@ -5,6 +5,7 @@ import Contact from '../components/Contact';
 import Experience from '../components/Experience';
 import Layout from '../components/Layout';
 import Sidebar from '../components/Sidebar';
+import Projects from '../components/Projects';
 
 const IndexPage = () => {
   return (
@@ -13,6 +14,7 @@ const IndexPage = () => {
       <div className="container-fluid">
         <About />
         <Experience />
+        <Projects />
         <Awards />
         <Contact />
       </div>

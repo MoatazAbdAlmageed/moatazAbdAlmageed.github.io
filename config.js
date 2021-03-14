@@ -324,10 +324,32 @@ const colors = [
   // { primary: '#99BC44', secondary: '#DB2977' },
 ];
 
-const portfolio = [
+const projects = [
   {
-    title: 'RTC Neklawy Website',
+    title: 'RTC Neklawy',
     url: 'hthttp://rtc-neklawy.com/',
+    type: 'WordPress',
+    icon: 'fa-wordpress',
+    year: '2020',
+  },
+  {
+    title: 'Az-Translation',
+    url: 'https://az-translation.com/',
+    type: 'WordPress',
+    icon: 'fa-wordpress',
+    year: '2017',
+  },
+  {
+    title: 'Youtube Channels',
+    url: 'https://arabicyoutubechannels.herokuapp.com/',
+    icon: 'fa-globe',
+    year: '2021',
+  },
+  {
+    title: 'Moataz Diary',
+    url: 'https://moatazdiary.herokuapp.com/',
+    icon: 'fa-globe',
+    year: '2021',
   },
 ];
 const jobs = [
@@ -557,6 +579,6 @@ module.exports = {
   phone: '+201150064746',
   address: 'Mansouria,Giza,Egypt',
   location: 'https://goo.gl/maps/QHh4H4eYJMByuneC8',
-  portfolio,
+  projects,
   jobs,
 };
