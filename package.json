@@ -17,6 +17,7 @@
     "@chakra-ui/system": "^1.4.0",
     "@chakra-ui/theme": "^1.7.0",
     "@emotion/react": "^11.1.5",
+    "@emotion/styled": "^11.1.5",
     "bootstrap": "^4.5.0",
     "font-awesome": "^4.7.0",
     "framer-motion": "^3.10.3",
