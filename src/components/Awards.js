@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Heading } from '@chakra-ui/react';
 
 import config from '../../config';
 
@@ -11,9 +12,9 @@ class Awards extends Component {
         id="awards"
       >
         <div className="w-100">
-          <h2 className="mb-5">
+          <Heading as="h4" isTruncated>
             <i className="fa fa-trophy" /> Awards &amp; Certifications
-          </h2>
+          </Heading>
           <p>
             All my life I have been driven by my strong belief that education is
             important. I try to learn something new every single day.

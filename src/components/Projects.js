@@ -15,7 +15,7 @@ class Projects extends Component {
         id="projects"
       >
         <div className="w-100">
-          <Heading as="h1" size="4xl" isTruncated>
+          <Heading as="h4" isTruncated>
             <i className="fa fa-keyboard" /> Projects
           </Heading>
           <div>

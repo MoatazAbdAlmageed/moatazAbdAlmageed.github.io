@@ -1,5 +1,6 @@
 import React from 'react';
 import config from '../../config';
+import { Heading } from '@chakra-ui/react';
 
 export default class Contact extends React.Component {
   constructor(props) {
@@ -20,9 +21,9 @@ export default class Contact extends React.Component {
         id="contact"
       >
         <div className="w-100">
-          <h2 className="mb-5">
+          <Heading as="h4" isTruncated>
             <i className="fa fa-envelope-open" /> Contact
-          </h2>
+          </Heading>
 
           <ul className="subheading mt-5">
             <li>

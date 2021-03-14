@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import config from '../../config';
+import { Heading } from '@chakra-ui/react';
 
 class Experience extends Component {
   render() {
@@ -11,9 +12,9 @@ class Experience extends Component {
         id="experience"
       >
         <div className="w-100">
-          <h2 className="mb-5">
+          <Heading as="h4" isTruncated>
             <i className="fa fa-keyboard" /> Experience
-          </h2>
+          </Heading>
 
           {jobs.map(job => {
             const {
