@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import config from '../../config';
 import Project from './Project';
-import { Heading } from '@chakra-ui/react';
+import { Heading, Flex, Box } from '@chakra-ui/react';
 
 class Projects extends Component {
   render() {
@@ -16,14 +16,21 @@ class Projects extends Component {
       >
         <div className="w-100">
           <Heading as="h4" isTruncated>
-            <i className="fa fa-keyboard" /> Projects
+            Projects
           </Heading>
+
+          <br />
           <div>
             {projects
               .filter(({ show }) => show == true)
               .sort((a, b) => b.year - a.year)
               .map(project => (
-                <Project project={project} />
+                <Flex>
+                  <Box flex="1">
+                    <Project project={project} />
+                    <br />
+                  </Box>
+                </Flex>
               ))}
           </div>
 

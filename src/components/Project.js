@@ -8,16 +8,12 @@ export default function Project({
     <Box maxW="sm" borderWidth="1px" borderRadius="lg" overflow="hidden">
       <Box p="6">
         <Box d="flex" alignItems="baseline">
-          <Badge borderRadius="full" px="2" colorScheme="teal">
-            <Link
-              isExternal
-              textDecor="underline"
-              color="purple.500"
-              href={url}
-            >
+          <Link isExternal textDecor="underline" color="purple.500" href={url}>
+            <Box fontWeight="semibold" as="h2" lineHeight="tight" isTruncated>
               {title}
-            </Link>
-          </Badge>
+            </Box>
+          </Link>
+
           <Box
             color="gray.500"
             fontWeight="semibold"
@@ -30,15 +26,7 @@ export default function Project({
           </Box>
         </Box>
 
-        <Box
-          mt="1"
-          fontWeight="semibold"
-          as="h4"
-          lineHeight="tight"
-          isTruncated
-        >
-          {description}
-        </Box>
+        <p>{description}</p>
       </Box>
     </Box>
   );
