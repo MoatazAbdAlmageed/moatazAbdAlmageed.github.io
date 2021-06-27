@@ -345,7 +345,7 @@ const projects = [
   },
   {
     title: 'Youtube Channels',
-    url: 'https://arabicyoutubechannels.herokuapp.com/',
+    url: 'https://arabicyoutubechannels.vercel.app/',
     icon: 'fa-globe',
     year: '2021',
     show: true,
