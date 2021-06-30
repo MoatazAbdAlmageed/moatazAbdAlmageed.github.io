@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import config from '../../config';
 import avatar from '../assets/img/avatar.jpg';
 import SkillsIcons from '../components/SkillsIcons';
-import { Stack, Box } from '@chakra-ui/react';
+import resume from '../assets/files/moataz_mohammady_resume.pdf';
+import { Stack, Box, Button } from '@chakra-ui/react';
 
 class About extends Component {
   render() {
@@ -58,6 +59,15 @@ class About extends Component {
                   );
                 })}
               </div>
+            </Box>
+
+            <Box>
+              <a href={resume} download>
+                <Button colorScheme="blue" size="lg">
+                  <i className="fa fa-file-pdf-o" /> <span>&nbsp;</span>{' '}
+                  Download Resume
+                </Button>
+              </a>
             </Box>
           </Stack>
         </div>
