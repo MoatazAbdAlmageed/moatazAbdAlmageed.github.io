@@ -6,10 +6,6 @@ For an overview of the project structure please refer to the [Gatsby documentati
 
 Check online preview [here](https://anubhavsrivastava.github.io/gatsby-starter-resume/)
 
-## Screenshot
-
-![Screenshot](./src/assets/img/demo.png)
-
 ## Install
 
 Make sure that you have the Gatsby CLI program installed:
@@ -64,7 +60,7 @@ Additionally, it also has [path-prefix](https://www.gatsbyjs.org/docs/path-prefi
 ### Checkout other similar starters
 
 - [gatsby-starter-casual](https://github.com/anubhavsrivastava/gatsby-starter-casual)
-- [gatsby-starter-grayscale](https://github.com/anubhavsrivastava/gatsby-starter-grayscale) 
+- [gatsby-starter-grayscale](https://github.com/anubhavsrivastava/gatsby-starter-grayscale)
 - [gatsby-starter-spectral](https://github.com/anubhavsrivastava/gatsby-starter-spectral)
 - [gatsby-starter-newage](https://github.com/anubhavsrivastava/gatsby-starter-newage)
 - [gatsby-starter-stylish](https://github.com/anubhavsrivastava/gatsby-starter-stylish)
