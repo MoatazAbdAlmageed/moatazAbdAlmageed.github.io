@@ -558,7 +558,7 @@ module.exports = {
   position: 'Full stack Web Developer',
   site_img:
     'https://avatars2.githubusercontent.com/u/17373050?s=460&u=b26d5f5d825283b7b067e10a46add610b512cb26&v=4',
-  description: `I am a Web Developer located in Egypt, I currently work as a full time Web Developer for ${jobs[0].company}. I am looking to take on more work and to increase my skills as a Web Developer.`,
+  description: `I am a Web Developer located in Egypt, I currently work as a full-time Web Developer for Wuilt. I am looking to take on more work and increase my skills as a Web Developer. Also, I'm married and I have 2 sons Hamza and Bilal`,
   keywords: 'developer,web,code,programming,',
   TRACKING_ID: process.env.TRACKING_ID,
   GITHUB_TOKEN: process.env.GITHUB_TOKEN,
