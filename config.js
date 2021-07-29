@@ -352,19 +352,11 @@ const projects = [
   },
   {
     title: 'Youtube Channels',
-    url: 'https://arabicyoutubechannels.vercel.app/',
+    url: 'https://youtubechannels.vercel.app/',
     icon: 'fa-globe',
     year: '2021',
     show: true,
     description: 'Simple website for list Youtube channels (Arabic,English)',
-  },
-  {
-    title: 'Moataz Diary',
-    url: 'https://moatazdiary.herokuapp.com/',
-    icon: 'fa-globe',
-    year: '2021',
-    show: true,
-    description: 'simple diary application with frontity',
   },
 ];
 const jobs = [
