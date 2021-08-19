@@ -24,6 +24,10 @@ class Layout extends Component {
         `}
         render={data => (
           <>
+            <meta
+              name="google-site-verification"
+              content="2o5ux7SuhqzyW9y9mjWagy7qW-4-a9eFayeKVW2tUg8"
+            />
             <Helmet
               title={data.site.siteMetadata.title}
               meta={[
