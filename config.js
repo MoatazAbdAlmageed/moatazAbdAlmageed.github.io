@@ -223,8 +223,10 @@ const certifications = [
   {
     place: 'Udemy',
     title: 'Introduction to TypeScript',
-    description: 'This certificate above verifies that Moataz Mohammady successfully completed the course Introduction to TypeScript on 07/26/2021 as taught by Daniel Stern on Udemy. The certificate indicates the entire course was completed as validated by the student. The course duration represents the total video hours of the course at time of most recent completion.',
-    url: 'https://udemy-certificate.s3.amazonaws.com/pdf/UC-f4d3813f-511b-405d-971b-b0f88039ec7b.pdf',
+    description:
+      'This certificate above verifies that Moataz Mohammady successfully completed the course Introduction to TypeScript on 07/26/2021 as taught by Daniel Stern on Udemy. The certificate indicates the entire course was completed as validated by the student. The course duration represents the total video hours of the course at time of most recent completion.',
+    url:
+      'https://udemy-certificate.s3.amazonaws.com/pdf/UC-f4d3813f-511b-405d-971b-b0f88039ec7b.pdf',
     issued: 'July 2021',
   },
   {
@@ -352,7 +354,7 @@ const projects = [
   },
   {
     title: 'Youtube Channels',
-    url: 'https://youtubechannels.vercel.app/',
+    url: 'https://youtubechannels.gatsbyjs.app/',
     icon: 'fa-globe',
     year: '2021',
     show: true,

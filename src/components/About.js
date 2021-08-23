@@ -3,7 +3,7 @@ import config from '../../config';
 import avatar from '../assets/img/avatar.jpg';
 import SkillsIcons from '../components/SkillsIcons';
 import resume from '../assets/files/moataz_mohammady_resume.pdf';
-import { Stack, Box, Button } from '@chakra-ui/react';
+import { Stack, Box, Button, Heading } from '@chakra-ui/react';
 
 class About extends Component {
   render() {
@@ -17,10 +17,9 @@ class About extends Component {
           <Stack>
             <Box>
               <p className="lead">Hi!, my name is</p>
-              <h1 className="mb-0">
-                {firstName}
-                <span className="text-primary">{lastName}</span>
-              </h1>
+              <Heading>
+                {firstName} {lastName}
+              </Heading>
             </Box>
             <Box>
               <p className="d-lg-none text-center">

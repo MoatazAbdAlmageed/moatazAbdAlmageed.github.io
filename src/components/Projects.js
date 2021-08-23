@@ -15,7 +15,7 @@ class Projects extends Component {
         id="projects"
       >
         <div className="w-100">
-          <Heading as="h4" isTruncated>
+          <Heading as="h2" isTruncated>
             Projects
           </Heading>
 

@@ -21,7 +21,7 @@ export default class Contact extends React.Component {
         id="contact"
       >
         <div className="w-100">
-          <Heading as="h4" isTruncated>
+          <Heading as="h2" isTruncated>
             <i className="fa fa-envelope-open" /> Contact
           </Heading>
 

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import config from '../../config';
-import { Heading } from '@chakra-ui/react';
+import { Heading, Spacer, Text } from '@chakra-ui/react';
 
 class Experience extends Component {
   render() {
@@ -12,7 +12,7 @@ class Experience extends Component {
         id="experience"
       >
         <div className="w-100">
-          <Heading as="h4" isTruncated>
+          <Heading as="h2" isTruncated>
             <i className="fa fa-keyboard" /> Experience
           </Heading>
 
@@ -34,18 +34,34 @@ class Experience extends Component {
                 <div className="resume-content">
                   <div className="row">
                     <div className="col-10">
-                      <h3 className="mb-0">
-                        {' '}
+                      <Heading as="h3">
                         <i className="fa fa-keyboard" /> {occupation}
-                      </h3>
+                      </Heading>
                       <div className="subheading mb-3">
                         <a href={url} target="_blank" rel="noopener noreferrer">
                           <i className="fa fa-building"></i> @{company}
                         </a>
                       </div>
+
+                      {responsibilities.length ? (
+                        <div>
+                          <Text fontSize="2xl">Responsibilities</Text>
+                          <ul className="responsibilities">
+                            {responsibilities.map(responsibility => {
+                              return (
+                                <li key={Math.random()}>{responsibility}</li>
+                              );
+                            })}
+                          </ul>
+                        </div>
+                      ) : (
+                        ''
+                      )}
+
+                      <Spacer />
                       {projects.length ? (
                         <div>
-                          <h5>Projects</h5>
+                          <Text fontSize="2xl">Projects</Text>
                           <ol className="projects">
                             {projects.map(project => {
                               return (
@@ -82,6 +98,7 @@ class Experience extends Component {
                       ) : (
                         ''
                       )}
+
                       <p>{description}</p>
                     </div>
                     <div className="col-2">
