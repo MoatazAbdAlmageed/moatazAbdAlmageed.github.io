@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import config from '../../config';
 import Project from './Project';
-import { Heading, Flex, Box } from '@chakra-ui/react';
+import { Heading, Flex, Box, Grid } from '@chakra-ui/react';
 
 class Projects extends Component {
   render() {
@@ -20,7 +20,7 @@ class Projects extends Component {
           </Heading>
 
           <br />
-          <div>
+          <Grid templateColumns="repeat(2, 1fr)" gap={2}>
             {projects
               .filter(({ show }) => show == true)
               .sort((a, b) => b.year - a.year)
@@ -32,7 +32,7 @@ class Projects extends Component {
                   </Box>
                 </Flex>
               ))}
-          </div>
+          </Grid>
 
           <div>
             <p>
