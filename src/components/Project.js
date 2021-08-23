@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, Box, Badge, Stack } from '@chakra-ui/react';
+import { Link, Box, Badge, Stack, Spacer } from '@chakra-ui/react';
 
 export default function Project({
   project: { title, url, tools, icon, year, description },
@@ -7,14 +7,6 @@ export default function Project({
   return (
     <Box maxW="sm" borderWidth="1px" borderRadius="lg" overflow="hidden">
       <Box p="6">
-        <Stack direction="row">
-          {tools.map(tool => (
-            <Badge variant="solid" colorScheme="teal">
-              {tool}
-            </Badge>
-          ))}
-        </Stack>
-
         <Box d="flex" alignItems="baseline">
           <Box fontWeight="semibold" as="h2" lineHeight="tight" isTruncated>
             <heading> {title}</heading>
@@ -40,6 +32,14 @@ export default function Project({
             </Box>
           </Link>
         </p>
+
+        <Stack direction="row" mt={5}>
+          {tools.map(tool => (
+            <Badge variant="solid" colorScheme="teal">
+              {tool}
+            </Badge>
+          ))}
+        </Stack>
       </Box>
     </Box>
   );
