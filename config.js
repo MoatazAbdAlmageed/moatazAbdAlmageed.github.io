@@ -334,6 +334,15 @@ const colors = [
 ];
 
 const projects = [
+   {
+    title: 'iimanacademy.com',
+    url: 'https://iimanacademy.com/',
+    tools: ['WordPress', 'Freelance'],
+    icon: 'fa-wordpress',
+    year: '2022',
+    show: true,
+    description: 'WordPress website for IIMAN academy',
+  },
   {
     title: 'RTC Neklawy',
     url: 'https://rtc-neklawy.com/',
