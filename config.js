@@ -334,18 +334,18 @@ const colors = [
 ];
 
 const projects = [
-   {
-    title: 'iimanacademy.com',
-    url: 'https://iimanacademy.com/',
+  {
+    title: 'kitaballahacademy.com',
+    url: 'https://kitaballahacademy.com/',
     tools: ['WordPress', 'Freelance'],
     icon: 'fa-wordpress',
     year: '2022',
     show: true,
-    description: 'WordPress website for IIMAN academy',
+    description: 'WordPress website for Kitab Allah Academy ',
   },
   {
     title: 'RTC Neklawy',
-    url: 'https://rtc-neklawy.com/',
+    url: 'https://rtcneklawy.com/',
     tools: ['WordPress', 'Freelance'],
     icon: 'fa-wordpress',
     year: '2020',
@@ -622,7 +622,9 @@ module.exports = {
   socialLinks,
   certifications,
   email: 'moataz.mohammady@gmail.com',
+  whatsapp: '201150064746',
   phone: '+201150064746',
+  phone2: '+201067869404',
   address: 'Mansouria,Giza,Egypt',
   location: 'https://goo.gl/maps/QHh4H4eYJMByuneC8',
   projects,

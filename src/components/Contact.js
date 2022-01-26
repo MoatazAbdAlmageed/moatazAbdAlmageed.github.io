@@ -1,6 +1,6 @@
+import { Heading } from '@chakra-ui/react';
 import React from 'react';
 import config from '../../config';
-import { Heading } from '@chakra-ui/react';
 
 export default class Contact extends React.Component {
   constructor(props) {
@@ -13,7 +13,7 @@ export default class Contact extends React.Component {
 
   render() {
     const { status } = this.state;
-    const { phone, email, FORMSPREE } = config;
+    const { phone, phone2, whatsapp, email, FORMSPREE } = config;
 
     return (
       <section
@@ -31,11 +31,15 @@ export default class Contact extends React.Component {
               <a href={`tel:${phone}`}>{phone}</a>{' '}
             </li>
             <li>
+              <i className="fa fa-mobile"> </i> &nbsp;{' '}
+              <a href={`tel:${phone2}`}>{phone2}</a>{' '}
+            </li>
+            <li>
               <i className="fa fa-whatsapp" /> &nbsp;
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href={`https://wa.me/${phone}`}
+                href={`https://api.whatsapp.com/send?phone=${whatsapp}`}
               >
                 {phone}
               </a>

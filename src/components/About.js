@@ -1,9 +1,9 @@
+import { Box, Button, Heading, Stack, Text } from '@chakra-ui/react';
 import React, { Component } from 'react';
 import config from '../../config';
+import resume from '../assets/files/moataz_mohammady_resume.pdf';
 import avatar from '../assets/img/avatar.jpg';
 import SkillsIcons from '../components/SkillsIcons';
-import resume from '../assets/files/moataz_mohammady_resume.pdf';
-import { Stack, Box, Button, Heading, Text } from '@chakra-ui/react';
 
 class About extends Component {
   render() {
@@ -16,7 +16,7 @@ class About extends Component {
         <div className="w-100">
           <Stack>
             <Box>
-              <Text className="lead">Hi!, my name is</Text>
+              <Text className="lead">Hello!, my name is</Text>
               <Heading>
                 {firstName} {lastName}
               </Heading>
