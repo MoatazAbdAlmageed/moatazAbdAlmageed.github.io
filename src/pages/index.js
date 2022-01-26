@@ -4,8 +4,8 @@ import Awards from '../components/Awards';
 import Contact from '../components/Contact';
 import Experience from '../components/Experience';
 import Layout from '../components/Layout';
-import Sidebar from '../components/Sidebar';
 import Projects from '../components/Projects';
+import Sidebar from '../components/Sidebar';
 
 const IndexPage = () => {
   return (

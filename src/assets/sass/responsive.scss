@@ -1,3 +1,6 @@
+section.resume-section {
+    width: 700px !important;
+}
 @media (min-width: 768px) {
     section.resume-section {
         min-height: 100vh;
@@ -13,6 +16,7 @@
     section.resume-section {
         padding-top: 3rem !important;
         padding-bottom: 3rem !important;
+        min-width: 1200px !important;
     }
     h1 {
         font-size: 4rem;
