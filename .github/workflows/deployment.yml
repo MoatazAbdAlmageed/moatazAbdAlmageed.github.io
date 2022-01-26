@@ -18,8 +18,8 @@ jobs:
         with:
           node-version: '13.x'
 
-      - name: Install Project Dependencies
-        run: npm ci
+      # - name: Install Project Dependencies
+      #   run: npm ci
 
       - name: Install Gatsby CLI
         run: npm install -g gatsby-cli@2.12.34
