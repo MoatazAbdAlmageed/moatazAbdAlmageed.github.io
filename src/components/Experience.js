@@ -1,6 +1,6 @@
+import { Heading, Spacer, Text } from '@chakra-ui/react';
 import React, { Component } from 'react';
 import config from '../../config';
-import { Heading, Spacer, Text } from '@chakra-ui/react';
 
 class Experience extends Component {
   render() {

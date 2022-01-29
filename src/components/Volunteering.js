@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import config from '../../config';
 
 class Volunteering extends Component {

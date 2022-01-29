@@ -1,5 +1,5 @@
+import { Image, ListItem, UnorderedList } from '@chakra-ui/react';
 import React, { Component } from 'react';
-import { UnorderedList, ListItem, Image } from '@chakra-ui/react';
 
 class SkillsIcons extends Component {
   // TODO:add icons to config file and use map

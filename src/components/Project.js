@@ -1,5 +1,5 @@
+import { Badge, Box, Link, Stack } from '@chakra-ui/react';
 import React from 'react';
-import { Link, Box, Badge, Stack, Spacer } from '@chakra-ui/react';
 
 export default function Project({
   project: { title, url, tools, icon, year, description },
@@ -8,7 +8,7 @@ export default function Project({
     <Box maxW="sm" borderWidth="1px" borderRadius="lg" overflow="hidden">
       <Box p="6">
         <Box d="flex" alignItems="baseline">
-          <Box fontWeight="semibold" as="h2" lineHeight="tight" isTruncated>
+          <Box fontWeight="semibold" as="p" lineHeight="tight" isTruncated>
             <heading> {title}</heading>
           </Box>
 
@@ -27,7 +27,7 @@ export default function Project({
         <p>{description}</p>
         <p>
           <Link isExternal textDecor="underline" color="purple.500" href={url}>
-            <Box fontWeight="semibold" as="h2" lineHeight="tight" isTruncated>
+            <Box fontWeight="semibold" as="p" lineHeight="tight" isTruncated>
               {url}
             </Box>
           </Link>

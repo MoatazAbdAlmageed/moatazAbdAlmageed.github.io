@@ -1,7 +1,7 @@
+import { Box, Flex, Grid, Heading } from '@chakra-ui/react';
 import React, { Component } from 'react';
 import config from '../../config';
 import Project from './Project';
-import { Heading, Flex, Box, Grid } from '@chakra-ui/react';
 
 class Projects extends Component {
   render() {

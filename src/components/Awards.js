@@ -1,6 +1,5 @@
-import React, { Component } from 'react';
 import { Heading } from '@chakra-ui/react';
-
+import React, { Component } from 'react';
 import config from '../../config';
 
 class Awards extends Component {
