@@ -3,6 +3,7 @@ import {
   Button,
   Heading,
   IconButton,
+  Image,
   Stack,
   Text,
 } from '@chakra-ui/react';
@@ -27,10 +28,11 @@ class About extends Component {
         </Box>
         <Box>
           <p className="d-lg-none text-center">
-            <img
-              className="img-fluid img-profile rounded-circle mx-auto mb-2 avatar"
-              alt="avatar"
+            <Image
+              borderRadius="full"
+              boxSize="150px"
               src={avatar}
+              alt="Dan Abramov"
             />
           </p>
         </Box>
@@ -80,7 +82,7 @@ class About extends Component {
 
         <Box>
           <a href={resume} download>
-            <Button colorScheme="blue" size="lg">
+            <Button colorScheme="green" size="lg">
               <i className="fa fa-file-pdf-o" /> <span>&nbsp;</span> Download
               Resume
             </Button>

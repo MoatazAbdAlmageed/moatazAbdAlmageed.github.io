@@ -1,9 +1,14 @@
 import { Badge, Box, Link, Stack } from '@chakra-ui/react';
+import PropTypes from 'prop-types';
 import React from 'react';
 
-export default function Project({
-  project: { title, url, tools, icon, year, description },
-}) {
+Project.propTypes = {
+  project: PropTypes.node.isRequired,
+};
+// eslint-disable-next-line react/prop-types
+export default function Project({ project }) {
+  // eslint-disable-next-line react/prop-types
+  const { title, url, tools, year, description } = project;
   return (
     <Box maxW="sm" borderWidth="1px" borderRadius="lg" overflow="hidden">
       <Box p="6">
@@ -34,8 +39,8 @@ export default function Project({
         </p>
 
         <Stack direction="row" mt={5}>
-          {tools.map(tool => (
-            <Badge variant="solid" colorScheme="teal">
+          {tools?.map((tool) => (
+            <Badge key={tool.key} variant="solid" colorScheme="teal">
               {tool}
             </Badge>
           ))}

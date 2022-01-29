@@ -13,7 +13,7 @@ class Awards extends Component {
         mt={10}
       >
         <div className="w-100">
-          <Heading as="h2" isTruncated>
+          <Heading as="h2" isTruncated pt={4} pb={4}>
             <i className="fa fa-trophy" /> Awards &amp; Certifications
           </Heading>
           <p>

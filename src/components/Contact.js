@@ -1,4 +1,4 @@
-import { Heading, Stack } from '@chakra-ui/react';
+import { Button, Heading, Input, Stack, Textarea } from '@chakra-ui/react';
 import React from 'react';
 import config from '../../config';
 
@@ -23,7 +23,7 @@ export default class Contact extends React.Component {
         mt={10}
       >
         <div className="w-100">
-          <Heading as="h2" isTruncated>
+          <Heading as="h2" isTruncated pt={4} pb={4}>
             <i className="fa fa-envelope-open" /> Contact
           </Heading>
 
@@ -68,7 +68,7 @@ export default class Contact extends React.Component {
               >
                 <div className="form-group">
                   <label>Name</label>
-                  <input
+                  <Input
                     className="form-control"
                     type="text"
                     name="name"
@@ -78,7 +78,7 @@ export default class Contact extends React.Component {
 
                 <div className="form-group">
                   <label>Email</label>
-                  <input
+                  <Input
                     className="form-control"
                     type="email"
                     name="email"
@@ -88,16 +88,18 @@ export default class Contact extends React.Component {
                 <div className="form-group">
                   <label>Message</label>
 
-                  <textarea
+                  <Textarea
                     className="form-control"
                     name="message"
                     rows="3"
                     placeholder="Enter message"
-                  ></textarea>
+                  ></Textarea>
                 </div>
-                <div className="form-group">
-                  <button className="btn btn-lg btn-success">Submit</button>
-                </div>
+                <Stack direction="row" spacing={4}>
+                  <Button colorScheme="green" size="lg">
+                    Submit
+                  </Button>
+                </Stack>
               </form>
             </>
           )}

@@ -17,12 +17,19 @@ class Projects extends Component {
         mt={10}
       >
         <div className="w-100">
-          <Heading as="h2" isTruncated>
+          <Heading as="h2" isTruncated pt={4} pb={4}>
             Projects
           </Heading>
 
-          <br />
-          <Grid templateColumns="repeat(2, 1fr)" gap={2}>
+          <Grid
+            gap={2}
+            templateColumns={{
+              base: 'repeat(1, 1fr)',
+              md: 'repeat(1, 1fr)',
+              lg: 'repeat(3, 1fr)',
+              xl: 'repeat(4, 1fr)',
+            }}
+          >
             {projects
               .filter(({ show }) => show == true)
               .sort((a, b) => b.year - a.year)

@@ -9,7 +9,6 @@ import {
   Icon,
   IconButton,
   Link,
-  Text,
   useColorModeValue,
   useDisclosure,
 } from '@chakra-ui/react';
@@ -83,9 +82,6 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
       {...rest}
     >
       <Flex h="20" alignItems="center" mx="8" justifyContent="space-between">
-        <Text fontSize="2xl" fontFamily="monospace" fontWeight="bold">
-          Moataz Mohammady
-        </Text>
         <CloseButton display={{ base: 'flex', md: 'none' }} onClick={onClose} />
       </Flex>
       {LinkItems.map((link) => (
@@ -160,10 +156,6 @@ const MobileNav = ({ onOpen, ...rest }: MobileProps) => {
         aria-label="open menu"
         icon={<FiMenu />}
       />
-
-      <Text fontSize="2xl" ml="8" fontFamily="monospace" fontWeight="bold">
-        Moataz
-      </Text>
     </Flex>
   );
 };
