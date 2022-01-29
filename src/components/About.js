@@ -1,5 +1,14 @@
-import { Box, Button, Heading, Stack, Text } from '@chakra-ui/react';
+import {
+  Box,
+  Button,
+  Heading,
+  IconButton,
+  Stack,
+  Text,
+} from '@chakra-ui/react';
+import { Link } from 'gatsby';
 import React, { Component } from 'react';
+import { BsBehance, BsGithub, BsLinkedin } from 'react-icons/bs';
 import config from '../../config';
 import resume from '../assets/files/moataz_mohammady_resume.pdf';
 import avatar from '../assets/img/avatar.jpg';
@@ -7,7 +16,7 @@ import SkillsIcons from '../components/SkillsIcons';
 
 class About extends Component {
   render() {
-    const { firstName, lastName, position, description, socialLinks } = config;
+    const { firstName, lastName, position, description } = config;
     return (
       <section className="resume-section d-flex align-items-center" id="about">
         <div className="w-100">
@@ -36,25 +45,42 @@ class About extends Component {
               <SkillsIcons />
             </Box>
             <Box>
-              <div className="social-icons mt-5">
-                {socialLinks.map(social => {
-                  const { icon, url, name, show } = social;
-                  if (!show) {
-                    return;
-                  }
-                  return (
-                    <a
-                      key={url}
-                      href={url}
-                      title={name}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <i className={`fa ${icon}`} />
-                    </a>
-                  );
-                })}
-              </div>
+              <Link to="https://github.com/MoatazAbdAlmageed" target="_blank">
+                <IconButton
+                  aria-label="BsGithub"
+                  variant="ghost"
+                  size="lg"
+                  isRound={true}
+                  _hover={{ bg: '#0D74FF' }}
+                  icon={<BsGithub size="28px" />}
+                />
+              </Link>
+              <Link
+                to="https://www.linkedin.com/in/moatazabdelmageed"
+                target="_blank"
+              >
+                <IconButton
+                  aria-label="BsLinkedin"
+                  variant="ghost"
+                  size="lg"
+                  isRound={true}
+                  _hover={{ bg: '#0D74FF' }}
+                  icon={<BsLinkedin size="28px" />}
+                />
+              </Link>
+              <Link
+                to="https://www.behance.net/moatazmohammady"
+                target="_blank"
+              >
+                <IconButton
+                  aria-label="BsBehance"
+                  variant="ghost"
+                  size="lg"
+                  isRound={true}
+                  _hover={{ bg: '#0D74FF' }}
+                  icon={<BsBehance size="28px" />}
+                />
+              </Link>
             </Box>
 
             <Box>
