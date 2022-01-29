@@ -9,10 +9,7 @@ class About extends Component {
   render() {
     const { firstName, lastName, position, description, socialLinks } = config;
     return (
-      <section
-        className="resume-section p-3  d-flex align-items-center"
-        id="about"
-      >
+      <section className="resume-section d-flex align-items-center" id="about">
         <div className="w-100">
           <Stack>
             <Box>
