@@ -19,11 +19,11 @@ class Repositories extends React.Component {
     fetch(endpoint, {
       credentials: 'same-origin', // Useful for including session ID (and, IIRC, authorization headers)
     })
-      .then(response => response.json())
-      .then(repos => {
+      .then((response) => response.json())
+      .then((repos) => {
         this.setState({ repos, status: 'ready' });
       })
-      .catch(error => console.error(error));
+      .catch((error) => console.error(error));
   }
   render() {
     const { status } = this.state;
@@ -31,6 +31,7 @@ class Repositories extends React.Component {
       <section
         className="resume-section p-3  d-flex align-items-center"
         id="repositories"
+        mb={10}
       >
         <div className="w-100">
           <h2 className="mb-5">
@@ -42,7 +43,7 @@ class Repositories extends React.Component {
               href={repositoriesLink}
             ></a>
           </h2>
-          <div className={this.props.className}>
+          <div>
             {status === 'loading' && (
               <div className="repositories__loader">
                 <Loader />
@@ -51,7 +52,7 @@ class Repositories extends React.Component {
             {status === 'ready' && this.state.repos && (
               <React.Fragment>
                 <div className="repositories__content">
-                  {this.state.repos.map(repo => {
+                  {this.state.repos.map((repo) => {
                     const {
                       name,
                       html_url,

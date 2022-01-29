@@ -1,4 +1,4 @@
-import { Heading } from '@chakra-ui/react';
+import { Heading, Stack } from '@chakra-ui/react';
 import React, { Component } from 'react';
 import config from '../../config';
 
@@ -6,9 +6,11 @@ class Awards extends Component {
   render() {
     const { certifications } = config;
     return (
-      <section
+      <Stack
         className="resume-section p-3  d-flex align-items-center"
         id="awards"
+        mb={10}
+        mt={10}
       >
         <div className="w-100">
           <Heading as="h2" isTruncated>
@@ -19,7 +21,7 @@ class Awards extends Component {
             important. I try to learn something new every single day.
           </p>
           <ul className="fa-ul mb-0">
-            {certifications.map(certification => {
+            {certifications.map((certification) => {
               const { place, url, title, issued, description } = certification;
               return (
                 <li key={Math.random()} className="row">
@@ -44,7 +46,7 @@ class Awards extends Component {
             })}
           </ul>
         </div>
-      </section>
+      </Stack>
     );
   }
 }

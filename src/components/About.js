@@ -18,82 +18,75 @@ class About extends Component {
   render() {
     const { firstName, lastName, position, description } = config;
     return (
-      <section className="resume-section d-flex align-items-center" id="about">
-        <div className="w-100">
-          <Stack>
-            <Box>
-              <Text className="lead">Hello!, my name is</Text>
-              <Heading>
-                {firstName} {lastName}
-              </Heading>
-            </Box>
-            <Box>
-              <p className="d-lg-none text-center">
-                <img
-                  className="img-fluid img-profile rounded-circle mx-auto mb-2 avatar"
-                  alt="avatar"
-                  src={avatar}
-                />
-              </p>
-            </Box>
-            <Box>
-              <p className="position">I am a {position}</p>
-              <p className="lead">{description}</p>
-            </Box>
+      <Stack id="about" mb={10}>
+        <Box>
+          <Text className="lead">Hello!, my name is</Text>
+          <Heading>
+            {firstName} {lastName}
+          </Heading>
+        </Box>
+        <Box>
+          <p className="d-lg-none text-center">
+            <img
+              className="img-fluid img-profile rounded-circle mx-auto mb-2 avatar"
+              alt="avatar"
+              src={avatar}
+            />
+          </p>
+        </Box>
+        <Box>
+          <p className="position">I am a {position}</p>
+          <p className="lead">{description}</p>
+        </Box>
 
-            <Box>
-              <SkillsIcons />
-            </Box>
-            <Box>
-              <Link to="https://github.com/MoatazAbdAlmageed" target="_blank">
-                <IconButton
-                  aria-label="BsGithub"
-                  variant="ghost"
-                  size="lg"
-                  isRound={true}
-                  _hover={{ bg: '#0D74FF' }}
-                  icon={<BsGithub size="28px" />}
-                />
-              </Link>
-              <Link
-                to="https://www.linkedin.com/in/moatazabdelmageed"
-                target="_blank"
-              >
-                <IconButton
-                  aria-label="BsLinkedin"
-                  variant="ghost"
-                  size="lg"
-                  isRound={true}
-                  _hover={{ bg: '#0D74FF' }}
-                  icon={<BsLinkedin size="28px" />}
-                />
-              </Link>
-              <Link
-                to="https://www.behance.net/moatazmohammady"
-                target="_blank"
-              >
-                <IconButton
-                  aria-label="BsBehance"
-                  variant="ghost"
-                  size="lg"
-                  isRound={true}
-                  _hover={{ bg: '#0D74FF' }}
-                  icon={<BsBehance size="28px" />}
-                />
-              </Link>
-            </Box>
+        <Box>
+          <SkillsIcons />
+        </Box>
+        <Box>
+          <Link to="https://github.com/MoatazAbdAlmageed" target="_blank">
+            <IconButton
+              aria-label="BsGithub"
+              variant="ghost"
+              size="lg"
+              isRound={true}
+              _hover={{ bg: '#0D74FF' }}
+              icon={<BsGithub size="28px" />}
+            />
+          </Link>
+          <Link
+            to="https://www.linkedin.com/in/moatazabdelmageed"
+            target="_blank"
+          >
+            <IconButton
+              aria-label="BsLinkedin"
+              variant="ghost"
+              size="lg"
+              isRound={true}
+              _hover={{ bg: '#0D74FF' }}
+              icon={<BsLinkedin size="28px" />}
+            />
+          </Link>
+          <Link to="https://www.behance.net/moatazmohammady" target="_blank">
+            <IconButton
+              aria-label="BsBehance"
+              variant="ghost"
+              size="lg"
+              isRound={true}
+              _hover={{ bg: '#0D74FF' }}
+              icon={<BsBehance size="28px" />}
+            />
+          </Link>
+        </Box>
 
-            <Box>
-              <a href={resume} download>
-                <Button colorScheme="blue" size="lg">
-                  <i className="fa fa-file-pdf-o" /> <span>&nbsp;</span>{' '}
-                  Download Resume
-                </Button>
-              </a>
-            </Box>
-          </Stack>
-        </div>
-      </section>
+        <Box>
+          <a href={resume} download>
+            <Button colorScheme="blue" size="lg">
+              <i className="fa fa-file-pdf-o" /> <span>&nbsp;</span> Download
+              Resume
+            </Button>
+          </a>
+        </Box>
+      </Stack>
     );
   }
 }

@@ -1,4 +1,4 @@
-import { Heading } from '@chakra-ui/react';
+import { Heading, Stack } from '@chakra-ui/react';
 import React from 'react';
 import config from '../../config';
 
@@ -16,9 +16,11 @@ export default class Contact extends React.Component {
     const { phone, phone2, whatsapp, email, FORMSPREE } = config;
 
     return (
-      <section
+      <Stack
         className="resume-section p-3  d-flex align-items-center"
         id="contact"
+        mb={10}
+        mt={10}
       >
         <div className="w-100">
           <Heading as="h2" isTruncated>
@@ -103,7 +105,7 @@ export default class Contact extends React.Component {
             <p className="text-danger">Ooops! There was an error.</p>
           )}
         </div>
-      </section>
+      </Stack>
     );
   }
 

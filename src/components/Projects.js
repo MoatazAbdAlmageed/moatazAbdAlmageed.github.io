@@ -1,4 +1,4 @@
-import { Box, Flex, Grid, Heading } from '@chakra-ui/react';
+import { Grid, Heading, Stack } from '@chakra-ui/react';
 import React, { Component } from 'react';
 import config from '../../config';
 import Project from './Project';
@@ -10,9 +10,11 @@ class Projects extends Component {
       ({ name }) => name === 'Behance'
     );
     return (
-      <section
+      <Stack
         className="resume-section p-3  d-flex justify-content-center"
         id="projects"
+        mb={10}
+        mt={10}
       >
         <div className="w-100">
           <Heading as="h2" isTruncated>
@@ -24,13 +26,8 @@ class Projects extends Component {
             {projects
               .filter(({ show }) => show == true)
               .sort((a, b) => b.year - a.year)
-              .map(project => (
-                <Flex>
-                  <Box flex="1">
-                    <Project project={project} />
-                    <br />
-                  </Box>
-                </Flex>
+              .map((project) => (
+                <Project key={project.url} project={project} />
               ))}
           </Grid>
 
@@ -50,7 +47,7 @@ class Projects extends Component {
             </p>
           </div>
         </div>
-      </section>
+      </Stack>
     );
   }
 }

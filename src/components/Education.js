@@ -9,13 +9,14 @@ class Education extends Component {
       <section
         className="resume-section p-3  d-flex align-items-center"
         id="education"
+        mb={10}
       >
         <div className="w-100">
           <h2 className="mb-5">
             <i className="fa fa-graduation-cap" /> Education
           </h2>
 
-          {education.map(education => {
+          {education.map((education) => {
             const { place, url, title, period } = education;
             return (
               <div
