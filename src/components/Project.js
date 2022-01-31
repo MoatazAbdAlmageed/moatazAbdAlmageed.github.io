@@ -15,7 +15,7 @@ export default function Project({ project }) {
       borderWidth="1px"
       borderRadius="lg"
       overflow="hidden"
-      _hover={{ bg: 'blue.400' }}
+      _hover={{ bg: '#F7FAFC' }}
     >
       <Box p="6">
         <Box d="flex" alignItems="baseline">

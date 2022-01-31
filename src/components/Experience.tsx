@@ -9,7 +9,7 @@ class Experience extends Component {
     return (
       <Stack
         id="experience"
-        bg="gray.50"
+        bg="#F7FAFC"
         className="resume-section  d-flex justify-content-center"
         mb={10}
       >
@@ -52,7 +52,7 @@ class Experience extends Component {
                 m={2}
                 key={url}
                 p={10}
-                _hover={{ bg: 'blue.400' }}
+                _hover={{ bg: 'gray.100' }}
                 className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
               >
                 <Heading size="md">

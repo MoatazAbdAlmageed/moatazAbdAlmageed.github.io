@@ -48,20 +48,21 @@ export default function contact() {
 
   return (
     <Container
-      id="#contact"
+      id="contact"
       maxW="full"
       mt={0}
       overflow="hidden"
       borderRadius="lg"
+      bg="#F7FAFC"
     >
       <Flex>
         <Box>
           <Box p={4}>
             <Wrap spacing={{ base: 20, sm: 3, md: 5, lg: 20 }}>
               <WrapItem>
-                <Box>
+                <Box x>
                   <Heading>Contact</Heading>
-                  <Text mt={{ sm: 3, md: 3, lg: 5 }} color="gray.500">
+                  <Text mt={{ sm: 3, md: 3, lg: 5 }} color="#333" pb={5}>
                     Are you working on something great? I would love to help
                     make it happen! <br />
                     Drop me a letter and start your project right now! Just do
@@ -87,6 +88,7 @@ export default function contact() {
                       >
                         {whatsapp}
                       </Button>
+
                       <Button
                         size="md"
                         leftIcon={<MdEmail color="blue.400" size="20px" />}
@@ -201,15 +203,13 @@ export default function contact() {
                         </FormControl>
 
                         {status === 'SUCCESS' && (
-                          <p className="text-success">
+                          <Text color="green">
                             Thank you for your message. It has been sent.{' '}
-                          </p>
+                          </Text>
                         )}
 
                         {status === 'ERROR' && (
-                          <p className="text-danger">
-                            Ooops! There was an error.
-                          </p>
+                          <Text color="red">Ooops! There was an error.</Text>
                         )}
                       </form>
                     </VStack>

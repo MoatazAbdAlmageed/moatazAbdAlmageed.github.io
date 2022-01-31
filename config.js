@@ -350,13 +350,22 @@ const projects = [
     description: 'Website for RTC Neklawy company',
   },
   {
+    title: 'Grandirlibrement Website',
+    url: 'https://grandirlibrement.com/',
+    tools: ['WordPress'],
+    icon: 'fa-wordpress',
+    year: '2022',
+    show: true,
+    description: 'Maintenance for Grandirlibrement website',
+  },
+  {
     title: 'Bein Quran Website',
     url: 'https://beinquran.com/',
     tools: ['WordPress'],
     icon: 'fa-wordpress',
     year: '2020',
     show: true,
-    description: 'Website for Bein Quran company',
+    description: 'Maintenance for Bein Quran website',
   },
   {
     title: 'Sahwa Website',
@@ -418,21 +427,14 @@ const jobs = [
     description: '',
     projects: [
       {
-        name: 'Wuilt Website',
-        url: 'https://wuilt.com/',
+        name: 'Wuilt blog',
+        url: 'https://wuilt.com/blog/ar/',
         technologies: ['WordPress'],
       },
       {
         name: 'Wuilt Builder',
         url: 'https://app.wuilt.com/',
-        technologies: [
-          'PHP',
-          'Laravel',
-          'reactJS',
-          'nodeJS',
-          'mondoDB',
-          'graphql',
-        ],
+        technologies: ['PHP', 'Laravel', 'reactJS'],
       },
       {
         name: 'Wuilt Store',
