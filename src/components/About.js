@@ -61,7 +61,7 @@ class About extends Component {
                   variant="ghost"
                   size="lg"
                   isRound={true}
-                  _hover={{ bg: 'green.300' }}
+                  _hover={{ bg: 'blue.400' }}
                   icon={<BsGithub size="28px" />}
                 />
               </Link>
@@ -74,7 +74,7 @@ class About extends Component {
                   variant="ghost"
                   size="lg"
                   isRound={true}
-                  _hover={{ bg: 'green.300' }}
+                  _hover={{ bg: 'blue.400' }}
                   icon={<BsLinkedin size="28px" />}
                 />
               </Link>
@@ -87,7 +87,7 @@ class About extends Component {
                   variant="ghost"
                   size="lg"
                   isRound={true}
-                  _hover={{ bg: 'green.300' }}
+                  _hover={{ bg: 'blue.400' }}
                   icon={<BsBehance size="28px" />}
                 />
               </Link>
@@ -96,10 +96,10 @@ class About extends Component {
             <Box mt={5}>
               <a href={resume} download>
                 <Button
-                  bg="green.300"
+                  bg="blue.400"
                   color="white"
                   size="lg"
-                  _hover={{ bg: 'green.400' }}
+                  _hover={{ bg: 'blue.400' }}
                 >
                   <i className="fa fa-file-pdf-o" /> <span>&nbsp;</span>{' '}
                   Download Resume

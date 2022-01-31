@@ -40,7 +40,7 @@ export default function CallToActionWithAnnotation() {
           >
             Hello!, <br />
             {`I'm`}{' '}
-            <Text as={'span'} color={'green.300'}>
+            <Text as={'span'} color={'blue.400'}>
               {firstName} {lastName}
             </Text>
           </Heading>
@@ -56,12 +56,12 @@ export default function CallToActionWithAnnotation() {
           >
             <Button
               href="#contact"
-              colorScheme={'green'}
-              bg={'green.300'}
+              colorScheme={'blue'}
+              bg={'blue.400'}
               rounded={'full'}
               px={6}
               _hover={{
-                bg: 'green.500',
+                bg: 'blue.500',
               }}
             >
               Contact

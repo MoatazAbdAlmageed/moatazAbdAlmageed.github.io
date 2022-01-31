@@ -113,10 +113,10 @@ export default class Contact extends React.Component {
             <Stack direction="row" spacing={4} pt={2}>
               <button>
                 <Button
-                  bg="green.300"
+                  bg="blue.400"
                   color="white"
                   size="lg"
-                  _hover={{ bg: 'green.400' }}
+                  _hover={{ bg: 'blue.400' }}
                 >
                   Submit
                 </Button>

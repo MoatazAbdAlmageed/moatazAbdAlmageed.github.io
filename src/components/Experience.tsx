@@ -52,7 +52,7 @@ class Experience extends Component {
                 m={2}
                 key={url}
                 p={10}
-                _hover={{ bg: 'green.300' }}
+                _hover={{ bg: 'blue.400' }}
                 className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
               >
                 <Heading size="md">

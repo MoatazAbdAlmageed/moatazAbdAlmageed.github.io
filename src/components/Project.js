@@ -15,7 +15,7 @@ export default function Project({ project }) {
       borderWidth="1px"
       borderRadius="lg"
       overflow="hidden"
-      _hover={{ bg: 'green.300' }}
+      _hover={{ bg: 'blue.400' }}
     >
       <Box p="6">
         <Box d="flex" alignItems="baseline">
@@ -48,7 +48,7 @@ export default function Project({ project }) {
 
         <Stack direction="row" mt={5}>
           {tools?.map((tool) => (
-            <Badge key={tool.key} variant="solid" colorScheme="green">
+            <Badge key={tool.key} variant="solid" colorScheme="blue">
               {tool}
             </Badge>
           ))}
