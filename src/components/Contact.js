@@ -1,144 +1,33 @@
 import {
   Box,
   Button,
+  Container,
+  Flex,
+  FormControl,
+  FormLabel,
   Heading,
-  Icon,
+  HStack,
+  IconButton,
   Input,
-  Stack,
+  InputGroup,
+  InputLeftElement,
+  Link,
   Text,
   Textarea,
+  VStack,
+  Wrap,
+  WrapItem,
 } from '@chakra-ui/react';
-import React from 'react';
-import { FaRegEnvelope } from 'react-icons/fa';
+import React, { useState } from 'react';
+import { BsBehance, BsGithub, BsLinkedin, BsPerson } from 'react-icons/bs';
+import { MdEmail, MdOutlineEmail, MdPhone } from 'react-icons/md';
 import config from '../../config';
 
-export default class Contact extends React.Component {
-  constructor(props) {
-    super(props);
-    this.submitForm = this.submitForm.bind(this);
-    this.state = {
-      status: '',
-    };
-  }
+export default function contact() {
+  const { phone, phone2, whatsapp, email, FORMSPREE } = config;
+  const [status, setStatus] = useState('');
 
-  render() {
-    const { status } = this.state;
-    const { phone, phone2, whatsapp, email, FORMSPREE } = config;
-
-    return (
-      <Stack
-        className="resume-section p-3  d-flex align-items-center"
-        id="contact"
-        mb={10}
-        mt={10}
-      >
-        <Heading as="h2" isTruncated pt={4} pb={4}>
-          <Icon
-            mr="4"
-            fontSize="16"
-            _groupHover={{
-              color: 'white',
-            }}
-            as={FaRegEnvelope}
-          />{' '}
-          Contact
-        </Heading>
-
-        <Text>
-          Are you working on something great? I would love to help make it
-          happen! Drop me a letter and start your project right now! Just do it.
-        </Text>
-
-        <Box>
-          <ul className="subheading">
-            <li>
-              <i className="fa fa-mobile"> </i> &nbsp;{' '}
-              <a href={`tel:${phone}`}>{phone}</a>{' '}
-            </li>
-            <li>
-              <i className="fa fa-mobile"> </i> &nbsp;{' '}
-              <a href={`tel:${phone2}`}>{phone2}</a>{' '}
-            </li>
-            <li>
-              <i className="fa fa-whatsapp" /> &nbsp;
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href={`https://api.whatsapp.com/send?phone=${whatsapp}`}
-              >
-                {phone}
-              </a>
-            </li>
-            <li>
-              <i className="fa fa-envelope" /> &nbsp;
-              <a href={`mailto:${email}`}>{email}</a>
-            </li>{' '}
-          </ul>
-        </Box>
-        <Box>
-          <form
-            onSubmit={this.submitForm}
-            action={`https://formspree.io/${FORMSPREE}`}
-            method="POST"
-          >
-            <div className="form-group">
-              <label>Name</label>
-              <Input
-                className="form-control"
-                type="text"
-                name="name"
-                placeholder="Enter Name"
-              />
-            </div>
-
-            <div className="form-group">
-              <label>Email</label>
-              <Input
-                className="form-control"
-                type="email"
-                name="email"
-                placeholder="Enter email"
-              />
-            </div>
-            <div className="form-group">
-              <label>Message</label>
-
-              <Textarea
-                className="form-control"
-                name="message"
-                rows="3"
-                placeholder="Enter message"
-              ></Textarea>
-            </div>
-            <Stack direction="row" spacing={4} pt={2}>
-              <button>
-                <Button
-                  bg="blue.400"
-                  color="white"
-                  size="lg"
-                  _hover={{ bg: 'blue.400' }}
-                >
-                  Submit
-                </Button>
-              </button>
-            </Stack>
-          </form>
-
-          {status === 'SUCCESS' && (
-            <p className="text-success">
-              Thank you for your message. It has been sent.{' '}
-            </p>
-          )}
-
-          {status === 'ERROR' && (
-            <p className="text-danger">Ooops! There was an error.</p>
-          )}
-        </Box>
-      </Stack>
-    );
-  }
-
-  submitForm(ev) {
+  const submitForm = (ev) => {
     ev.preventDefault();
     const form = ev.target;
     const data = new FormData(form);
@@ -149,11 +38,188 @@ export default class Contact extends React.Component {
       if (xhr.readyState !== XMLHttpRequest.DONE) return;
       if (xhr.status === 200) {
         form.reset();
-        this.setState({ status: 'SUCCESS' });
+        setStatus('SUCCESS');
       } else {
-        this.setState({ status: 'ERROR' });
+        setStatus('ERROR');
       }
     };
     xhr.send(data);
-  }
+  };
+
+  return (
+    <Container
+      id="#contact"
+      maxW="full"
+      mt={0}
+      overflow="hidden"
+      borderRadius="lg"
+    >
+      <Flex>
+        <Box>
+          <Box p={4}>
+            <Wrap spacing={{ base: 20, sm: 3, md: 5, lg: 20 }}>
+              <WrapItem>
+                <Box>
+                  <Heading>Contact</Heading>
+                  <Text mt={{ sm: 3, md: 3, lg: 5 }} color="gray.500">
+                    Are you working on something great? I would love to help
+                    make it happen! <br />
+                    Drop me a letter and start your project right now! Just do
+                    it.
+                  </Text>
+                  <Box>
+                    <VStack spacing={3} alignItems="flex-start">
+                      <Button
+                        size="md"
+                        leftIcon={<MdPhone color="blue.400" size="20px" />}
+                      >
+                        {phone}
+                      </Button>
+                      <Button
+                        size="md"
+                        leftIcon={<MdPhone color="blue.400" size="20px" />}
+                      >
+                        {phone2}
+                      </Button>
+                      <Button
+                        size="md"
+                        leftIcon={<MdPhone color="blue.400" size="20px" />}
+                      >
+                        {whatsapp}
+                      </Button>
+                      <Button
+                        size="md"
+                        leftIcon={<MdEmail color="blue.400" size="20px" />}
+                      >
+                        {email}
+                      </Button>
+                    </VStack>
+                  </Box>
+                  <HStack
+                    mt={{ lg: 10, md: 10 }}
+                    spacing={5}
+                    px={5}
+                    alignItems="flex-start"
+                  >
+                    <Box mt={5}>
+                      <Link
+                        to="https://github.com/MoatazAbdAlmageed"
+                        target="_blank"
+                      >
+                        <IconButton
+                          aria-label="BsGithub"
+                          variant="ghost"
+                          size="lg"
+                          isRound={true}
+                          _hover={{ bg: 'blue.400' }}
+                          icon={<BsGithub size="28px" />}
+                        />
+                      </Link>
+                      <Link
+                        to="https://www.linkedin.com/in/moatazabdelmageed"
+                        target="_blank"
+                      >
+                        <IconButton
+                          aria-label="BsLinkedin"
+                          variant="ghost"
+                          size="lg"
+                          isRound={true}
+                          _hover={{ bg: 'blue.400' }}
+                          icon={<BsLinkedin size="28px" />}
+                        />
+                      </Link>
+                      <Link
+                        to="https://www.behance.net/moatazmohammady"
+                        target="_blank"
+                      >
+                        <IconButton
+                          aria-label="BsBehance"
+                          variant="ghost"
+                          size="lg"
+                          isRound={true}
+                          _hover={{ bg: 'blue.400' }}
+                          icon={<BsBehance size="28px" />}
+                        />
+                      </Link>
+                    </Box>
+                  </HStack>
+                </Box>
+              </WrapItem>
+              <WrapItem>
+                <Box bg="white" borderRadius="lg">
+                  <Box m={8} color="#0B0E3F">
+                    <VStack spacing={5}>
+                      <form
+                        onSubmit={submitForm}
+                        action={`https://formspree.io/${FORMSPREE}`}
+                        method="POST"
+                      >
+                        <FormControl id="name" pt={2}>
+                          <FormLabel>Your Name</FormLabel>
+                          <InputGroup borderColor="#E0E1E7">
+                            <InputLeftElement
+                              pointerEvents="none"
+                              // eslint-disable-next-line react/no-children-prop
+                              children={<BsPerson color="gray.800" />}
+                            />
+                            <Input type="text" name="name" size="md" />
+                          </InputGroup>
+                        </FormControl>
+                        <FormControl id="email" pt={2}>
+                          <FormLabel>Mail</FormLabel>
+                          <InputGroup borderColor="#E0E1E7">
+                            <InputLeftElement
+                              pointerEvents="none"
+                              // eslint-disable-next-line react/no-children-prop
+                              children={<MdOutlineEmail color="gray.800" />}
+                            />
+                            <Input type="text" name="email" size="md" />
+                          </InputGroup>
+                        </FormControl>
+                        <FormControl id="message" pt={2}>
+                          <FormLabel>Message</FormLabel>
+                          <Textarea
+                            name="message"
+                            borderColor="gray.300"
+                            _hover={{
+                              borderRadius: 'gray.300',
+                            }}
+                            placeholder="message"
+                          />
+                        </FormControl>
+                        <FormControl id="name" float="right" pt={2}>
+                          <button>
+                            <Button
+                              variant="solid"
+                              bg="#0D74FF"
+                              color="white"
+                              _hover={{}}
+                            >
+                              Send Message
+                            </Button>
+                          </button>
+                        </FormControl>
+
+                        {status === 'SUCCESS' && (
+                          <p className="text-success">
+                            Thank you for your message. It has been sent.{' '}
+                          </p>
+                        )}
+
+                        {status === 'ERROR' && (
+                          <p className="text-danger">
+                            Ooops! There was an error.
+                          </p>
+                        )}
+                      </form>
+                    </VStack>
+                  </Box>
+                </Box>
+              </WrapItem>
+            </Wrap>
+          </Box>
+        </Box>
+      </Flex>
+    </Container>
+  );
 }
