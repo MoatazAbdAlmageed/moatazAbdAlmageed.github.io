@@ -33,6 +33,7 @@
     "@babel/eslint-parser": "^7.15.4",
     "@babel/eslint-plugin": "^7.14.0",
     "@babel/node": "^7.15.4",
+    "@babel/plugin-proposal-decorators": "^7.16.7",
     "@babel/plugin-transform-typescript": "^7.15.4",
     "@babel/runtime": "^7.15.4",
     "@lerna/prompt": "3.18.5",
