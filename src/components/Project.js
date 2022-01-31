@@ -48,7 +48,7 @@ export default function Project({ project }) {
 
         <Stack direction="row" mt={5}>
           {tools?.map((tool) => (
-            <Badge key={tool.key} variant="solid" colorScheme="green.300">
+            <Badge key={tool.key} variant="solid" colorScheme="green">
               {tool}
             </Badge>
           ))}

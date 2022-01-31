@@ -104,8 +104,7 @@ export default function WithSpeechBubbles() {
             <TestimonialContent>
               <TestimonialHeading>Efficient Collaborating</TestimonialHeading>
               <TestimonialText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor
-                neque sed imperdiet nibh lectus feugiat nunc sem.
+                Highly recommended for professional websites
               </TestimonialText>
             </TestimonialContent>
             <TestimonialAvatar
@@ -120,8 +119,7 @@ export default function WithSpeechBubbles() {
             <TestimonialContent>
               <TestimonialHeading>Intuitive Design</TestimonialHeading>
               <TestimonialText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor
-                neque sed imperdiet nibh lectus feugiat nunc sem.
+                Highly recommended for professional websites
               </TestimonialText>
             </TestimonialContent>
             <TestimonialAvatar
@@ -134,15 +132,14 @@ export default function WithSpeechBubbles() {
           </Testimonial>
           <Testimonial>
             <TestimonialContent>
-              <TestimonialHeading>Mindblowing Service</TestimonialHeading>
+              <TestimonialHeading>Results are amazing</TestimonialHeading>
               <TestimonialText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor
-                neque sed imperdiet nibh lectus feugiat nunc sem.
+                Highly recommended for professional websites
               </TestimonialText>
             </TestimonialContent>
             <TestimonialAvatar
               src={
-                'https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/User-avatar.svg/1024px-User-avatar.svg.png'
+                'https://pps.whatsapp.net/v/t61.24694-24/229002938_347695800219086_1999437479412687992_n.jpg?ccb=11-4&oh=01_AVyVWmK7mO7oYEzWuEBpZmHqYYfadZnbWGXpd_-vTr3rSQ&oe=61FBDA1C'
               }
               name={'Bakr Hamza'}
               title={'CEO at beinquran'}

@@ -49,7 +49,8 @@ class About extends Component {
           <Box>
             <Box>
               <p className="position">
-                I am a {position} , {description}{' '}
+                I am a {position} with +{new Date().getFullYear() - 2016} years
+                of experience, {description}{' '}
               </p>
             </Box>
 

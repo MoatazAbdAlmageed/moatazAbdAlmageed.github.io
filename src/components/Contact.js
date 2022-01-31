@@ -1,7 +1,6 @@
 import {
   Box,
   Button,
-  Grid,
   Heading,
   Icon,
   Input,
@@ -50,100 +49,91 @@ export default class Contact extends React.Component {
           happen! Drop me a letter and start your project right now! Just do it.
         </Text>
 
-        <Grid
-          gap={2}
-          templateColumns={{
-            base: 'repeat(1, 1fr)',
-            md: 'repeat(1, 1fr)',
-            lg: 'repeat(2, 1fr)',
-          }}
-        >
-          <Box>
-            <ul className="subheading">
-              <li>
-                <i className="fa fa-mobile"> </i> &nbsp;{' '}
-                <a href={`tel:${phone}`}>{phone}</a>{' '}
-              </li>
-              <li>
-                <i className="fa fa-mobile"> </i> &nbsp;{' '}
-                <a href={`tel:${phone2}`}>{phone2}</a>{' '}
-              </li>
-              <li>
-                <i className="fa fa-whatsapp" /> &nbsp;
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href={`https://api.whatsapp.com/send?phone=${whatsapp}`}
+        <Box>
+          <ul className="subheading">
+            <li>
+              <i className="fa fa-mobile"> </i> &nbsp;{' '}
+              <a href={`tel:${phone}`}>{phone}</a>{' '}
+            </li>
+            <li>
+              <i className="fa fa-mobile"> </i> &nbsp;{' '}
+              <a href={`tel:${phone2}`}>{phone2}</a>{' '}
+            </li>
+            <li>
+              <i className="fa fa-whatsapp" /> &nbsp;
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href={`https://api.whatsapp.com/send?phone=${whatsapp}`}
+              >
+                {phone}
+              </a>
+            </li>
+            <li>
+              <i className="fa fa-envelope" /> &nbsp;
+              <a href={`mailto:${email}`}>{email}</a>
+            </li>{' '}
+          </ul>
+        </Box>
+        <Box>
+          <form
+            onSubmit={this.submitForm}
+            action={`https://formspree.io/${FORMSPREE}`}
+            method="POST"
+          >
+            <div className="form-group">
+              <label>Name</label>
+              <Input
+                className="form-control"
+                type="text"
+                name="name"
+                placeholder="Enter Name"
+              />
+            </div>
+
+            <div className="form-group">
+              <label>Email</label>
+              <Input
+                className="form-control"
+                type="email"
+                name="email"
+                placeholder="Enter email"
+              />
+            </div>
+            <div className="form-group">
+              <label>Message</label>
+
+              <Textarea
+                className="form-control"
+                name="message"
+                rows="3"
+                placeholder="Enter message"
+              ></Textarea>
+            </div>
+            <Stack direction="row" spacing={4} pt={2}>
+              <button>
+                <Button
+                  bg="green.300"
+                  color="white"
+                  size="lg"
+                  _hover={{ bg: 'green.400' }}
                 >
-                  {phone}
-                </a>
-              </li>
-              <li>
-                <i className="fa fa-envelope" /> &nbsp;
-                <a href={`mailto:${email}`}>{email}</a>
-              </li>{' '}
-            </ul>
-          </Box>
-          <Box align="left">
-            <form
-              onSubmit={this.submitForm}
-              action={`https://formspree.io/${FORMSPREE}`}
-              method="POST"
-            >
-              <div className="form-group">
-                <label>Name</label>
-                <Input
-                  className="form-control"
-                  type="text"
-                  name="name"
-                  placeholder="Enter Name"
-                />
-              </div>
+                  Submit
+                </Button>
+              </button>
+            </Stack>
+          </form>
 
-              <div className="form-group">
-                <label>Email</label>
-                <Input
-                  className="form-control"
-                  type="email"
-                  name="email"
-                  placeholder="Enter email"
-                />
-              </div>
-              <div className="form-group">
-                <label>Message</label>
+          {status === 'SUCCESS' && (
+            <p className="text-success">
+              Thank you for your message. It has been sent.{' '}
+            </p>
+          )}
 
-                <Textarea
-                  className="form-control"
-                  name="message"
-                  rows="3"
-                  placeholder="Enter message"
-                ></Textarea>
-              </div>
-              <Stack direction="row" spacing={4} pt={2}>
-                <button>
-                  <Button
-                    bg="green.300"
-                    color="white"
-                    size="lg"
-                    _hover={{ bg: 'green.400' }}
-                  >
-                    Submit
-                  </Button>
-                </button>
-              </Stack>
-            </form>
-
-            {status === 'SUCCESS' && (
-              <p className="text-success">
-                Thank you for your message. It has been sent.{' '}
-              </p>
-            )}
-
-            {status === 'ERROR' && (
-              <p className="text-danger">Ooops! There was an error.</p>
-            )}
-          </Box>
-        </Grid>
+          {status === 'ERROR' && (
+            <p className="text-danger">Ooops! There was an error.</p>
+          )}
+        </Box>
       </Stack>
     );
   }

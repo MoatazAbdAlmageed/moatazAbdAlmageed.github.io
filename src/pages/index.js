@@ -15,7 +15,7 @@ const IndexPage = () => {
         <Box>
           <Sidebar />
         </Box>
-        <Box p={5}>
+        <Box p={1}>
           <About />
           <Experience />
           <Projects />

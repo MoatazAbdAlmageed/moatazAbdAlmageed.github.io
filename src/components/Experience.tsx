@@ -1,12 +1,4 @@
-import {
-  Box,
-  Grid,
-  Heading,
-  Icon,
-  Spacer,
-  Stack,
-  Text,
-} from '@chakra-ui/react';
+import { Box, Grid, Heading, Icon, Spacer, Stack } from '@chakra-ui/react';
 import React, { Component } from 'react';
 import { TiStarburst } from 'react-icons/ti';
 import config from '../../config';
@@ -63,7 +55,7 @@ class Experience extends Component {
                 _hover={{ bg: 'green.300' }}
                 className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
               >
-                <Heading as="h3" size="sm">
+                <Heading size="md">
                   {occupation}{' '}
                   <a href={url} target="_blank" rel="noopener noreferrer">
                     @{company}{' '}
@@ -71,58 +63,47 @@ class Experience extends Component {
                 </Heading>
                 <h4> {period}</h4>
 
-                {responsibilities.length ? (
-                  <div>
-                    <Heading as="h5" size="sm">
-                      Responsibilities
-                    </Heading>
-                    <ul className="responsibilities">
-                      {responsibilities.map((responsibility) => {
-                        return <li key={Math.random()}>{responsibility}</li>;
-                      })}
-                    </ul>
-                  </div>
-                ) : (
-                  ''
-                )}
+                <Stack pt={5}>
+                  <Heading size="sm">Responsibilities</Heading>
+                  <ul className="responsibilities">
+                    {responsibilities.map((responsibility) => {
+                      return <li key={Math.random()}>{responsibility}</li>;
+                    })}
+                  </ul>
+                </Stack>
 
                 <Spacer />
-                {projects.length ? (
-                  <div>
-                    <Text fontSize="2xl">Projects</Text>
-                    <ol className="projects">
-                      {projects.map((project) => {
-                        return (
-                          <li key={Math.random()}>
-                            <a
-                              href={project.url}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
-                              <i className="fa fa-globe" aria-hidden="true"></i>
-                              &nbsp;
-                              {project.name}
-                            </a>
 
-                            {/* <ul className="technologies">
-                                  {project.technologies.map((tech) => {
-                                    return (
-                                      <li key={Math.random()}>
-                                        <span className="badge badge-secondary">
-                                          {tech}
-                                        </span>
-                                      </li>
-                                    );
-                                  })}
-                                </ul> */}
-                          </li>
-                        );
-                      })}
-                    </ol>
-                  </div>
-                ) : (
-                  ''
-                )}
+                <Stack pt={5}>
+                  <Heading size="sm"> Projects</Heading>
+                  {projects.map((project) => {
+                    return (
+                      <li key={Math.random()}>
+                        <a
+                          href={project.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <i className="fa fa-globe" aria-hidden="true"></i>
+                          &nbsp;
+                          {project.name}
+                        </a>
+
+                        {/* <ul className="technologies">
+                                {project.technologies.map((tech) => {
+                                  return (
+                                    <li key={Math.random()}>
+                                      <span className="badge badge-secondary">
+                                        {tech}
+                                      </span>
+                                    </li>
+                                  );
+                                })}
+                              </ul> */}
+                      </li>
+                    );
+                  })}
+                </Stack>
 
                 <p>{description}</p>
               </Box>

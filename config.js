@@ -411,9 +411,9 @@ const jobs = [
     period: 'Jan 2020 - Present',
     occupation: 'Full-Stack Web Developer',
     responsibilities: [
-      'Maintain and add new features for wuilt builder',
-      'Maintain and add new features for wuilt store',
-      'Maintain wuilt blog',
+      'Maintain and add new features for Wuilt builder',
+      'Maintain and add new features for Wuilt store',
+      'Maintain Wuilt blog',
     ],
     description: '',
     projects: [
