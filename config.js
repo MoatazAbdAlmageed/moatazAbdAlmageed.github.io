@@ -218,15 +218,14 @@ const socialLinks = [
     show: false,
   },
 ];
-
+// eslint-disable-next-line no-sparse-arrays
 const certifications = [
   {
     place: 'Udemy',
     title: 'Introduction to TypeScript',
     description:
       'This certificate above verifies that Moataz Mohammady successfully completed the course Introduction to TypeScript on 07/26/2021 as taught by Daniel Stern on Udemy. The certificate indicates the entire course was completed as validated by the student. The course duration represents the total video hours of the course at time of most recent completion.',
-    url:
-      'https://udemy-certificate.s3.amazonaws.com/pdf/UC-f4d3813f-511b-405d-971b-b0f88039ec7b.pdf',
+    url: 'https://udemy-certificate.s3.amazonaws.com/pdf/UC-f4d3813f-511b-405d-971b-b0f88039ec7b.pdf',
     issued: 'July 2021',
   },
   {
@@ -240,8 +239,7 @@ const certifications = [
     place: 'Udacity',
     title: 'Front End Development Track',
     description: 'One Million Arab Coders',
-    url:
-      'https://s3-us-west-2.amazonaws.com/udacity-printer/production/certificates/8274026e-a9af-49ba-b82b-66b5824b65fe.pdf',
+    url: 'https://s3-us-west-2.amazonaws.com/udacity-printer/production/certificates/8274026e-a9af-49ba-b82b-66b5824b65fe.pdf',
     issued: 'May 2019',
   },
   {
@@ -265,8 +263,7 @@ const certifications = [
     title: 'Responsive Web Design',
     description:
       'Developer Certification, representing approximately 300 hours of coursework',
-    url:
-      'https://www.freecodecamp.org/certification/fcc319f679c/responsive-web-design',
+    url: 'https://www.freecodecamp.org/certification/fcc319f679c/responsive-web-design',
     issued: 'Jun 2018',
   },
 
@@ -335,31 +332,40 @@ const colors = [
 
 const projects = [
   {
-    title: 'kitaballahacademy.com',
+    title: 'Kitab Allah Academy Website',
     url: 'https://kitaballahacademy.com/',
-    tools: ['WordPress', 'Freelance'],
+    tools: ['WordPress'],
     icon: 'fa-wordpress',
     year: '2022',
     show: true,
-    description: 'WordPress website for Kitab Allah Academy ',
+    description: 'Website for Kitab Allah Academy ',
   },
   {
-    title: 'RTC Neklawy',
+    title: 'RTC Neklawy Website',
     url: 'https://rtcneklawy.com/',
-    tools: ['WordPress', 'Freelance'],
+    tools: ['WordPress'],
     icon: 'fa-wordpress',
     year: '2020',
     show: true,
-    description: 'WordPress website for RTC Neklawy company',
+    description: 'Website for RTC Neklawy company',
   },
   {
-    title: 'Sahwa Website (under construction)',
+    title: 'Bein Quran Website',
+    url: 'https://beinquran.com/',
+    tools: ['WordPress'],
+    icon: 'fa-wordpress',
+    year: '2020',
+    show: true,
+    description: 'Website for Bein Quran company',
+  },
+  {
+    title: 'Sahwa Website',
     url: 'http://sahwa-candy.com/',
-    tools: ['WordPress', 'Freelance'],
+    tools: ['WordPress', 'woocommerce'],
     icon: 'fa-wordpress',
     year: '2021',
     show: true,
-    description: 'WordPress website for Sahwa company',
+    description: 'Website for Sahwa company',
   },
   {
     title: 'moneyManger',
@@ -373,11 +379,11 @@ const projects = [
   {
     title: 'Az-Translation',
     url: 'https://az-translation.com/',
-    tools: ['WordPress', 'Freelance'],
+    tools: ['WordPress'],
     icon: 'fa-wordpress',
     year: '2017',
     show: false,
-    description: 'WordPress website for Az-Translation company',
+    description: 'Website for Az-Translation company',
   },
   {
     title: 'Youtube Channels',
@@ -392,7 +398,7 @@ const projects = [
     title: 'Portfolio',
     url: 'https://moatazabdalmageed.github.io/',
     icon: 'fa-globe',
-    tools: ['gatsbyjs', 'chakra-ui'],
+    tools: ['gatsbyjs', 'chakra-ui', 'react-icons'],
     year: '2020',
     show: true,
     description: 'My Portfolio',
@@ -405,9 +411,9 @@ const jobs = [
     period: 'Jan 2020 - Present',
     occupation: 'Full-Stack Web Developer',
     responsibilities: [
-      'Develop new user-facing features',
-      'Build reusable code and libraries for future use',
-      'Collaborate with other team members and stakeholders',
+      'Maintain and add new features for wuilt builder',
+      'Maintain and add new features for wuilt store',
+      'Maintain wuilt blog',
     ],
     description: '',
     projects: [
@@ -596,8 +602,9 @@ module.exports = {
   position: 'Full stack Web Developer',
   site_img:
     'https://avatars2.githubusercontent.com/u/17373050?s=460&u=b26d5f5d825283b7b067e10a46add610b512cb26&v=4',
-  description: `I currently work as a full-time Web Developer for Wuilt. I am looking to take on more work and increase my skills as a Web Developer. Also, I'm married and I have 2 sons Hamza and Bilal`,
-  keywords: 'developer,web,code,programming,',
+
+  keywords:
+    'developer,web,code,programming,html,css,js,react,php,mysql,docker,nodejs,mongodb',
   TRACKING_ID: process.env.TRACKING_ID,
   GITHUB_TOKEN: process.env.GITHUB_TOKEN,
   FORMSPREE: 'xgenoded', // create your form from => https://formspree.io
@@ -629,4 +636,5 @@ module.exports = {
   location: 'https://goo.gl/maps/QHh4H4eYJMByuneC8',
   projects,
   jobs,
+  description: `Works as a full-time Web Developer for ${jobs[0].company}. I am looking to take on more work and increase my skills as a Web Developer, I'm married and I have 2 sons Hamza and Bilal`,
 };

@@ -1,6 +1,7 @@
 import {
   Box,
   Button,
+  Grid,
   Heading,
   IconButton,
   Image,
@@ -32,62 +33,84 @@ class About extends Component {
               borderRadius="full"
               boxSize="150px"
               src={avatar}
-              alt="Dan Abramov"
+              alt={`${firstName} ${lastName}`}
             />
           </p>
         </Box>
-        <Box>
-          <p className="position">I am a {position}</p>
-          <p className="lead">{description}</p>
-        </Box>
 
-        <Box>
-          <SkillsIcons />
-        </Box>
-        <Box>
-          <Link to="https://github.com/MoatazAbdAlmageed" target="_blank">
-            <IconButton
-              aria-label="BsGithub"
-              variant="ghost"
-              size="lg"
-              isRound={true}
-              _hover={{ bg: '#0D74FF' }}
-              icon={<BsGithub size="28px" />}
-            />
-          </Link>
-          <Link
-            to="https://www.linkedin.com/in/moatazabdelmageed"
-            target="_blank"
-          >
-            <IconButton
-              aria-label="BsLinkedin"
-              variant="ghost"
-              size="lg"
-              isRound={true}
-              _hover={{ bg: '#0D74FF' }}
-              icon={<BsLinkedin size="28px" />}
-            />
-          </Link>
-          <Link to="https://www.behance.net/moatazmohammady" target="_blank">
-            <IconButton
-              aria-label="BsBehance"
-              variant="ghost"
-              size="lg"
-              isRound={true}
-              _hover={{ bg: '#0D74FF' }}
-              icon={<BsBehance size="28px" />}
-            />
-          </Link>
-        </Box>
+        <Grid
+          gap={2}
+          templateColumns={{
+            base: 'repeat(1, 1fr)',
+            md: 'repeat(1, 1fr)',
+            lg: 'repeat(2, 1fr)',
+          }}
+        >
+          <Box>
+            <Box>
+              <p className="position">
+                I am a {position} , {description}{' '}
+              </p>
+            </Box>
 
-        <Box>
-          <a href={resume} download>
-            <Button colorScheme="green" size="lg">
-              <i className="fa fa-file-pdf-o" /> <span>&nbsp;</span> Download
-              Resume
-            </Button>
-          </a>
-        </Box>
+            <Box mt={5}>
+              <Link to="https://github.com/MoatazAbdAlmageed" target="_blank">
+                <IconButton
+                  aria-label="BsGithub"
+                  variant="ghost"
+                  size="lg"
+                  isRound={true}
+                  _hover={{ bg: 'green.300' }}
+                  icon={<BsGithub size="28px" />}
+                />
+              </Link>
+              <Link
+                to="https://www.linkedin.com/in/moatazabdelmageed"
+                target="_blank"
+              >
+                <IconButton
+                  aria-label="BsLinkedin"
+                  variant="ghost"
+                  size="lg"
+                  isRound={true}
+                  _hover={{ bg: 'green.300' }}
+                  icon={<BsLinkedin size="28px" />}
+                />
+              </Link>
+              <Link
+                to="https://www.behance.net/moatazmohammady"
+                target="_blank"
+              >
+                <IconButton
+                  aria-label="BsBehance"
+                  variant="ghost"
+                  size="lg"
+                  isRound={true}
+                  _hover={{ bg: 'green.300' }}
+                  icon={<BsBehance size="28px" />}
+                />
+              </Link>
+            </Box>
+
+            <Box mt={5}>
+              <a href={resume} download>
+                <Button
+                  bg="green.300"
+                  color="white"
+                  size="lg"
+                  _hover={{ bg: 'green.400' }}
+                >
+                  <i className="fa fa-file-pdf-o" /> <span>&nbsp;</span>{' '}
+                  Download Resume
+                </Button>
+              </a>
+            </Box>
+          </Box>
+
+          <Box>
+            <SkillsIcons />
+          </Box>
+        </Grid>
       </Stack>
     );
   }

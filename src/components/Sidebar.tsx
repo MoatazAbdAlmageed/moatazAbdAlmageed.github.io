@@ -14,14 +14,10 @@ import {
 } from '@chakra-ui/react';
 import React, { ReactNode, ReactText } from 'react';
 import { IconType } from 'react-icons';
-import {
-  FiCompass,
-  FiHome,
-  FiMenu,
-  FiSettings,
-  FiStar,
-  FiTrendingUp,
-} from 'react-icons/fi';
+import { FaRegEnvelope } from 'react-icons/fa';
+import { FiMenu, FiTerminal, FiUser } from 'react-icons/fi';
+import { GrCertificate } from 'react-icons/gr';
+import { TiStarburst } from 'react-icons/ti';
 
 interface LinkItemProps {
   name: string;
@@ -29,11 +25,12 @@ interface LinkItemProps {
   icon: IconType;
 }
 const LinkItems: Array<LinkItemProps> = [
-  { name: 'About', icon: FiHome, url: '#about' },
-  { name: 'Experience', icon: FiTrendingUp, url: '#experience' },
-  { name: 'Projects', icon: FiCompass, url: '#projects' },
-  { name: 'Awards', icon: FiStar, url: '#awards' },
-  { name: 'Contact', icon: FiSettings, url: '#contact' },
+  { name: 'About', icon: FiUser, url: '#about' },
+  { name: 'Experience', icon: TiStarburst, url: '#experience' },
+  { name: 'Projects', icon: FiTerminal, url: '#projects' },
+  { name: 'Testimonials', icon: FaRegEnvelope, url: '#testimonials' },
+  { name: 'Awards', icon: GrCertificate, url: '#awards' },
+  { name: 'Contact', icon: FaRegEnvelope, url: '#contact' },
 ];
 
 export default function SimpleSidebar({ children }: { children: ReactNode }) {
@@ -113,7 +110,7 @@ const NavItem = ({ url, icon, children, ...rest }: NavItemProps) => {
         role="group"
         cursor="pointer"
         _hover={{
-          bg: 'cyan.400',
+          bg: 'green.300',
           color: 'white',
         }}
         {...rest}

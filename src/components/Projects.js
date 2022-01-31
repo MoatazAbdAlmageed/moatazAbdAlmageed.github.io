@@ -1,14 +1,12 @@
-import { Grid, Heading, Stack } from '@chakra-ui/react';
+import { Grid, Heading, Icon, Stack } from '@chakra-ui/react';
 import React, { Component } from 'react';
+import { FiTerminal } from 'react-icons/fi';
 import config from '../../config';
 import Project from './Project';
 
 class Projects extends Component {
   render() {
-    const { socialLinks, projects } = config;
-    const { url, name, icon } = socialLinks.find(
-      ({ name }) => name === 'Behance'
-    );
+    const { projects } = config;
     return (
       <Stack
         className="resume-section p-3  d-flex justify-content-center"
@@ -16,44 +14,34 @@ class Projects extends Component {
         mb={10}
         mt={10}
       >
-        <div className="w-100">
-          <Heading as="h2" isTruncated pt={4} pb={4}>
-            Projects
-          </Heading>
-
-          <Grid
-            gap={2}
-            templateColumns={{
-              base: 'repeat(1, 1fr)',
-              md: 'repeat(1, 1fr)',
-              lg: 'repeat(3, 1fr)',
-              xl: 'repeat(4, 1fr)',
+        <Heading as="h2" isTruncated pt={4} pb={4}>
+          <Icon
+            mr="4"
+            fontSize="16"
+            _groupHover={{
+              color: 'white',
             }}
-          >
-            {projects
-              .filter(({ show }) => show == true)
-              .sort((a, b) => b.year - a.year)
-              .map((project) => (
-                <Project key={project.url} project={project} />
-              ))}
-          </Grid>
+            as={FiTerminal}
+          />{' '}
+          Projects
+        </Heading>
 
-          <div>
-            <p>
-              For more projects kindly check <span>&nbsp;</span>
-              <i className={`fa ${icon}`} />{' '}
-              <a
-                key={url}
-                href={url}
-                title={name}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span>&nbsp;</span> {url}{' '}
-              </a>{' '}
-            </p>
-          </div>
-        </div>
+        <Grid
+          gap={2}
+          templateColumns={{
+            base: 'repeat(1, 1fr)',
+            md: 'repeat(1, 1fr)',
+            lg: 'repeat(3, 1fr)',
+            xl: 'repeat(4, 1fr)',
+          }}
+        >
+          {projects
+            .filter(({ show }) => show == true)
+            .sort((a, b) => b.year - a.year)
+            .map((project) => (
+              <Project key={project.url} project={project} />
+            ))}
+        </Grid>
       </Stack>
     );
   }

@@ -1,5 +1,6 @@
-import { Heading, Stack } from '@chakra-ui/react';
+import { Heading, Icon, Stack } from '@chakra-ui/react';
 import React, { Component } from 'react';
+import { GrCertificate } from 'react-icons/gr';
 import config from '../../config';
 
 class Awards extends Component {
@@ -14,7 +15,15 @@ class Awards extends Component {
       >
         <div className="w-100">
           <Heading as="h2" isTruncated pt={4} pb={4}>
-            <i className="fa fa-trophy" /> Awards &amp; Certifications
+            <Icon
+              mr="4"
+              fontSize="16"
+              _groupHover={{
+                color: 'white',
+              }}
+              as={GrCertificate}
+            />{' '}
+            Awards &amp; Certifications
           </Heading>
           <p>
             All my life I have been driven by my strong belief that education is

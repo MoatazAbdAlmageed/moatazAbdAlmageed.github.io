@@ -7,6 +7,7 @@ import Experience from '../components/Experience';
 import Layout from '../components/Layout';
 import Projects from '../components/Projects';
 import Sidebar from '../components/Sidebar';
+import TestimonialContent from '../components/Testimonials';
 const IndexPage = () => {
   return (
     <Layout>
@@ -14,10 +15,11 @@ const IndexPage = () => {
         <Box>
           <Sidebar />
         </Box>
-        <Box p={2}>
+        <Box p={5}>
           <About />
           <Experience />
           <Projects />
+          <TestimonialContent />
           <Awards />
           <Contact />
         </Box>
