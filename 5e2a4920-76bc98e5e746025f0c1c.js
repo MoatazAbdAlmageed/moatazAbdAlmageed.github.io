@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[152],{3750:function(t,n,e){e.d(n,{cDN:function(){return o}});var r=e(1046);function o(t){return(0,r.w_)({tag:"svg",attr:{viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:"2",strokeLinecap:"round",strokeLinejoin:"round"},child:[{tag:"polyline",attr:{points:"4 17 10 11 4 5"}},{tag:"line",attr:{x1:"12",y1:"19",x2:"20",y2:"19"}}]})(t)}}}]);
+//# sourceMappingURL=5e2a4920-76bc98e5e746025f0c1c.js.map
