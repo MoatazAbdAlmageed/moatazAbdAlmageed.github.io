@@ -63,31 +63,19 @@ export default function contact() {
                   </Text>
                   <Box>
                     <VStack spacing={3} alignItems="flex-start">
-                      <Button
-                        size="md"
-                        leftIcon={<MdPhone color="orange" size="20px" />}
-                      >
-                        {phone}
-                      </Button>
-                      <Button
-                        size="md"
-                        leftIcon={<MdPhone color="orange" size="20px" />}
-                      >
-                        {phone2}
-                      </Button>
-                      <Button
-                        size="md"
-                        leftIcon={<MdPhone color="orange" size="20px" />}
-                      >
-                        {whatsapp}
-                      </Button>
+                      <a href={phone} target="_blank" rel="noreferrer">
+                        <MdPhone color="orange" size="20px" /> {phone}
+                      </a>
+                      <a href={phone2} target="_blank" rel="noreferrer">
+                        <MdPhone color="orange" size="20px" /> {phone2}
+                      </a>
 
-                      <Button
-                        size="md"
-                        leftIcon={<MdEmail color="orange" size="20px" />}
-                      >
-                        {email}
-                      </Button>
+                      <a href={whatsapp} target="_blank" rel="noreferrer">
+                        <MdPhone color="orange" size="20px" /> {whatsapp}
+                      </a>
+                      <a href={email} target="_blank" rel="noreferrer">
+                        <MdEmail color="orange" size="20px" /> {email}
+                      </a>
                     </VStack>
                   </Box>
                   <HStack mt={{ lg: 10, md: 10 }} alignItems="flex-start">
