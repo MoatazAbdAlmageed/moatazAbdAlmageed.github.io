@@ -15,3 +15,5 @@ jobs:
           access-token: ${{ secrets.ACCESS_TOKEN }}
           git-config-name: DeployBot
           git-config-email: moataz.mohammady@gmail.com
+          deploy-branch: gh-pages
+          gatsby-args: --prefix-paths
