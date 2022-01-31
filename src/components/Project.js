@@ -1,4 +1,4 @@
-import { Badge, Box, Heading, Link, Stack } from '@chakra-ui/react';
+import { Container , Badge, Box, Heading, Link, Stack } from '@chakra-ui/react';
 import PropTypes from 'prop-types';
 import React from 'react';
 
@@ -10,7 +10,7 @@ export default function Project({ project }) {
   // eslint-disable-next-line react/prop-types
   const { title, url, tools, year, description } = project;
   return (
-    <Box
+    <Container
       maxW="sm"
       borderWidth="1px"
       borderRadius="lg"
@@ -54,6 +54,6 @@ export default function Project({ project }) {
           ))}
         </Stack>
       </Box>
-    </Box>
+    </Container>
   );
 }

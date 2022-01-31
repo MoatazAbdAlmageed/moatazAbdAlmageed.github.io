@@ -1,7 +1,6 @@
 import {
   Box,
   Button,
-  Container,
   Flex,
   FormControl,
   FormLabel,
@@ -12,6 +11,7 @@ import {
   InputGroup,
   InputLeftElement,
   Link,
+  Stack,
   Text,
   Textarea,
   VStack,
@@ -47,14 +47,7 @@ export default function contact() {
   };
 
   return (
-    <Container
-      id="contact"
-      maxW="full"
-      mt={0}
-      overflow="hidden"
-      borderRadius="lg"
-      bg="#F7FAFC"
-    >
+    <Stack id="contact" borderRadius="lg" bg="#F7FAFC">
       <Flex>
         <Box>
           <Box p={4}>
@@ -97,12 +90,7 @@ export default function contact() {
                       </Button>
                     </VStack>
                   </Box>
-                  <HStack
-                    mt={{ lg: 10, md: 10 }}
-                    spacing={5}
-                    px={5}
-                    alignItems="flex-start"
-                  >
+                  <HStack mt={{ lg: 10, md: 10 }} alignItems="flex-start">
                     <Box mt={5}>
                       <Link
                         to="https://github.com/MoatazAbdAlmageed"
@@ -150,7 +138,7 @@ export default function contact() {
               <WrapItem>
                 <Box bg="white" borderRadius="lg">
                   <Box m={8} color="#0B0E3F">
-                    <VStack spacing={5}>
+                    <VStack>
                       <form
                         onSubmit={submitForm}
                         action={`https://formspree.io/${FORMSPREE}`}
@@ -220,6 +208,6 @@ export default function contact() {
           </Box>
         </Box>
       </Flex>
-    </Container>
+    </Stack>
   );
 }

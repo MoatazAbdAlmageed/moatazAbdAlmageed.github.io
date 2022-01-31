@@ -1,4 +1,4 @@
-import { Container, Grid, Heading, Icon } from '@chakra-ui/react';
+import { Grid, Heading, Icon, Stack } from '@chakra-ui/react';
 import React, { Component } from 'react';
 import { FiTerminal } from 'react-icons/fi';
 import config from '../../config';
@@ -8,13 +8,7 @@ class Projects extends Component {
   render() {
     const { projects } = config;
     return (
-      <Container
-        className="resume-section p-3  d-flex justify-content-center"
-        id="projects"
-        mb={10}
-        mt={10}
-        bg="#F7FAFC"
-      >
+      <Stack id="projects" mb={10} mt={10} bg="#F7FAFC" s borderRadius="lg">
         <Heading as="h2" isTruncated pt={4} pb={4}>
           <Icon
             mr="4"
@@ -43,7 +37,7 @@ class Projects extends Component {
               <Project key={project.url} project={project} />
             ))}
         </Grid>
-      </Container>
+      </Stack>
     );
   }
 }

@@ -20,6 +20,7 @@ class Experience extends Component {
         bg="#F7FAFC"
         className="resume-section  d-flex justify-content-center"
         mb={10}
+        borderRadius="lg"
       >
         <Heading as="h2" isTruncated pt={4} pb={4}>
           <Icon

@@ -20,7 +20,7 @@ class About extends Component {
     return (
       <Stack id="about" mb={10} textAlign="center" align="center">
         <Box>
-          <Text className="lead">Hello!, my name is</Text>
+          <Text className="lead">Hello!, {`I'm`}</Text>
           <Heading>
             {firstName} {lastName}
           </Heading>

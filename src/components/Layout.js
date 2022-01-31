@@ -1,9 +1,8 @@
-import { Flex } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
 import { graphql, StaticQuery } from 'gatsby';
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import Helmet from 'react-helmet';
-import '../assets/sass/resume.scss';
 
 class Layout extends Component {
   render() {
@@ -88,19 +87,9 @@ class Layout extends Component {
                 content="2o5ux7SuhqzyW9y9mjWagy7qW-4-a9eFayeKVW2tUg8"
               />
             </Helmet>
-            <Flex
-              as="nav"
-              align="center"
-              justify="space-between"
-              wrap="wrap"
-              w="100%"
-              mb={8}
-              p={8}
-              pt={0}
-              bg={['primary.500', 'primary.500', 'transparent', 'transparent']}
-            >
+            <Box p={5} pt={0}>
               {children}
-            </Flex>
+            </Box>
           </>
         )}
       />
