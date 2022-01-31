@@ -235,13 +235,14 @@ const NAV_ITEMS: Array<NavItem> = [
     href: '#experience',
   },
   {
-    label: 'Projects',
-    href: '#projects',
-  },
-  {
     label: 'Testimonials',
     href: '#testimonials',
   },
+  {
+    label: 'Projects',
+    href: '#projects',
+  },
+
   {
     label: 'Awards',
     href: '#awards',

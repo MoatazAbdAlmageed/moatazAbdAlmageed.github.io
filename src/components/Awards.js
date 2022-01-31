@@ -1,4 +1,4 @@
-import { Heading, Icon, Stack } from '@chakra-ui/react';
+import { Heading, Icon, Stack, Text } from '@chakra-ui/react';
 import React, { Component } from 'react';
 import { GrCertificate } from 'react-icons/gr';
 import config from '../../config';
@@ -35,7 +35,9 @@ class Awards extends Component {
               return (
                 <li key={Math.random()} className="row">
                   <div className="col-10">
-                    <i className="fa-li fa fa-star text-warning" />
+                    <Text color={'orange'}>
+                      <i className="fa-li fa fa-star text-warning" />
+                    </Text>
                     <a href={url} target="_blank" rel="noopener noreferrer">
                       <b> {title}</b>
                     </a>{' '}

@@ -72,26 +72,26 @@ export default function contact() {
                     <VStack spacing={3} alignItems="flex-start">
                       <Button
                         size="md"
-                        leftIcon={<MdPhone color="blue.400" size="20px" />}
+                        leftIcon={<MdPhone color="orange" size="20px" />}
                       >
                         {phone}
                       </Button>
                       <Button
                         size="md"
-                        leftIcon={<MdPhone color="blue.400" size="20px" />}
+                        leftIcon={<MdPhone color="orange" size="20px" />}
                       >
                         {phone2}
                       </Button>
                       <Button
                         size="md"
-                        leftIcon={<MdPhone color="blue.400" size="20px" />}
+                        leftIcon={<MdPhone color="orange" size="20px" />}
                       >
                         {whatsapp}
                       </Button>
 
                       <Button
                         size="md"
-                        leftIcon={<MdEmail color="blue.400" size="20px" />}
+                        leftIcon={<MdEmail color="orange" size="20px" />}
                       >
                         {email}
                       </Button>
@@ -113,7 +113,7 @@ export default function contact() {
                           variant="ghost"
                           size="lg"
                           isRound={true}
-                          _hover={{ bg: 'blue.400' }}
+                          _hover={{ bg: 'orange' }}
                           icon={<BsGithub size="28px" />}
                         />
                       </Link>
@@ -126,7 +126,7 @@ export default function contact() {
                           variant="ghost"
                           size="lg"
                           isRound={true}
-                          _hover={{ bg: 'blue.400' }}
+                          _hover={{ bg: 'orange' }}
                           icon={<BsLinkedin size="28px" />}
                         />
                       </Link>
@@ -139,7 +139,7 @@ export default function contact() {
                           variant="ghost"
                           size="lg"
                           isRound={true}
-                          _hover={{ bg: 'blue.400' }}
+                          _hover={{ bg: 'orange' }}
                           icon={<BsBehance size="28px" />}
                         />
                       </Link>
@@ -193,7 +193,7 @@ export default function contact() {
                           <button>
                             <Button
                               variant="solid"
-                              bg="#0D74FF"
+                              bg="orange"
                               color="white"
                               _hover={{}}
                             >

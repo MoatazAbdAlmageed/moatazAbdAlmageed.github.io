@@ -20,8 +20,8 @@ const IndexPage = () => {
       <Box mt={2}>
         <About />
         <Experience />
-        <Projects />
         <TestimonialContent />
+        <Projects />
         <Awards />
         <Contact />
       </Box>

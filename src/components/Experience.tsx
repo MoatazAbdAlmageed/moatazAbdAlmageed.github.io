@@ -1,4 +1,12 @@
-import { Box, Grid, Heading, Icon, Spacer, Stack } from '@chakra-ui/react';
+import {
+  Box,
+  Grid,
+  Heading,
+  Icon,
+  Link,
+  Spacer,
+  Stack,
+} from '@chakra-ui/react';
 import React, { Component } from 'react';
 import { TiStarburst } from 'react-icons/ti';
 import config from '../../config';
@@ -55,12 +63,10 @@ class Experience extends Component {
                 _hover={{ bg: 'gray.100' }}
                 className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
               >
-                <Heading size="md">
-                  {occupation}{' '}
-                  <a href={url} target="_blank" rel="noopener noreferrer">
-                    @{company}{' '}
-                  </a>
+                <Heading size="md" color="orange">
+                  {occupation}
                 </Heading>
+                <Link to={url}> @{company} </Link>
                 <h4> {period}</h4>
 
                 <Stack pt={5}>
