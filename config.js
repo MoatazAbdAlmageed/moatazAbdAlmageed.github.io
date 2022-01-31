@@ -583,7 +583,26 @@ const jobs = [
       'Generating WordPress themes and plugins.',
     ],
     description: '',
-    projects: [],
+    projects: [
+      {
+        name: 'contraplanii',
+        url: 'http://www.contraplanii.com',
+        icon: 'fa-globe',
+        tools: ['wordpress'],
+        year: '2015',
+        show: true,
+        description: 'contraplanii website',
+      },
+      {
+        name: 'https://fiestaegypt.com/',
+        url: 'http://www.fiestaegypt.com',
+        icon: 'fa-globe',
+        tools: ['wordpress'],
+        year: '2015',
+        show: true,
+        description: 'fiestaegypt website',
+      },
+    ],
   },
   /* ... */
 ];
