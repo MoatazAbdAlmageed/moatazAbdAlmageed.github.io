@@ -650,7 +650,7 @@ module.exports = {
   socialLinks,
   certifications,
   email: 'moataz.mohammady@gmail.com',
-  whatsapp: 'https://api.whatsapp.com/send?phone/201150064746',
+  whatsapp: 'https://wa.me/201150064746',
   phone: '+201150064746',
   phone2: '+201067869404',
   address: 'Mansouria,Giza,Egypt',

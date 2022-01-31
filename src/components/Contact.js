@@ -1,3 +1,4 @@
+import { Icon } from '@chakra-ui/icons';
 import {
   Box,
   Button,
@@ -20,6 +21,7 @@ import {
 } from '@chakra-ui/react';
 import React, { useState } from 'react';
 import { BsBehance, BsGithub, BsLinkedin, BsPerson } from 'react-icons/bs';
+import { GrContactInfo } from 'react-icons/gr';
 import { MdEmail, MdOutlineEmail, MdPhone } from 'react-icons/md';
 import config from '../../config';
 
@@ -54,7 +56,17 @@ export default function contact() {
             <Wrap spacing={{ base: 20, sm: 3, md: 5, lg: 20 }}>
               <WrapItem>
                 <Box x>
-                  <Heading>Contact</Heading>
+                  <Heading>
+                    <Icon
+                      mr="4"
+                      fontSize="16"
+                      _groupHover={{
+                        color: 'white',
+                      }}
+                      as={GrContactInfo}
+                    />{' '}
+                    Contact
+                  </Heading>
                   <Text mt={{ sm: 3, md: 3, lg: 5 }} color="#333" pb={5}>
                     Are you working on something great? I would love to help
                     make it happen! <br />
