@@ -37,10 +37,10 @@ class About extends Component {
         </Box>
 
         <Box>
-          <p className="position">
+          <Text>
             I am a {position} with +{new Date().getFullYear() - 2016} years of
             experience, {description}{' '}
-          </p>
+          </Text>
         </Box>
 
         <Box mt={5}>
