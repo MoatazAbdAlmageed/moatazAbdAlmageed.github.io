@@ -30,7 +30,6 @@ class Projects extends Component {
           gap={2}
           templateColumns={{
             base: 'repeat(1, 1fr)',
-            md: 'repeat(1, 1fr)',
             lg: 'repeat(3, 1fr)',
             xl: 'repeat(4, 1fr)',
           }}
