@@ -4,7 +4,6 @@ import {
   Heading,
   IconButton,
   Image,
-  Stack,
   Text,
 } from '@chakra-ui/react';
 import { Link } from 'gatsby';
@@ -13,35 +12,32 @@ import { BsBehance, BsGithub, BsLinkedin } from 'react-icons/bs';
 import config from '../../config';
 import resume from '../assets/files/moataz_mohammady_resume.pdf';
 import avatar from '../assets/img/avatar.jpg';
+import Wrapper from './Wrapper';
 
 class About extends Component {
   render() {
-    const { firstName, lastName, position, description } = config;
+    const { firstName, lastName, position } = config;
     return (
-      <Stack id="about" mb={10} textAlign="center" align="center">
-        <Box>
-          <Text className="lead">Hello!, {`I'm`}</Text>
-          <Heading>
-            {firstName} {lastName}
-          </Heading>
-        </Box>
-        <Box>
-          <p className="d-lg-none text-center">
-            <Image
-              borderRadius="full"
-              boxSize="150px"
-              src={avatar}
-              alt={`${firstName} ${lastName}`}
-            />
-          </p>
-        </Box>
+      <Wrapper id="about" align={'center'}>
+        <Text>Hello!, {`I'm`}</Text>
+        <Heading>
+          {firstName} {lastName}
+        </Heading>
 
-        <Box>
-          <Text>
-            I am a {position} with +{new Date().getFullYear() - 2016} years of
-            experience, {description}{' '}
-          </Text>
-        </Box>
+        <Image
+          borderRadius="full"
+          boxSize="150px"
+          src={avatar}
+          alt={`${firstName} ${lastName}`}
+        />
+
+        <Text align="center">
+          I am a {position} with +{new Date().getFullYear() - 2016} years of
+          experience, Works as a full-time Web Developer for Wuilt.
+          <br /> I am looking to take on more work and increase my skills as a
+          Web Developer.
+          <br /> {`I'm`} married and I have 2 boys Hamza and Bilal
+        </Text>
 
         <Box mt={5}>
           <Link to="https://github.com/MoatazAbdAlmageed" target="_blank">
@@ -92,7 +88,7 @@ class About extends Component {
             </Button>
           </a>
         </Box>
-      </Stack>
+      </Wrapper>
     );
   }
 }

@@ -1,11 +1,11 @@
-import { Box } from '@chakra-ui/react';
 import React from 'react';
 import About from '../components/About';
 import Awards from '../components/Awards';
 import Contact from '../components/Contact';
 import Experience from '../components/Experience';
+import Footer from '../components/Footer';
+import Header from '../components/Header';
 import Layout from '../components/Layout';
-import Navigation from '../components/Navigation';
 import Projects from '../components/Projects';
 import TestimonialContent from '../components/Testimonials';
 // TODO:add sendstrap
@@ -16,15 +16,16 @@ import TestimonialContent from '../components/Testimonials';
 const IndexPage = () => {
   return (
     <Layout>
-      <Navigation />
-      <Box mt={2}>
-        <About />
-        <Experience />
-        <TestimonialContent />
-        <Projects />
-        <Awards />
-        <Contact />
-      </Box>
+      <Header />
+
+      <About />
+      <Experience />
+      <TestimonialContent />
+      <Projects />
+      <Awards />
+      <Contact />
+
+      <Footer />
     </Layout>
   );
 };

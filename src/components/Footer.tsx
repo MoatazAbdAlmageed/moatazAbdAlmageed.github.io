@@ -42,7 +42,7 @@ const SocialButton = ({
   );
 };
 
-export default function SmallCenteredFooter() {
+export default function Footer() {
   return (
     <Box
       bg={useColorModeValue('gray.50', 'gray.900')}
@@ -62,7 +62,9 @@ export default function SmallCenteredFooter() {
           justify={{ base: 'center', md: 'space-between' }}
           align={{ base: 'center', md: 'center' }}
         >
-          <Text>© 2020 Chakra Templates. All rights reserved</Text>
+          <Text>
+            © {new Date().getFullYear()} Chakra Templates. All rights reserved
+          </Text>
           <Stack direction={'row'} spacing={6}>
             <SocialButton
               label={'github'}

@@ -1,45 +1,38 @@
-import {
-  Box,
-  Grid,
-  Heading,
-  Icon,
-  Link,
-  Spacer,
-  Stack,
-} from '@chakra-ui/react';
+import { Icon } from '@chakra-ui/icons';
+import { Box, Grid, Heading, Link, Spacer, Stack } from '@chakra-ui/react';
 import React, { Component } from 'react';
 import { TiStarburst } from 'react-icons/ti';
 import config from '../../config';
+import Wrapper from './Wrapper';
+
 class Experience extends Component {
   render() {
     const { jobs } = config;
 
     return (
-      <Stack
-        id="experience"
-        bg="#F7FAFC"
-        className="resume-section  d-flex justify-content-center"
-        mb={10}
-        borderRadius="lg"
-      >
-        <Heading as="h2" isTruncated pt={4} pb={4}>
-          <Icon
-            mr="4"
-            fontSize="16"
-            _groupHover={{
-              color: 'white',
-            }}
-            as={TiStarburst}
-          />{' '}
-          Experience
-        </Heading>
+      <Wrapper id="experience" bg="#F7FAFC">
+        <Stack spacing={0} align={'center'}>
+          <Heading>
+            {' '}
+            <Icon
+              mr="4"
+              fontSize="16"
+              _groupHover={{
+                color: 'white',
+              }}
+              as={TiStarburst}
+            />{' '}
+            Experience
+          </Heading>
+        </Stack>
+
         <Grid
           gap={2}
           templateColumns={{
             base: 'repeat(1, 1fr)',
             md: 'repeat(1, 1fr)',
             lg: 'repeat(3, 1fr)',
-            xl: 'repeat(4, 1fr)',
+            xl: 'repeat(5, 1fr)',
           }}
         >
           {jobs.map((job) => {
@@ -117,7 +110,7 @@ class Experience extends Component {
             );
           })}
         </Grid>
-      </Stack>
+      </Wrapper>
     );
   }
 }

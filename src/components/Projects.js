@@ -3,23 +3,27 @@ import React, { Component } from 'react';
 import { FiTerminal } from 'react-icons/fi';
 import config from '../../config';
 import Project from './Project';
+import Wrapper from './Wrapper';
 
 class Projects extends Component {
   render() {
     const { projects } = config;
     return (
-      <Stack id="projects" mb={10} mt={10} bg="#F7FAFC" s borderRadius="lg">
-        <Heading as="h2" isTruncated pt={4} pb={4}>
-          <Icon
-            mr="4"
-            fontSize="16"
-            _groupHover={{
-              color: 'white',
-            }}
-            as={FiTerminal}
-          />{' '}
-          Projects
-        </Heading>
+      <Wrapper id="projects" bg="#F7FAFC">
+        <Stack spacing={0} align={'center'}>
+          <Heading>
+            {' '}
+            <Icon
+              mr="4"
+              fontSize="16"
+              _groupHover={{
+                color: 'white',
+              }}
+              as={FiTerminal}
+            />{' '}
+            Projects
+          </Heading>
+        </Stack>
 
         <Grid
           gap={2}
@@ -37,7 +41,7 @@ class Projects extends Component {
               <Project key={project.url} project={project} />
             ))}
         </Grid>
-      </Stack>
+      </Wrapper>
     );
   }
 }

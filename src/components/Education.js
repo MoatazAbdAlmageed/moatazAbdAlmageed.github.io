@@ -1,16 +1,13 @@
 import React, { Component } from 'react';
 import config from '../../config';
+import Wrapper from './Wrapper';
 
 class Education extends Component {
   render() {
     const { education } = config;
 
     return (
-      <section
-        className="resume-section p-3  d-flex align-items-center"
-        id="education"
-        mb={10}
-      >
+      <Wrapper id="education">
         <div className="w-100">
           <h2 className="mb-5">
             <i className="fa fa-graduation-cap" /> Education
@@ -38,7 +35,7 @@ class Education extends Component {
             );
           })}
         </div>
-      </section>
+      </Wrapper>
     );
   }
 }

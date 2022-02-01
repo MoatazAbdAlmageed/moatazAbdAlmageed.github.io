@@ -235,21 +235,7 @@ const certifications = [
     url: 'https://graduation-api.udacity.com/api/certificate/A57FXWSR/download',
     issued: 'Aug 2020',
   },
-  {
-    place: 'Udacity',
-    title: 'Front End Development Track',
-    description: 'One Million Arab Coders',
-    url: 'https://s3-us-west-2.amazonaws.com/udacity-printer/production/certificates/8274026e-a9af-49ba-b82b-66b5824b65fe.pdf',
-    issued: 'May 2019',
-  },
-  {
-    place: 'futurelearn.com',
-    title: "BASIC ENGLISH 1: ELEMENTARY KING'S COLLEGE LONDON",
-    description:
-      'This course helped you develop your use of English in a range of everyday situations and built your confidence by improving your listening skills. You’ve heard people talking in a number of different situations and have had an opportunity to review the language through a series of quizzes.',
-    url: 'https://www.futurelearn.com/certificates/tl15gwi',
-    issued: 'Dec 2018',
-  },
+
   {
     place: 'futurelearn.com',
     title: "BASIC ENGLISH 2: PRE-INTERMEDIATE KING'S COLLEGE LONDON",
@@ -258,6 +244,24 @@ const certifications = [
     url: 'https://www.futurelearn.com/certificates/d829clk',
     issued: 'Jan 2020',
   },
+
+  {
+    place: 'Udacity',
+    title: 'Front End Development Track',
+    description: 'One Million Arab Coders',
+    url: 'https://s3-us-west-2.amazonaws.com/udacity-printer/production/certificates/8274026e-a9af-49ba-b82b-66b5824b65fe.pdf',
+    issued: 'May 2019',
+  },
+
+  {
+    place: 'futurelearn.com',
+    title: "BASIC ENGLISH 1: ELEMENTARY KING'S COLLEGE LONDON",
+    description:
+      'This course helped you develop your use of English in a range of everyday situations and built your confidence by improving your listening skills. You’ve heard people talking in a number of different situations and have had an opportunity to review the language through a series of quizzes.',
+    url: 'https://www.futurelearn.com/certificates/tl15gwi',
+    issued: 'Dec 2018',
+  },
+
   {
     place: 'Freecodecamp',
     title: 'Responsive Web Design',

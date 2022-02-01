@@ -15,12 +15,12 @@ class Skills extends Component {
             <i className="fa fa-code" /> Skills
           </h2>
           {false &&
-            skills.map(type => {
+            skills.map((type) => {
               return (
                 <div key={Math.random()} className="items">
                   <h4>{type.title}</h4>
                   <ul className="list-inline dev-icons">
-                    {type.skills.map(skill => (
+                    {type.skills.map((skill) => (
                       <li key={Math.random()}>
                         <i title={skill.title} className="fa fa-square-o" />{' '}
                         <a

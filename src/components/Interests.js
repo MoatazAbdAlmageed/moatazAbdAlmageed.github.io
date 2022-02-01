@@ -1,21 +1,19 @@
 import React, { Component } from 'react';
 import config from '../../config';
+import Wrapper from './Wrapper';
 
 class Interests extends Component {
   render() {
     const { interests, volunteerActivities } = config;
 
     return (
-      <section
-        className="resume-section p-3  d-flex align-items-center"
-        id="interests"
-      >
+      <Wrapper id="interests">
         <div className="w-100">
           <h2>
             <i className="fa fa-heart" /> Interests
           </h2>
           <ul className="mb-5">
-            {interests.map(interest => {
+            {interests.map((interest) => {
               const { url, title, sites } = interest;
               return (
                 <li key={Math.random()}>
@@ -29,7 +27,7 @@ class Interests extends Component {
 
                   {sites && (
                     <ul>
-                      {sites.map(site => {
+                      {sites.map((site) => {
                         return (
                           <li key={Math.random()}>
                             <a
@@ -53,7 +51,7 @@ class Interests extends Component {
             <i className="fa fa-smile" /> Volunteering
           </h2>
           <ul>
-            {volunteerActivities.map(activity => {
+            {volunteerActivities.map((activity) => {
               return (
                 <li key={Math.random()}>
                   <a
@@ -68,7 +66,7 @@ class Interests extends Component {
             })}
           </ul>
         </div>
-      </section>
+      </Wrapper>
     );
   }
 }
