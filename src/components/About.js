@@ -34,13 +34,14 @@ class About extends Component {
 
         <Text align="center">
           I am a {position} with +{new Date().getFullYear() - 2016} years of
-          experience, Works as a full-time Web Developer for Wuilt.
-          <br /> I am looking to take on more work and increase my skills as a
-          Web Developer.
-          <br /> {`I'm`} married and I have 2 boys Hamza and Bilal
+          experience. I work for Wuilt.
+          <br /> I am looking forward to taking on more work and increase my
+          skills as a Web Developer.
+          <br /> {`I'm`} married and I have 2 sons; Hamza and Bilal
         </Text>
-
-        <SkillsIcons />
+        <Box width="50%">
+          <SkillsIcons />
+        </Box>
         <Box mt={5}>
           <Link to="https://github.com/MoatazAbdAlmageed" target="_blank">
             <IconButton
