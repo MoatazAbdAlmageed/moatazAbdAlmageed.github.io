@@ -87,9 +87,7 @@ class Layout extends Component {
                 content="2o5ux7SuhqzyW9y9mjWagy7qW-4-a9eFayeKVW2tUg8"
               />
             </Helmet>
-            <Box p={2} pt={0}>
-              {children}
-            </Box>
+            <Box>{children}</Box>
           </>
         )}
       />

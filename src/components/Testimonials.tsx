@@ -102,7 +102,7 @@ export default function WithSpeechBubbles() {
   return (
     <Wrapper id="testimonials">
       <Stack spacing={0} align={'center'}>
-        <Heading>Our Clients Speak</Heading>
+        <Heading>Clients Speak</Heading>
         <Text>I have been working with clients around the world</Text>
       </Stack>
       <Stack
