@@ -1,4 +1,4 @@
-import { Heading, Icon, List, ListItem, Stack, Text } from '@chakra-ui/react';
+import { Box, Grid, Heading, Icon, Stack, Text } from '@chakra-ui/react';
 import { Link } from 'gatsby';
 import React, { Component } from 'react';
 import { GrCertificate } from 'react-icons/gr';
@@ -30,30 +30,40 @@ class Awards extends Component {
           </Text>
         </Stack>
 
-        <Text>
-          <List>
-            {certifications.map((certification) => {
-              const { place, url, title, issued, description } = certification;
-              return (
-                <ListItem key={Math.random()} p={2}>
-                  <Text color={'orange'}>
-                    <i className="fa-li fa fa-star text-warning" />
+        <Grid
+          gap={2}
+          templateColumns={{
+            base: 'repeat(1, 1fr)',
+            md: 'repeat(1, 1fr)',
+            lg: 'repeat(3, 1fr)',
+            xl: 'repeat(5, 1fr)',
+          }}
+        >
+          {certifications.map((certification) => {
+            const { place, url, title, issued, description } = certification;
+            return (
+              <Box
+                key={title}
+                maxW="sm"
+                borderWidth="1px"
+                borderRadius="lg"
+                overflow="hidden"
+                m={2}
+                p={10}
+                _hover={{ bg: 'gray.100' }}
+              >
+                <Link to={url} target="_blank" rel="noopener noreferrer">
+                  <Text color="orange">
+                    <b>{title} </b> @{place}
                   </Text>
-                  <Link to={url} target="_blank" rel="noopener noreferrer">
-                    <Text>
-                      {' '}
-                      <b>{title} </b> @{place}
-                    </Text>
-                  </Link>{' '}
+
                   <Text>{description}</Text>
-                  <span className="badge badge-secondary badge badge-secondary-primary">
-                    {issued}
-                  </span>
-                </ListItem>
-              );
-            })}
-          </List>
-        </Text>
+                  <Text>{issued}</Text>
+                </Link>
+              </Box>
+            );
+          })}
+        </Grid>
       </Wrapper>
     );
   }

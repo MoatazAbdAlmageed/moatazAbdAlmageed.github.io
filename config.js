@@ -224,7 +224,7 @@ const certifications = [
     place: 'Udemy',
     title: 'Introduction to TypeScript',
     description:
-      'This certificate above verifies that Moataz Mohammady successfully completed the course Introduction to TypeScript on 07/26/2021 as taught by Daniel Stern on Udemy. The certificate indicates the entire course was completed as validated by the student. The course duration represents the total video hours of the course at time of most recent completion.',
+      'This certificate above verifies that Moataz Mohammady successfully completed the course Introduction to TypeScript on 07/26/2021',
     url: 'https://udemy-certificate.s3.amazonaws.com/pdf/UC-f4d3813f-511b-405d-971b-b0f88039ec7b.pdf',
     issued: 'July 2021',
   },
@@ -257,7 +257,7 @@ const certifications = [
     place: 'futurelearn.com',
     title: "BASIC ENGLISH 1: ELEMENTARY KING'S COLLEGE LONDON",
     description:
-      'This course helped you develop your use of English in a range of everyday situations and built your confidence by improving your listening skills. You’ve heard people talking in a number of different situations and have had an opportunity to review the language through a series of quizzes.',
+      'This course helped you develop your use of English in a range of everyday situations and built your confidence by improving your listening skills.',
     url: 'https://www.futurelearn.com/certificates/tl15gwi',
     issued: 'Dec 2018',
   },
