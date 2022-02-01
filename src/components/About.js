@@ -12,6 +12,7 @@ import { BsBehance, BsGithub, BsLinkedin } from 'react-icons/bs';
 import config from '../../config';
 import resume from '../assets/files/moataz_mohammady_resume.pdf';
 import avatar from '../assets/img/avatar.jpg';
+import SkillsIcons from './SkillsIcons';
 import Wrapper from './Wrapper';
 
 class About extends Component {
@@ -39,6 +40,7 @@ class About extends Component {
           <br /> {`I'm`} married and I have 2 boys Hamza and Bilal
         </Text>
 
+        <SkillsIcons />
         <Box mt={5}>
           <Link to="https://github.com/MoatazAbdAlmageed" target="_blank">
             <IconButton
