@@ -39,7 +39,13 @@ class About extends Component {
           skills as a Web Developer.
           <br /> {`I'm`} married and I have 2 sons; Hamza and Bilal
         </Text>
-        <Box width="50%">
+        <Box
+          width={{
+            base: '100%',
+            sm: '100%',
+            md: '50%',
+          }}
+        >
           <SkillsIcons />
         </Box>
         <Box mt={5}>
