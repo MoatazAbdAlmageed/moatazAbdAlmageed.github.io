@@ -8,7 +8,12 @@ import {
 } from '@chakra-ui/react';
 import { Link } from 'gatsby';
 import React, { Component } from 'react';
-import { BsBehance, BsGithub, BsLinkedin } from 'react-icons/bs';
+import {
+  BsBehance,
+  BsCloudDownloadFill,
+  BsGithub,
+  BsLinkedin,
+} from 'react-icons/bs';
 import config from '../../config';
 import resume from '../assets/files/moataz_mohammady_resume.pdf';
 import avatar from '../assets/img/avatar.jpg';
@@ -92,7 +97,14 @@ class About extends Component {
               size="lg"
               _hover={{ bg: 'orange' }}
             >
-              <i className="fa fa-file-pdf-o" /> <span>&nbsp;</span> Download
+              <IconButton
+                aria-label="BsCloudDownloadFill"
+                variant="ghost"
+                size="lg"
+                isRound={true}
+                _hover={{ bg: 'orange' }}
+                icon={<BsCloudDownloadFill size="28px" />}
+              />
               Resume
             </Button>
           </a>
