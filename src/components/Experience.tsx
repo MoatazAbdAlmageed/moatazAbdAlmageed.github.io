@@ -1,13 +1,5 @@
 import { Icon } from '@chakra-ui/icons';
-import {
-  Box,
-  Grid,
-  Heading,
-  Link,
-  Spacer,
-  Stack,
-  Text,
-} from '@chakra-ui/react';
+import { Box, Grid, Heading, Link, Spacer, Stack } from '@chakra-ui/react';
 import React, { Component } from 'react';
 import { TiStarburst } from 'react-icons/ti';
 import config from '../../config';
@@ -32,10 +24,6 @@ class Experience extends Component {
             />{' '}
             Experience
           </Heading>
-          <Text>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry
-          </Text>
         </Stack>
 
         <Grid

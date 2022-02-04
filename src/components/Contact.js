@@ -44,7 +44,7 @@ export default function contact() {
   };
 
   return (
-    <Wrapper id="contact" bg="#F7FAFC">
+    <Wrapper id="contact" bg="#F7FAFC" m={0} p={0}>
       <Stack spacing={0} align={'center'}>
         <Heading>
           {' '}
