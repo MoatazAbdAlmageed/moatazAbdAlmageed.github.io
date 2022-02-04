@@ -1,4 +1,4 @@
-import { Box, Grid, Heading, Icon, Stack, Text } from '@chakra-ui/react';
+import { Grid, Heading, Icon, Stack, Text } from '@chakra-ui/react';
 import { Link } from 'gatsby';
 import React, { Component } from 'react';
 import { GrCertificate } from 'react-icons/gr';
@@ -41,9 +41,10 @@ class Awards extends Component {
           {certifications.map((certification) => {
             const { place, url, title, issued, description } = certification;
             return (
-              <Box
+              <Stack
                 key={title}
-                maxW="sm"
+                direction={{ base: 'column', md: 'row' }}
+                spacing={{ base: 10, md: 4, lg: 10 }}
                 borderWidth="1px"
                 borderRadius="lg"
                 overflow="hidden"
@@ -59,7 +60,7 @@ class Awards extends Component {
                   <Text>{description}</Text>
                   <Text>{issued}</Text>
                 </Link>
-              </Box>
+              </Stack>
             );
           })}
         </Grid>

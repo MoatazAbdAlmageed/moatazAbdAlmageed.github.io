@@ -1,6 +1,16 @@
 import { Icon } from '@chakra-ui/icons';
-import { Box, Grid, Heading, Link, Spacer, Stack } from '@chakra-ui/react';
+import {
+  Box,
+  Grid,
+  Heading,
+  Link,
+  List,
+  ListIcon,
+  ListItem,
+  Stack,
+} from '@chakra-ui/react';
 import React, { Component } from 'react';
+import { MdCheckCircle } from 'react-icons/md';
 import { TiStarburst } from 'react-icons/ti';
 import config from '../../config';
 import Wrapper from './Wrapper';
@@ -31,7 +41,7 @@ class Experience extends Component {
           templateColumns={{
             base: 'repeat(1, 1fr)',
             lg: 'repeat(3, 1fr)',
-            xl: 'repeat(5, 1fr)',
+            xl: 'repeat(4, 1fr)',
           }}
         >
           {jobs.map((job) => {
@@ -45,66 +55,64 @@ class Experience extends Component {
               projects,
             } = job;
             return (
-              <Box
-                maxW="sm"
+              <Stack
+                key={url}
                 borderWidth="1px"
                 borderRadius="lg"
                 overflow="hidden"
-                m={2}
-                key={url}
+                _hover={{ bg: '#F7FAFC' }}
+                direction={{ base: 'column', md: 'row' }}
+                spacing={{ base: 10, md: 4, lg: 10 }}
                 p={10}
-                _hover={{ bg: 'gray.100' }}
               >
-                <Heading size="md" color="orange">
-                  {occupation}
-                </Heading>
-                <Link to={url}> @{company} </Link>
-                <h4> {period}</h4>
+                <Box>
+                  <Box>
+                    <Heading size="md" color="orange">
+                      {occupation}
+                    </Heading>
+                    <Link to={url}> @{company} </Link>
+                    <h4> {period}</h4>
+                  </Box>
 
-                <Stack pt={5}>
-                  <Heading size="sm">Responsibilities</Heading>
-                  <ul className="responsibilities">
-                    {responsibilities.map((responsibility) => {
-                      return <li key={Math.random()}>{responsibility}</li>;
-                    })}
-                  </ul>
-                </Stack>
+                  <Box pt={5}>
+                    <Heading size="sm">Responsibilities</Heading>
+                    <List>
+                      {responsibilities.map((responsibility) => {
+                        return (
+                          <ListItem key={Math.random()}>
+                            <ListIcon as={MdCheckCircle} color="green.500" />
+                            {responsibility}
+                          </ListItem>
+                        );
+                      })}
+                    </List>
+                  </Box>
 
-                <Spacer />
+                  <Box pt={5}>
+                    <Heading size="sm"> Projects</Heading>
+                    <List>
+                      {projects.map((project) => {
+                        return (
+                          <ListItem key={Math.random()}>
+                            <ListIcon as={MdCheckCircle} color="green.500" />
+                            <a
+                              href={project.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <i className="fa fa-globe" aria-hidden="true"></i>
+                              &nbsp;
+                              {project.name}
+                            </a>
+                          </ListItem>
+                        );
+                      })}
+                    </List>
+                  </Box>
 
-                <Stack pt={5}>
-                  <Heading size="sm"> Projects</Heading>
-                  {projects.map((project) => {
-                    return (
-                      <li key={Math.random()}>
-                        <a
-                          href={project.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <i className="fa fa-globe" aria-hidden="true"></i>
-                          &nbsp;
-                          {project.name}
-                        </a>
-
-                        {/* <ul className="technologies">
-                                {project.technologies.map((tech) => {
-                                  return (
-                                    <li key={Math.random()}>
-                                      <span className="badge badge-secondary">
-                                        {tech}
-                                      </span>
-                                    </li>
-                                  );
-                                })}
-                              </ul> */}
-                      </li>
-                    );
-                  })}
-                </Stack>
-
-                <p>{description}</p>
-              </Box>
+                  <p>{description}</p>
+                </Box>
+              </Stack>
             );
           })}
         </Grid>
