@@ -1,4 +1,4 @@
-import { Grid, Heading, Icon, Stack, Text } from '@chakra-ui/react';
+import { Grid, Heading, Icon, Link, Stack, Text } from '@chakra-ui/react';
 import React, { Component } from 'react';
 import { FiTerminal } from 'react-icons/fi';
 import config from '../../config';
@@ -23,7 +23,16 @@ class Projects extends Component {
             />{' '}
             Projects
           </Heading>
-          <Text>Freelance and side projects</Text>
+          <Text>My projects</Text>
+
+          <Link
+              to="https://www.linkedin.com/in/moatazabdelmageed/details/projects/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fa fa-globe" aria-hidden="true"></i>
+              &nbsp; @linkedin
+            </Link>
         </Stack>
 
         <Grid
