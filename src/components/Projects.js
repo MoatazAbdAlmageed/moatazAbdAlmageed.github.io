@@ -1,4 +1,5 @@
-import { Grid, Heading, Icon, Link, Stack, Text } from '@chakra-ui/react';
+import { Grid, Heading, Icon, Stack, Text } from '@chakra-ui/react';
+import { Link } from 'gatsby';
 import React, { Component } from 'react';
 import { FiTerminal } from 'react-icons/fi';
 import config from '../../config';
