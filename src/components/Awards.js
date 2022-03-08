@@ -1,6 +1,6 @@
 import { Grid, Heading, Icon, Stack, Text } from '@chakra-ui/react';
 import { Link } from 'gatsby';
-import React, { Component } from 'react';
+import React , { Component } from 'react';
 import { GrCertificate } from 'react-icons/gr';
 import config from '../../config';
 import Wrapper from './Wrapper';
@@ -27,6 +27,15 @@ class Awards extends Component {
             All my life I have been driven by my strong belief that education is
             important.
             <br /> I try to learn something new every single day.
+            <br /> You can check more here
+            <Link
+              to="https://www.linkedin.com/in/moatazabdelmageed/details/certifications/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fa fa-globe" aria-hidden="true"></i>
+              &nbsp; @linkedin
+            </Link>
           </Text>
         </Stack>
 

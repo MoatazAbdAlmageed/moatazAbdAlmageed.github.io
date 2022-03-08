@@ -95,15 +95,15 @@ class Experience extends Component {
                         return (
                           <ListItem key={Math.random()}>
                             <ListIcon as={MdCheckCircle} color="green.500" />
-                            <a
-                              href={project.url}
+                            <Link
+                              to={project.url}
                               target="_blank"
                               rel="noopener noreferrer"
                             >
                               <i className="fa fa-globe" aria-hidden="true"></i>
                               &nbsp;
                               {project.name}
-                            </a>
+                            </Link>
                           </ListItem>
                         );
                       })}
