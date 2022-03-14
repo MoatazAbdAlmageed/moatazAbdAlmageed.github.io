@@ -9,7 +9,6 @@ import {
 import { Link } from 'gatsby';
 import React, { Component } from 'react';
 import {
-  BsBehance,
   BsCloudDownloadFill,
   BsGithub,
   BsLinkedin,
@@ -88,16 +87,7 @@ class About extends Component {
               icon={<BsYoutube size="28px" />}
             />
           </Link>
-          <Link to="https://www.behance.net/moatazmohammady" target="_blank">
-            <IconButton
-              aria-label="BsBehance"
-              variant="ghost"
-              size="lg"
-              isRound={true}
-              _hover={{ bg: 'orange' }}
-              icon={<BsBehance size="28px" />}
-            />
-          </Link>
+      
         </Box>
 
         <Box mt={5}>
