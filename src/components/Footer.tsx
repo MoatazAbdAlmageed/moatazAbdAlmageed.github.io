@@ -8,7 +8,7 @@ import {
   VisuallyHidden,
 } from '@chakra-ui/react';
 import React, { ReactNode } from 'react';
-import { FaGithubAlt, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
+import { FaGithubAlt, FaLinkedinIn, FaTwitter  , FaYoutube} from 'react-icons/fa';
 
 const SocialButton = ({
   children,
@@ -83,6 +83,12 @@ export default function Footer() {
               href={'https://twitter.com/MoatazMohammady'}
             >
               <FaTwitter />
+            </SocialButton>
+            <SocialButton
+              label={'Youtube'}
+              href={'https://www.youtube.com/channel/UClP1ys1YN3IX8LvpeMlI2rg'}
+            >
+              <FaYoutube />
             </SocialButton>
           </Stack>
         </Container>

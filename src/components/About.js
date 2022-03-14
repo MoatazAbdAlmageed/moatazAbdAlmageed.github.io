@@ -13,6 +13,7 @@ import {
   BsCloudDownloadFill,
   BsGithub,
   BsLinkedin,
+  BsYoutube,
 } from 'react-icons/bs';
 import config from '../../config';
 import resume from '../assets/files/moataz_mohammady_resume.pdf';
@@ -75,6 +76,16 @@ class About extends Component {
               isRound={true}
               _hover={{ bg: 'orange' }}
               icon={<BsLinkedin size="28px" />}
+            />
+          </Link>
+          <Link to="https://www.youtube.com/channel/UClP1ys1YN3IX8LvpeMlI2rg" target="_blank">
+            <IconButton
+              aria-label="BsYoutube"
+              variant="ghost"
+              size="lg"
+              isRound={true}
+              _hover={{ bg: 'orange' }}
+              icon={<BsYoutube size="28px" />}
             />
           </Link>
           <Link to="https://www.behance.net/moatazmohammady" target="_blank">
