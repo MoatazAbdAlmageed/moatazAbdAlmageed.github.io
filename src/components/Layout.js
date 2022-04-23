@@ -86,22 +86,14 @@ class Layout extends Component {
                 name="google-site-verification"
                 content="2o5ux7SuhqzyW9y9mjWagy7qW-4-a9eFayeKVW2tUg8"
               />
-                   <script src="https://app.sendstrap.com/scripts/js/social_button.js?id=2416&key=x5EdqfpvyKIFrdgLQAIDuarBMxw0zIhEKDdp3Iln"></script>
               <script
                 src="//code.tidio.co/hu1y1yihc632mh3wnzjitnrvou1gkrhq.js"
                 async
               ></script>
-  <div className="a2a_kit a2a_kit_size_32 a2a_default_style">
-                <a className="a2a_dd" href="https://www.addtoany.com/share"></a>
-                <a className="a2a_button_facebook"></a>
-                <a className="a2a_button_twitter"></a>
-                <a className="a2a_button_email"></a>
-                <a className="a2a_button_linkedin"></a>
-                <a className="a2a_button_facebook_messenger"></a>
-              </div>
-              <script
+
+   <script
+                src="https://api.at.getsocial.io/get/v1/b5cea8ec/gs_async.js"
                 async
-                src="https://static.addtoany.com/menu/page.js"
               ></script>
             </Helmet>
             <Box>{children}</Box>
