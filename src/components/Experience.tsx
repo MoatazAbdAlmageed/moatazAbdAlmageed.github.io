@@ -3,13 +3,13 @@ import {
   Box,
   Grid,
   Heading,
-  Link,
   List,
   ListIcon,
   ListItem,
   Stack,
 } from '@chakra-ui/react';
 import React, { Component } from 'react';
+import { Link } from 'gatsby';
 import { MdCheckCircle } from 'react-icons/md';
 import { TiStarburst } from 'react-icons/ti';
 import config from '../../config';
