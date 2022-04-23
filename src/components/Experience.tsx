@@ -8,16 +8,15 @@ import {
   ListItem,
   Stack,
 } from '@chakra-ui/react';
-import React, { Component } from 'react';
+import React from 'react';
 import { Link } from 'gatsby';
 import { MdCheckCircle } from 'react-icons/md';
 import { TiStarburst } from 'react-icons/ti';
 import config from '../../config';
 import Wrapper from './Wrapper';
 
-class Experience extends Component {
-  render() {
-    const { jobs } = config;
+function Experience(){
+  const { jobs } = config;
 
     return (
       <Wrapper id="experience" bg="#F7FAFC">
@@ -119,6 +118,5 @@ class Experience extends Component {
       </Wrapper>
     );
   }
-}
 
 export default Experience;
