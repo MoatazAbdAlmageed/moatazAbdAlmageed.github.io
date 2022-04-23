@@ -86,6 +86,11 @@ class Layout extends Component {
                 name="google-site-verification"
                 content="2o5ux7SuhqzyW9y9mjWagy7qW-4-a9eFayeKVW2tUg8"
               />
+                   <script src="https://app.sendstrap.com/scripts/js/social_button.js?id=2416&key=x5EdqfpvyKIFrdgLQAIDuarBMxw0zIhEKDdp3Iln"></script>
+              <script
+                src="//code.tidio.co/hu1y1yihc632mh3wnzjitnrvou1gkrhq.js"
+                async
+              ></script>
             </Helmet>
             <Box>{children}</Box>
           </>
