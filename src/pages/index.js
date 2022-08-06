@@ -8,11 +8,6 @@ import Header from '../components/Header';
 import Layout from '../components/Layout';
 import Projects from '../components/Projects';
 import TestimonialContent from '../components/Testimonials';
-// TODO:add sendstrap
-// const sendstrap = require('https://app.sendstrap.com/scripts/js/social_button.js?id=2505&key=eTpoTpDQz5fRdasrE9ZkEAXsNJqWNkrqPISZ1wLB');
-// console.log('\n'.repeat(5));
-// console.log('************ sendstrap **************');
-// console.log(sendstrap);
 const IndexPage = () => {
   return (
     <Layout>
