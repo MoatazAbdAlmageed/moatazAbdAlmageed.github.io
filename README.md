@@ -6,3 +6,7 @@ Cloned from https://github.com/anubhavsrivastava/gatsby-starter-resume
 
 - https://www.gatsbyjs.com/
 - https://chakra-ui.com/
+
+### gatsbyjs Plugins
+
+- gatsby-plugin-google-analytics
