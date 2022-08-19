@@ -7,8 +7,9 @@ import {
   Text,
   useColorModeValue,
 } from '@chakra-ui/react';
-import { Link } from 'gatsby';
 import React, { ReactNode } from 'react';
+
+import { Link } from 'gatsby';
 import Wrapper from './Wrapper';
 
 const Testimonial = ({ children }: { children: ReactNode }) => {
@@ -159,9 +160,10 @@ export default function WithSpeechBubbles() {
         </Testimonial>
         <Testimonial>
           <TestimonialContent>
-            <TestimonialHeading>Amazing support</TestimonialHeading>
+            <TestimonialHeading>الخدمة ممتازة </TestimonialHeading>
             <TestimonialText>
-              Highly recommended for professional websites
+              الخدمة ممتازة وعمل متقن وشخصية محترمة وتعامل راقي أشركم بالتوفيق
+              ان شاء الله
             </TestimonialText>
           </TestimonialContent>
           <TestimonialAvatar
