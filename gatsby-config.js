@@ -14,7 +14,6 @@ const {
   manifestStartUrl,
   manifestThemeColor,
   manifestIcon,
-  TRACKING_ID,
 } = config;
 module.exports = {
   pathPrefix: pathPrefix,
@@ -45,7 +44,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: TRACKING_ID,
+        trackingId: 'UA-149833401-1',
       },
     },
   ],
