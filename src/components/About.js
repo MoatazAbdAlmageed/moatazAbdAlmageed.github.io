@@ -30,7 +30,7 @@ class About extends Component {
         id="about"
         align={'center'}
         direction="column"
-        pt={{ base: 5, md: 20 }}
+        pt={{ base: 100, md: 20 }}
       >
         <Box align="center">
           <Text>Hello!, {`I'm`}</Text>
