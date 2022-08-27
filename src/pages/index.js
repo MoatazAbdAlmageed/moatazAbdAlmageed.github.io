@@ -1,4 +1,5 @@
 import About from '../components/About';
+import { Animate } from 'react-simple-animate';
 import Awards from '../components/Awards';
 import Contact from '../components/Contact';
 import Experience from '../components/Experience';
@@ -13,13 +14,19 @@ const IndexPage = () => {
   return (
     <Layout>
       <Header />
-      <About />
-      <Projects />
-      <TestimonialContent />
-      <Experience />
-      <Awards />
-      <Contact />
-      <Footer />
+      <Animate
+        play={true}
+        end={{ opacity: 1, transform: 'translateY(0)' }}
+        start={{ opacity: 1, transform: 'translateY(-100px)' }}
+      >
+        <About />
+        <Projects />
+        <TestimonialContent />
+        <Experience />
+        <Awards />
+        <Contact />
+        <Footer />
+      </Animate>
     </Layout>
   );
 };
