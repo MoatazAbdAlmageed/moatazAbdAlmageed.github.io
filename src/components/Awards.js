@@ -12,7 +12,7 @@ class Awards extends Component {
     return (
       <Wrapper id="awards">
         <Stack spacing={0} align={'center'}>
-          <Heading pt={10}>
+          <Heading pt={20}>
             {' '}
             <Icon
               mr="4"

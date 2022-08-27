@@ -20,9 +20,9 @@ function Experience() {
   const { jobs } = config;
 
   return (
-    <Wrapper id="experience" bg="#F7FAFC">
+    <Wrapper id="experience">
       <Stack spacing={0} align={'center'}>
-        <Heading pt={10}>
+        <Heading pt={20}>
           {' '}
           <Icon
             mr="4"

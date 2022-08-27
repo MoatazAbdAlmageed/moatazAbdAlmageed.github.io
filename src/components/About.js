@@ -23,7 +23,8 @@ import resume from '../assets/files/moataz_mohammady_resume.pdf';
 
 class About extends Component {
   render() {
-    const { firstName, lastName, position, kids } = config;
+    const { firstName, lastName, position, kids, jobs } = config;
+    const currentCompany = jobs[0];
     return (
       <Flex
         id="about"
@@ -47,7 +48,11 @@ class About extends Component {
           />
           <Text align="center" p={5} fontSize="1.4em">
             I am a {position} with +{new Date().getFullYear() - 2015} years of
-            experience. I work for Wuilt.
+            experience. I work for{' '}
+            <a target="_blank" href={currentCompany.url} rel="noreferrer">
+              {currentCompany.company}
+            </a>
+            .
             <br /> I am looking forward to taking on more work and increase my
             skills as a Web Developer.
             <br /> {`I'm`} married and I have {kids.length} sons{' '}
