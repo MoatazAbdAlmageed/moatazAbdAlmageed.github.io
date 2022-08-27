@@ -1,4 +1,5 @@
-import { Badge, Box, Heading, Link, Stack } from '@chakra-ui/react';
+import { Badge, Box, Heading, Link } from '@chakra-ui/react';
+
 import PropTypes from 'prop-types';
 import React from 'react';
 
@@ -10,12 +11,10 @@ export default function Project({ project }) {
   // eslint-disable-next-line react/prop-types
   const { title, url, tools, year, description } = project;
   return (
-    <Stack
-      // maxW="sm"
-      borderWidth="1px"
-      borderRadius="lg"
-      overflow="hidden"
+    <Box
       _hover={{ bg: '#F7FAFC' }}
+      // maxW="sm"
+      overflow="hidden"
       direction={{ base: 'column', md: 'row' }}
       spacing={{ base: 10, md: 4, lg: 10 }}
     >
@@ -48,14 +47,14 @@ export default function Project({ project }) {
           </Link>
         </p>
 
-        <Stack direction="row" mt={5}>
+        <Box direction="row" mt={5}>
           {tools?.map((tool) => (
-            <Badge key={tool.key} variant="solid" colorScheme="orange">
+            <Badge key={tool.key} variant="solid" colorScheme="orange" m={1}>
               {tool}
             </Badge>
           ))}
-        </Stack>
+        </Box>
       </Box>
-    </Stack>
+    </Box>
   );
 }

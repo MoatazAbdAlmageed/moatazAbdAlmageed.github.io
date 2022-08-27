@@ -399,8 +399,8 @@ const projects = [
     description: 'Website for Az-Translation company',
   },
   {
-    title: 'Youtube Channels',
-    url: 'https://youtubechannels.gatsbyjs.io/',
+    title: 'CodingDir',
+    url: 'https://codingdir.gatsbyjs.io/',
     icon: 'fa-globe',
     tools: ['gatsbyjs', 'chakra-ui'],
     year: '2021',

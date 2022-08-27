@@ -1,16 +1,16 @@
-import { Grid, Heading, Icon, Stack, Text } from '@chakra-ui/react';
-import { Link } from 'gatsby';
+import { Flex, Heading, Icon, Stack, Text } from '@chakra-ui/react';
 import React, { Component } from 'react';
+
 import { FiTerminal } from 'react-icons/fi';
-import config from '../../config';
+import { Link } from 'gatsby';
 import Project from './Project';
-import Wrapper from './Wrapper';
+import config from '../../config';
 
 class Projects extends Component {
   render() {
     const { projects } = config;
     return (
-      <Wrapper id="projects" bg="#F7FAFC">
+      <Flex id="projects" direction="column" p={{ base: 5, md: 20 }}>
         <Stack spacing={0} align={'center'}>
           <Heading>
             {' '}
@@ -24,9 +24,9 @@ class Projects extends Component {
             />{' '}
             Projects
           </Heading>
-          <Text>My projects</Text>
-
-          <Link
+          <Text>
+            My projects{' '}
+            <Link
               to="https://www.linkedin.com/in/moatazabdelmageed/details/projects/"
               target="_blank"
               rel="noopener noreferrer"
@@ -34,24 +34,18 @@ class Projects extends Component {
               <i className="fa fa-globe" aria-hidden="true"></i>
               &nbsp; @linkedin
             </Link>
+          </Text>
         </Stack>
 
-        <Grid
-          gap={2}
-          templateColumns={{
-            base: 'repeat(1, 1fr)',
-            lg: 'repeat(3, 1fr)',
-            xl: 'repeat(4, 1fr)',
-          }}
-        >
+        <Flex direction="column">
           {projects
             .filter(({ show }) => show == true)
             .sort((a, b) => b.year - a.year)
             .map((project) => (
               <Project key={project.url} project={project} />
             ))}
-        </Grid>
-      </Wrapper>
+        </Flex>
+      </Flex>
     );
   }
 }

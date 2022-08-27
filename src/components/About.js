@@ -1,58 +1,66 @@
 import {
   Box,
   Button,
+  Flex,
   Heading,
   IconButton,
   Image,
   Text,
 } from '@chakra-ui/react';
-import { Link } from 'gatsby';
-import React, { Component } from 'react';
 import {
   BsCloudDownloadFill,
   BsGithub,
   BsLinkedin,
   BsYoutube,
 } from 'react-icons/bs';
+import React, { Component } from 'react';
+
+import { Link } from 'gatsby';
+import SkillsIcons from './SkillsIcons';
+import avatar from '../assets/img/avatar.jpg';
 import config from '../../config';
 import resume from '../assets/files/moataz_mohammady_resume.pdf';
-import avatar from '../assets/img/avatar.jpg';
-import SkillsIcons from './SkillsIcons';
-import Wrapper from './Wrapper';
 
 class About extends Component {
   render() {
     const { firstName, lastName, position } = config;
     return (
-      <Wrapper id="about" align={'center'}>
-        <Text>Hello!, {`I'm`}</Text>
-        <Heading>
-          {firstName} {lastName}
-        </Heading>
+      <Flex
+        id="about"
+        align={'center'}
+        direction="column"
+        p={{ base: 5, md: 20 }}
+      >
+        <Box align="center">
+          <Text>Hello!, {`I'm`}</Text>
 
-        <Image
-          borderRadius="full"
-          boxSize="150px"
-          src={avatar}
-          alt={`${firstName} ${lastName}`}
-        />
+          <Heading>
+            {firstName} {lastName}
+          </Heading>
 
-        <Text align="center">
-          I am a {position} with +{new Date().getFullYear() - 2016} years of
-          experience. I work for Wuilt.
-          <br /> I am looking forward to taking on more work and increase my
-          skills as a Web Developer.
-          <br /> {`I'm`} married and I have 2 sons; Hamza and Bilal
-        </Text>
+          <Image
+            borderRadius="full"
+            boxSize="150px"
+            src={avatar}
+            alt={`${firstName} ${lastName}`}
+            p={5}
+          />
+          <Text align="center" p={5} fontSize="1.4em">
+            I am a {position} with +{new Date().getFullYear() - 2015} years of
+            experience. I work for Wuilt.
+            <br /> I am looking forward to taking on more work and increase my
+            skills as a Web Developer.
+            <br /> {`I'm`} married and I have 2 sons; Hamza and Bilal
+          </Text>
+        </Box>
         <Box
           width={{
             base: '100%',
             sm: '100%',
             md: '50%',
           }}
-        >
-          <SkillsIcons />
-        </Box>
+        ></Box>
+
         <Box mt={5}>
           <Link to="https://github.com/MoatazAbdAlmageed" target="_blank">
             <IconButton
@@ -77,7 +85,10 @@ class About extends Component {
               icon={<BsLinkedin size="28px" />}
             />
           </Link>
-          <Link to="https://www.youtube.com/channel/UClP1ys1YN3IX8LvpeMlI2rg" target="_blank">
+          <Link
+            to="https://www.youtube.com/channel/UClP1ys1YN3IX8LvpeMlI2rg"
+            target="_blank"
+          >
             <IconButton
               aria-label="BsYoutube"
               variant="ghost"
@@ -87,7 +98,6 @@ class About extends Component {
               icon={<BsYoutube size="28px" />}
             />
           </Link>
-      
         </Box>
 
         <Box mt={5}>
@@ -110,7 +120,11 @@ class About extends Component {
             </Button>
           </a>
         </Box>
-      </Wrapper>
+
+        <Box p={20}>
+          <SkillsIcons />
+        </Box>
+      </Flex>
     );
   }
 }

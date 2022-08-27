@@ -1,7 +1,7 @@
-import { Icon } from '@chakra-ui/icons';
 import {
   Box,
   Button,
+  Flex,
   FormControl,
   FormLabel,
   Grid,
@@ -9,16 +9,16 @@ import {
   Input,
   InputGroup,
   InputLeftElement,
-  Stack,
   Text,
   Textarea,
 } from '@chakra-ui/react';
 import React, { useState } from 'react';
+
 import { BsPerson } from 'react-icons/bs';
 import { GrContactInfo } from 'react-icons/gr';
+import { Icon } from '@chakra-ui/icons';
 import { MdOutlineEmail } from 'react-icons/md';
 import config from '../../config';
-import Wrapper from './Wrapper';
 
 export default function contact() {
   const { FORMSPREE } = config;
@@ -44,8 +44,8 @@ export default function contact() {
   };
 
   return (
-    <Wrapper id="contact" bg="#F7FAFC" m={0} p={0}>
-      <Stack spacing={0} align={'center'}>
+    <Flex id="contact" bg="#F7FAFC" direction="column" p={{ base: 5, md: 20 }}>
+      <Box spacing={0} align={'center'}>
         <Heading>
           {' '}
           <Icon
@@ -63,7 +63,7 @@ export default function contact() {
           happen!
           <br /> Drop me a letter and start your project right now!
         </Text>
-      </Stack>
+      </Box>
 
       <Grid
         gap={2}
@@ -132,6 +132,6 @@ export default function contact() {
           </form>
         </Box>
       </Grid>
-    </Wrapper>
+    </Flex>
   );
 }

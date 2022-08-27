@@ -10,7 +10,6 @@ import {
 import React, { ReactNode } from 'react';
 
 import { Link } from 'gatsby';
-import Wrapper from './Wrapper';
 
 const Testimonial = ({ children }: { children: ReactNode }) => {
   return <Box>{children}</Box>;
@@ -101,8 +100,8 @@ const TestimonialAvatar = ({
 
 export default function WithSpeechBubbles() {
   return (
-    <Wrapper id="testimonials">
-      <Stack spacing={0} align={'center'}>
+    <Flex id="testimonials" direction="column" p={{ base: 5, md: 20 }}>
+      <Stack spacing={0} align={'center'} p={{ base: 5 }}>
         <Heading>Clients Speak</Heading>
         <Text>I have been working with clients around the world</Text>
       </Stack>
@@ -176,6 +175,6 @@ export default function WithSpeechBubbles() {
           />
         </Testimonial>
       </Stack>
-    </Wrapper>
+    </Flex>
   );
 }

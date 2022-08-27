@@ -1,10 +1,4 @@
 import {
-  ChevronDownIcon,
-  ChevronRightIcon,
-  CloseIcon,
-  HamburgerIcon,
-} from '@chakra-ui/icons';
-import {
   Box,
   Collapse,
   Flex,
@@ -19,16 +13,27 @@ import {
   useColorModeValue,
   useDisclosure,
 } from '@chakra-ui/react';
+import {
+  ChevronDownIcon,
+  ChevronRightIcon,
+  CloseIcon,
+  HamburgerIcon,
+} from '@chakra-ui/icons';
+
 import React from 'react';
 
 export default function Header() {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
-    <Box>
+    <>
       <Flex
-        bg={useColorModeValue('white', 'gray.800')}
-        color={useColorModeValue('gray.600', 'white')}
+        as="header"
+        position="fixed"
+        backgroundColor="rgba(255,
+ 255, 255, 0.8)"
+        backdropFilter="saturate(180%) blur(5px)"
+        w="100%"
         minH={'60px'}
         py={{ base: 2 }}
         px={{ base: 4 }}
@@ -61,7 +66,7 @@ export default function Header() {
       <Collapse in={isOpen} animateOpacity>
         <MobileNav />
       </Collapse>
-    </Box>
+    </>
   );
 }
 
