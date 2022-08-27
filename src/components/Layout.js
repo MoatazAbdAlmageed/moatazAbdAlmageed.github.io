@@ -1,8 +1,9 @@
-import { Box } from '@chakra-ui/react';
-import { graphql, StaticQuery } from 'gatsby';
-import PropTypes from 'prop-types';
+import { Box, SlideFade } from '@chakra-ui/react';
 import React, { Component } from 'react';
+import { StaticQuery, graphql } from 'gatsby';
+
 import Helmet from 'react-helmet';
+import PropTypes from 'prop-types';
 
 class Layout extends Component {
   render() {
@@ -23,7 +24,7 @@ class Layout extends Component {
           }
         `}
         render={(data) => (
-          <>
+          <SlideFade in={true}>
             <Helmet
               title={data.site.siteMetadata.title}
               meta={
@@ -88,7 +89,7 @@ class Layout extends Component {
               />
             </Helmet>
             <Box>{children}</Box>
-          </>
+          </SlideFade>
         )}
       />
     );

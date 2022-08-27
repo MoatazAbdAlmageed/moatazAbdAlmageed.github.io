@@ -8,12 +8,12 @@ import Layout from '../components/Layout';
 import Projects from '../components/Projects';
 import React from 'react';
 import TestimonialContent from '../components/Testimonials';
+
 const IndexPage = () => {
   return (
     <Layout>
       <Header />
       <About />
-
       <Projects />
       <TestimonialContent />
       <Experience />

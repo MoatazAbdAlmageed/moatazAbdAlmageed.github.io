@@ -1,14 +1,16 @@
 import {
   Box,
-  chakra,
   Container,
   Stack,
   Text,
-  useColorModeValue,
   VisuallyHidden,
+  chakra,
+  useColorModeValue,
 } from '@chakra-ui/react';
+import { FaLinkedinIn, FaYoutube } from 'react-icons/fa';
 import React, { ReactNode } from 'react';
-import { FaGithubAlt, FaLinkedinIn, FaTwitter  , FaYoutube} from 'react-icons/fa';
+
+import { BsGithub } from 'react-icons/bs';
 
 const SocialButton = ({
   children,
@@ -63,14 +65,15 @@ export default function Footer() {
           align={{ base: 'center', md: 'center' }}
         >
           <Text>
-            © {new Date().getFullYear()} Chakra Templates. All rights reserved
+            © {new Date().getFullYear()} Build using ChakraUI and Gatsby. All
+            rights reserved
           </Text>
           <Stack direction={'row'} spacing={6}>
             <SocialButton
               label={'github'}
               href={'https://github.com/MoatazAbdAlmageed'}
             >
-              <FaGithubAlt />
+              <BsGithub />
             </SocialButton>
             <SocialButton
               label={'linkedin'}
@@ -78,12 +81,7 @@ export default function Footer() {
             >
               <FaLinkedinIn />
             </SocialButton>
-            <SocialButton
-              label={'Twitter'}
-              href={'https://twitter.com/MoatazMohammady'}
-            >
-              <FaTwitter />
-            </SocialButton>
+
             <SocialButton
               label={'Youtube'}
               href={'https://www.youtube.com/channel/UClP1ys1YN3IX8LvpeMlI2rg'}

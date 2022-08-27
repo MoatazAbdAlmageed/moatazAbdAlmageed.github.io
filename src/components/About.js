@@ -29,7 +29,7 @@ class About extends Component {
         id="about"
         align={'center'}
         direction="column"
-        p={{ base: 5, md: 20 }}
+        pt={{ base: 5, md: 20 }}
       >
         <Box align="center">
           <Text>Hello!, {`I'm`}</Text>
@@ -60,7 +60,6 @@ class About extends Component {
             md: '50%',
           }}
         ></Box>
-
         <Box mt={5}>
           <Link to="https://github.com/MoatazAbdAlmageed" target="_blank">
             <IconButton
@@ -99,7 +98,6 @@ class About extends Component {
             />
           </Link>
         </Box>
-
         <Box mt={5}>
           <a href={resume} download>
             <Button
@@ -120,8 +118,7 @@ class About extends Component {
             </Button>
           </a>
         </Box>
-
-        <Box p={20}>
+        <Box p={{ base: 5, md: 10 }}>
           <SkillsIcons />
         </Box>
       </Flex>

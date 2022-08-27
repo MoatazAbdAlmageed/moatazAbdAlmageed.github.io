@@ -1,20 +1,13 @@
-import { Stack } from '@chakra-ui/react';
-import PropTypes from 'prop-types';
 import React, { Component } from 'react';
+
+import PropTypes from 'prop-types';
+import { Stack } from '@chakra-ui/react';
 
 class Wrapper extends Component {
   render() {
     const { children, id, align, bg, p, m } = this.props;
     return (
-      <Stack
-        mb={10}
-        id={id}
-        align={align}
-        bg={bg}
-        borderRadius="lg"
-        p={p || 5}
-        m={m || 0}
-      >
+      <Stack mb={10} id={id} align={align} bg={bg} p={p || 5} m={m || 0}>
         {children}
       </Stack>
     );

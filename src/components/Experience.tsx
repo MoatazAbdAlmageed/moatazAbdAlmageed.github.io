@@ -1,19 +1,28 @@
-import { Box, Flex, Heading, List, ListIcon, ListItem } from '@chakra-ui/react';
+import {
+  Box,
+  Grid,
+  Heading,
+  List,
+  ListIcon,
+  ListItem,
+  Stack,
+} from '@chakra-ui/react';
 
 import { Icon } from '@chakra-ui/icons';
 import { Link } from 'gatsby';
 import { MdCheckCircle } from 'react-icons/md';
 import React from 'react';
 import { TiStarburst } from 'react-icons/ti';
+import Wrapper from './Wrapper';
 import config from '../../config';
 
 function Experience() {
   const { jobs } = config;
 
   return (
-    <Flex id="experience" direction="column" p={{ base: 5, md: 20 }}>
-      <Box spacing={0} align={'center'} p={5}>
-        <Heading>
+    <Wrapper id="experience" bg="#F7FAFC">
+      <Stack spacing={0} align={'center'}>
+        <Heading pt={10}>
           {' '}
           <Icon
             mr="4"
@@ -25,9 +34,16 @@ function Experience() {
           />{' '}
           Experience
         </Heading>
-      </Box>
+      </Stack>
 
-      <Flex direction="column">
+      <Grid
+        gap={2}
+        templateColumns={{
+          base: 'repeat(1, 1fr)',
+          lg: 'repeat(3, 1fr)',
+          xl: 'repeat(4, 1fr)',
+        }}
+      >
         {jobs.map((job) => {
           const {
             company,
@@ -39,13 +55,13 @@ function Experience() {
             projects,
           } = job;
           return (
-            <Box
+            <Stack
               key={url}
               overflow="hidden"
               direction={{ base: 'column', md: 'row' }}
               spacing={{ base: 10, md: 4, lg: 10 }}
+              _hover={{ bg: 'gray.800', color: '#ffffff' }}
               p={10}
-              _hover={{ bg: '#F7FAFC' }}
             >
               <Box>
                 <Box>
@@ -94,11 +110,11 @@ function Experience() {
 
                 <p>{description}</p>
               </Box>
-            </Box>
+            </Stack>
           );
         })}
-      </Flex>
-    </Flex>
+      </Grid>
+    </Wrapper>
   );
 }
 

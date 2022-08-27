@@ -19,12 +19,16 @@ import {
   CloseIcon,
   HamburgerIcon,
 } from '@chakra-ui/icons';
-
-import React from 'react';
+import React, { useEffect } from 'react';
 
 export default function Header() {
   const { isOpen, onToggle } = useDisclosure();
 
+  useEffect(() => {
+    if (isOpen) {
+      window.scrollTo(0, 0);
+    }
+  }, [isOpen]);
   return (
     <>
       <Flex
@@ -41,6 +45,7 @@ export default function Header() {
         borderStyle={'solid'}
         borderColor={useColorModeValue('gray.200', 'gray.900')}
         align={'center'}
+        zIndex="99999;"
       >
         <Flex
           flex={{ base: 1, md: 'auto' }}
@@ -239,17 +244,19 @@ const NAV_ITEMS: Array<NavItem> = [
     label: 'About',
     href: '#about',
   },
-  {
-    label: 'Experience',
-    href: '#experience',
-  },
-  {
-    label: 'Testimonials',
-    href: '#testimonials',
-  },
+
   {
     label: 'Projects',
     href: '#projects',
+  },
+
+  {
+    label: 'Clients Speak',
+    href: '#testimonials',
+  },
+  {
+    label: 'Experience',
+    href: '#experience',
   },
 
   {

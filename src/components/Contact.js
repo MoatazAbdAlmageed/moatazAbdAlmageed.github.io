@@ -44,7 +44,7 @@ export default function contact() {
   };
 
   return (
-    <Flex id="contact" bg="#F7FAFC" direction="column" p={{ base: 5, md: 20 }}>
+    <Flex id="contact" bg="#F7FAFC" direction="column" p={{ base: 5, md: 10 }}>
       <Box spacing={0} align={'center'}>
         <Heading>
           {' '}
