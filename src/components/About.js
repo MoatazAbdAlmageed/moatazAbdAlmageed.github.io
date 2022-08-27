@@ -23,7 +23,7 @@ import resume from '../assets/files/moataz_mohammady_resume.pdf';
 
 class About extends Component {
   render() {
-    const { firstName, lastName, position } = config;
+    const { firstName, lastName, position, kids } = config;
     return (
       <Flex
         id="about"
@@ -50,7 +50,10 @@ class About extends Component {
             experience. I work for Wuilt.
             <br /> I am looking forward to taking on more work and increase my
             skills as a Web Developer.
-            <br /> {`I'm`} married and I have 2 sons; Hamza and Bilal
+            <br /> {`I'm`} married and I have {kids.length} sons{' '}
+            {kids.map(
+              ({ name }, index) => `${name}${kids[index + 1] ? ',' : ''}`
+            )}
           </Text>
         </Box>
         <Box

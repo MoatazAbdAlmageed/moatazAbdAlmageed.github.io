@@ -1,3 +1,4 @@
+const kids = [{ name: 'Hamza' }, { name: 'Belal' }];
 const skills = [
   {
     title: 'Front-end',
@@ -643,7 +644,7 @@ module.exports = {
     },
   ],
   skills,
-
+  kids,
   volunteerActivities: [
     {
       title: 'Resala Charity Organization | جمعية رسالة للأعمال الخيرية',
