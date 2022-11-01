@@ -12,6 +12,7 @@ import {
   BsCloudDownloadFill,
   BsGithub,
   BsLinkedin,
+  BsMailbox2,
   BsYoutube,
 } from 'react-icons/bs';
 
@@ -29,6 +30,7 @@ class About extends Component {
       position,
       kids,
       jobs,
+      email,
       socialLinks: { linkedin, github, youtube },
     } = config;
     const currentCompany = jobs[0];
@@ -106,6 +108,16 @@ class About extends Component {
               icon={<BsYoutube size="28px" />}
             />
           </Link>
+          <a href={`mailto:${email}`} target="_blank" rel="noreferrer">
+            <IconButton
+              aria-label="email"
+              variant="ghost"
+              size="lg"
+              isRound={true}
+              _hover={{ bg: 'orange' }}
+              icon={<BsMailbox2 size="28px" />}
+            />
+          </a>
         </Box>
         <Box mt={5}>
           <a href={resume} download>
