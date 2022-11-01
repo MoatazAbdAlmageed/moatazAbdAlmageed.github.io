@@ -161,55 +161,52 @@ const socialLinks = {
   },
   linkedin: {
     icon: 'fa-linkedin',
-    name: 'Linkedin',
     url: 'https://www.linkedin.com/in/moatazabdelmageed',
     show: true,
   },
   stackoverflow: {
     icon: 'fa-stack-overflow',
-    name: 'stackoverflow',
     url: 'https://stackoverflow.com/users/2524043/moataz-mohammady',
     show: false,
   },
   codepen: {
     icon: 'fa-codepen',
-    name: 'codepen',
     url: 'https://codepen.io/Moataz-Mohammady/pens/public',
   },
   edabit: {
     icon: 'fa-trophy',
-    name: 'edabit',
+    name: 'edabitK',
     url: 'https://edabit.com/user/NcL6egjCcAi5zR9k2',
     show: false,
   },
   behance: {
     icon: 'fa-behance',
-    name: 'Behance',
     url: 'https://www.behance.net/moatazmohammady',
     show: true,
   },
   wordpress: {
     icon: 'fa-wordpress',
-    name: 'Wordpress Blog',
     url: 'https://profiles.wordpress.org/moataz-mohammady/',
     show: false,
   },
   goodreads: {
     icon: 'fa-book',
-    name: 'Goodreads',
     url: 'https://www.goodreads.com/user/show/92723087-moataz-mohammady',
     show: false,
   },
   caramellaapp: {
     icon: 'fas fa-tint',
-    name: 'caramellaapp',
     url: 'https://caramellaapp.com/moatazmohammady',
     show: false,
   },
   youtube: {
     icon: 'fa-youtube',
-    name: 'youtube',
     url: 'https://www.youtube.com/@moatazMohamady',
+    show: false,
+  },
+  upwork: {
+    icon: 'fa-upwork',
+    url: 'https://www.upwork.com/freelancers/~014cb5bb210055661c',
     show: false,
   },
 };

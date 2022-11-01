@@ -14,9 +14,9 @@ import {
 } from '@chakra-ui/react';
 import React, { useState } from 'react';
 
+import { Icon } from '@chakra-ui/icons';
 import { BsPerson } from 'react-icons/bs';
 import { GrContactInfo } from 'react-icons/gr';
-import { Icon } from '@chakra-ui/icons';
 import { MdOutlineEmail } from 'react-icons/md';
 import config from '../../config';
 
@@ -82,7 +82,7 @@ export default function contact() {
         <Box>
           <form
             onSubmit={submitForm}
-            action={`https://formspree.io/${FORMSPREE}`}
+            action={`https://formspree.io/f/${FORMSPREE}`}
             method="POST"
           >
             <FormControl id="name" pt={2}>
