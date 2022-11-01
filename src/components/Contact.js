@@ -13,6 +13,7 @@ import {
   Textarea,
 } from '@chakra-ui/react';
 import React, { useState } from 'react';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 import { Icon } from '@chakra-ui/icons';
 import { BsPerson } from 'react-icons/bs';
@@ -21,7 +22,7 @@ import { MdOutlineEmail } from 'react-icons/md';
 import config from '../../config';
 
 export default function contact() {
-  const { FORMSPREE } = config;
+  const { FORMSPREE, REACT_APP_SITE_KEY } = config;
   const [status, setStatus] = useState('');
 
   const submitForm = (ev) => {
@@ -135,6 +136,7 @@ export default function contact() {
             {status === 'ERROR' && (
               <Text color="red">Ooops! There was an error.</Text>
             )}
+            <ReCAPTCHA sitekey={REACT_APP_SITE_KEY} />
           </form>
         </Box>
       </Grid>

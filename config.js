@@ -651,6 +651,7 @@ module.exports = {
   phone2: '+201067869404',
   address: 'Mansouria,Giza,Egypt',
   location: 'https://goo.gl/maps/QHh4H4eYJMByuneC8',
+  REACT_APP_SITE_KEY: '6Lf8xc0iAAAAACBuQe99ferPa8rFuef4SaoEuPcL',
   projects,
   jobs,
   description: `Works as a full-time Web Developer for ${jobs[0].company}. I am looking to take on more work and increase my skills as a Web Developer, I'm married and I have 2 sons Hamza and Bilal`,
