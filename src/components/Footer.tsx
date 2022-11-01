@@ -1,14 +1,15 @@
 import {
   Box,
+  chakra,
   Container,
   Stack,
   Text,
-  VisuallyHidden,
-  chakra,
   useColorModeValue,
+  VisuallyHidden,
 } from '@chakra-ui/react';
-import { FaLinkedinIn, FaYoutube } from 'react-icons/fa';
 import React, { ReactNode } from 'react';
+import { FaLinkedinIn, FaYoutube } from 'react-icons/fa';
+import config from '../../config';
 
 import { BsGithub } from 'react-icons/bs';
 
@@ -45,6 +46,9 @@ const SocialButton = ({
 };
 
 export default function Footer() {
+  const {
+    socialLinks: { youtube, linkedin, github },
+  } = config;
   return (
     <Box
       bg={useColorModeValue('gray.50', 'gray.900')}
@@ -69,23 +73,14 @@ export default function Footer() {
             rights reserved
           </Text>
           <Stack direction={'row'} spacing={6}>
-            <SocialButton
-              label={'github'}
-              href={'https://github.com/MoatazAbdAlmageed'}
-            >
+            <SocialButton label={'github'} href={github.url}>
               <BsGithub />
             </SocialButton>
-            <SocialButton
-              label={'linkedin'}
-              href={'https://www.linkedin.com/in/moatazabdelmageed'}
-            >
+            <SocialButton label={'linkedin'} href={linkedin.url}>
               <FaLinkedinIn />
             </SocialButton>
 
-            <SocialButton
-              label={'Youtube'}
-              href={'https://www.youtube.com/channel/UClP1ys1YN3IX8LvpeMlI2rg'}
-            >
+            <SocialButton label={'Youtube'} href={youtube.url}>
               <FaYoutube />
             </SocialButton>
           </Stack>

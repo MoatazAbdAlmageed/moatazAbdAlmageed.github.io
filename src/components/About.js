@@ -7,23 +7,30 @@ import {
   Image,
   Text,
 } from '@chakra-ui/react';
+import React, { Component } from 'react';
 import {
   BsCloudDownloadFill,
   BsGithub,
   BsLinkedin,
   BsYoutube,
 } from 'react-icons/bs';
-import React, { Component } from 'react';
 
 import { Link } from 'gatsby';
-import SkillsIcons from './SkillsIcons';
-import avatar from '../assets/img/avatar.jpg';
 import config from '../../config';
 import resume from '../assets/files/moataz_mohammady_resume.pdf';
+import avatar from '../assets/img/avatar.jpg';
+import SkillsIcons from './SkillsIcons';
 
 class About extends Component {
   render() {
-    const { firstName, lastName, position, kids, jobs } = config;
+    const {
+      firstName,
+      lastName,
+      position,
+      kids,
+      jobs,
+      socialLinks: { linkedin, github, youtube },
+    } = config;
     const currentCompany = jobs[0];
     return (
       <Flex
@@ -69,7 +76,7 @@ class About extends Component {
           }}
         ></Box>
         <Box mt={5}>
-          <Link to="https://github.com/MoatazAbdAlmageed" target="_blank">
+          <Link to={github.url} target="_blank">
             <IconButton
               aria-label="BsGithub"
               variant="ghost"
@@ -79,10 +86,7 @@ class About extends Component {
               icon={<BsGithub size="28px" />}
             />
           </Link>
-          <Link
-            to="https://www.linkedin.com/in/moatazabdelmageed"
-            target="_blank"
-          >
+          <Link to={linkedin.url} target="_blank">
             <IconButton
               aria-label="BsLinkedin"
               variant="ghost"
@@ -92,10 +96,7 @@ class About extends Component {
               icon={<BsLinkedin size="28px" />}
             />
           </Link>
-          <Link
-            to="https://www.youtube.com/channel/UClP1ys1YN3IX8LvpeMlI2rg"
-            target="_blank"
-          >
+          <Link to={youtube.url} target="_blank">
             <IconButton
               aria-label="BsYoutube"
               variant="ghost"

@@ -152,73 +152,67 @@ const interests = [
     title: 'Running && Walking in the countryside with my family or friends.',
   },
 ];
-const socialLinks = [
-  {
+const socialLinks = {
+  github: {
     icon: 'fa-github',
     name: 'Github',
     url: 'https://github.com/MoatazAbdAlmageed',
     show: true,
   },
-  {
+  linkedin: {
     icon: 'fa-linkedin',
     name: 'Linkedin',
     url: 'https://www.linkedin.com/in/moatazabdelmageed',
     show: true,
   },
-  {
+  stackoverflow: {
     icon: 'fa-stack-overflow',
     name: 'stackoverflow',
     url: 'https://stackoverflow.com/users/2524043/moataz-mohammady',
     show: false,
   },
-  {
+  codepen: {
     icon: 'fa-codepen',
     name: 'codepen',
     url: 'https://codepen.io/Moataz-Mohammady/pens/public',
   },
-  {
+  edabit: {
     icon: 'fa-trophy',
     name: 'edabit',
     url: 'https://edabit.com/user/NcL6egjCcAi5zR9k2',
     show: false,
   },
-  {
+  behance: {
     icon: 'fa-behance',
     name: 'Behance',
     url: 'https://www.behance.net/moatazmohammady',
     show: true,
   },
-  {
+  wordpress: {
     icon: 'fa-wordpress',
     name: 'Wordpress Blog',
     url: 'https://profiles.wordpress.org/moataz-mohammady/',
     show: false,
   },
-  {
+  goodreads: {
     icon: 'fa-book',
     name: 'Goodreads',
     url: 'https://www.goodreads.com/user/show/92723087-moataz-mohammady',
     show: false,
   },
-  {
+  caramellaapp: {
     icon: 'fas fa-tint',
     name: 'caramellaapp',
     url: 'https://caramellaapp.com/moatazmohammady',
     show: false,
   },
-  {
-    icon: 'fa-facebook-f',
-    name: 'Facebook',
-    url: 'https://www.facebook.com/moataz.mohammady.3',
+  youtube: {
+    icon: 'fa-youtube',
+    name: 'youtube',
+    url: 'https://www.youtube.com/@moatazMohamady',
     show: false,
   },
-  {
-    icon: 'fa-twitter',
-    name: 'Twitter',
-    url: 'https://twitter.com/MoatazMohammady',
-    show: false,
-  },
-];
+};
 // eslint-disable-next-line no-sparse-arrays
 const certifications = [
   {
