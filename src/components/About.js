@@ -10,9 +10,9 @@ import {
 import React, { Component } from 'react';
 import {
   BsCloudDownloadFill,
+  BsEnvelope,
   BsGithub,
   BsLinkedin,
-  BsMailbox2,
   BsYoutube,
 } from 'react-icons/bs';
 
@@ -115,7 +115,7 @@ class About extends Component {
               size="lg"
               isRound={true}
               _hover={{ bg: 'orange' }}
-              icon={<BsMailbox2 size="28px" />}
+              icon={<BsEnvelope size="28px" />}
             />
           </a>
         </Box>
