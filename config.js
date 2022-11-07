@@ -364,6 +364,15 @@ const projects = [
     description: 'Maintenance for Bein Quran website',
   },
   {
+    title: 'Quran Spirit website',
+    url: 'https://quranspirit.com/',
+    tools: ['WordPress'],
+    icon: 'fa-wordpress',
+    year: '2022',
+    show: true,
+    description: 'Maintenance for Quran Spirit website',
+  },
+  {
     title: 'Sahwa Website',
     url: 'http://sahwa-candy.com/',
     tools: ['WordPress', 'woocommerce'],
