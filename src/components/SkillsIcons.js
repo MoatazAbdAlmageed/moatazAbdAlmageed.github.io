@@ -50,6 +50,13 @@ class SkillsIcons extends Component {
               height="50"
               src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg"
             />
+          </ListItem>{' '} <ListItem float="left">
+            {' '}
+            <Image
+              title="vuejs"
+              height="50"
+              src="https://www.vectorlogo.zone/logos/vuejs/vuejs-icon.svg"
+            />
           </ListItem>{' '}
           <ListItem float="left">
             {' '}
