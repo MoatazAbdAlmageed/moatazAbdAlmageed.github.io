@@ -345,15 +345,7 @@ const projects = [
     show: true,
     description: 'Website for RTC Neklawy company',
   },
-  {
-    title: 'Grandirlibrement Website',
-    url: 'https://grandirlibrement.com/',
-    tools: ['WordPress'],
-    icon: 'fa-wordpress',
-    year: '2022',
-    show: true,
-    description: 'Maintenance for Grandirlibrement website',
-  },
+
   {
     title: 'Bein Quran Website',
     url: 'https://beinquran.com/',
