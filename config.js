@@ -414,6 +414,20 @@ const jobs = [
   {
     company: 'Wuilt',
     url: 'http://wuilt.com/',
+    technologies:[
+      'HTML',
+      'CSS',
+      'Javascript',
+      'typescript',
+      'react',
+      'PHP',
+      'mysql',
+      'Laravel',
+      'wordPress',
+      'graphql',
+      'nodejs',
+      'mongodb',
+    ],
     period: 'Jan 2020 - Present',
     occupation: 'Full-Stack Web Developer',
     responsibilities: [
@@ -442,6 +456,14 @@ const jobs = [
   },
   {
     company: 'camelCase',
+    technologies:[
+      'HTML',
+      'CSS',
+      'Javascript',
+      'PHP',
+      'mysql',
+      'Laravel',
+    ],
     responsibilities: [
       'Develop new user-facing features',
       'Build reusable code and libraries for future use',
@@ -476,6 +498,13 @@ const jobs = [
   {
     company: 'Nile Bits',
     url: 'https://www.nilebits.com/',
+    technologies:[
+      'HTML',
+      'CSS',
+      'Javascript',
+      'angularjs',
+      'angular',
+    ],
     period: 'Jan 2017 - Apr 2018',
     occupation: 'Front-End developer',
     responsibilities: [
@@ -497,6 +526,16 @@ const jobs = [
   {
     company: 'TIE',
     url: 'http://tie.com.eg/',
+    technologies:[
+      'HTML',
+      'CSS',
+      'Javascript',
+      'PHP',
+      'mysql',
+      'Laravel',
+      'rails',
+      'angularjs',
+    ],
     period: 'Sep 2016 - Jan 2017',
     occupation: 'WordPress developer',
     responsibilities: [
@@ -522,6 +561,12 @@ const jobs = [
   {
     company: 'EgyCoders',
     url: 'http://www.egycoders.com/',
+    technologies:[
+      'HTML',
+      'CSS',
+      'Javascript',
+      'angularjs',
+    ],
     period: 'Mar 2016 - Jun 2016',
     occupation: 'Front-End developer',
     responsibilities: [
@@ -540,6 +585,14 @@ const jobs = [
   {
     company: 'Orchtech',
     url: 'https://www.orchtech.com/',
+    technologies:[
+      'HTML',
+      'CSS',
+      'Javascript',
+      'PHP',
+      'mysql',
+      'wordPress',
+    ],
     period: 'Dec 2015 - May 2016',
     occupation: 'WordPress Developer',
     responsibilities: [
@@ -572,6 +625,14 @@ const jobs = [
   {
     company: 'Leogami',
     url: 'http://leogami.com/',
+    technologies:[
+      'HTML',
+      'CSS',
+      'Javascript',
+      'PHP',
+      'mysql',
+      'wordPress',
+    ],
     period: 'Oct 2015 - Nov 2015',
     occupation: 'WordPress Developer',
     responsibilities: [

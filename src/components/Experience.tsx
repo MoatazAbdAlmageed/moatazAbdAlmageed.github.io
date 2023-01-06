@@ -52,6 +52,7 @@ function Experience() {
             description,
             period,
             responsibilities,
+            technologies,
             projects,
           } = job;
           return (
@@ -80,6 +81,20 @@ function Experience() {
                         <ListItem key={Math.random()}>
                           <ListIcon as={MdCheckCircle} color="green.500" />
                           {responsibility}
+                        </ListItem>
+                      );
+                    })}
+                  </List>
+                </Box>
+
+                <Box pt={5}>
+                  <Heading size="sm">Technologies</Heading>
+                  <List>
+                    {technologies.map((technology) => {
+                      return (
+                        <ListItem key={Math.random()}>
+                          <ListIcon as={MdCheckCircle} color="green.500" />
+                          {technology}
                         </ListItem>
                       );
                     })}
