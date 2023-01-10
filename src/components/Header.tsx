@@ -1,4 +1,10 @@
 import {
+  ChevronDownIcon,
+  ChevronRightIcon,
+  CloseIcon,
+  HamburgerIcon,
+} from '@chakra-ui/icons';
+import {
   Box,
   Collapse,
   Flex,
@@ -13,12 +19,6 @@ import {
   useColorModeValue,
   useDisclosure,
 } from '@chakra-ui/react';
-import {
-  ChevronDownIcon,
-  ChevronRightIcon,
-  CloseIcon,
-  HamburgerIcon,
-} from '@chakra-ui/icons';
 import React, { useEffect } from 'react';
 
 export default function Header() {
@@ -249,7 +249,10 @@ const NAV_ITEMS: Array<NavItem> = [
     label: 'About',
     href: '#about',
   },
-
+  {
+    label: 'Experience',
+    href: '#experience',
+  },
   {
     label: 'Projects',
     href: '#projects',
@@ -258,10 +261,6 @@ const NAV_ITEMS: Array<NavItem> = [
   {
     label: 'Clients Speak',
     href: '#testimonials',
-  },
-  {
-    label: 'Experience',
-    href: '#experience',
   },
 
   {
