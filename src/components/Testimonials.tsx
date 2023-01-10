@@ -110,10 +110,7 @@ export default function WithSpeechBubbles() {
         <Heading pt={20}>Clients Speak</Heading>
         <Text>I have been working with clients around the world</Text>
       </Stack>
-      <Stack
-        direction={{ base: 'column', md: 'row' }}
-        spacing={{ base: 10, md: 4, lg: 10 }}
-      >
+      <Stack direction={{ base: 'column', md: 'row' }} spacing={{ base: 10 }}>
         <Testimonial>
           <TestimonialContent>
             <TestimonialHeading>Efficient Collaborating</TestimonialHeading>
@@ -162,7 +159,6 @@ export default function WithSpeechBubbles() {
             url="https://beinquran.com/"
           />
         </Testimonial>
-      
       </Stack>
     </Flex>
   );

@@ -37,11 +37,9 @@ function Experience() {
       </Stack>
 
       <Grid
-        gap={2}
+        gap={1}
         templateColumns={{
           base: 'repeat(1, 1fr)',
-          lg: 'repeat(3, 1fr)',
-          xl: 'repeat(4, 1fr)',
         }}
       >
         {jobs.map((job) => {
@@ -83,7 +81,7 @@ function Experience() {
                   <List>
                     {responsibilities.map((responsibility) => {
                       return (
-                        <ListItem key={Math.random()}>
+                        <ListItem margin={1} key={Math.random()}>
                           <ListIcon as={MdCheckCircle} color="green.500" />
                           {responsibility}
                         </ListItem>
@@ -94,10 +92,10 @@ function Experience() {
 
                 <Box pt={5}>
                   <Heading size="sm">Technologies</Heading>
-                  <List>
+                  <List display="flex">
                     {technologies.map((technology) => {
                       return (
-                        <ListItem key={Math.random()}>
+                        <ListItem margin={1} key={Math.random()}>
                           <ListIcon as={MdCheckCircle} color="green.500" />
                           {technology}
                         </ListItem>
@@ -108,10 +106,10 @@ function Experience() {
 
                 <Box pt={5}>
                   <Heading size="sm"> Projects</Heading>
-                  <List>
+                  <List display="flex">
                     {projects.map((project) => {
                       return (
-                        <ListItem key={Math.random()}>
+                        <ListItem margin={1} key={Math.random()}>
                           <ListIcon as={MdCheckCircle} color="green.500" />
                           <Link
                             to={project.url}
