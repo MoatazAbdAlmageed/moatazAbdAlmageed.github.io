@@ -1,8 +1,7 @@
-import { Grid, Heading, Icon, Stack, Text } from '@chakra-ui/react';
+import { Grid, Heading, Icon, Link, Stack, Text } from '@chakra-ui/react';
 import React, { Component } from 'react';
 
 import { GrCertificate } from 'react-icons/gr';
-import { Link } from 'gatsby';
 import Wrapper from './Wrapper';
 import config from '../../config';
 
@@ -58,7 +57,12 @@ class Awards extends Component {
                 overflow="hidden"
                 m={2}
                 p={10}
-                _hover={{ bg: 'gray.800', color: '#ffffff' }}
+                _hover={{
+                  shadow: 'md',
+                  transform: 'translateY(-5px)',
+                  transition: '0.5s',
+                  bg: 'gray.100',
+                }}
               >
                 <Link to={url} target="_blank" rel="noopener noreferrer">
                   <Text color="orange">

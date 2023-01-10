@@ -7,6 +7,7 @@ import {
   Image,
   Text,
 } from '@chakra-ui/react';
+import React, { Component } from 'react';
 import {
   BsCloudDownloadFill,
   BsEnvelope,
@@ -14,13 +15,11 @@ import {
   BsLinkedin,
   BsYoutube,
 } from 'react-icons/bs';
-import React, { Component } from 'react';
 
 import { Link } from 'gatsby';
-import SkillsIcons from './SkillsIcons';
-import avatar from '../assets/img/avatar.jpg';
 import config from '../../config';
 import resume from '../assets/files/moataz_mohammady_resume.pdf';
+import avatar from '../assets/img/avatar.jpg';
 
 class About extends Component {
   render() {
@@ -56,11 +55,20 @@ class About extends Component {
             p={5}
           />
           <Text align="center" p={5} fontSize="1.4em">
-            I am a {position} with +{new Date().getFullYear() - 2015} years of
-            experience. I work as {currentCompany.position} for{' '}
-            <a target="_blank" href={currentCompany.url} rel="noreferrer">
-              {currentCompany.company}
-            </a>
+            I am a{' '}
+            <i>
+              <b>{position}</b>
+            </i>{' '}
+            with +{new Date().getFullYear() - 2015} years of experience. I work
+            as {currentCompany.position} for{' '}
+            <i>
+              <b>
+                {' '}
+                <a target="_blank" href={currentCompany.url} rel="noreferrer">
+                  {currentCompany.company}
+                </a>
+              </b>
+            </i>
             .
             <br /> I am looking forward to taking on more work and increase my
             skills as a Web Developer.
@@ -138,9 +146,6 @@ class About extends Component {
               Resume
             </Button>
           </a>
-        </Box>
-        <Box p={{ base: 5, md: 10 }}>
-          <SkillsIcons />
         </Box>
       </Flex>
     );

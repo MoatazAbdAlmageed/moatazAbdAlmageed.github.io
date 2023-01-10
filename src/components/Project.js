@@ -17,7 +17,12 @@ export default function Project({ project }) {
       direction={{ base: 'column', md: 'row' }}
       spacing={{ base: 10, md: 4, lg: 10 }}
       style={{ transition: 'transition-delay: 1s' }}
-      _hover={{ bg: 'gray.800', color: '#ffffff' }}
+      _hover={{
+        shadow: 'md',
+        transform: 'translateY(-5px)',
+        transition: '0.5s',
+        bg: 'gray.100',
+      }}
     >
       <Box p="6">
         <Box d="flex" alignItems="baseline">

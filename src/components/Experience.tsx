@@ -10,11 +10,11 @@ import {
 
 import { Icon } from '@chakra-ui/icons';
 import { Link } from 'gatsby';
-import { MdCheckCircle } from 'react-icons/md';
 import React from 'react';
+import { MdCheckCircle } from 'react-icons/md';
 import { TiStarburst } from 'react-icons/ti';
-import Wrapper from './Wrapper';
 import config from '../../config';
+import Wrapper from './Wrapper';
 
 function Experience() {
   const { jobs } = config;
@@ -61,7 +61,12 @@ function Experience() {
               overflow="hidden"
               direction={{ base: 'column', md: 'row' }}
               spacing={{ base: 10, md: 4, lg: 10 }}
-              _hover={{ bg: 'gray.800', color: '#ffffff' }}
+              _hover={{
+                shadow: 'md',
+                transform: 'translateY(-5px)',
+                transition: '0.5s',
+                bg: 'gray.100',
+              }}
               p={10}
             >
               <Box>
