@@ -2,8 +2,8 @@ import { Grid, Heading, Icon, Link, Stack, Text } from '@chakra-ui/react';
 import React, { Component } from 'react';
 
 import { GrCertificate } from 'react-icons/gr';
-import Wrapper from './Wrapper';
 import config from '../../config';
+import Wrapper from './Wrapper';
 
 class Awards extends Component {
   render() {
@@ -29,7 +29,7 @@ class Awards extends Component {
             <br /> I try to learn something new every single day.
             <br /> You can check more here
             <Link
-              to="https://www.linkedin.com/in/moatazabdelmageed/details/certifications/"
+              href="https://www.linkedin.com/in/moatazabdelmageed/details/certifications/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -64,7 +64,7 @@ class Awards extends Component {
                   bg: 'gray.100',
                 }}
               >
-                <Link to={url} target="_blank" rel="noopener noreferrer">
+                <Link href={url} target="_blank" rel="noopener noreferrer">
                   <Text color="orange">
                     <b>{title} </b> @{place}
                   </Text>
