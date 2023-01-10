@@ -413,8 +413,9 @@ const projects = [
 const jobs = [
   {
     company: 'Wuilt',
+    position: 'Backend Developer',
     url: 'http://wuilt.com/',
-    technologies:[
+    technologies: [
       'HTML',
       'CSS',
       'Javascript',
@@ -431,9 +432,7 @@ const jobs = [
     period: 'Jan 2020 - Present',
     occupation: 'Full-Stack Web Developer',
     responsibilities: [
-      'Maintain and add new features for Wuilt builder',
-      'Maintain and add new features for Wuilt store',
-      'Maintain Wuilt blog',
+      "As a Back End Developer at Wuilt, I am responsible for developing and maintaining the server-side logic of the company's web applications using PHP and Laravel. My main duties include designing, coding, testing, debugging, and documenting software applications; creating databases; writing scripts to automate processes; developing APIs; optimizing application performance; and troubleshooting system issues. I also collaborate with other developers and designers to ensure that the user experience is seamless. With my expertise in PHP and Laravel, I am confident that I can help Wuilt create efficient web applications that meet the highest standards of quality.As a Back End Developer at Wuilt, I am responsible for developing and maintaining the server-side logic of the company's web applications using PHP and Laravel. My main duties include designing, coding, testing, debugging, and documenting software applications; creating databases; writing scripts to automate processes; developing APIs; optimizing application performance; and troubleshooting system issues. I also collaborate with other developers and designers to ensure that the user experience is seamless. With my expertise in PHP and Laravel, I am confident that I can help Wuilt create efficient web applications that meet the highest standards of quality.",
     ],
     description: '',
     projects: [
@@ -456,14 +455,7 @@ const jobs = [
   },
   {
     company: 'camelCase',
-    technologies:[
-      'HTML',
-      'CSS',
-      'Javascript',
-      'PHP',
-      'mysql',
-      'Laravel',
-    ],
+    technologies: ['HTML', 'CSS', 'Javascript', 'PHP', 'mysql', 'Laravel'],
     responsibilities: [
       'Develop new user-facing features',
       'Build reusable code and libraries for future use',
@@ -498,13 +490,7 @@ const jobs = [
   {
     company: 'Nile Bits',
     url: 'https://www.nilebits.com/',
-    technologies:[
-      'HTML',
-      'CSS',
-      'Javascript',
-      'angularjs',
-      'angular',
-    ],
+    technologies: ['HTML', 'CSS', 'Javascript', 'angularjs', 'angular'],
     period: 'Jan 2017 - Apr 2018',
     occupation: 'Front-End developer',
     responsibilities: [
@@ -526,7 +512,7 @@ const jobs = [
   {
     company: 'TIE',
     url: 'http://tie.com.eg/',
-    technologies:[
+    technologies: [
       'HTML',
       'CSS',
       'Javascript',
@@ -561,12 +547,7 @@ const jobs = [
   {
     company: 'EgyCoders',
     url: 'http://www.egycoders.com/',
-    technologies:[
-      'HTML',
-      'CSS',
-      'Javascript',
-      'angularjs',
-    ],
+    technologies: ['HTML', 'CSS', 'Javascript', 'angularjs'],
     period: 'Mar 2016 - Jun 2016',
     occupation: 'Front-End developer',
     responsibilities: [
@@ -585,14 +566,7 @@ const jobs = [
   {
     company: 'Orchtech',
     url: 'https://www.orchtech.com/',
-    technologies:[
-      'HTML',
-      'CSS',
-      'Javascript',
-      'PHP',
-      'mysql',
-      'wordPress',
-    ],
+    technologies: ['HTML', 'CSS', 'Javascript', 'PHP', 'mysql', 'wordPress'],
     period: 'Dec 2015 - May 2016',
     occupation: 'WordPress Developer',
     responsibilities: [
@@ -625,14 +599,7 @@ const jobs = [
   {
     company: 'Leogami',
     url: 'http://leogami.com/',
-    technologies:[
-      'HTML',
-      'CSS',
-      'Javascript',
-      'PHP',
-      'mysql',
-      'wordPress',
-    ],
+    technologies: ['HTML', 'CSS', 'Javascript', 'PHP', 'mysql', 'wordPress'],
     period: 'Oct 2015 - Nov 2015',
     occupation: 'WordPress Developer',
     responsibilities: [

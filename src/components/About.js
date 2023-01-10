@@ -7,7 +7,6 @@ import {
   Image,
   Text,
 } from '@chakra-ui/react';
-import React, { Component } from 'react';
 import {
   BsCloudDownloadFill,
   BsEnvelope,
@@ -15,12 +14,13 @@ import {
   BsLinkedin,
   BsYoutube,
 } from 'react-icons/bs';
+import React, { Component } from 'react';
 
 import { Link } from 'gatsby';
+import SkillsIcons from './SkillsIcons';
+import avatar from '../assets/img/avatar.jpg';
 import config from '../../config';
 import resume from '../assets/files/moataz_mohammady_resume.pdf';
-import avatar from '../assets/img/avatar.jpg';
-import SkillsIcons from './SkillsIcons';
 
 class About extends Component {
   render() {
@@ -57,7 +57,7 @@ class About extends Component {
           />
           <Text align="center" p={5} fontSize="1.4em">
             I am a {position} with +{new Date().getFullYear() - 2015} years of
-            experience. I work for{' '}
+            experience. I work as {currentCompany.position} for{' '}
             <a target="_blank" href={currentCompany.url} rel="noreferrer">
               {currentCompany.company}
             </a>
