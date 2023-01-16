@@ -10,3 +10,8 @@ Cloned from https://github.com/anubhavsrivastava/gatsby-starter-resume
 ### gatsbyjs Plugins
 
 - gatsby-plugin-google-analytics
+
+## Installation
+
+- `yarn install`
+- `yarn dev`
