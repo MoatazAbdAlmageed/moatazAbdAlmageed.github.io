@@ -413,7 +413,6 @@ const projects = [
 const jobs = [
   {
     company: 'Wuilt',
-    position: 'Backend Developer',
     url: 'http://wuilt.com/',
     technologies: [
       'HTML',
@@ -430,7 +429,7 @@ const jobs = [
       'mongodb',
     ],
     period: 'Jan 2020 - Present',
-    occupation: 'Full-Stack Web Developer',
+    occupation: 'Backend web developer',
     responsibilities: [
       "As a Back End Developer at Wuilt, I am responsible for developing and maintaining the server-side logic of the company's web applications using PHP and Laravel. My main duties include designing, coding, testing, debugging, and documenting software applications; creating databases; writing scripts to automate processes; developing APIs; optimizing application performance; and troubleshooting system issues. I also collaborate with other developers and designers to ensure that the user experience is seamless. With my expertise in PHP and Laravel, I am confident that I can help Wuilt create efficient web applications that meet the highest standards of quality.",
     ],
@@ -463,7 +462,7 @@ const jobs = [
     ],
     url: 'https://camelcasetech.com/',
     period: 'May 2018 - Dec 2019',
-    occupation: 'Full-Stack PHP Developer',
+    occupation: 'Backend web developer',
     description: '',
     projects: [
       {
