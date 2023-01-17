@@ -1,11 +1,11 @@
 import {
   Box,
   Grid,
+  GridItem,
   Heading,
   List,
   ListIcon,
   ListItem,
-  Stack,
 } from '@chakra-ui/react';
 
 import { Icon } from '@chakra-ui/icons';
@@ -21,7 +21,7 @@ function Experience() {
 
   return (
     <Wrapper id="experience">
-      <Stack spacing={0} align={'center'}>
+      <Box spacing={0} align={'center'}>
         <Heading pt={20}>
           {' '}
           <Icon
@@ -34,14 +34,9 @@ function Experience() {
           />{' '}
           Experience
         </Heading>
-      </Stack>
+      </Box>
 
-      <Grid
-        gap={1}
-        templateColumns={{
-          base: 'repeat(1, 1fr)',
-        }}
-      >
+      <Box>
         {jobs.map((job) => {
           const {
             company,
@@ -54,11 +49,9 @@ function Experience() {
             projects,
           } = job;
           return (
-            <Stack
+            <Grid
               key={url}
               overflow="hidden"
-              direction={{ base: 'column', md: 'row' }}
-              spacing={{ base: 10, md: 4, lg: 10 }}
               _hover={{
                 shadow: 'md',
                 transform: 'translateY(-5px)',
@@ -66,8 +59,10 @@ function Experience() {
                 bg: 'gray.100',
               }}
               p={10}
+              templateColumns="repeat(3, 1fr)"
+              gap={4}
             >
-              <Box>
+              <GridItem>
                 <Box>
                   <Heading size="md" color="orange">
                     {occupation}
@@ -78,7 +73,7 @@ function Experience() {
 
                 <Box pt={5}>
                   <Heading size="sm"> Projects</Heading>
-                  <List display="flex">
+                  <List>
                     {projects.map((project) => {
                       return (
                         <ListItem margin={1} key={Math.random()}>
@@ -97,7 +92,9 @@ function Experience() {
                     })}
                   </List>
                 </Box>
+              </GridItem>
 
+              <GridItem colSpan={2}>
                 <Box pt={5}>
                   <Heading size="sm">Responsibilities</Heading>
                   <List>
@@ -127,11 +124,11 @@ function Experience() {
                 </Box>
 
                 <p>{description}</p>
-              </Box>
-            </Stack>
+              </GridItem>
+            </Grid>
           );
         })}
-      </Grid>
+      </Box>
     </Wrapper>
   );
 }

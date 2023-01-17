@@ -5,21 +5,21 @@ import {
   Heading,
   IconButton,
   Image,
-  Text
+  Text,
 } from '@chakra-ui/react';
-import React, { Component } from 'react';
 import {
   BsCloudDownloadFill,
   BsEnvelope,
   BsGithub,
   BsLinkedin,
-  BsYoutube
+  BsYoutube,
 } from 'react-icons/bs';
+import React, { Component } from 'react';
 
 import { Link } from 'gatsby';
+import avatar from '../assets/img/avatar.jpg';
 import config from '../../config';
 import resume from '../assets/files/moataz_mohammady_resume.pdf';
-import avatar from '../assets/img/avatar.jpg';
 
 class About extends Component {
   render() {
@@ -27,7 +27,6 @@ class About extends Component {
       firstName,
       lastName,
       position,
-      kids,
       jobs,
       email,
       socialLinks: { linkedin, github, youtube },
@@ -72,10 +71,6 @@ class About extends Component {
             .
             <br /> I am looking forward to taking on more work and increase my
             skills as a Web Developer.
-            <br /> {`I'm`} married and I have {kids.length} sons{' '}
-            {kids.map(
-              ({ name }, index) => `${name}${kids[index + 1] ? ',' : ''}`
-            )}
           </Text>
         </Box>
         <Box
