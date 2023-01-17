@@ -5,7 +5,7 @@ import {
   Heading,
   IconButton,
   Image,
-  Text,
+  Text
 } from '@chakra-ui/react';
 import React, { Component } from 'react';
 import {
@@ -13,7 +13,7 @@ import {
   BsEnvelope,
   BsGithub,
   BsLinkedin,
-  BsYoutube,
+  BsYoutube
 } from 'react-icons/bs';
 
 import { Link } from 'gatsby';
@@ -59,7 +59,7 @@ class About extends Component {
             <i>
               <b>{position}</b>
             </i>{' '}
-            with +{new Date().getFullYear() - 2015} years of experience. I work
+            with {new Date().getFullYear() - 2015} years of experience. I work
             as {currentCompany.position} for{' '}
             <i>
               <b>

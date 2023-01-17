@@ -682,5 +682,5 @@ module.exports = {
   REACT_APP_SITE_KEY: '6Lep6c0iAAAAAKc4uMszguapnASF0Yi0gdRm9ZGi',
   projects,
   jobs,
-  description: `Works as a full-time Web Developer for ${jobs[0].company}. I am looking to take on more work and increase my skills as a Web Developer, I'm married and I have 2 sons Hamza and Bilal`,
+  description: `Works as a full-time Web Developer for ${jobs[0].company}. I am looking to take on more work and increase my skills as a Web Developer`,
 };
