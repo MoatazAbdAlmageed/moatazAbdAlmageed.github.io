@@ -127,6 +127,7 @@ class About extends Component {
                 variant="ghost"
                 size="lg"
                 isRound={true}
+                _hover={{ bg: 'orange.600' }}
                 icon={<BsCloudDownloadFill size="28px" />}
               />
               Resume
