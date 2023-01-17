@@ -26,12 +26,9 @@ class About extends Component {
     const {
       firstName,
       lastName,
-      position,
-      jobs,
       email,
       socialLinks: { linkedin, github, youtube },
     } = config;
-    const currentCompany = jobs[0];
     return (
       <Flex
         id="about"
@@ -54,23 +51,15 @@ class About extends Component {
             p={5}
           />
           <Text align="center" p={5} fontSize="1.4em">
-            I am a{' '}
-            <i>
-              <b>{position}</b>
-            </i>{' '}
-            with {new Date().getFullYear() - 2015} years of experience. I work
-            as {currentCompany.position} for{' '}
-            <i>
-              <b>
-                {' '}
-                <a target="_blank" href={currentCompany.url} rel="noreferrer">
-                  {currentCompany.company}
-                </a>
-              </b>
-            </i>
-            .
-            <br /> I am looking forward to taking on more work and increase my
-            skills as a Web Developer.
+            With 8 years of experience as a Full Stack Web Developer, I am
+            highly skilled and passionate about my work. I currently work for
+            Wuilt and am eager to take on more challenging projects and expand
+            my expertise in the field. My experience includes developing web
+            applications using HTML5, CSS3, JavaScript, Node.js, React.js, PHP,
+            Laravel, and WordPress. Additionally, I have experience with
+            databases such as MySQL and MongoDB. With my knowledge and passion
+            for web development, I look forward to taking on more work and
+            increasing my skillset as a Web Developer.
           </Text>
         </Box>
         <Box
