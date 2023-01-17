@@ -49,8 +49,11 @@ class About extends Component {
             src={avatar}
             alt={`${firstName} ${lastName}`}
             p={5}
+            _hover={{
+              transform: 'scaleX(-1)',
+            }}
           />
-          <Text align="center" p={5} fontSize="1.4em">
+          <Text align="center" padding="3em" fontSize="1.4em">
             With 8 years of experience as a Full Stack Web Developer, I am
             highly skilled and passionate about my work. I currently work for
             Wuilt and am eager to take on more challenging projects and expand
@@ -117,14 +120,13 @@ class About extends Component {
               bg="orange"
               color="white"
               size="lg"
-              _hover={{ bg: 'orange' }}
+              _hover={{ bg: 'gray.800' }}
             >
               <IconButton
                 aria-label="BsCloudDownloadFill"
                 variant="ghost"
                 size="lg"
                 isRound={true}
-                _hover={{ bg: 'orange' }}
                 icon={<BsCloudDownloadFill size="28px" />}
               />
               Resume
