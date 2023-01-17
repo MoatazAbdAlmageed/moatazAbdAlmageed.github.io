@@ -10,11 +10,11 @@ import {
 
 import { Icon } from '@chakra-ui/icons';
 import { Link } from 'gatsby';
-import React from 'react';
 import { MdCheckCircle } from 'react-icons/md';
+import React from 'react';
 import { TiStarburst } from 'react-icons/ti';
-import config from '../../config';
 import Wrapper from './Wrapper';
+import config from '../../config';
 
 function Experience() {
   const { jobs } = config;
@@ -77,6 +77,28 @@ function Experience() {
                 </Box>
 
                 <Box pt={5}>
+                  <Heading size="sm"> Projects</Heading>
+                  <List display="flex">
+                    {projects.map((project) => {
+                      return (
+                        <ListItem margin={1} key={Math.random()}>
+                          <ListIcon as={MdCheckCircle} color="green.500" />
+                          <Link
+                            to={project.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <i className="fa fa-globe" aria-hidden="true"></i>
+                            &nbsp;
+                            {project.name}
+                          </Link>
+                        </ListItem>
+                      );
+                    })}
+                  </List>
+                </Box>
+
+                <Box pt={5}>
                   <Heading size="sm">Responsibilities</Heading>
                   <List>
                     {responsibilities.map((responsibility) => {
@@ -98,28 +120,6 @@ function Experience() {
                         <ListItem margin={1} key={Math.random()}>
                           <ListIcon as={MdCheckCircle} color="green.500" />
                           {technology}
-                        </ListItem>
-                      );
-                    })}
-                  </List>
-                </Box>
-
-                <Box pt={5}>
-                  <Heading size="sm"> Projects</Heading>
-                  <List display="flex">
-                    {projects.map((project) => {
-                      return (
-                        <ListItem margin={1} key={Math.random()}>
-                          <ListIcon as={MdCheckCircle} color="green.500" />
-                          <Link
-                            to={project.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <i className="fa fa-globe" aria-hidden="true"></i>
-                            &nbsp;
-                            {project.name}
-                          </Link>
                         </ListItem>
                       );
                     })}
