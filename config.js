@@ -327,15 +327,7 @@ const colors = [
 ];
 
 const projects = [
-  {
-    title: 'Kitab Allah Academy Website',
-    url: 'https://kitaballahacademy.com/',
-    tools: ['WordPress'],
-    icon: 'fa-wordpress',
-    year: '2022',
-    show: true,
-    description: 'Website for Kitab Allah Academy ',
-  },
+ 
   {
     title: 'RTC Neklawy Website',
     url: 'https://rtcneklawy.com/',
