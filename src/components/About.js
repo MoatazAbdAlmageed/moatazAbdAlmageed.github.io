@@ -54,16 +54,7 @@ class About extends Component {
             }}
           />
           <Text align="center" padding="3em" fontSize="1.4em">
-            With 8 years of experience as a Full Stack Web Developer, I am
-            highly skilled and passionate about my work. I currently work for
-            Wuilt and am eager to take on more challenging projects and expand
-            my expertise in the field. My experience includes developing web
-            applications using HTML5, CSS3, JavaScript, Node.js, React.js, PHP,
-            Laravel, and WordPress. Additionally, I have experience with
-            databases such as MySQL and MongoDB. With my knowledge and passion
-            for web development, I look forward to taking on more work and
-            increasing my skillset as a Web Developer.
-          </Text>
+             As a Full Stack Web Developer, I am highly skilled and passionate about my work. I currently work for Wuilt and am eager to take on more challenging projects and expand my expertise in the field. My experience includes developing web applications using HTML5, CSS3, JavaScript, Node.js, React.js, PHP, Laravel, and WordPress. Additionally, I have experience with databases such as MySQL and MongoDB. With my knowledge and passion for web development, I look forward to taking on more work and increasing my skillset as a Web Developer.
         </Box>
         <Box
           width={{
