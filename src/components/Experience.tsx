@@ -59,7 +59,11 @@ function Experience() {
                 bg: 'gray.100',
               }}
               p={10}
-              templateColumns="repeat(3, 1fr)"
+              templateColumns={{
+                base: 'repeat(2, 1fr)',
+                md: 'repeat(3, 1fr)',
+                sm: 'repeat(1, 1fr)',
+              }}
               gap={4}
             >
               <GridItem>
