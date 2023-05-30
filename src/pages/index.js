@@ -1,14 +1,15 @@
-import About from '../components/About';
-import { Animate } from 'react-simple-animate';
-import Awards from '../components/Awards';
 import { Box } from '@chakra-ui/react';
+import React from 'react';
+import { Animate } from 'react-simple-animate';
+import About from '../components/About';
+import Awards from '../components/Awards';
 import Contact from '../components/Contact';
+import Divider from '../components/Divider';
 import Experience from '../components/Experience';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Layout from '../components/Layout';
 import Projects from '../components/Projects';
-import React from 'react';
 import TestimonialContent from '../components/Testimonials';
 
 const IndexPage = () => {
@@ -30,8 +31,9 @@ const IndexPage = () => {
           <TestimonialContent />
           <Awards />
           <Contact />
-          <Footer />
         </Box>
+        <Footer />
+        <Divider />
       </Animate>
     </Layout>
   );

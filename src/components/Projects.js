@@ -1,11 +1,10 @@
 import { Grid, Heading, Icon, Stack } from '@chakra-ui/react';
 import React, { Component } from 'react';
 
-import Divider from './Divider';
 import { FiTerminal } from 'react-icons/fi';
+import config from '../../config';
 import Project from './Project';
 import Wrapper from './Wrapper';
-import config from '../../config';
 
 class Projects extends Component {
   render() {
@@ -42,7 +41,6 @@ class Projects extends Component {
               <Project key={project.url} project={project} />
             ))}
         </Grid>
-        <Divider />
       </Wrapper>
     );
   }

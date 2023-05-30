@@ -9,7 +9,6 @@ import {
 } from '@chakra-ui/react';
 import React, { ReactNode } from 'react';
 
-import Divider from './Divider';
 import { Link } from 'gatsby';
 
 const Testimonial = ({ children }: { children: ReactNode }) => {
@@ -79,7 +78,7 @@ const TestimonialAvatar = ({
   url: string;
 }) => {
   return (
-    <Flex align={'center'} mt={8} direction={'column'}>
+    <Flex align={'center'} p={8} direction={'column'}>
       <Avatar src={src} alt={name} mb={2} />
       <Stack spacing={-1} align={'center'}>
         <Text color={'orange'} fontWeight={600}>
@@ -156,7 +155,6 @@ export default function WithSpeechBubbles() {
           />
         </Testimonial>
       </Stack>
-      <Divider />
     </Flex>
   );
 }

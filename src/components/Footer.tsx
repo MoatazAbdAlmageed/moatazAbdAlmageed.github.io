@@ -1,17 +1,16 @@
 import {
   Box,
+  chakra,
   Container,
   Stack,
   Text,
-  VisuallyHidden,
-  chakra,
   useColorModeValue,
+  VisuallyHidden,
 } from '@chakra-ui/react';
-import { FaLinkedinIn, FaYoutube } from 'react-icons/fa';
 import React, { ReactNode } from 'react';
+import { FaLinkedinIn, FaYoutube } from 'react-icons/fa';
 
 import { BsGithub } from 'react-icons/bs';
-import Divider from './Divider';
 import config from '../../config';
 
 const SocialButton = ({
@@ -52,10 +51,8 @@ export default function Footer() {
   } = config;
   return (
     <Box>
-      <Divider />
       <Box
         color={useColorModeValue('gray.700', 'gray.200')}
-        bg={useColorModeValue('gray.50', 'gray.900')}
         borderTopWidth={1}
         borderStyle={'solid'}
         borderColor={useColorModeValue('gray.200', 'gray.700')}

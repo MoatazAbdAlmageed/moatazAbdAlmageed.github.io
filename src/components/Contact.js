@@ -14,11 +14,11 @@ import {
 } from '@chakra-ui/react';
 import React, { useState } from 'react';
 
+import { Icon } from '@chakra-ui/icons';
+import ReCAPTCHA from 'react-google-recaptcha';
 import { BsPerson } from 'react-icons/bs';
 import { GrContactInfo } from 'react-icons/gr';
-import { Icon } from '@chakra-ui/icons';
 import { MdOutlineEmail } from 'react-icons/md';
-import ReCAPTCHA from 'react-google-recaptcha';
 import config from '../../config';
 
 export default function contact() {
@@ -45,7 +45,7 @@ export default function contact() {
   };
 
   return (
-    <Flex id="contact" direction="column">
+    <Flex id="contact" direction="column" p={8}>
       <Box spacing={0} align={'center'} p={{ base: 5, md: 10 }}>
         <Heading>
           {' '}

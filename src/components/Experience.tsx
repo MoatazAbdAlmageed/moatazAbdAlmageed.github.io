@@ -11,14 +11,13 @@ import {
   Text,
 } from '@chakra-ui/react';
 
-import Divider from './Divider';
 import { Icon } from '@chakra-ui/icons';
 import { Link } from 'gatsby';
-import { MdCheckCircle } from 'react-icons/md';
 import React from 'react';
+import { MdCheckCircle } from 'react-icons/md';
 import { TiStarburst } from 'react-icons/ti';
-import Wrapper from './Wrapper';
 import config from '../../config';
+import Wrapper from './Wrapper';
 
 function Experience() {
   const { jobs } = config;
@@ -153,7 +152,6 @@ function Experience() {
           );
         })}
       </Box>
-      <Divider />
     </Wrapper>
   );
 }
