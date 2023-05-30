@@ -402,6 +402,18 @@ const projects = [
     show: true,
     description: 'My Portfolio',
   },
+  {
+    title: 'News aggregator',
+    url: 'https://github.com/MoatazAbdAlmageed/news-server',
+    demo: 'https://www.loom.com/share/1522833ee84e403588bf6cacb0629aea',
+    icon: 'fa-globe',
+    tools: ['laravel', 'chakra-ui', 'react'],
+    year: '2023',
+    show: true,
+    description: 'News aggregator',
+    server: 'https://github.com/MoatazAbdAlmageed/news-server',
+    client: 'https://github.com/MoatazAbdAlmageed/news-client',
+  },
 ];
 const jobs = [
   {

@@ -9,7 +9,8 @@ Project.propTypes = {
 // eslint-disable-next-line react/prop-types
 export default function Project({ project }) {
   // eslint-disable-next-line react/prop-types
-  const { title, url, tools, year, description } = project;
+  const { title, url, tools, year, description, server, client, demo } =
+    project;
   return (
     <Box
       // maxW="sm"
@@ -51,6 +52,43 @@ export default function Project({ project }) {
               {url}
             </Box>
           </Link>
+
+          {server && (
+            <Link
+              isExternal
+              textDecor="underline"
+              color="purple.500"
+              href={server}
+            >
+              <Box fontWeight="semibold" as="p" lineHeight="tight" isTruncated>
+                Server
+              </Box>
+            </Link>
+          )}
+          {client && (
+            <Link
+              isExternal
+              textDecor="underline"
+              color="purple.500"
+              href={client}
+            >
+              <Box fontWeight="semibold" as="p" lineHeight="tight" isTruncated>
+                Client
+              </Box>
+            </Link>
+          )}
+          {demo && (
+            <Link
+              isExternal
+              textDecor="underline"
+              color="purple.500"
+              href={demo}
+            >
+              <Box fontWeight="semibold" as="p" lineHeight="tight" isTruncated>
+                Demo
+              </Box>
+            </Link>
+          )}
         </p>
 
         <Box direction="row" mt={5}>
