@@ -1,8 +1,10 @@
 import {
   Box,
+  Center,
   Grid,
   GridItem,
   Heading,
+  Image,
   List,
   ListIcon,
   ListItem,
@@ -40,7 +42,7 @@ function Experience() {
       <Box>
         {jobs.map((job) => {
           const {
-            company,
+            logo,
             url,
             occupation,
             description,
@@ -61,18 +63,23 @@ function Experience() {
               }}
               p={5}
               templateColumns={{
-                base: 'repeat(2, 1fr)',
-                md: 'repeat(3, 1fr)',
+                md: 'repeat(4, 1fr)',
                 sm: 'repeat(1, 1fr)',
               }}
-              gap={4}
+              gap={2}
             >
+              <GridItem>
+                <Center>
+                  <Link to={url}>
+                    <Image width="150px" src={logo} />
+                  </Link>
+                </Center>
+              </GridItem>
               <GridItem>
                 <Box>
                   <Heading size="md" color="orange">
                     {occupation}
                   </Heading>
-                  <Link to={url}> @{company} </Link>
                   <h4> {period}</h4>
                 </Box>
 

@@ -327,7 +327,6 @@ const colors = [
 ];
 
 const projects = [
- 
   {
     title: 'RTC Neklawy Website',
     url: 'https://rtcneklawy.com/',
@@ -405,6 +404,7 @@ const projects = [
 const jobs = [
   {
     company: 'Wuilt',
+    logo: 'https://assets-global.website-files.com/614319338322d2f96eb4dd96/615c930a565cd057bcdc8df3_Wuilt%20Logo%20W%20Colored.svg',
     url: 'http://wuilt.com/',
     technologies: [
       'HTML',
@@ -446,6 +446,7 @@ const jobs = [
   },
   {
     company: 'camelCase',
+    logo: 'https://camelcasetech.com/assets/img/logo_camelcasetech.png',
     technologies: ['HTML', 'CSS', 'Javascript', 'PHP', 'mysql', 'Laravel'],
     responsibilities: [
       'Develop new user-facing features',
@@ -480,6 +481,7 @@ const jobs = [
 
   {
     company: 'Nile Bits',
+    logo: 'https://www.nilebits.com/wp-content/uploads/2020/09/styick.png',
     url: 'https://www.nilebits.com/',
     technologies: ['HTML', 'CSS', 'Javascript', 'angularjs', 'angular'],
     period: 'Jan 2017 - Apr 2018',
@@ -502,6 +504,7 @@ const jobs = [
 
   {
     company: 'TIE',
+    logo: 'http://tie.com.eg/wp-content/uploads/2016/05/TIE-Logo.png',
     url: 'http://tie.com.eg/',
     technologies: [
       'HTML',
@@ -556,6 +559,7 @@ const jobs = [
   },
   {
     company: 'Orchtech',
+    logo: 'https://cdn.shortpixel.ai/spai/w_491+q_lossy+ret_img+to_webp/https://orchtech.com/wp-content/uploads/2019/07/orchtech_Logo-01.png',
     url: 'https://www.orchtech.com/',
     technologies: ['HTML', 'CSS', 'Javascript', 'PHP', 'mysql', 'wordPress'],
     period: 'Dec 2015 - May 2016',
@@ -589,6 +593,7 @@ const jobs = [
   },
   {
     company: 'Leogami',
+    logo: 'https://leogami.com/wp-content/webpc-passthru.php?src=https://leogami.com/wp-content/uploads/2021/10/The-Logo-H-white-1.png&nocache=1',
     url: 'http://leogami.com/',
     technologies: ['HTML', 'CSS', 'Javascript', 'PHP', 'mysql', 'wordPress'],
     period: 'Oct 2015 - Nov 2015',
