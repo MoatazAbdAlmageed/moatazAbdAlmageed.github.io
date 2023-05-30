@@ -26,6 +26,7 @@ function Experience() {
     <Wrapper id="experience">
       <Box spacing={0} align={'center'}>
         <Icon
+          color="orange.400"
           fontSize="64"
           _groupHover={{
             color: 'white',
@@ -75,7 +76,7 @@ function Experience() {
               </GridItem>
               <GridItem>
                 <Box>
-                  <Heading size="md" color="orange">
+                  <Heading size="md" color="orange.400">
                     {occupation}
                   </Heading>
                   <Text>

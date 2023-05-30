@@ -53,6 +53,7 @@ export default function contact() {
     >
       <Box spacing={0} align={'center'} p={{ base: 5, md: 10 }}>
         <Icon
+          color="orange.400"
           fontSize="64"
           _groupHover={{
             color: 'white',
@@ -116,7 +117,12 @@ export default function contact() {
             </FormControl>
             <FormControl id="name" float="right" pt={2}>
               <button>
-                <Button variant="solid" bg="orange" color="white" _hover={{}}>
+                <Button
+                  variant="solid"
+                  bg="orange.400"
+                  color="white"
+                  _hover={{}}
+                >
                   Send Message
                 </Button>
               </button>

@@ -10,6 +10,7 @@ import {
   Text,
   useColorModeValue,
 } from '@chakra-ui/react';
+
 import React from 'react';
 import config from '../../config';
 import avatar from '../assets/img/avatar.jpg';
@@ -40,7 +41,7 @@ export default function CallToActionWithAnnotation() {
           >
             Hello!, <br />
             {`I'm`}{' '}
-            <Text as={'span'} color={'orange'}>
+            <Text as={'span'} color={'orange.400'}>
               {firstName} {lastName}
             </Text>
           </Heading>
@@ -56,17 +57,17 @@ export default function CallToActionWithAnnotation() {
           >
             <Button
               href="#contact"
-              colorScheme={'orange'}
-              bg={'orange'}
+              colorScheme={'orange.400'}
+              bg={'orange.400'}
               rounded={'full'}
               px={6}
               _hover={{
-                bg: 'orange',
+                bg: 'orange.400',
               }}
             >
               Contact
             </Button>
-            <Button variant={'link'} colorScheme={'orange'} size={'sm'}>
+            <Button variant={'link'} colorScheme={'orange.400'} size={'sm'}>
               Learn more
             </Button>
             <Box>

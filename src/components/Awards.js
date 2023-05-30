@@ -12,6 +12,7 @@ class Awards extends Component {
       <Wrapper id="awards" bg="#F7FAFC">
         <Stack spacing={0} align={'center'}>
           <Icon
+            fill="orange.400"
             fontSize="64"
             _groupHover={{
               color: 'white',
@@ -61,7 +62,7 @@ class Awards extends Component {
                 }}
               >
                 <Link href={url} target="_blank" rel="noopener noreferrer">
-                  <Text color="orange">
+                  <Text color="orange.400">
                     <b>{title} </b> @{place}
                   </Text>
 
