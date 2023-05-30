@@ -101,13 +101,8 @@ const TestimonialAvatar = ({
 
 export default function WithSpeechBubbles() {
   return (
-    <Flex
-      id="testimonials"
-      direction="column"
-      p={{ base: 5, md: 10 }}
-      bg="#F7FAFC"
-    >
-      <Stack spacing={0} align={'center'} pb={{ base: 5 }}>
+    <Flex id="testimonials" direction="column">
+      <Stack spacing={0} align={'center'} p={{ base: 5, md: 10 }}>
         <Heading pt={20}>Clients Speak</Heading>
         <Text>I have been working with clients around the world</Text>
       </Stack>

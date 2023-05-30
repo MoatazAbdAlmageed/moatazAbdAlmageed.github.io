@@ -13,12 +13,12 @@ import {
   Textarea,
 } from '@chakra-ui/react';
 import React, { useState } from 'react';
-import ReCAPTCHA from 'react-google-recaptcha';
 
-import { Icon } from '@chakra-ui/icons';
 import { BsPerson } from 'react-icons/bs';
 import { GrContactInfo } from 'react-icons/gr';
+import { Icon } from '@chakra-ui/icons';
 import { MdOutlineEmail } from 'react-icons/md';
+import ReCAPTCHA from 'react-google-recaptcha';
 import config from '../../config';
 
 export default function contact() {
@@ -45,14 +45,8 @@ export default function contact() {
   };
 
   return (
-    <Flex
-      id="contact"
-      bg="#F7FAFC"
-      direction="column"
-      p={{ base: 5, md: 10 }}
-      pt={{ base: 100, md: 10 }}
-    >
-      <Box spacing={0} align={'center'}>
+    <Flex id="contact" direction="column">
+      <Box spacing={0} align={'center'} p={{ base: 5, md: 10 }}>
         <Heading>
           {' '}
           <Icon

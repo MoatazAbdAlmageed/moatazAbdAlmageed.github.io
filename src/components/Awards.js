@@ -10,7 +10,7 @@ class Awards extends Component {
   render() {
     const { certifications } = config;
     return (
-      <Wrapper id="awards">
+      <Wrapper id="awards" bg="#F7FAFC">
         <Stack spacing={0} align={'center'}>
           <Heading pt={20}>
             {' '}

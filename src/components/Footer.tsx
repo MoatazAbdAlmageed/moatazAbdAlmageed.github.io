@@ -1,17 +1,18 @@
 import {
   Box,
-  chakra,
   Container,
   Stack,
   Text,
-  useColorModeValue,
   VisuallyHidden,
+  chakra,
+  useColorModeValue,
 } from '@chakra-ui/react';
-import React, { ReactNode } from 'react';
 import { FaLinkedinIn, FaYoutube } from 'react-icons/fa';
-import config from '../../config';
+import React, { ReactNode } from 'react';
 
 import { BsGithub } from 'react-icons/bs';
+import Divider from './Divider';
+import config from '../../config';
 
 const SocialButton = ({
   children,
@@ -50,11 +51,11 @@ export default function Footer() {
     socialLinks: { youtube, linkedin, github },
   } = config;
   return (
-    <Box
-      bg={useColorModeValue('gray.50', 'gray.900')}
-      color={useColorModeValue('gray.700', 'gray.200')}
-    >
+    <Box>
+      <Divider />
       <Box
+        color={useColorModeValue('gray.700', 'gray.200')}
+        bg={useColorModeValue('gray.50', 'gray.900')}
         borderTopWidth={1}
         borderStyle={'solid'}
         borderColor={useColorModeValue('gray.200', 'gray.700')}

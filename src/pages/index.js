@@ -20,15 +20,18 @@ const IndexPage = () => {
         end={{ opacity: 1, transform: 'translateY(0)' }}
         start={{ opacity: 1, transform: 'translateY(-100px)' }}
       >
-        <Box p={20} bgGradient="linear(to-r, gray.100, gray.300)">
+        <Box
+          padding={{ md: '20', sm: '5' }}
+          bgGradient="linear(to-r, gray.100, gray.300)"
+        >
           <About />
           <Experience />
           <Projects />
           <TestimonialContent />
           <Awards />
           <Contact />
+          <Footer />
         </Box>
-        <Footer />
       </Animate>
     </Layout>
   );
