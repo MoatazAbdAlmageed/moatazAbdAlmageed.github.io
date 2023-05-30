@@ -9,6 +9,7 @@ import {
 } from '@chakra-ui/react';
 import React, { ReactNode } from 'react';
 
+import Divider from './Divider';
 import { Link } from 'gatsby';
 
 const Testimonial = ({ children }: { children: ReactNode }) => {
@@ -160,6 +161,7 @@ export default function WithSpeechBubbles() {
           />
         </Testimonial>
       </Stack>
+      <Divider />
     </Flex>
   );
 }

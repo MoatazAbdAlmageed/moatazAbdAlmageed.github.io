@@ -8,6 +8,7 @@ import {
   ListItem,
 } from '@chakra-ui/react';
 
+import Divider from './Divider';
 import { Icon } from '@chakra-ui/icons';
 import { Link } from 'gatsby';
 import { MdCheckCircle } from 'react-icons/md';
@@ -58,7 +59,7 @@ function Experience() {
                 transition: '0.5s',
                 bg: 'gray.100',
               }}
-              p={10}
+              p={5}
               templateColumns={{
                 base: 'repeat(2, 1fr)',
                 md: 'repeat(3, 1fr)',
@@ -99,7 +100,7 @@ function Experience() {
               </GridItem>
 
               <GridItem colSpan={2}>
-                <Box pt={5}>
+                <Box pt={2}>
                   <Heading size="sm">Responsibilities</Heading>
                   <List>
                     {responsibilities.map((responsibility) => {
@@ -113,7 +114,7 @@ function Experience() {
                   </List>
                 </Box>
 
-                <Box pt={5}>
+                <Box pt={2}>
                   <Heading size="sm">Technologies</Heading>
                   <List display="flex">
                     {technologies.map((technology) => {
@@ -133,6 +134,7 @@ function Experience() {
           );
         })}
       </Box>
+      <Divider />
     </Wrapper>
   );
 }

@@ -16,6 +16,7 @@ import {
 } from 'react-icons/bs';
 import React, { Component } from 'react';
 
+import Divider from './Divider';
 import { Link } from 'gatsby';
 import avatar from '../assets/img/avatar.jpg';
 import config from '../../config';
@@ -49,9 +50,6 @@ class About extends Component {
             src={avatar}
             alt={`${firstName} ${lastName}`}
             p={5}
-            _hover={{
-              transform: 'scaleX(-1)',
-            }}
           />
           <Text align="center" padding="1em" fontSize="1.4em">
             As a Full Stack Web Developer, I am highly skilled and passionate
@@ -134,6 +132,7 @@ class About extends Component {
             </Button>
           </a>
         </Box>
+        <Divider />
       </Flex>
     );
   }

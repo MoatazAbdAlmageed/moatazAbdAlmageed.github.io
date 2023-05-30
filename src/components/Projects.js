@@ -1,6 +1,7 @@
 import { Grid, Heading, Icon, Stack } from '@chakra-ui/react';
 import React, { Component } from 'react';
 
+import Divider from './Divider';
 import { FiTerminal } from 'react-icons/fi';
 import Project from './Project';
 import Wrapper from './Wrapper';
@@ -41,6 +42,7 @@ class Projects extends Component {
               <Project key={project.url} project={project} />
             ))}
         </Grid>
+        <Divider />
       </Wrapper>
     );
   }

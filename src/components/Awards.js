@@ -1,9 +1,10 @@
 import { Grid, Heading, Icon, Link, Stack, Text } from '@chakra-ui/react';
 import React, { Component } from 'react';
 
+import Divider from './Divider';
 import { GrCertificate } from 'react-icons/gr';
-import config from '../../config';
 import Wrapper from './Wrapper';
+import config from '../../config';
 
 class Awards extends Component {
   render() {
@@ -76,6 +77,7 @@ class Awards extends Component {
             );
           })}
         </Grid>
+        <Divider />
       </Wrapper>
     );
   }
