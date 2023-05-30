@@ -1,3 +1,5 @@
+const dayjs = require('dayjs');
+
 const kids = [{ name: 'Hamza' }, { name: 'Belal' }];
 const skills = [
   {
@@ -420,7 +422,10 @@ const jobs = [
       'nodejs',
       'mongodb',
     ],
-    period: 'Jan 2020 - Present',
+    period: '',
+    startDate: dayjs('2020-01-01'),
+    endDate: dayjs(),
+    present: true,
     occupation: 'Backend web developer',
     responsibilities: [
       "As a Back End Developer at Wuilt, I'm responsible for developing and maintaining web applications using PHP and Laravel. My duties include designing, coding, testing, debugging, documenting software applications; creating databases; writing scripts to automate processes; developing APIs; optimizing performance; and troubleshooting system issues. I also collaborate with other developers and designers to ensure a seamless user experience.",
@@ -455,6 +460,8 @@ const jobs = [
     ],
     url: 'https://camelcasetech.com/',
     period: 'May 2018 - Dec 2019',
+    startDate: dayjs('2018-05-01'),
+    endDate: dayjs('2019-12-30'),
     occupation: 'Backend web developer',
     description: '',
     projects: [
@@ -485,6 +492,8 @@ const jobs = [
     url: 'https://www.nilebits.com/',
     technologies: ['HTML', 'CSS', 'Javascript', 'angularjs', 'angular'],
     period: 'Jan 2017 - Apr 2018',
+    startDate: dayjs('2017-01-1'),
+    endDate: dayjs('2018-04-30'),
     occupation: 'Front-End developer',
     responsibilities: [
       'Created custom AngularJS components for internal framework',
@@ -517,6 +526,8 @@ const jobs = [
       'angularjs',
     ],
     period: 'Sep 2016 - Jan 2017',
+    startDate: dayjs('2016-08-1'),
+    endDate: dayjs('2017-01-01'),
     occupation: 'WordPress developer',
     responsibilities: [
       'Generating WordPress themes and plugins.',
@@ -543,6 +554,9 @@ const jobs = [
     url: 'http://www.egycoders.com/',
     technologies: ['HTML', 'CSS', 'Javascript', 'angularjs'],
     period: 'Mar 2016 - Jun 2016',
+    startDate: dayjs('2016-03-1'),
+    endDate: dayjs('2016-06-01'),
+
     occupation: 'Front-End developer',
     responsibilities: [
       'Develop new user-facing features',
@@ -563,6 +577,9 @@ const jobs = [
     url: 'https://www.orchtech.com/',
     technologies: ['HTML', 'CSS', 'Javascript', 'PHP', 'mysql', 'wordPress'],
     period: 'Dec 2015 - May 2016',
+    startDate: dayjs('2015-12-01'),
+    endDate: dayjs('2016-05-01'),
+
     occupation: 'WordPress Developer',
     responsibilities: [
       'Generating WordPress themes and plugins.',
@@ -597,6 +614,9 @@ const jobs = [
     url: 'http://leogami.com/',
     technologies: ['HTML', 'CSS', 'Javascript', 'PHP', 'mysql', 'wordPress'],
     period: 'Oct 2015 - Nov 2015',
+    startDate: dayjs('2015-08-01'),
+    endDate: dayjs('2015-11-01'),
+
     occupation: 'WordPress Developer',
     responsibilities: [
       'Designing and building the website front-end.',

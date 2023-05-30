@@ -54,6 +54,7 @@
     "@chakra-ui/theme": "^1.7.0",
     "@emotion/react": "^11.1.5",
     "@emotion/styled": "^11.1.5",
+    "dayjs": "^1.11.7",
     "font-awesome": "^4.7.0",
     "framer-motion": "^3.10.3",
     "gatsby": "^4.6.0",

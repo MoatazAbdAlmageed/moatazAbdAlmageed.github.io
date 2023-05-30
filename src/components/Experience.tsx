@@ -8,6 +8,7 @@ import {
   List,
   ListIcon,
   ListItem,
+  Text,
 } from '@chakra-ui/react';
 
 import Divider from './Divider';
@@ -46,10 +47,12 @@ function Experience() {
             url,
             occupation,
             description,
-            period,
+            present,
             responsibilities,
             technologies,
             projects,
+            startDate,
+            endDate,
           } = job;
           return (
             <Grid
@@ -80,7 +83,16 @@ function Experience() {
                   <Heading size="md" color="orange">
                     {occupation}
                   </Heading>
-                  <h4> {period}</h4>
+                  <Text>
+                    {startDate.format('YYYY-MMMM')} :{' '}
+                    {present ? 'Present' : endDate.format('YYYY-MMMM')}
+                    <Text>
+                      {endDate.diff(startDate, 'years') > 0 && (
+                        <> {endDate.diff(startDate, 'years')} years </>
+                      )}
+                      {endDate.diff(startDate, 'months') % 12} months
+                    </Text>
+                  </Text>
                 </Box>
 
                 <Box pt={5}>
