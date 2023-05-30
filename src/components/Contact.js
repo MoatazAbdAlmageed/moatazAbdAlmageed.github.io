@@ -45,20 +45,21 @@ export default function contact() {
   };
 
   return (
-    <Flex id="contact" direction="column" p={8}>
+    <Flex
+      id="contact"
+      direction="column"
+      p={{ md: '10', sm: '5' }}
+      pb={{ md: '20', sm: '5' }}
+    >
       <Box spacing={0} align={'center'} p={{ base: 5, md: 10 }}>
-        <Heading>
-          {' '}
-          <Icon
-            mr="4"
-            fontSize="16"
-            _groupHover={{
-              color: 'white',
-            }}
-            as={GrContactInfo}
-          />{' '}
-          Contact
-        </Heading>
+        <Icon
+          fontSize="64"
+          _groupHover={{
+            color: 'white',
+          }}
+          as={GrContactInfo}
+        />{' '}
+        <Heading> Contact</Heading>
         <Text align="center">
           Are you working on something great? I would love to help make it
           happen!

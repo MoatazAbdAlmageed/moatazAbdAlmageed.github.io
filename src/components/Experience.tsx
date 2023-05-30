@@ -25,18 +25,14 @@ function Experience() {
   return (
     <Wrapper id="experience">
       <Box spacing={0} align={'center'}>
-        <Heading pt={20}>
-          {' '}
-          <Icon
-            mr="4"
-            fontSize="16"
-            _groupHover={{
-              color: 'white',
-            }}
-            as={TiStarburst}
-          />{' '}
-          Experience
-        </Heading>
+        <Icon
+          fontSize="64"
+          _groupHover={{
+            color: 'white',
+          }}
+          as={TiStarburst}
+        />
+        <Heading p={10}>Experience</Heading>
       </Box>
 
       <Box>

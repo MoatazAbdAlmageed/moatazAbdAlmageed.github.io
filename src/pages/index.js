@@ -21,10 +21,7 @@ const IndexPage = () => {
         end={{ opacity: 1, transform: 'translateY(0)' }}
         start={{ opacity: 1, transform: 'translateY(-100px)' }}
       >
-        <Box
-          padding={{ md: '20', sm: '5' }}
-          bgGradient="linear(to-r, gray.100, gray.300)"
-        >
+        <Box bgGradient="linear(to-r, gray.100, gray.300)">
           <About />
           <Experience />
           <Projects />

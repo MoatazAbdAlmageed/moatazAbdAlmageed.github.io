@@ -7,6 +7,7 @@ import {
   Image,
   Text,
 } from '@chakra-ui/react';
+import React, { Component } from 'react';
 import {
   BsCloudDownloadFill,
   BsEnvelope,
@@ -14,13 +15,12 @@ import {
   BsLinkedin,
   BsYoutube,
 } from 'react-icons/bs';
-import React, { Component } from 'react';
 
-import Divider from './Divider';
 import { Link } from 'gatsby';
-import avatar from '../assets/img/avatar.jpg';
 import config from '../../config';
 import resume from '../assets/files/moataz_mohammady_resume.pdf';
+import avatar from '../assets/img/avatar.jpg';
+import Divider from './Divider';
 
 class About extends Component {
   render() {
@@ -38,7 +38,7 @@ class About extends Component {
         pt={{ base: 100, md: 20 }}
         bg="#F7FAFC"
       >
-        <Box align="center">
+        <Box align="center" padding={{ md: '10', sm: '5' }}>
           <Text>Hello!, {`I'm`}</Text>
 
           <Heading>

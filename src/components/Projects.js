@@ -12,18 +12,14 @@ class Projects extends Component {
     return (
       <Wrapper id="projects" bg="#F7FAFC">
         <Stack spacing={0} align={'center'} pt={20}>
-          <Heading>
-            {' '}
-            <Icon
-              mr="4"
-              fontSize="16"
-              _groupHover={{
-                color: 'white',
-              }}
-              as={FiTerminal}
-            />{' '}
-            Projects
-          </Heading>
+          <Icon
+            fontSize="64"
+            _groupHover={{
+              color: 'white',
+            }}
+            as={FiTerminal}
+          />{' '}
+          <Heading>Projects</Heading>
         </Stack>
 
         <Grid

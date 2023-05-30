@@ -3,6 +3,7 @@ import {
   Box,
   Flex,
   Heading,
+  Icon,
   Stack,
   Text,
   useColorModeValue,
@@ -10,6 +11,7 @@ import {
 import React, { ReactNode } from 'react';
 
 import { Link } from 'gatsby';
+import { FiUsers } from 'react-icons/fi';
 
 const Testimonial = ({ children }: { children: ReactNode }) => {
   return <Box>{children}</Box>;
@@ -102,7 +104,14 @@ export default function WithSpeechBubbles() {
   return (
     <Flex id="testimonials" direction="column">
       <Stack spacing={0} align={'center'} p={{ base: 5, md: 10 }}>
-        <Heading pt={20}>Clients Speak</Heading>
+        <Icon
+          fontSize="64"
+          _groupHover={{
+            color: 'white',
+          }}
+          as={FiUsers}
+        />{' '}
+        <Heading p={10}>Clients Speak</Heading>
         <Text>I have been working with clients around the world</Text>
       </Stack>
       <Stack direction={{ base: 'column', md: 'row' }} spacing={{ base: 10 }}>

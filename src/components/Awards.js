@@ -11,18 +11,14 @@ class Awards extends Component {
     return (
       <Wrapper id="awards" bg="#F7FAFC">
         <Stack spacing={0} align={'center'}>
-          <Heading pt={20}>
-            {' '}
-            <Icon
-              mr="4"
-              fontSize="16"
-              _groupHover={{
-                color: 'white',
-              }}
-              as={GrCertificate}
-            />{' '}
-            Awards &amp; Certifications
-          </Heading>
+          <Icon
+            fontSize="64"
+            _groupHover={{
+              color: 'white',
+            }}
+            as={GrCertificate}
+          />{' '}
+          <Heading p={10}>Awards &amp; Certifications</Heading>
           <Text align="center">
             All my life I have been driven by my strong belief that education is
             important.
