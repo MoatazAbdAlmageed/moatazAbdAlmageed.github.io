@@ -144,8 +144,8 @@ export default function WithSpeechBubbles() {
               'https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/User-avatar.svg/1024px-User-avatar.svg.png'
             }
             name={'Hamada Hassan'}
-            title={'CEO at kitaballahacademy'}
-            url="https://www.kitaballahacademy.com/"
+            title={'CEO at azanalquran'}
+            url="https://www.azanalquran.com/"
           />
         </Testimonial>
         <Testimonial>
