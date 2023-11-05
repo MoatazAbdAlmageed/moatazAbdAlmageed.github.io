@@ -330,6 +330,14 @@ const colors = [
 
 const projects = [
   {
+    title: 'Quran Moddaker Website',
+    url: 'https://quranmoddaker.com/',
+    tools: ['WordPress'],
+    icon: 'fa-wordpress',
+    year: '2023',
+    show: true,
+    description: 'Website for Quran Moddaker company',
+  }, {
     title: 'RTC Neklawy Website',
     url: 'https://rtcneklawy.com/',
     tools: ['WordPress'],

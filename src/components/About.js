@@ -5,7 +5,7 @@ import {
   Heading,
   IconButton,
   Image,
-  Text,
+  Text
 } from '@chakra-ui/react';
 import React, { Component } from 'react';
 import {
@@ -13,13 +13,13 @@ import {
   BsEnvelope,
   BsGithub,
   BsLinkedin,
-  BsYoutube,
+  BsYoutube
 } from 'react-icons/bs';
 
 import { Link } from 'gatsby';
 import config from '../../config';
 import resume from '../assets/files/moataz_mohammady_resume.pdf';
-import avatar from '../assets/img/avatar.jpg';
+import avatar from '../assets/img/avatar.png';
 import Divider from './Divider';
 
 class About extends Component {
