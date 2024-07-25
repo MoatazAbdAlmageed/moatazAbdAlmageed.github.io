@@ -330,6 +330,15 @@ const colors = [
 
 const projects = [
   {
+    title: 'Lazez Roasters Website',
+    url: 'https://lazez.talal-foods.com/',
+    tools: ['WordPress'],
+    icon: 'fa-wordpress',
+    year: '2024',
+    show: true,
+    description: 'Website for Lazez Roasters company',
+  },
+  {
     title: 'Quran Moddaker Website',
     url: 'https://quranmoddaker.com/',
     tools: ['WordPress'],
@@ -337,7 +346,8 @@ const projects = [
     year: '2023',
     show: true,
     description: 'Website for Quran Moddaker company',
-  }, {
+  },
+  {
     title: 'RTC Neklawy Website',
     url: 'https://rtcneklawy.com/',
     tools: ['WordPress'],
