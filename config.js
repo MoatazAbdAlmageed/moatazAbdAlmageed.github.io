@@ -331,7 +331,7 @@ const colors = [
 const projects = [
   {
     title: 'diwan academy Website',
-    url: 'https://diwanacademy.com/',
+    url: 'https://diwanacademy.net/',
     tools: ['WordPress'],
     icon: 'fa-wordpress',
     year: '2024',
@@ -348,7 +348,7 @@ const projects = [
   },
   {
     title: 'Ahlan academy Website',
-    url: 'https://ahlanacademy.com/',
+    url: 'https://ahlanacademy.net/',
     tools: ['WordPress'],
     icon: 'fa-wordpress',
     year: '2024',
