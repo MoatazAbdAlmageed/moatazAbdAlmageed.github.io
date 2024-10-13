@@ -330,6 +330,43 @@ const colors = [
 
 const projects = [
   {
+    title: 'diwan academy Website',
+    url: 'https://diwanacademy.com/',
+    tools: ['WordPress'],
+    icon: 'fa-wordpress',
+    year: '2024',
+    show: true,
+    description: 'Website for diwan academy',
+  }, {
+    title: 'Ahlan alawal Website',
+    url: 'https://alawalacademy.com/',
+    tools: ['WordPress'],
+    icon: 'fa-wordpress',
+    year: '2024',
+    show: true,
+    description: 'Website for alawal academy',
+  },
+  {
+    title: 'Ahlan academy Website',
+    url: 'https://ahlanacademy.com/',
+    tools: ['WordPress'],
+    icon: 'fa-wordpress',
+    year: '2024',
+    show: true,
+    description: 'Website for ahlan academy',
+  },
+
+  {
+    title: 'inarah academy Website',
+    url: 'https://inarahacademy.com/',
+    tools: ['WordPress'],
+    icon: 'fa-wordpress',
+    year: '2024',
+    show: true,
+    description: 'Website for inarah academy',
+  },
+
+  {
     title: 'Lazez Roasters Website',
     url: 'https://lazez.talal-foods.com/',
     tools: ['WordPress'],
