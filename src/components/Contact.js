@@ -45,7 +45,7 @@ export default function contact() {
   };
 
   return (
-    <Flex id="contact" direction="column" p={12}>
+    <Flex id="contact" direction="column" p={12} backgroundColor="white">
       <Box spacing={0} align={'center'} p={{ base: 5, md: 10 }}>
         <Icon
           color="orange.400"

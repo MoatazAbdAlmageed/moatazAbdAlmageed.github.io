@@ -383,7 +383,8 @@ const projects = [
     year: '2023',
     show: true,
     description: 'Website for Quran Spring company',
-  }, {
+  },
+   {
     title: 'Quran Moddaker Website',
     url: 'https://quranmoddaker.com/',
     tools: ['WordPress'],
@@ -392,6 +393,18 @@ const projects = [
     show: true,
     description: 'Website for Quran Moddaker company',
   },
+
+  {
+    title: 'Azan Al Quran Website',
+    url: 'https://azanalquran.com/',
+    tools: ['WordPress'],
+    icon: 'fa-wordpress',
+    year: '2023',
+    show: true,
+    description: 'Website for Azan Al Quran company',
+  },
+
+
   {
     title: 'RTC Neklawy Website',
     url: 'https://rtcneklawy.com/',
@@ -455,15 +468,6 @@ const projects = [
     year: '2021',
     show: true,
     description: 'Simple website for list Youtube channels (Arabic,English)',
-  },
-  {
-    title: 'Portfolio',
-    url: 'https://moatazabdalmageed.github.io/',
-    icon: 'fa-globe',
-    tools: ['gatsbyjs', 'chakra-ui', 'react-icons'],
-    year: '2020',
-    show: true,
-    description: 'My Portfolio',
   },
   {
     title: 'News aggregator',
@@ -588,7 +592,7 @@ const jobs = [
 
   {
     company: 'TIE',
-    logo: 'http://tie.com.eg/wp-content/uploads/2016/05/TIE-Logo.png',
+    logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAHrk6z4AQPTd5-eq4Iolv8SZM9MdDjPLQeg&s',
     url: 'http://tie.com.eg/',
     technologies: [
       'HTML',
