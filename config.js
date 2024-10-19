@@ -330,7 +330,7 @@ const colors = [
 
 const projects = [
   {
-    title: 'diwan academy Website',
+    title: 'Diwan Academy Website',
     url: 'https://diwanacademy.net/',
     tools: ['WordPress'],
     icon: 'fa-wordpress',
@@ -338,7 +338,7 @@ const projects = [
     show: true,
     description: 'Website for diwan academy',
   }, {
-    title: 'Ahlan alawal Website',
+    title: 'Alawal Academy Website',
     url: 'https://alawalacademy.com/',
     tools: ['WordPress'],
     icon: 'fa-wordpress',
@@ -347,7 +347,7 @@ const projects = [
     description: 'Website for alawal academy',
   },
   {
-    title: 'Ahlan academy Website',
+    title: 'Ahlan Academy Website',
     url: 'https://ahlanacademy.net/',
     tools: ['WordPress'],
     icon: 'fa-wordpress',
@@ -357,7 +357,7 @@ const projects = [
   },
 
   {
-    title: 'inarah academy Website',
+    title: 'Inarah Academy Website',
     url: 'https://inarahacademy.com/',
     tools: ['WordPress'],
     icon: 'fa-wordpress',
