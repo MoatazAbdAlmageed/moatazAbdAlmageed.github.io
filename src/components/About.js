@@ -52,7 +52,7 @@ class About extends Component {
             alt={`${firstName} ${lastName}`}
             p={5}
           />
-          <Text align="center" padding="1em" fontSize="1.4em" maxWidth="60%"  >
+          <Text align="center" padding="1em" fontSize="1.4em" width={{ md: '60%', sm: '95%' }} >
             Full Stack Web Developer with expertise in HTML5, CSS3,
             JavaScript, Node.js, React.js, PHP, Laravel, and WordPress. Experienced
             with MySQL and MongoDB databases. Currently employed at Wuilt,
