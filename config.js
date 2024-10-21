@@ -367,15 +367,6 @@ const projects = [
   },
 
   {
-    title: 'Lazez Roasters Website',
-    url: 'https://lazez.talal-foods.com/',
-    tools: ['WordPress'],
-    icon: 'fa-wordpress',
-    year: '2024',
-    show: true,
-    description: 'Website for Lazez Roasters company',
-  },
-  {
     title: 'Quran Spring Website',
     url: 'https://quranspring.com/',
     tools: ['WordPress'],
@@ -384,7 +375,7 @@ const projects = [
     show: true,
     description: 'Website for Quran Spring company',
   },
-   {
+  {
     title: 'Quran Moddaker Website',
     url: 'https://quranmoddaker.com/',
     tools: ['WordPress'],
