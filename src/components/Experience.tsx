@@ -23,7 +23,7 @@ function Experience() {
   const { jobs } = config;
 
   return (
-    <Wrapper id="experience">
+    <Wrapper id="experience" bg="#fff">
       <Box spacing={0} align={'center'}>
         <Icon
           color="orange.400"

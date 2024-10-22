@@ -10,7 +10,7 @@ class Projects extends Component {
   render() {
     const { projects } = config;
     return (
-      <Wrapper id="projects" bg="#F7FAFC">
+      <Wrapper id="projects" bg="#fff">
         <Stack spacing={0} align={'center'} pt={20}>
           <Icon
             color="orange.400"
