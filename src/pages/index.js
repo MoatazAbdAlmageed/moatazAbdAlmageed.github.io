@@ -3,7 +3,6 @@ import React from 'react';
 import { Animate } from 'react-simple-animate';
 import About from '../components/About';
 import Awards from '../components/Awards';
-import Contact from '../components/Contact';
 import Divider from '../components/Divider';
 import Experience from '../components/Experience';
 import Footer from '../components/Footer';
@@ -27,7 +26,6 @@ const IndexPage = () => {
           <Projects />
           <TestimonialContent />
           <Awards />
-          <Contact />
         </Box>
         <Footer />
         <Divider />

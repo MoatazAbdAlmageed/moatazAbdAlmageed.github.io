@@ -13,6 +13,7 @@ import {
   BsEnvelope,
   BsGithub,
   BsLinkedin,
+  BsWhatsapp,
   BsYoutube
 } from 'react-icons/bs';
 
@@ -28,6 +29,7 @@ class About extends Component {
       firstName,
       lastName,
       email,
+      whatsapp,
       socialLinks: { linkedin, github, youtube },
     } = config;
     return (
@@ -106,6 +108,15 @@ class About extends Component {
               isRound={true}
               _hover={{ bg: 'orange.400' }}
               icon={<BsEnvelope size="28px" />}
+            />
+          </a><a href={whatsapp} target="_blank" rel="noreferrer">
+            <IconButton
+              aria-label="whatsapp"
+              variant="ghost"
+              size="lg"
+              isRound={true}
+              _hover={{ bg: 'orange.400' }}
+              icon={<BsWhatsapp size="28px" />}
             />
           </a>
         </Box>
