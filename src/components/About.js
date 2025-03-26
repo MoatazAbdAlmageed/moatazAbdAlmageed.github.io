@@ -55,11 +55,8 @@ class About extends Component {
             p={5}
           />
           <Text align="center" padding="1em" fontSize="1.4em" width={{ md: '60%', sm: '95%' }} >
-            Full Stack Web Developer with expertise in HTML5, CSS3,
-            JavaScript, Node.js, React.js, PHP, Laravel, and WordPress. Experienced
-            with MySQL and MongoDB databases. Currently employed at Wuilt,
-            seeking challenging projects to expand skills and expertise in web
-            development.
+          Back-End Web Developer specializing in PHP and Laravel. Experienced in building scalable and secure web applications, designing RESTful APIs, and optimizing database performance with MySQL and MongoDB. Proficient in integrating third-party services, implementing authentication systems, and enhancing application security. Familiar with front-end technologies such as HTML, CSS, JavaScript, React, and Angular, allowing seamless collaboration with front-end teams. Additionally, knowledgeable in DevOps practices, including server management, CI/CD pipelines, and Docker.
+
           </Text>
         </Box>
         <Box
