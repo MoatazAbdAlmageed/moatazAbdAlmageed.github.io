@@ -13,7 +13,7 @@ class Projects extends Component {
       <Wrapper id="projects" bg="#fff">
         <Stack spacing={0} align={'center'} pt={20}>
           <Icon
-            color="orange.400"
+            color="#F49717"
             fontSize="64"
             _groupHover={{
               color: 'white',

@@ -1,14 +1,14 @@
 import {
-  Box,
-  Center,
-  Grid,
-  GridItem,
-  Heading,
-  Image,
-  List,
-  ListIcon,
-  ListItem,
-  Text,
+    Box,
+    Center,
+    Grid,
+    GridItem,
+    Heading,
+    Image,
+    List,
+    ListIcon,
+    ListItem,
+    Text,
 } from '@chakra-ui/react';
 
 import { Icon } from '@chakra-ui/icons';
@@ -26,7 +26,7 @@ function Experience() {
     <Wrapper id="experience" bg="#fff">
       <Box spacing={0} align={'center'}>
         <Icon
-          color="orange.400"
+          color="#F49717"
           fontSize="64"
           _groupHover={{
             color: 'white',
@@ -76,7 +76,7 @@ function Experience() {
               </GridItem>
               <GridItem>
                 <Box>
-                  <Heading size="md" color="orange.400">
+                  <Heading size="md" color="#F49717">
                     {occupation}
                   </Heading>
                   <Text>

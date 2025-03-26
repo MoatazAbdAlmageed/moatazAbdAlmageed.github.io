@@ -1,16 +1,16 @@
 import {
-  Box,
-  Button,
-  Flex,
-  FormControl,
-  FormLabel,
-  Grid,
-  Heading,
-  Input,
-  InputGroup,
-  InputLeftElement,
-  Text,
-  Textarea,
+    Box,
+    Button,
+    Flex,
+    FormControl,
+    FormLabel,
+    Grid,
+    Heading,
+    Input,
+    InputGroup,
+    InputLeftElement,
+    Text,
+    Textarea,
 } from '@chakra-ui/react';
 import React, { useState } from 'react';
 
@@ -48,7 +48,7 @@ export default function contact() {
     <Flex id="contact" direction="column" p={12} backgroundColor="white">
       <Box spacing={0} align={'center'} p={{ base: 5, md: 10 }}>
         <Icon
-          color="orange.400"
+          color="#F49717"
           fontSize="64"
           _groupHover={{
             color: 'white',
@@ -114,7 +114,7 @@ export default function contact() {
               <button>
                 <Button
                   variant="solid"
-                  bg="orange.400"
+                  bg="#F49717"
                   color="white"
                   _hover={{}}
                 >

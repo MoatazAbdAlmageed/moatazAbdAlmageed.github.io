@@ -49,7 +49,7 @@ class About extends Component {
 
           <Image
             borderRadius="full"
-            boxSize="150px"
+            boxSize="450px"
             src={avatar}
             alt={`${firstName} ${lastName}`}
             p={5}
@@ -76,7 +76,7 @@ class About extends Component {
               variant="ghost"
               size="lg"
               isRound={true}
-              _hover={{ bg: 'orange.400' }}
+              _hover={{ bg: '#F49717#F49717' }}
               icon={<BsGithub size="28px" />}
             />
           </Link>
@@ -86,7 +86,7 @@ class About extends Component {
               variant="ghost"
               size="lg"
               isRound={true}
-              _hover={{ bg: 'orange.400' }}
+              _hover={{ bg: '#F49717' }}
               icon={<BsLinkedin size="28px" />}
             />
           </Link>
@@ -96,7 +96,7 @@ class About extends Component {
               variant="ghost"
               size="lg"
               isRound={true}
-              _hover={{ bg: 'orange.400' }}
+              _hover={{ bg: '#F49717' }}
               icon={<BsYoutube size="28px" />}
             />
           </Link>
@@ -106,7 +106,7 @@ class About extends Component {
               variant="ghost"
               size="lg"
               isRound={true}
-              _hover={{ bg: 'orange.400' }}
+              _hover={{ bg: '#F49717' }}
               icon={<BsEnvelope size="28px" />}
             />
           </a><a href={whatsapp} target="_blank" rel="noreferrer">
@@ -115,7 +115,7 @@ class About extends Component {
               variant="ghost"
               size="lg"
               isRound={true}
-              _hover={{ bg: 'orange.400' }}
+              _hover={{ bg: '#F49717' }}
               icon={<BsWhatsapp size="28px" />}
             />
           </a>
@@ -123,7 +123,7 @@ class About extends Component {
         <Box mt={5}>
           <a href={resume} download>
             <Button
-              bg="orange.400"
+              bg="#F49717"
               color="white"
               size="lg"
               _hover={{ bg: 'gray.800' }}
@@ -133,7 +133,7 @@ class About extends Component {
                 variant="ghost"
                 size="lg"
                 isRound={true}
-                _hover={{ bg: 'orange.400' }}
+                _hover={{ bg: '#F49717' }}
                 icon={<BsCloudDownloadFill size="28px" />}
               />
               Resume

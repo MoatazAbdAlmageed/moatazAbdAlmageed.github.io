@@ -1,12 +1,12 @@
 import {
-  Avatar,
-  Box,
-  Flex,
-  Heading,
-  Icon,
-  Stack,
-  Text,
-  useColorModeValue,
+    Avatar,
+    Box,
+    Flex,
+    Heading,
+    Icon,
+    Stack,
+    Text,
+    useColorModeValue,
 } from '@chakra-ui/react';
 import React, { ReactNode } from 'react';
 
@@ -83,7 +83,7 @@ const TestimonialAvatar = ({
     <Flex align={'center'} p={8} direction={'column'}>
       <Avatar src={src} alt={name} mb={2} />
       <Stack spacing={-1} align={'center'}>
-        <Text color={'orange.400'} fontWeight={600}>
+        <Text color={'#F49717'} fontWeight={600}>
           {name}
         </Text>
         <Text fontSize={'md'} color={useColorModeValue('gray.600', 'gray.400')}>
@@ -105,7 +105,7 @@ export default function WithSpeechBubbles() {
     <Flex id="testimonials" direction="column">
       <Stack spacing={0} align={'center'} p={{ base: 5, md: 10 }}>
         <Icon
-          color="orange.400"
+          color="#F49717"
           fontSize="64"
           _groupHover={{
             color: 'white',
