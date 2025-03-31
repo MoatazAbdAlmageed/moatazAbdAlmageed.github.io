@@ -415,6 +415,15 @@ const projects = [
     show: true,
     description: 'Website for RTC Neklawy company',
   },
+  {
+    title: 'Mansouria Directory',
+    url: 'https://directory.egycodecrafters.com/',
+    tools: ['Laravel'],
+    icon: 'fa-laravel',
+    year: '2024',
+    show: true,
+    description: 'Our application is a comprehensive and innovative platform that aims to simplify your daily life and save time and effort by offering a wide range of services under one roof. The application is designed to be the perfect solution for all your daily needs, providing quick and easy access to a variety of services covering various aspects of life.',
+  },
 
   {
     title: 'Bein Quran Website',
