@@ -330,6 +330,15 @@ const colors = [
 
 const projects = [
   {
+    title: 'in Quran Academy',
+    url: 'https://inquranacademy.com/',
+    tools: ['WordPress'],
+    year: '2025',
+    icon: 'fa-wordpress',
+    show: true,
+    description: 'Website for In Quran Academy Institute',
+  },
+  {
     title: 'Quranst Website',
     url: 'https://quranst.com/',
     tools: ['WordPress'],
