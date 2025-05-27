@@ -258,11 +258,6 @@ const NAV_ITEMS: Array<NavItem> = [
   },
 
   {
-    label: 'Clients Speak',
-    href: '#testimonials',
-  },
-
-  {
     label: 'Awards',
     href: '#awards',
   },

@@ -4,6 +4,7 @@ import { Animate } from 'react-simple-animate';
 import About from '../components/About';
 import Awards from '../components/Awards';
 import Divider from '../components/Divider';
+import Education from '../components/Education';
 import Experience from '../components/Experience';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
@@ -21,9 +22,10 @@ const IndexPage = () => {
       >
         <Box bgGradient="linear(to-r, gray.100, gray.300)">
           <About />
-          <Projects />
           <Experience />
+          <Projects />
           <Awards />
+          <Education />
         </Box>
         <Footer />
         <Divider />
