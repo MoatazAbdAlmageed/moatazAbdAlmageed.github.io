@@ -1,59 +1,41 @@
 import {
-  Heading,
-  Button,
-  toast
+  Heading
 } from '@chakra-ui/react';
 import React, { Component } from 'react';
 import config from '../../config';
 import Wrapper from './Wrapper';
 
+import {
+  Box
+} from '@chakra-ui/react';
+
+import { Icon } from '@chakra-ui/icons';
+import { GrCertificate } from 'react-icons/ti';
+
+
+
 class Education extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      isEditing: false,
-      educationData: config.education
-    };
-  }
-
-  handleSave = () => {
-    const formattedData = this.state.educationData.map(item => ({
-      ...item,
-      place: item.place.trim(),
-      title: item.title.trim(),
-      period: item.period.trim()
-    }));
-
-    // Update config with formatted data
-    config.education = formattedData;
-    
-    // Show success toast
-    toast({
-      title: 'Success',
-      description: 'Education data has been formatted and saved successfully',
-      status: 'success',
-      duration: 3000,
-      isClosable: true,
-    });
-
-    this.setState({
-      isEditing: false,
-      educationData: formattedData
-    });
-  }
-
   render() {
-    return (
-      <Wrapper id="education">
-        <div className="w-100">
-          <div className="d-flex justify-content-between align-items-center mb-4">
-            <Heading p={10}>Education</Heading>
-            <Button onClick={this.handleSave} colorScheme="blue">
-              Save & Format
-            </Button>
-          </div>
+    const { education } = config;
 
-          {this.state.educationData.map((education) => {
+    return (
+      <Wrapper id="education" bg="#fff">
+        <Box spacing={0} align={'center'}>
+              <Icon
+                color="#F49717"
+                fontSize="64"
+                _groupHover={{
+                  color: 'white',
+                }}
+                as={GrCertificate}
+              />
+          <Heading p={10}>Education</Heading>
+          </Box>
+
+
+        <div className="w-100">
+
+          {education.map((education) => {
             const { place, url, title, period } = education;
             return (
               <div
