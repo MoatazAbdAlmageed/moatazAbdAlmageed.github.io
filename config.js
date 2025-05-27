@@ -611,7 +611,7 @@ const jobs = [
 
   {
     company: 'TIE',
-    logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAHrk6z4AQPTd5-eq4Iolv8SZM9MdDjPLQeg&s',
+    logo: 'https://media.licdn.com/dms/image/v2/D4D0BAQH-gBOxg3WX8Q/company-logo_200_200/company-logo_200_200/0/1722259219599/tie_for_information_technology_logo?e=1753920000&v=beta&t=_yV2-WUnEtDj31HyR2_Fo180GOZ6pkA2GLA3HwhGOKU',
     url: 'http://tie.com.eg/',
     technologies: [
       'HTML',
@@ -636,7 +636,7 @@ const jobs = [
     projects: [
       {
         name: 'la creation',
-        url: 'https://www.picuki.com/profile/la__creation',
+        url: 'https://www.instagram.com/la__creation/',
         technologies: ['PHP', 'Wordpress'],
       },
       {
