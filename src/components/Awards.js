@@ -21,9 +21,8 @@ class Awards extends Component {
           />{' '}
           <Heading p={10}>Awards &amp; Certifications</Heading>
           <Text align="center">
-            All my life I have been driven by my strong belief that education is
-            important.
-            <br /> I try to learn something new every single day.
+          All my life, I have been driven by a strong belief in the importance of education. I try to learn something new every single day. Although I studied Commerce and earned a Bachelor&apos;s Degree from Cairo University (2008–2013), my passion for coding started back in secondary school and has only grown stronger over time. You can check more here @LinkedIn.
+
             <br /> You can check more here
             <Link
               href="https://www.linkedin.com/in/moatazabdelmageed/details/certifications/"

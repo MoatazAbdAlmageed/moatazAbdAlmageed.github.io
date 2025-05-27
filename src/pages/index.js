@@ -4,7 +4,6 @@ import { Animate } from 'react-simple-animate';
 import About from '../components/About';
 import Awards from '../components/Awards';
 import Divider from '../components/Divider';
-import Education from '../components/Education';
 import Experience from '../components/Experience';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
@@ -25,7 +24,6 @@ const IndexPage = () => {
           <Experience />
           <Projects />
           <Awards />
-          <Education />
         </Box>
         <Footer />
         <Divider />
