@@ -522,7 +522,7 @@ const jobs = [
     ],
     period: '',
     startDate: dayjs('2020-01-01'),
-    endDate: dayjs(),
+    endDate: dayjs('2025-05-31'),
     present: true,
     occupation: 'Backend web developer',
     responsibilities: [
