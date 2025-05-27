@@ -1,19 +1,59 @@
+import {
+  Heading,
+  Button,
+  toast
+} from '@chakra-ui/react';
 import React, { Component } from 'react';
 import config from '../../config';
 import Wrapper from './Wrapper';
 
 class Education extends Component {
-  render() {
-    const { education } = config;
+  constructor(props) {
+    super(props);
+    this.state = {
+      isEditing: false,
+      educationData: config.education
+    };
+  }
 
+  handleSave = () => {
+    const formattedData = this.state.educationData.map(item => ({
+      ...item,
+      place: item.place.trim(),
+      title: item.title.trim(),
+      period: item.period.trim()
+    }));
+
+    // Update config with formatted data
+    config.education = formattedData;
+    
+    // Show success toast
+    toast({
+      title: 'Success',
+      description: 'Education data has been formatted and saved successfully',
+      status: 'success',
+      duration: 3000,
+      isClosable: true,
+    });
+
+    this.setState({
+      isEditing: false,
+      educationData: formattedData
+    });
+  }
+
+  render() {
     return (
       <Wrapper id="education">
         <div className="w-100">
-          <h2 className="mb-5">
-            <i className="fa fa-graduation-cap" /> Education
-          </h2>
+          <div className="d-flex justify-content-between align-items-center mb-4">
+            <Heading p={10}>Education</Heading>
+            <Button onClick={this.handleSave} colorScheme="blue">
+              Save & Format
+            </Button>
+          </div>
 
-          {education.map((education) => {
+          {this.state.educationData.map((education) => {
             const { place, url, title, period } = education;
             return (
               <div
