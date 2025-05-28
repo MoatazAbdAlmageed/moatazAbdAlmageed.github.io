@@ -748,7 +748,7 @@ const jobs = [
 
 module.exports = {
   siteTitle: 'Moataz Mohammady | Senior PHP Laravel Developer', // <title>
-  about: 'Back-End Web Developer specializing in PHP and Laravel, with experience building scalable, secure applications and designing RESTful APIs. Skilled in MySQL, MongoDB, and third-party integrations. Proficient in authentication, security, and familiar with HTML, CSS, JavaScript, React, and Angular for effective front-end collaboration. Also experienced in DevOps, including Docker, server management, and CI/CD pipelines.', // <title>
+  about: 'Back-End Web Developer specializing in PHP and Laravel, with experience building scalable, secure applications and designing RESTful APIs. Skilled in MySQL, MongoDB, and third-party integrations. Proficient in authentication, security, and familiar with HTML, CSS, JavaScript, React, and Angular for effective front-end collaboration. Also experienced in DevOps, including Docker, server management, and CI/CD pipelines.',
   manifestName: 'Resume',
   manifestShortName: 'Moataz Mohammady', // max 12 characters
   manifestStartUrl: 'https://moatazabdalmageed.github.io/',
@@ -756,11 +756,11 @@ module.exports = {
   manifestThemeColor: '#FE6F42',
   manifestDisplay: 'standalone',
   manifestIcon: 'src/assets/img/avatar.png',
-  pathPrefix: '/', // This path is subpath of your hosting https://domain/portfolio
+  pathPrefix: '/',
   firstName: 'Moataz',
   lastName: 'Mohammady',
   githubUsername: 'MoatazAbdAlmageed',
-  position: 'Full stack Web Developer',
+  position: 'Senior PHP Laravel Developer',
   site_img:
     'https://avatars2.githubusercontent.com/u/17373050?s=460&u=b26d5f5d825283b7b067e10a46add610b512cb26&v=4',
 
