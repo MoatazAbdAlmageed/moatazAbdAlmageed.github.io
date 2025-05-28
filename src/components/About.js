@@ -28,7 +28,7 @@ class About extends Component {
     const {
       firstName,
       lastName,
-      about,
+      description,
       email,
       whatsapp,
       socialLinks: { linkedin, github, youtube },
@@ -57,7 +57,7 @@ class About extends Component {
           />
 
           <Text align="center" padding="1em" fontSize="1.4em" width={{ md: '60%', sm: '95%' }} >
-            {{ about }}
+            {{ description }}
           </Text>
         </Box>
         <Box
