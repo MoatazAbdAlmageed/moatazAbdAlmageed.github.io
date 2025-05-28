@@ -611,7 +611,7 @@ const jobs = [
 
   {
     company: 'TIE',
-    logo: 'https://media.licdn.com/dms/image/v2/D4D0BAQH-gBOxg3WX8Q/company-logo_200_200/company-logo_200_200/0/1722259219599/tie_for_information_technology_logo?e=1753920000&v=beta&t=_yV2-WUnEtDj31HyR2_Fo180GOZ6pkA2GLA3HwhGOKU',
+    logo: 'https://tie.sa/wp-content/uploads/2024/09/4-eng-1.png',
     url: 'http://tie.com.eg/',
     technologies: [
       'HTML',
@@ -708,7 +708,7 @@ const jobs = [
   },
   {
     company: 'Leogami',
-    logo: 'https://leogami.com/wp-content/webpc-passthru.php?src=https://leogami.com/wp-content/uploads/2021/10/The-Logo-H-white-1.png&nocache=1',
+    logo: 'https://scontent.fcai19-7.fna.fbcdn.net/v/t39.30808-1/348428110_1316224438977334_4606188085044298261_n.png?stp=dst-png_s480x480&_nc_cat=111&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=ZTleuczNtcQQ7kNvwG2r_BH&_nc_oc=AdlXEyhB_MNWEg2jOcVSs9LSHPr9PYu_kSo-QTU38OgczgUKsPSrWqx4DLOIoRL01NA&_nc_zt=24&_nc_ht=scontent.fcai19-7.fna&_nc_gid=2OXzWPKCVtBdO0tfhCl4AA&oh=00_AfLST0ZD_7yE6UWOxJJ-IZaMRvzIowyUBrM-35I0QA-9gw&oe=683C6220',
     url: 'http://leogami.com/',
     technologies: ['HTML', 'CSS', 'Javascript', 'PHP', 'mysql', 'wordPress'],
     period: 'Oct 2015 - Nov 2015',

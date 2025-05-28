@@ -41,6 +41,7 @@ function Experience() {
           const {
             logo,
             url,
+            company,
             occupation,
             description,
             present,
@@ -71,6 +72,7 @@ function Experience() {
                 <Center>
                   <Link to={url}>
                     <Image width="150px" src={logo} />
+                    <h3>{company}</h3>
                   </Link>
                 </Center>
               </GridItem>
