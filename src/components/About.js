@@ -57,7 +57,7 @@ class About extends Component {
           />
 
           <Text align="center" padding="1em" fontSize="1.4em" width={{ md: '60%', sm: '95%' }} >
-            {{ description }}
+            { description }
           </Text>
         </Box>
         <Box
