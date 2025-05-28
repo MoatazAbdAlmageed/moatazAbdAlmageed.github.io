@@ -748,6 +748,7 @@ const jobs = [
 
 module.exports = {
   siteTitle: 'Moataz Mohammady | Senior PHP Laravel Developer', // <title>
+  about: 'Back-End Web Developer specializing in PHP and Laravel, with experience building scalable, secure applications and designing RESTful APIs. Skilled in MySQL, MongoDB, and third-party integrations. Proficient in authentication, security, and familiar with HTML, CSS, JavaScript, React, and Angular for effective front-end collaboration. Also experienced in DevOps, including Docker, server management, and CI/CD pipelines.', // <title>
   manifestName: 'Resume',
   manifestShortName: 'Moataz Mohammady', // max 12 characters
   manifestStartUrl: 'https://moatazabdalmageed.github.io/',
