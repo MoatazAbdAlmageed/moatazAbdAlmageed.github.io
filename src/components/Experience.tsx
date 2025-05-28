@@ -1,18 +1,17 @@
-import {
-    Box,
-    Center,
-    Grid,
-    GridItem,
-    Heading,
-    Image,
-    List,
-    ListIcon,
-    ListItem,
-    Text,
-} from '@chakra-ui/react';
-
 import { Icon } from '@chakra-ui/icons';
-import { Link } from 'gatsby';
+import {
+  Box,
+  Center,
+  Grid,
+  GridItem,
+  Heading,
+  Image,
+  Link,
+  List,
+  ListIcon,
+  ListItem,
+  Text,
+} from '@chakra-ui/react';
 import React from 'react';
 import { MdCheckCircle } from 'react-icons/md';
 import { TiStarburst } from 'react-icons/ti';
@@ -24,7 +23,7 @@ function Experience() {
 
   return (
     <Wrapper id="experience" bg="#fff">
-      <Box spacing={0} align={'center'}>
+      <Box gap={0} justifyContent={'center'}>
         <Icon
           color="#F49717"
           fontSize="64"
@@ -70,7 +69,7 @@ function Experience() {
             >
               <GridItem>
                 <Center>
-                  <Link to={url}>
+                  <Link href={url}>
                     <Image width="150px" src={logo} />
                     <h3>{company}</h3>
                   </Link>
@@ -96,22 +95,35 @@ function Experience() {
                 <Box pt={5}>
                   <Heading size="sm"> Projects</Heading>
                   <List>
-                    {projects.map((project) => {
-                      return (
-                        <ListItem margin={1} key={Math.random()}>
-                          <ListIcon as={MdCheckCircle} color="green.500" />
-                          <Link
-                            to={project.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <i className="fa fa-globe" aria-hidden="true"></i>
-                            &nbsp;
-                            {project.name}
-                          </Link>
-                        </ListItem>
-                      );
-                    })}
+                    {projects.map(
+                      (project: {
+                        url: string | undefined;
+                        name:
+                          | string
+                          | number
+                          | boolean
+                          | {}
+                          | React.ReactElement<
+                              any,
+                              string | React.JSXElementConstructor<any>
+                            >
+                          | React.ReactNodeArray
+                          | React.ReactPortal
+                          | null
+                          | undefined;
+                      }) => {
+                        return (
+                          <ListItem margin={1} key={Math.random()}>
+                            <ListIcon as={MdCheckCircle} color="green.500" />
+                            <Link href={project.url}>
+                              <i className="fa fa-globe" aria-hidden="true"></i>
+                              &nbsp;
+                              {project.name}
+                            </Link>
+                          </ListItem>
+                        );
+                      }
+                    )}
                   </List>
                 </Box>
               </GridItem>
