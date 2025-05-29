@@ -71,8 +71,10 @@ function Experience() {
               <GridItem>
                 <Center>
                   <Link href={url}>
-                    <Image width="150px" src={logo} />
-                    <h3>{company}</h3>
+                 <Center>
+                 <Image width="150px" src={logo} />
+                 <h2>{company}</h2>
+                 </Center>
                   </Link>
                 </Center>
               </GridItem>
