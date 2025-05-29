@@ -10,6 +10,7 @@ import {
   List,
   ListIcon,
   ListItem,
+  Stack,
   Text,
 } from '@chakra-ui/react';
 import React from 'react';
@@ -23,7 +24,7 @@ function Experience() {
 
   return (
     <Wrapper id="experience" bg="#fff">
-      <Box gap={0} justifyContent={'center'}>
+      <Stack spacing={0} align={'center'} pt={20}>
         <Icon
           color="#F49717"
           fontSize="64"
@@ -31,9 +32,9 @@ function Experience() {
             color: 'white',
           }}
           as={TiStarburst}
-        />
-        <Heading p={10}>Experience</Heading>
-      </Box>
+        />{' '}
+        <Heading>Experience</Heading>
+      </Stack>
 
       <Box>
         {jobs.map((job) => {
