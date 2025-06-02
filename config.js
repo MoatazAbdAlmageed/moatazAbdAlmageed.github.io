@@ -523,7 +523,7 @@ const jobs = [
     period: '',
     startDate: dayjs('2020-01-01'),
     endDate: dayjs('2025-05-31'),
-    present: true,
+    present: falase,
     occupation: 'Backend web developer',
     responsibilities: [
       "As a Back End Developer at Wuilt, I'm responsible for developing and maintaining web applications using PHP and Laravel. My duties include designing, coding, testing, debugging, documenting software applications; creating databases; writing scripts to automate processes; developing APIs; optimizing performance; and troubleshooting system issues. I also collaborate with other developers and designers to ensure a seamless user experience.",
