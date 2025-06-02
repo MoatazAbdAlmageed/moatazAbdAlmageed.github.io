@@ -33,6 +33,12 @@ class About extends Component {
       whatsapp,
       socialLinks: { linkedin, github, youtube },
     } = config;
+
+    
+const currentYear = new Date().getFullYear();
+const yearsExperience = currentYear - 2016;
+
+    
     return (
       <Flex
         id="about"
@@ -57,7 +63,7 @@ class About extends Component {
           />
 
         <Box textAlign="center" padding="1em" fontSize="1.4em" width={{ md: '60%', sm: '95%' }} mx="auto">
-          <Text mb={4}>👋 Hi, I'm a seasoned Back-End Web Developer with 5+ years of experience building robust and scalable applications using PHP and Laravel. I specialize in creating clean, efficient back-end systems that power dynamic web platforms.</Text>
+          <Text mb={4}> I'm a seasoned Back-End Web Developer with {yearsExperience}+ years of experience building robust and scalable applications using PHP and Laravel. I specialize in creating clean, efficient back-end systems that power dynamic web platforms.</Text>
         </Box>
               
         </Box>
