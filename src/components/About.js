@@ -42,7 +42,7 @@ class About extends Component {
         bg="#F7FAFC"
       >
         <Box align="center" padding={{ md: '10', sm: '5' }}>
-          <Text>Hello!, {`I'm`}</Text>
+          <Text>👋 Hello!, {`I'm`}</Text>
 
           <Heading>
             {firstName} {lastName}
@@ -57,14 +57,9 @@ class About extends Component {
           />
 
         <Box textAlign="center" padding="1em" fontSize="1.4em" width={{ md: '60%', sm: '95%' }} mx="auto">
-  <Text mb={4}>👋 Hi, I'm a seasoned Back-End Web Developer with 5+ years of experience building robust and scalable applications using PHP and Laravel. I specialize in creating clean, efficient back-end systems that power dynamic web platforms.</Text>
-  
-  <Text mb={4}>I’ve designed and developed RESTful APIs, worked with MySQL and MongoDB, and integrated various third-party services such as payment gateways, CRMs, and analytics platforms. My projects are secure, fast, and well-documented.</Text>
-
-  <Text mb={4}>I collaborate closely with front-end teams and am proficient in HTML, CSS, JavaScript, with experience in React and Angular, ensuring seamless integration across the full stack.</Text>
-
-  <Text>I also bring knowledge of DevOps basics—working with Docker, CI/CD pipelines, and server deployment—to help streamline your development and deployment processes.</Text>
-</Box>
+          <Text mb={4}>👋 Hi, I'm a seasoned Back-End Web Developer with 5+ years of experience building robust and scalable applications using PHP and Laravel. I specialize in creating clean, efficient back-end systems that power dynamic web platforms.</Text>
+        </Box>
+              
         </Box>
         <Box
           width={{
