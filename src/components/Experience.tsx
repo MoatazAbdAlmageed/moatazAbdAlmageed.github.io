@@ -12,6 +12,7 @@ import {
   ListItem,
   Stack,
   Text,
+  VStack
 } from '@chakra-ui/react';
 import React from 'react';
 import { MdCheckCircle } from 'react-icons/md';
@@ -71,13 +72,16 @@ function Experience() {
               <GridItem>
                 <Center>
                   <Link href={url}>
-                 <Center>
-                 <Image width="150px" src={logo} />
-                 <h2>{company}</h2>
-                 </Center>
+                    <VStack spacing={2} align="center">
+                      <Image width="150px" src={logo} alt={`${company} logo`} />
+                      <Text fontSize="lg" fontWeight="semibold" pt={2}>
+                        {company}
+                      </Text>
+                    </VStack>
                   </Link>
                 </Center>
               </GridItem>
+
               <GridItem>
                 <Box>
                   <Heading size="md" color="#F49717">
@@ -102,18 +106,18 @@ function Experience() {
                       (project: {
                         url: string | undefined;
                         name:
-                          | string
-                          | number
-                          | boolean
-                          | {}
-                          | React.ReactElement<
-                              any,
-                              string | React.JSXElementConstructor<any>
-                            >
-                          | React.ReactNodeArray
-                          | React.ReactPortal
-                          | null
-                          | undefined;
+                        | string
+                        | number
+                        | boolean
+                        | {}
+                        | React.ReactElement<
+                          any,
+                          string | React.JSXElementConstructor<any>
+                        >
+                        | React.ReactNodeArray
+                        | React.ReactPortal
+                        | null
+                        | undefined;
                       }) => {
                         return (
                           <ListItem margin={1} key={Math.random()}>
