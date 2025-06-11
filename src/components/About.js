@@ -34,11 +34,11 @@ class About extends Component {
       socialLinks: { linkedin, github, youtube },
     } = config;
 
-    
+
 const currentYear = new Date().getFullYear();
 const yearsExperience = currentYear - 2016;
 
-    
+
     return (
       <Flex
         id="about"
@@ -63,9 +63,9 @@ const yearsExperience = currentYear - 2016;
           />
 
         <Box textAlign="center" padding="1em" fontSize="1.4em" width={{ md: '60%', sm: '95%' }} mx="auto">
-          <Text mb={4}> I'm a seasoned Back-End Web Developer with {yearsExperience}+ years of experience building robust and scalable applications using PHP and Laravel. I specialize in creating clean, efficient back-end systems that power dynamic web platforms.</Text>
+       <Text mb={4}> I'm a 👨‍💻 Back-End Web Developer with over {yearsExperience}+  years of experience, specializing in PHP and Laravel. I’ve built secure, scalable web applications and designed 🔗 RESTful APIs, with strong skills in 🗄️ MySQL and MongoDB. I’m experienced in implementing 🔒 authentication systems and integrating 🔌 third-party services. With a good grasp of 🎨 HTML, CSS, JavaScript, React, and Angular, I collaborate smoothly with front-end teams. I’m also familiar with 🐳 Docker, 🔁 CI/CD pipelines, and 🖥️ server management as part of my DevOps workflow. </Text>
         </Box>
-              
+
         </Box>
         <Box
           width={{
