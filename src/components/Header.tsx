@@ -253,14 +253,15 @@ const NAV_ITEMS: Array<NavItem> = [
     href: '#experience',
   },
   {
+    label: 'Awards',
+    href: '#awards',
+  },
+  {
     label: 'Projects',
     href: '#projects',
   },
 
-  {
-    label: 'Awards',
-    href: '#awards',
-  },
+
   {
     label: 'Contact',
     href: '#contact',

@@ -22,8 +22,8 @@ const IndexPage = () => {
         <Box bgGradient="linear(to-r, gray.100, gray.300)">
           <About />
           <Experience />
-          <Projects />
           <Awards />
+          <Projects />
         </Box>
         <Footer />
         <Divider />
