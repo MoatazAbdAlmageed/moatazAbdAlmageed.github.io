@@ -19,7 +19,7 @@ import {
 
 import { Link } from 'gatsby';
 import config from '../../config';
-import resume from '../assets/files/moataz_mohammady_resume.pdf';
+import resume from '../assets/files/Moataz-Mohammady-Resume.pdf';
 import avatar from '../assets/img/avatar.png';
 import Divider from './Divider';
 
