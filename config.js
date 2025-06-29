@@ -503,6 +503,49 @@ const projects = [
 ];
 const jobs = [
   {
+  company: 'Shahbandr',
+  logo: 'https://shahbandr.com/wp-content/uploads/2025/04/shahbandr-logo.svg',
+  url: 'https://shahbandr.com/',
+  technologies: [
+    'PHP',
+    'Laravel',
+    'WordPress',
+    'WooCommerce',
+    'MySQL',
+    'HTML',
+    'CSS',
+    'JavaScript',
+    'Docker',
+    'REST API',
+  ],
+  period: '',
+  startDate: dayjs('2025-06-01'),
+  endDate: null,
+  present: true,
+  occupation: 'Senior Full Stack Developer (Laravel, PHP & WordPress)',
+  responsibilities: [
+    "Responsible for developing new features for both the Shahbandr company dashboard and the clients' dashboards.",
+    "Implement backend logic using Laravel and integrate with WordPress where needed.",
+    "Write technical documentation for internal tools and features.",
+    "Implement automated testing to ensure code quality and stability.",
+    "Collaborate with frontend and product teams to deliver scalable, user-friendly SaaS solutions.",
+    "Optimize application performance and support deployment with Docker-based environments."
+  ],
+  description: '',
+  projects: [
+    {
+      name: 'Shahbandr Plugin Suite',
+      url: 'https://shahbandr.com/',
+      technologies: ['PHP', 'Laravel', 'WordPress', 'WooCommerce'],
+    },
+    {
+      name: 'Merchant Admin Dashboard',
+      url: 'https://shahbandr.com/',
+      technologies: ['Laravel', 'MySQL', 'Docker'],
+    },
+  ],
+},
+  {
     company: 'Wuilt',
     logo: 'https://assets-global.website-files.com/614319338322d2f96eb4dd96/615c930a565cd057bcdc8df3_Wuilt%20Logo%20W%20Colored.svg',
     url: 'http://wuilt.com/',
