@@ -520,7 +520,6 @@ const jobs = [
   ],
   period: '',
   startDate: dayjs('2025-06-01'),
-  endDate: null,
   present: true,
   occupation: 'Senior Full Stack Developer (Laravel, PHP & WordPress)',
   responsibilities: [
@@ -533,16 +532,7 @@ const jobs = [
   ],
   description: '',
   projects: [
-    {
-      name: 'Shahbandr Plugin Suite',
-      url: 'https://shahbandr.com/',
-      technologies: ['PHP', 'Laravel', 'WordPress', 'WooCommerce'],
-    },
-    {
-      name: 'Merchant Admin Dashboard',
-      url: 'https://shahbandr.com/',
-      technologies: ['Laravel', 'MySQL', 'Docker'],
-    },
+    
   ],
 },
   {
