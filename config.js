@@ -529,6 +529,7 @@ const jobs = [
   ],
   period: '',
   startDate: dayjs('2025-06-01'),
+  endDate: dayjs('2025-05-31'),
   present: true,
   occupation: 'Senior Full Stack Developer (Laravel, PHP & WordPress)',
   responsibilities: [
