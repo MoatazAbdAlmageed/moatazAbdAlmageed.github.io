@@ -329,6 +329,15 @@ const colors = [
 ];
 
 const projects = [
+    {
+    title: 'Ozn Waeiah Institute',
+    url: 'https://oznwaeiah.com/',
+    tools: ['WordPress'],
+    year: '2025',
+    icon: 'fa-wordpress',
+    show: true,
+    description: 'Website for Ozn Waeiah Institute',
+  },
   {
     title: 'in Quran Academy',
     url: 'https://inquranacademy.com/',
@@ -336,7 +345,7 @@ const projects = [
     year: '2025',
     icon: 'fa-wordpress',
     show: true,
-    description: 'Website for In Quran Academy Institute',
+    description: 'Website for In Quran Academy',
   },
   {
     title: 'Quranst Website',
