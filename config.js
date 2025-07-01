@@ -513,7 +513,7 @@ const projects = [
 const jobs = [
   {
   company: 'Shahbandr',
-  logo: 'https://shahbandr.com/wp-content/uploads/2025/04/shahbandr-logo.svg',
+  logo: 'https://my.shahbandr.com/front/media/logo.svg',
   url: 'https://shahbandr.com/',
   technologies: [
     'PHP',
