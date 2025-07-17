@@ -126,7 +126,7 @@ const yearsExperience = currentYear - 2016;
           </a>
         </Box>
         <Box mt={5}>
-          <a href={resume} download>
+          <a href="https://flowcv.com/resume/em2lg0713u">
             <Button
               bg="#F49717"
               color="white"
