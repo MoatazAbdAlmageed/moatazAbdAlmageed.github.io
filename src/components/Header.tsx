@@ -261,9 +261,4 @@ const NAV_ITEMS: Array<NavItem> = [
     href: '#projects',
   },
 
-
-  {
-    label: 'Contact',
-    href: '#contact',
-  },
 ];
