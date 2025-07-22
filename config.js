@@ -536,7 +536,20 @@ const jobs = [
     present: false,
     occupation: 'Backend web developer',
     responsibilities: [
-      "As a Back End Developer at Wuilt, I'm responsible for developing and maintaining web applications using PHP and Laravel. My duties include designing, coding, testing, debugging, documenting software applications; creating databases; writing scripts to automate processes; developing APIs; optimizing performance; and troubleshooting system issues. I also collaborate with other developers and designers to ensure a seamless user experience.",
+  "Developed and maintained server-side logic using PHP and Laravel.",
+  "Built and maintained RESTful APIs for internal and external use.",
+  "01/2020 – 05/2025",
+  "Cairo, Egypt",
+  "Resolved system issues to ensure platform stability and performance.",
+  "Enhanced Builder API performance, significantly improving speed and reliability.",
+  "Delivered high-quality, scalable web applications aligned with business needs.",
+  "Optimized Google Translation API integration by switching from single to bulk translation, improving UX, reducing bugs, and cutting external API costs.",
+  "Wrote unit and integration tests using PHPUnit to ensure code reliability and reduce bugs during development.",
+  "Mentored junior developers through code reviews, architectural discussions, and pair programming sessions.",
+  "Integrated Laravel queues to asynchronously send customer behavior events to HubSpot, improving reliability and decoupling external API calls from the main application flow.",
+  "Integrated external APIs including Stripe (for billing and subscription management), Google Translation API (for multilingual support), and Pixabay (for image search and content enrichment).",
+  "Operated within Agile development teams using sprint-based workflows to deliver iterative features and improvements.",
+  "Built a proof of concept (POC) integrating AI tools like Mistral.ai into the page builder platform to explore automated content generation, enhancing efficiency for a potential user base of over 200,000 clients."
     ],
     description: '',
     projects: [
@@ -562,9 +575,12 @@ const jobs = [
     logo: 'https://camelcasetech.com/assets/img/logo_camelcasetech.png',
     technologies: ['HTML', 'CSS', 'Javascript', 'PHP', 'mysql', 'Laravel'],
     responsibilities: [
-      'Develop new user-facing features',
-      'Build reusable code and libraries for future use',
-      'Designing and managing the website back-end including database and server integration.',
+  "Building UI using HTML, CSS, JS.",
+  "Building Web applications using PHP, Laravel, Zend.",
+  "Collaborate with other team members and stakeholders.",
+  "Stay up-to-date on emerging technologies.",
+  "Wrote unit and integration tests using PHPUnit to ensure code reliability and reduce bugs during development."
+
     ],
     url: 'https://camelcasetech.com/',
     period: 'May 2018 - Dec 2019',
