@@ -538,8 +538,6 @@ const jobs = [
     responsibilities: [
   "Developed and maintained server-side logic using PHP and Laravel.",
   "Built and maintained RESTful APIs for internal and external use.",
-  "01/2020 – 05/2025",
-  "Cairo, Egypt",
   "Resolved system issues to ensure platform stability and performance.",
   "Enhanced Builder API performance, significantly improving speed and reliability.",
   "Delivered high-quality, scalable web applications aligned with business needs.",
