@@ -403,19 +403,6 @@ const projects = [
     show: true,
     description: 'Website for Quran Spring company',
   },
-  {
-    title: 'Quran Moddaker Website',
-    url: 'https://quranmoddaker.com/',
-    tools: ['WordPress'],
-    icon: 'fa-wordpress',
-    year: '2023',
-    show: true,
-    description: 'Website for Quran Moddaker company',
-  },
-
-
-
-
  
   {
     title: 'Mansouria Directory',
@@ -426,9 +413,6 @@ const projects = [
     show: true,
     description: 'Our application is a comprehensive and innovative platform that aims to simplify your daily life and save time and effort by offering a wide range of services under one roof. The application is designed to be the perfect solution for all your daily needs, providing quick and easy access to a variety of services covering various aspects of life.',
   },
-
-
-
  
   {
     title: 'moneyManger',
@@ -439,15 +423,7 @@ const projects = [
     show: true,
     description: 'simple moneyManger using adonisJs',
   },
-  {
-    title: 'Az-Translation',
-    url: 'https://az-translation.com/',
-    tools: ['WordPress'],
-    icon: 'fa-wordpress',
-    year: '2017',
-    show: false,
-    description: 'Website for Az-Translation company',
-  },
+ 
   {
     title: 'CodingDir',
     url: 'https://codingdir.gatsbyjs.io/',
