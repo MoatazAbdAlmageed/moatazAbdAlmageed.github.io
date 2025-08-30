@@ -424,15 +424,7 @@ const projects = [
   },
 
 
-  {
-    title: 'RTC Neklawy Website',
-    url: 'https://rtcneklawy.com/',
-    tools: ['WordPress'],
-    icon: 'fa-wordpress',
-    year: '2020',
-    show: true,
-    description: 'Website for RTC Neklawy company',
-  },
+ 
   {
     title: 'Mansouria Directory',
     url: 'https://directory.egycodecrafters.com/',
@@ -461,15 +453,7 @@ const projects = [
     show: true,
     description: 'Maintenance for Quran Spirit website',
   },
-  {
-    title: 'Sahwa Website',
-    url: 'http://sahwa-candy.com/',
-    tools: ['WordPress', 'woocommerce'],
-    icon: 'fa-wordpress',
-    year: '2021',
-    show: true,
-    description: 'Website for Sahwa company',
-  },
+ 
   {
     title: 'moneyManger',
     url: 'https://github.com/MoatazAbdAlmageed/adonis-moneyManger',
