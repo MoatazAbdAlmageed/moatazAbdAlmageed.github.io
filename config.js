@@ -413,15 +413,7 @@ const projects = [
     description: 'Website for Quran Moddaker company',
   },
 
-  {
-    title: 'Azan Al Quran Website',
-    url: 'https://azanalquran.com/',
-    tools: ['WordPress'],
-    icon: 'fa-wordpress',
-    year: '2023',
-    show: true,
-    description: 'Website for Azan Al Quran company',
-  },
+
 
 
  
@@ -435,24 +427,8 @@ const projects = [
     description: 'Our application is a comprehensive and innovative platform that aims to simplify your daily life and save time and effort by offering a wide range of services under one roof. The application is designed to be the perfect solution for all your daily needs, providing quick and easy access to a variety of services covering various aspects of life.',
   },
 
-  {
-    title: 'Bein Quran Website',
-    url: 'https://beinquran.com/',
-    tools: ['WordPress'],
-    icon: 'fa-wordpress',
-    year: '2020',
-    show: true,
-    description: 'Maintenance for Bein Quran website',
-  },
-  {
-    title: 'Quran Spirit website',
-    url: 'https://quranspirit.com/',
-    tools: ['WordPress'],
-    icon: 'fa-wordpress',
-    year: '2022',
-    show: true,
-    description: 'Maintenance for Quran Spirit website',
-  },
+
+
  
   {
     title: 'moneyManger',
