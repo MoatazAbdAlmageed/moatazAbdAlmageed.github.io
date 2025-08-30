@@ -355,15 +355,7 @@ const projects = [
     year: '2024',
     show: true,
     description: 'Website for Quranst Institute',
-  }, {
-    title: 'Diwan Academy Website',
-    url: 'https://diwanacademy.net/',
-    tools: ['WordPress'],
-    icon: 'fa-wordpress',
-    year: '2024',
-    show: true,
-    description: 'Website for diwan academy',
-  },
+  }, 
 
   {
     title: 'Alawal Academy Website',
@@ -424,15 +416,7 @@ const projects = [
     description: 'simple moneyManger using adonisJs',
   },
  
-  {
-    title: 'CodingDir',
-    url: 'https://codingdir.gatsbyjs.io/',
-    icon: 'fa-globe',
-    tools: ['gatsbyjs', 'chakra-ui'],
-    year: '2021',
-    show: true,
-    description: 'Simple website for list Youtube channels (Arabic,English)',
-  },
+
   {
     title: 'News aggregator',
     url: 'https://github.com/MoatazAbdAlmageed/news-server',
