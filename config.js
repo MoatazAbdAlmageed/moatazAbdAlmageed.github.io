@@ -431,6 +431,46 @@ const projects = [
   },
 ];
 const jobs = [
+{
+  company: 'QAED (Quality Leaders)',
+  logo: 'https://theqaed.com/wp-content/uploads/2025/08/theqaed-logo-e1675012115961-1024x761-1.png',
+  url: 'https://theqaed.com/',
+  technologies: [
+    'WordPress',
+    'Elementor',
+    'PHP',
+    'MySQL',
+    'WooCommerce',
+    'HTML',
+    'CSS',
+    'JavaScript'
+  ],
+  period: '',
+  startDate: dayjs('2025-08-01'),
+  endDate: null,
+  present: true,
+  occupation: 'Backend web developer',
+  responsibilities: [
+    "Rebuilt and optimized the company website using WordPress and Elementor for improved UX and performance.",
+    "Developed custom WordPress plugins and theme modifications to meet specific business needs.",
+    "Integrated WooCommerce for seamless e-commerce functionality, enabling digital services and product offerings.",
+    "Implemented scalable backend solutions with PHP and MySQL for handling enterprise-level clients.",
+    "Ensured cross-browser compatibility and responsive design for mobile, tablet, and desktop users.",
+    "Optimized website performance through caching, query optimization, and media handling improvements.",
+    "Collaborated with the design team to translate business requirements into functional, user-friendly web experiences.",
+    "Secured the platform by applying WordPress hardening techniques, regular updates, and role-based access controls.",
+    "Integrated analytics tools to monitor user engagement, improve decision-making, and guide marketing strategies.",
+    "Provided technical consultation to align enterprise solutions with client requirements across industries like education, healthcare, and government."
+  ],
+  description: 'Introduce world-class consultation services & enterprise solutions by modernizing the QAED website and backend infrastructure.',
+  projects: [
+    {
+      name: 'QAED Website Redesign',
+      url: 'https://theqaed.com/',
+      technologies: ['WordPress', 'Elementor', 'PHP', 'MySQL'],
+    }
+  ],
+},
 
   {
     company: 'Wuilt',
