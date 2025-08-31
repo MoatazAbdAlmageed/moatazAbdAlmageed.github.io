@@ -471,7 +471,6 @@ const jobs = [
     }
   ],
 },
-
   {
     company: 'Wuilt',
     logo: 'https://assets-global.website-files.com/614319338322d2f96eb4dd96/615c930a565cd057bcdc8df3_Wuilt%20Logo%20W%20Colored.svg',
