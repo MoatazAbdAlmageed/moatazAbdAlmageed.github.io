@@ -91,7 +91,7 @@ function Experience() {
                     {startDate.format('YYYY-MMMM')} :{' '}
                     {present ? 'Present' : endDate.format('YYYY-MMMM')}
                     <Text>
-                      {endDate.diff(startDate, 'years') > 0 && (
+                      {endDate?.diff(startDate, 'years') > 0 && (
                         <> {endDate.diff(startDate, 'years')} years </>
                       )}
                       {endDate.diff(startDate, 'months') % 12} months
