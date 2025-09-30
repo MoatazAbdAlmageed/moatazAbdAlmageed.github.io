@@ -330,6 +330,15 @@ const colors = [
 
 const projects = [
     {
+    title: 'اذاعة القرآن الكريم من القاهرة - مصر بث مباشر',
+    url: 'https://moatazabdalmageed.github.io/Quran-Radio-from-Cairo/',
+    tools: ['html','css','js'],
+    year: '2025',
+    icon: 'fa-html',
+    show: true,
+    description: 'اذاعة القرآن الكريم من القاهرة - مصر بث مباشر',
+  },
+    {
     title: 'Ozn Waeiah Institute',
     url: 'https://oznwaeiah.com/',
     tools: ['WordPress'],
