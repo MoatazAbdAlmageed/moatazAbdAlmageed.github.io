@@ -330,7 +330,7 @@ const colors = [
 
 const projects = [
     {
-    title: 'اذاعة القرآن الكريم من القاهرة - مصر بث مباشر',
+    title: 'Holy Quran Radio from Cairo - Egypt Live Broadcast',
     url: 'https://moatazabdalmageed.github.io/Quran-Radio-from-Cairo/',
     tools: ['html','css','js'],
     year: '2025',
