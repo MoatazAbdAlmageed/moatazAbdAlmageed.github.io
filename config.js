@@ -459,9 +459,12 @@ const jobs = [
   endDate: null,
   present: true,
   occupation: 'Backend web developer',
-  responsibilities: [
-    "Rebuilt and optimized the company website using WordPress and Elementor for improved UX and performance."
-  ],
+responsibilities: [
+  "Rebuilt and optimized the company website using WordPress and Elementor for improved UX and performance.",
+  "Updated, fixed bugs, and added new features to the https://ql-me.com/ website."
+],
+  
+
   description: 'Introduce world-class consultation services & enterprise solutions by modernizing the QAED website and backend infrastructure.',
   projects: [
     {
