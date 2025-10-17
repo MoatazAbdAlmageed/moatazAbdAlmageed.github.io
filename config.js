@@ -468,9 +468,15 @@ responsibilities: [
   description: 'Introduce world-class consultation services & enterprise solutions by modernizing the QAED website and backend infrastructure.',
   projects: [
     {
-      name: 'QAED Website Redesign',
+      name: 'QAED Website',
       url: 'https://theqaed.com/',
       technologies: ['WordPress', 'Elementor', 'PHP', 'MySQL'],
+    },
+
+      {
+      name: 'QAED Website for certificates',
+      url: 'https://ql-me.com/',
+      technologies: ['WordPress', 'Elementor', 'PHP', 'MySQL','ACF'],
     }
   ],
 },
