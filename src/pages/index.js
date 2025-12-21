@@ -8,7 +8,6 @@ import Experience from '../components/Experience';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Layout from '../components/Layout';
-import Projects from '../components/Projects';
 
 const IndexPage = () => {
   return (
@@ -23,7 +22,6 @@ const IndexPage = () => {
           <About />
           <Experience />
           <Awards />
-          <Projects />
         </Box>
         <Footer />
         <Divider />
