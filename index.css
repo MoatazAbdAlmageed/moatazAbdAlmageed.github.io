@@ -64,7 +64,7 @@
   --primary-hover: #ff9e84;
   --text-main: #f8fafc;
   --text-muted: #94a3b8;
-  --accent-blue: #0f172a;
+  --accent-blue: #38bdf8;
   --accent-purple: #818cf8;
 
   --glass-border: rgba(255, 255, 255, 0.1);
@@ -78,6 +78,7 @@ body.light-mode {
   --bg-card: rgba(255, 255, 255, 0.8);
   --text-main: #0f172a;
   --text-muted: #64748b;
+  --accent-blue: #0369a1;
   --glass-border: rgba(0, 0, 0, 0.1);
 }
 
@@ -171,7 +172,8 @@ body {
   background-color: var(--bg-dark);
   color: var(--text-main);
   line-height: 1.6;
-  overflow-x: hidden;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  width: 100%;
   scrollbar-width: thin;
   scrollbar-color: var(--primary) var(--bg-dark);
 }
@@ -194,8 +196,8 @@ a {
 /* --- Background Animations --- */
 .bg-blob {
   position: fixed;
-  width: 500px;
-  height: 500px;
+  width: 40vw; /* Use viewport units to keep it relative */
+  height: 40vw;
   background: radial-gradient(
     circle,
     rgba(254, 111, 66, 0.15) 0%,
@@ -204,6 +206,7 @@ a {
   border-radius: 50%;
   filter: blur(80px);
   z-index: -1;
+  pointer-events: none; /* Ensure it doesn't block clicks */
   animation: blob-move 20s infinite alternate;
 }
 
@@ -274,11 +277,17 @@ nav {
   display: flex;
   gap: 1.5rem;
   justify-content: center;
+  flex-wrap: wrap; /* Safety for very small screens */
 }
 
 @media (max-width: 768px) {
   .hero-actions {
     flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+  }
+  .hero-actions .btn {
     width: 100%;
     max-width: 300px;
   }
@@ -395,7 +404,7 @@ section {
 /* --- Experience Cards --- */
 .exp-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(450px, 100%), 1fr));
   gap: 2rem;
 }
 
@@ -730,11 +739,38 @@ footer {
 
   section {
     padding: 4rem 5%;
+    overflow-x: hidden; /* Local safety */
   }
+
   .hero h1 {
-    font-size: 3rem;
+    font-size: 2.8rem; /* Slightly smaller for narrow screens */
   }
+
   .exp-card {
     padding: 1.5rem;
   }
+
+  .exp-card header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .period {
+    font-weight: 600;
+    color: var(--primary);
+  }
+
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Global Fix for Horizontal Scroll */
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  position: relative;
 }
