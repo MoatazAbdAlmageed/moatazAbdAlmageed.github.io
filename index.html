@@ -574,10 +574,7 @@
       <!-- Certifications Section -->
       <section id="certifications">
         <h2 class="section-title">Certifications</h2>
-        <div
-          class="skills-container"
-          style="grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))"
-        >
+        <div class="skills-container">
           <a
             href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-f4d3813f-511b-405d-971b-b0f88039ec7b.pdf"
             class="skill-item"
@@ -686,17 +683,16 @@
       <!-- Contact Section -->
       <section id="contact" style="background: rgba(15, 23, 42, 0.3)">
         <h2 class="section-title">Get In Touch</h2>
-        <div style="display: flex; flex-wrap: wrap; gap: 4rem">
-          <div style="flex: 1; min-width: 300px">
-            <p style="margin-bottom: 2rem; color: var(--text-muted)">
+        <div class="contact-container">
+          <div class="contact-info">
+            <p>
               Let's collaborate on your next project or just talk tech. My inbox
               is always open.
             </p>
-            <div style="display: flex; flex-direction: column; gap: 1.5rem">
+            <div class="contact-methods">
               <a
                 href="mailto:moataz.mohammady@gmail.com"
                 class="badge"
-                style="padding: 1rem; width: fit-content"
               >
                 <i class="fas fa-envelope"></i> moataz.mohammady@gmail.com
               </a>
@@ -704,92 +700,41 @@
                 href="https://wa.me/201150064746"
                 class="badge"
                 target="_blank"
-                style="padding: 1rem; width: fit-content"
               >
                 <i class="fab fa-whatsapp"></i> +201150064746
               </a>
-              <div class="badge" style="padding: 1rem; width: fit-content">
+              <div class="badge">
                 <i class="fas fa-map-marker-alt"></i> Mansouria, Giza, Egypt
               </div>
             </div>
           </div>
-          <div
-            style="
-              flex: 1;
-              min-width: 300px;
-              background: var(--bg-card);
-              padding: 2rem;
-              border-radius: 20px;
-              border: 1px solid var(--glass-border);
-            "
-          >
+          <div class="contact-form-card">
             <form action="https://formspree.io/f/xgenoded" method="POST">
-              <div style="margin-bottom: 1.5rem">
-                <label
-                  style="
-                    display: block;
-                    margin-bottom: 0.5rem;
-                    font-size: 0.9rem;
-                  "
-                  >Name</label
-                >
+              <div class="form-group">
+                <label>Name</label>
                 <input
                   type="text"
                   name="name"
-                  style="
-                    width: 100%;
-                    background: var(--bg-dark);
-                    border: 1px solid var(--glass-border);
-                    padding: 0.8rem;
-                    border-radius: 8px;
-                    color: white;
-                  "
+                  class="form-control"
                   required
                 />
               </div>
-              <div style="margin-bottom: 1.5rem">
-                <label
-                  style="
-                    display: block;
-                    margin-bottom: 0.5rem;
-                    font-size: 0.9rem;
-                  "
-                  >Email</label
-                >
+              <div class="form-group">
+                <label>Email</label>
                 <input
                   type="email"
                   name="email"
-                  style="
-                    width: 100%;
-                    background: var(--bg-dark);
-                    border: 1px solid var(--glass-border);
-                    padding: 0.8rem;
-                    border-radius: 8px;
-                    color: white;
-                  "
+                  class="form-control"
                   required
                 />
               </div>
-              <div style="margin-bottom: 1.5rem">
-                <label
-                  style="
-                    display: block;
-                    margin-bottom: 0.5rem;
-                    font-size: 0.9rem;
-                  "
-                  >Message</label
-                >
+              <div class="form-group">
+                <label>Message</label>
                 <textarea
                   name="message"
                   rows="4"
-                  style="
-                    width: 100%;
-                    background: var(--bg-dark);
-                    border: 1px solid var(--glass-border);
-                    padding: 0.8rem;
-                    border-radius: 8px;
-                    color: white;
-                  "
+                  class="form-control"
+                  style="resize: vertical"
                   required
                 ></textarea>
               </div>
@@ -802,12 +747,8 @@
                 style="margin-bottom: 1.5rem"
               ></div>
 
-              <button
-                type="submit"
-                class="btn btn-primary"
-                style="width: 100%; border: none; cursor: pointer"
-              >
-                Send Message
+              <button type="submit" class="btn btn-primary" style="width: 100%">
+                <i class="fas fa-paper-plane"></i> Send Message
               </button>
             </form>
           </div>
@@ -834,11 +775,11 @@
     </div>
 
     <footer>
-      <div class="social-links css-17qnj1m">
+      <div class="social-links">
         <a href="https://github.com/MoatazAbdAlmageed" target="_blank">
           <button
             type="button"
-            class="chakra-button css-97z9jt"
+            class="chakra-button"
             aria-label="BsGithub"
           >
             <svg
@@ -861,7 +802,7 @@
         <a href="https://www.linkedin.com/in/moatazabdelmageed" target="_blank">
           <button
             type="button"
-            class="chakra-button css-146e4ie"
+            class="chakra-button"
             aria-label="BsLinkedin"
           >
             <svg
@@ -884,7 +825,7 @@
         <a href="https://www.youtube.com/@moatazMohamady" target="_blank">
           <button
             type="button"
-            class="chakra-button css-146e4ie"
+            class="chakra-button"
             aria-label="BsYoutube"
           >
             <svg
@@ -911,7 +852,7 @@
         >
           <button
             type="button"
-            class="chakra-button css-146e4ie"
+            class="chakra-button"
             aria-label="email"
           >
             <svg
@@ -934,7 +875,7 @@
         <a href="https://wa.me/201150064746" target="_blank" rel="noreferrer">
           <button
             type="button"
-            class="chakra-button css-146e4ie"
+            class="chakra-button"
             aria-label="whatsapp"
           >
             <svg
@@ -955,9 +896,6 @@
           </button>
         </a>
       </div>
-      <p style="color: var(--text-muted); font-size: 0.9rem">
-        &copy; 2026 Moataz Mohammady. Designed for high impact.
-      </p>
     </footer>
 
     <script src="https://unpkg.com/scrollreveal"></script>
