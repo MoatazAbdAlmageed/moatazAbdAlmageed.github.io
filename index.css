@@ -380,7 +380,13 @@ nav {
 
 /* --- Section Styling --- */
 section {
-  padding: 8rem 10%;
+  padding: 8rem 5%; /* Reduced slightly from 10% for better mobile compatibility */
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 4rem 1.5rem; /* Consistent smaller padding for mobile */
+  }
 }
 
 .section-title {
@@ -505,7 +511,7 @@ section {
 /* --- Project Grid --- */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
   gap: 2rem;
 }
 
@@ -630,7 +636,7 @@ section {
 /* --- Skills Layout --- */
 .skills-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
   gap: 2rem;
 }
 
@@ -665,11 +671,86 @@ section {
   transform: translateX(5px);
 }
 
+/* --- Contact Section --- */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: min(300px, 100%);
+}
+
+.contact-info p {
+  margin-bottom: 2rem;
+  color: var(--text-muted);
+}
+
+.contact-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-methods .badge {
+  padding: 1rem;
+  width: fit-content;
+}
+
+.contact-form-card {
+  flex: 1;
+  min-width: min(300px, 100%);
+  background: var(--bg-card);
+  padding: 2.5rem;
+  border-radius: 20px;
+  border: 1px solid var(--glass-border);
+  backdrop-filter: var(--glass-blur);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.form-control {
+  width: 100%;
+  background: var(--bg-dark);
+  border: 1px solid var(--glass-border);
+  padding: 0.8rem;
+  border-radius: 8px;
+  color: white;
+  transition: var(--transition);
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(254, 111, 66, 0.2);
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .contact-form-card {
+    padding: 1.5rem;
+  }
+}
+
 /* --- Footer --- */
 footer {
-  padding: 4rem 10%;
+  padding: 4rem 1.5rem;
   border-top: 1px solid var(--glass-border);
   text-align: center;
+  width: 100%;
 }
 
 .social-links {
@@ -748,6 +829,7 @@ footer {
 
   .exp-card {
     padding: 1.5rem;
+    padding-right: 2rem; /* Added right padding adjustment */
   }
 
   .exp-card header {
@@ -761,16 +843,28 @@ footer {
     color: var(--primary);
   }
 
-  .skills-container {
+  .skills-container,
+  .project-grid {
     grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  footer {
+    padding: 3rem 5%;
   }
 }
 
 /* Global Fix for Horizontal Scroll */
-html, body {
+html,
+body {
   width: 100%;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
   position: relative;
+}
+
+main {
+  width: 100%;
+  overflow-x: hidden;
 }
