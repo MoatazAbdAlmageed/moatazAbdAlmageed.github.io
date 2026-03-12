@@ -60,10 +60,13 @@
   /* Default Dark Mode */
   --bg-dark: #0f172a;
   --bg-card: rgba(30, 41, 59, 0.7);
-  --primary: #ff8664;
-  --primary-hover: #ff9e84;
-  --text-main: #f8fafc;
-  --text-muted: #94a3b8;
+  --primary: #feba3b; /* Warm Gold from image */
+  --primary-hover: #ffcc4d;
+  --bg-dark: #0f1115; /* Deep Obsidian */
+  --bg-card: rgba(26, 28, 35, 0.7); /* Deep Glass */
+  --text-main: #ffffff;
+  --text-muted: #a0a0a0;
+  --accent-pink: #d33de0; /* Magenta pop from image */
   --accent-blue: #38bdf8;
   --accent-purple: #818cf8;
 
@@ -132,14 +135,14 @@ body:not(.light-mode) .theme-switcher .fa-moon {
   left: 2rem;
   width: 55px;
   height: 55px;
-  background-color: #25d366;
+  background-color: #25d366; /* Keep WA Green but add pink hover/shadow? */
   color: white;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 2rem;
-  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+  box-shadow: 0 4px 15px rgba(211, 61, 224, 0.3); /* Pink shadow pop */
   z-index: 1000;
   transition: var(--transition);
   animation: whatsapp-float 3s infinite ease-in-out;
@@ -247,7 +250,7 @@ nav {
 .logo {
   font-size: 1.5rem;
   font-weight: 700;
-  background: linear-gradient(to right, var(--primary), var(--accent-blue));
+  background: linear-gradient(to right, var(--primary), var(--accent-pink));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -258,8 +261,18 @@ nav {
   gap: 2rem;
 }
 
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: var(--transition);
+  opacity: 0.8;
+}
+
 .nav-links a:hover {
   color: var(--primary);
+  opacity: 1;
 }
 
 .menu-toggle {
@@ -441,6 +454,11 @@ section {
 .company-info h3 {
   font-size: 1.5rem;
   color: var(--primary);
+}
+
+.period {
+  color: var(--accent-pink); /* Period in magenta pop */
+  font-weight: 500;
 }
 
 .company-main {
@@ -745,6 +763,94 @@ section {
   }
 }
 
+/* --- About Section Integrated --- */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.about-text {
+  font-size: 1.15rem;
+  color: var(--text-muted);
+}
+
+.about-text p {
+  margin-bottom: 2rem;
+}
+
+.hub-card {
+  background: var(--bg-card);
+  border-radius: 24px;
+  padding: 2rem;
+  border: 1px solid var(--glass-border);
+  backdrop-filter: var(--glass-blur);
+  position: relative;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.hub-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.hub-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.hub-icon {
+  width: 50px;
+  height: 50px;
+  background: #ff0033;
+  color: white;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  box-shadow: 0 5px 15px rgba(255, 0, 51, 0.2);
+}
+
+.hub-header h3 {
+  font-size: 1.3rem;
+  color: var(--text-main);
+  margin: 0;
+}
+
+.hub-details p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+/* --- YouTube Section (Keep for specific card parts but integrated) --- */
+.youtube-banner {
+  width: 100%;
+  height: 151px; /* Smaller for Hub card */
+  margin: -2rem -2rem 2rem -2rem;
+  width: calc(100% + 4rem);
+  overflow: hidden;
+}
+
+.youtube-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* --- Footer --- */
 footer {
   padding: 4rem 1.5rem;
@@ -840,7 +946,7 @@ footer {
 
   .period {
     font-weight: 600;
-    color: var(--primary);
+    color: var(--accent-pink);
   }
 
   .skills-container,
