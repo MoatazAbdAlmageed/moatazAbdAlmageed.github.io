@@ -1,0 +1,14 @@
+{
+  "name": "moataz-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio website",
+  "main": "dev.js",
+  "scripts": {
+    "minify": "node minify.js",
+    "dev": "node dev.js",
+    "start": "node dev.js"
+  },
+  "devDependencies": {
+    "browser-sync": "^3.0.0"
+  }
+}

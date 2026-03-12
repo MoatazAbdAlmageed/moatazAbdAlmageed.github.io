@@ -1,14 +1,70 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap");
+/* --- Fonts --- */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("assets/fonts/inter-300.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/inter-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/fonts/inter-500.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/fonts/inter-600.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("assets/fonts/outfit-300.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/outfit-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/fonts/outfit-600.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/fonts/outfit-700.woff2") format("woff2");
+}
 
 :root {
-  /* Color Palette based on config.js manifest colors */
+  /* Default Dark Mode */
   --bg-dark: #0f172a;
   --bg-card: rgba(30, 41, 59, 0.7);
-  --primary: #fe6f42;
-  --primary-hover: #ff8b6b;
+  --primary: #ff8664;
+  --primary-hover: #ff9e84;
   --text-main: #f8fafc;
   --text-muted: #94a3b8;
-  --accent-blue: #38bdf8;
+  --accent-blue: #0f172a;
   --accent-purple: #818cf8;
 
   --glass-border: rgba(255, 255, 255, 0.1);
@@ -17,26 +73,12 @@
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* --- Themes --- */
-body.theme-sublime {
-  --bg-dark: #4b4b4b;
-  --primary: #f09733;
-}
-body.theme-vscode {
-  --bg-dark: #252526;
-  --primary: #1e88e5;
-}
-body.theme-brackets {
-  --bg-dark: #4d4d4d;
-  --primary: #22a3dc;
-}
-body.theme-github {
-  --bg-dark: #24292e;
-  --primary: #2ea44f;
-}
-body.theme-notion {
-  --bg-dark: #000000;
-  --primary: #e16259;
+body.light-mode {
+  --bg-dark: #f8fafc;
+  --bg-card: rgba(255, 255, 255, 0.8);
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --glass-border: rgba(0, 0, 0, 0.1);
 }
 
 .theme-switcher {
@@ -44,13 +86,29 @@ body.theme-notion {
   bottom: 2rem;
   right: 2rem;
   z-index: 1000;
-  display: flex;
-  gap: 0.5rem;
   background: var(--bg-card);
-  padding: 0.5rem;
-  border-radius: 99px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
   border: 1px solid var(--glass-border);
   backdrop-filter: var(--glass-blur);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition);
+  color: var(--text-main);
+  font-size: 1.2rem;
+}
+
+.theme-switcher:hover {
+  transform: scale(1.1);
+  border-color: var(--primary);
+}
+
+body.light-mode .theme-switcher .fa-sun,
+body:not(.light-mode) .theme-switcher .fa-moon {
+  display: none;
 }
 
 .theme-btn {
@@ -277,6 +335,7 @@ section {
 /* --- Experience Cards --- */
 .exp-grid {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   gap: 2rem;
 }
 
@@ -305,6 +364,42 @@ section {
 }
 
 .company-info h3 {
+  font-size: 1.5rem;
+  color: var(--primary);
+}
+
+.company-main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.company-logo {
+  max-width: 120px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background: white; /* Often logos have dark text, white bg helps visibility */
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.company-logo img {
+  max-width: 80px;
+  width: 90px;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.logo-placeholder {
+  width: 50px;
+  height: 50px;
+  background: var(--bg-dark);
+  border: 1px solid var(--glass-border);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 1.5rem;
   color: var(--primary);
 }
