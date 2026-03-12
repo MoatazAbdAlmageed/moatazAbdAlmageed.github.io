@@ -1,0 +1,32 @@
+name: Build and Deploy to Main
+
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js ⚙️
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Dependencies 📦
+        run: npm install
+
+      - name: Build (Minify CSS) 🏗️
+        run: node minify.js
+
+      - name: Deploy to Main 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: . # The folder the action should deploy.
+          branch: main # The branch the action should deploy to.
+          commit-message: "deploy: build from develop [skip ci]"
+          clean: true # Automatically remove deleted files from the target branch
