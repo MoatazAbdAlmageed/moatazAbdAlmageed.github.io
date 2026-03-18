@@ -502,6 +502,17 @@ section {
   margin-bottom: 0.5rem;
 }
 
+.timeline-content h3 a:hover {
+  text-decoration: underline !important;
+  opacity: 0.8;
+}
+
+.timeline-content .company-logo:hover,
+.timeline-content .logo-placeholder:hover {
+  transform: scale(1.05);
+  transition: var(--transition);
+}
+
 .timeline-content .job-title {
   color: var(--text-main);
   font-weight: 600;
