@@ -349,7 +349,8 @@ const projects = [
   },
   {
     title: 'Coding Directory',
-    url: 'https://github.com/MoatazAbdAlmageed/codingdir',
+    url: 'https://moatazabdalmageed.github.io/codingdir/',
+    github: 'https://github.com/MoatazAbdAlmageed/codingdir',
     tools: ['Gatsby', 'React', 'SCSS', 'JavaScript'],
     year: '2025',
     icon: 'fa-code',
