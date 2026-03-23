@@ -348,6 +348,15 @@ const projects = [
     description: 'Website for Ozn Waeiah Institute',
   },
   {
+    title: 'Coding Directory',
+    url: 'https://github.com/MoatazAbdAlmageed/codingdir',
+    tools: ['Gatsby', 'React', 'SCSS', 'JavaScript'],
+    year: '2025',
+    icon: 'fa-code',
+    show: true,
+    description: 'Simple application to list youtube channels and websites that are related to coding!!',
+  },
+  {
     title: 'in Quran Academy',
     url: 'https://inquranacademy.com/',
     tools: ['WordPress'],
