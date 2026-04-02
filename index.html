@@ -727,109 +727,90 @@
       <!-- Certifications Section -->
       <section id="certifications">
         <h2 class="section-title">Certifications</h2>
-        <div class="skills-container">
-          <a
-            href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-f4d3813f-511b-405d-971b-b0f88039ec7b.pdf"
-            class="skill-item"
-            target="_blank"
-            style="
-              flex-direction: column;
-              align-items: flex-start;
-              text-decoration: none;
-            "
-          >
-            <span style="color: var(--primary); font-weight: 600"
-              >Introduction to TypeScript</span
-            >
-            <span style="font-size: 0.8rem; color: var(--text-muted)"
-              >Udemy | July 2021</span
-            >
-          </a>
-          <a
-            href="https://graduation-api.udacity.com/api/certificate/A57FXWSR/download"
-            class="skill-item"
-            target="_blank"
-            style="
-              flex-direction: column;
-              align-items: flex-start;
-              text-decoration: none;
-            "
-          >
-            <span style="color: var(--primary); font-weight: 600"
-              >Web Development Professional</span
-            >
-            <span style="font-size: 0.8rem; color: var(--text-muted)"
-              >Udacity | Aug 2020</span
-            >
-          </a>
-          <a
-            href="https://s3-us-west-2.amazonaws.com/udacity-printer/production/certificates/8274026e-a9af-49ba-b82b-66b5824b65fe.pdf"
-            class="skill-item"
-            target="_blank"
-            style="
-              flex-direction: column;
-              align-items: flex-start;
-              text-decoration: none;
-            "
-          >
-            <span style="color: var(--primary); font-weight: 600"
-              >Front End Development Track</span
-            >
-            <span style="font-size: 0.8rem; color: var(--text-muted)"
-              >Udacity | May 2019</span
-            >
-          </a>
-          <a
-            href="https://www.freecodecamp.org/certification/fcc319f679c/responsive-web-design"
-            class="skill-item"
-            target="_blank"
-            style="
-              flex-direction: column;
-              align-items: flex-start;
-              text-decoration: none;
-            "
-          >
-            <span style="color: var(--primary); font-weight: 600"
-              >Responsive Web Design</span
-            >
-            <span style="font-size: 0.8rem; color: var(--text-muted)"
-              >FreeCodeCamp | June 2018</span
-            >
-          </a>
-          <a
-            href="https://www.sololearn.com/Certificate/1059-1342830/pdf/"
-            class="skill-item"
-            target="_blank"
-            style="
-              flex-direction: column;
-              align-items: flex-start;
-              text-decoration: none;
-            "
-          >
-            <span style="color: var(--primary); font-weight: 600"
-              >PHP Fundamentals</span
-            >
-            <span style="font-size: 0.8rem; color: var(--text-muted)"
-              >Sololearn | July 2016</span
-            >
-          </a>
-          <a
-            href="https://www.sololearn.com/Certificate/1014-1342830/pdf/"
-            class="skill-item"
-            target="_blank"
-            style="
-              flex-direction: column;
-              align-items: flex-start;
-              text-decoration: none;
-            "
-          >
-            <span style="color: var(--primary); font-weight: 600"
-              >HTML Fundamentals</span
-            >
-            <span style="font-size: 0.8rem; color: var(--text-muted)"
-              >Sololearn | Jan 2017</span
-            >
-          </a>
+        <div class="cert-gallery">
+          <!-- Advanced Cloud DevOps -->
+          <div class="cert-card" onclick="openLightbox(0)">
+            <div class="cert-thumbnail">
+              <img src="assets/img/certifications/www.udacity.com_certificate_KKCD4PEK.png" alt="Advanced Cloud DevOps" loading="lazy">
+            </div>
+            <div class="cert-info">
+              <h3>Advanced Cloud DevOps</h3>
+              <p><span>Udacity</span> <span>Feb 2023</span></p>
+              <a href="https://confirm.udacity.com/KKCD4PEK" target="_blank" class="cert-verify-btn" onclick="event.stopPropagation()"><i class="fas fa-external-link-alt"></i> View Credential</a>
+            </div>
+          </div>
+
+          <!-- Web Development Professional -->
+          <div class="cert-card" onclick="openLightbox(1)">
+            <div class="cert-thumbnail">
+              <img src="assets/img/certifications/www.udacity.com_certificate_A57FXWSR.png" alt="Web Development Professional" loading="lazy">
+            </div>
+            <div class="cert-info">
+              <h3>Web Development Professional</h3>
+              <p><span>Udacity</span> <span>Aug 2020</span></p>
+              <a href="https://confirm.udacity.com/A57FXWSR" target="_blank" class="cert-verify-btn" onclick="event.stopPropagation()"><i class="fas fa-external-link-alt"></i> View Credential</a>
+            </div>
+          </div>
+
+          <!-- Front-End Development Libraries -->
+          <div class="cert-card" onclick="openLightbox(2)">
+            <div class="cert-thumbnail">
+              <img src="assets/img/certifications/www.freecodecamp.org_certification_moatazgithub_front-end-development-libraries.png" alt="Front-End Development Libraries" loading="lazy">
+            </div>
+            <div class="cert-info">
+              <h3>Front-End Development Libraries</h3>
+              <p><span>FreeCodeCamp</span> <span>Aug 2018</span></p>
+              <a href="https://www.freecodecamp.org/certification/moatazgithub/front-end-development-libraries" target="_blank" class="cert-verify-btn" onclick="event.stopPropagation()"><i class="fas fa-external-link-alt"></i> View Credential</a>
+            </div>
+          </div>
+
+          <!-- Responsive Web Design -->
+          <div class="cert-card" onclick="openLightbox(3)">
+            <div class="cert-thumbnail">
+              <img src="assets/img/certifications/www.freecodecamp.org_certification_moatazgithub_responsive-web-design.png" alt="Responsive Web Design" loading="lazy">
+            </div>
+            <div class="cert-info">
+              <h3>Responsive Web Design</h3>
+              <p><span>FreeCodeCamp</span> <span>Apr 2019</span></p>
+              <a href="https://www.freecodecamp.org/certification/moatazgithub/responsive-web-design" target="_blank" class="cert-verify-btn" onclick="event.stopPropagation()"><i class="fas fa-external-link-alt"></i> View Credential</a>
+            </div>
+          </div>
+
+          <!-- Introduction to TypeScript -->
+          <div class="cert-card" onclick="openLightbox(4)">
+            <div class="cert-thumbnail">
+              <img src="assets/img/certifications/ilovepdf_pages-to-jpg/UC-f4d3813f-511b-405d-971b-b0f88039ec7b/UC-f4d3813f-511b-405d-971b-b0f88039ec7b_page-0001.jpg" alt="Introduction to TypeScript" loading="lazy">
+            </div>
+            <div class="cert-info">
+              <h3>Introduction to TypeScript</h3>
+              <p><span>Udemy</span> <span>July 2021</span></p>
+              <a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-f4d3813f-511b-405d-971b-b0f88039ec7b.pdf" target="_blank" class="cert-verify-btn" onclick="event.stopPropagation()"><i class="fas fa-external-link-alt"></i> View Credential</a>
+            </div>
+          </div>
+
+          <!-- PHP Fundamentals -->
+          <div class="cert-card" onclick="openLightbox(5)">
+            <div class="cert-thumbnail">
+              <img src="assets/img/certifications/ilovepdf_pages-to-jpg/cert-CT-FCSAED3T/cert-CT-FCSAED3T_page-0001.jpg" alt="PHP Fundamentals" loading="lazy">
+            </div>
+            <div class="cert-info">
+              <h3>PHP Fundamentals</h3>
+              <p><span>Sololearn</span> <span>July 2016</span></p>
+              <a href="https://www.sololearn.com/Certificate/CT-FCSAED3T/pdf/" target="_blank" class="cert-verify-btn" onclick="event.stopPropagation()"><i class="fas fa-external-link-alt"></i> View Credential</a>
+            </div>
+          </div>
+
+          <!-- HTML Fundamentals -->
+          <div class="cert-card" onclick="openLightbox(6)">
+            <div class="cert-thumbnail">
+              <img src="assets/img/certifications/ilovepdf_pages-to-jpg/cert-CT-VJNF12PB/cert-CT-VJNF12PB_page-0001.jpg" alt="HTML Fundamentals" loading="lazy">
+            </div>
+            <div class="cert-info">
+              <h3>HTML Fundamentals</h3>
+              <p><span>Sololearn</span> <span>Jan 2017</span></p>
+              <a href="https://www.sololearn.com/Certificate/CT-VJNF12PB/pdf/" target="_blank" class="cert-verify-btn" onclick="event.stopPropagation()"><i class="fas fa-external-link-alt"></i> View Credential</a>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -1080,6 +1061,18 @@
     </footer>
 
     <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+      <div class="lightbox-close" onclick="closeLightbox()">&times;</div>
+      <div class="lightbox-nav lightbox-prev" onclick="changeLightbox(-1)">&#10094;</div>
+      <div class="lightbox-content">
+        <img id="lightbox-img" class="lightbox-image" src="" alt="Certificate View">
+        <div id="lightbox-caption" class="lightbox-caption"></div>
+        <a id="lightbox-verify" class="lightbox-verify" href="" target="_blank"><i class="fas fa-check-circle"></i> View Credential</a>
+      </div>
+      <div class="lightbox-nav lightbox-next" onclick="changeLightbox(1)">&#10095;</div>
+    </div>
+
     <script>
       // Smooth scroll revealing animations
       ScrollReveal().reveal(
@@ -1099,7 +1092,7 @@
         origin: "left",
       });
 
-      ScrollReveal().reveal(".exp-card, .project-card, .skill-item, .youtube-card", {
+      ScrollReveal().reveal(".exp-card, .project-card, .cert-card, .youtube-card", {
         delay: 300,
         distance: "40px",
         origin: "bottom",
@@ -1144,6 +1137,60 @@
             behavior: "smooth",
           });
         });
+      });
+
+      // Lightbox Logic
+      const certificates = [
+        { src: 'assets/img/certifications/www.udacity.com_certificate_KKCD4PEK.png', title: 'Advanced Cloud DevOps - Udacity', verify: 'https://confirm.udacity.com/KKCD4PEK' },
+        { src: 'assets/img/certifications/www.udacity.com_certificate_A57FXWSR.png', title: 'Web Development Professional - Udacity', verify: 'https://confirm.udacity.com/A57FXWSR' },
+        { src: 'assets/img/certifications/www.freecodecamp.org_certification_moatazgithub_front-end-development-libraries.png', title: 'Front-End Development Libraries - FreeCodeCamp', verify: 'https://www.freecodecamp.org/certification/moatazgithub/front-end-development-libraries' },
+        { src: 'assets/img/certifications/www.freecodecamp.org_certification_moatazgithub_responsive-web-design.png', title: 'Responsive Web Design - FreeCodeCamp', verify: 'https://www.freecodecamp.org/certification/moatazgithub/responsive-web-design' },
+        { src: 'assets/img/certifications/ilovepdf_pages-to-jpg/UC-f4d3813f-511b-405d-971b-b0f88039ec7b/UC-f4d3813f-511b-405d-971b-b0f88039ec7b_page-0001.jpg', title: 'Introduction to TypeScript - Udemy', verify: 'https://udemy-certificate.s3.amazonaws.com/pdf/UC-f4d3813f-511b-405d-971b-b0f88039ec7b.pdf' },
+        { src: 'assets/img/certifications/ilovepdf_pages-to-jpg/cert-CT-FCSAED3T/cert-CT-FCSAED3T_page-0001.jpg', title: 'PHP Fundamentals - SoloLearn', verify: 'https://www.sololearn.com/Certificate/CT-FCSAED3T/pdf/' },
+        { src: 'assets/img/certifications/ilovepdf_pages-to-jpg/cert-CT-VJNF12PB/cert-CT-VJNF12PB_page-0001.jpg', title: 'HTML Fundamentals - SoloLearn', verify: 'https://www.sololearn.com/Certificate/CT-VJNF12PB/pdf/' }
+      ];
+
+      let currentCertIndex = 0;
+
+      window.openLightbox = function(index) {
+        currentCertIndex = index;
+        updateLightbox();
+        document.getElementById('lightbox').classList.add('active');
+        document.body.style.overflow = 'hidden'; // Prevent scrolling
+      };
+
+      window.closeLightbox = function() {
+        document.getElementById('lightbox').classList.remove('active');
+        document.body.style.overflow = 'auto';
+      };
+
+      window.changeLightbox = function(step) {
+        currentCertIndex = (currentCertIndex + step + certificates.length) % certificates.length;
+        updateLightbox();
+      };
+
+      function updateLightbox() {
+        const img = document.getElementById('lightbox-img');
+        const caption = document.getElementById('lightbox-caption');
+        const verify = document.getElementById('lightbox-verify');
+        img.src = certificates[currentCertIndex].src;
+        caption.textContent = certificates[currentCertIndex].title;
+        verify.href = certificates[currentCertIndex].verify;
+      }
+
+      // Keyboard navigation
+      document.addEventListener('keydown', (e) => {
+        if (!document.getElementById('lightbox').classList.contains('active')) return;
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowLeft') changeLightbox(-1);
+        if (e.key === 'ArrowRight') changeLightbox(1);
+      });
+
+      // Close on click outside image
+      document.getElementById('lightbox').addEventListener('click', (e) => {
+        if (e.target.id === 'lightbox' || e.target.className === 'lightbox-content') {
+          closeLightbox();
+        }
       });
     </script>
   </body>
