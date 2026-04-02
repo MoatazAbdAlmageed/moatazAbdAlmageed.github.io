@@ -1041,3 +1041,250 @@ main {
   width: 100%;
   overflow-x: hidden;
 }
+
+/* --- Certification Gallery --- */
+.cert-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.cert-card {
+  background: var(--bg-card);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: var(--glass-blur);
+}
+
+.cert-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--primary);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.cert-thumbnail {
+  width: 100%;
+  height: 210px;
+  overflow: hidden;
+  background: #1a1c23;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.cert-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cert-card:hover .cert-thumbnail img {
+  transform: scale(1.1);
+}
+
+.cert-info {
+  padding: 1.5rem;
+}
+
+.cert-info h3 {
+  font-size: 1.15rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.cert-info p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* --- Lightbox --- */
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 11, 15, 0.98);
+  backdrop-filter: blur(15px);
+  z-index: 2000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.lightbox.active {
+  display: flex;
+  opacity: 1;
+}
+
+.lightbox-content {
+  position: relative;
+  max-width: 85%;
+  max-height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox-image {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.6);
+  object-fit: contain;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.lightbox-close {
+  position: absolute;
+  top: -50px;
+  right: -20px;
+  color: white;
+  font-size: 2.5rem;
+  cursor: pointer;
+  transition: var(--transition);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox-close:hover {
+  color: var(--primary);
+  transform: rotate(90deg);
+}
+
+.lightbox-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 3.5rem;
+  cursor: pointer;
+  padding: 1.5rem;
+  transition: var(--transition);
+  user-select: none;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox-nav:hover {
+  color: var(--primary);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.lightbox-prev {
+  left: -120px;
+}
+
+.lightbox-next {
+  right: -120px;
+}
+
+.lightbox-caption {
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 1.4rem;
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
+}
+
+@media (max-width: 1200px) {
+  .lightbox-prev { left: -80px; }
+  .lightbox-next { right: -80px; }
+}
+
+@media (max-width: 992px) {
+  .lightbox-content {
+    max-width: 95%;
+  }
+  .lightbox-nav {
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
+  }
+  .lightbox-prev { left: 10px; background: rgba(0,0,0,0.5); }
+  .lightbox-next { right: 10px; background: rgba(0,0,0,0.5); }
+  .lightbox-close { top: 10px; right: 10px; background: rgba(0,0,0,0.5); border-radius: 50%; }
+  .lightbox-caption { bottom: 20px; background: rgba(0,0,0,0.7); padding: 5px 15px; border-radius: 20px; width: auto; left: 50%; transform: translateX(-50%); font-size: 1rem; }
+}
+
+.cert-verify-btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  border-radius: 8px;
+  background: rgba(254, 186, 59, 0.1);
+  color: var(--primary);
+  border: 1px solid rgba(254, 186, 59, 0.3);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: var(--transition);
+}
+
+.cert-verify-btn:hover {
+  background: var(--primary);
+  color: var(--bg-dark);
+  border-color: var(--primary);
+}
+
+.lightbox-verify {
+  position: absolute;
+  bottom: -110px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--primary);
+  color: var(--bg-dark);
+  padding: 0.8rem 2rem;
+  border-radius: 99px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  white-space: nowrap;
+}
+
+.lightbox-verify:hover {
+  background: white;
+  transform: translateX(-50%) translateY(-3px);
+  box-shadow: 0 10px 30px rgba(254, 186, 59, 0.4);
+}
+
+@media (max-width: 992px) {
+  .lightbox-verify {
+    bottom: -40px;
+    padding: 0.5rem 1.5rem;
+    font-size: 0.9rem;
+  }
+  .lightbox-caption {
+    bottom: 50px;
+  }
+}
