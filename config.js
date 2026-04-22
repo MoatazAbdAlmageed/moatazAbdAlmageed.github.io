@@ -55,6 +55,11 @@ const skills = [
         icon: 'laravel',
         url: 'https://laravel.com/',
       },
+      {
+        title: 'Ruby on Rails',
+        icon: 'gem fa',
+        url: 'https://rubyonrails.org/',
+      },
     ],
   },
   {
@@ -330,6 +335,15 @@ const colors = [
 
 const projects = [
   {
+    title: 'Learn Quran The Right Way',
+    url: 'https://learnqurantherightway.com/',
+    tools: ['WordPress', 'Elementor'],
+    year: '2026',
+    icon: 'fa-wordpress',
+    show: true,
+    description: 'Unlock the true depth of the Quran by understanding its original language. Stop relying on translations.',
+  },
+  {
     title: 'Ozn Waeiah Institute',
     url: 'https://oznwaeiah.com/',
     tools: ['WordPress'],
@@ -442,6 +456,31 @@ const projects = [
 ];
 const jobs = [
 {
+  company: 'Loop Chat',
+  logo: 'https://loopchat.sa/wp-content/uploads/2025/10/loop-chat-logo-4.png',
+  url: 'https://loopchat.sa/en/',
+  technologies: [
+    'Ruby on Rails',
+    'PostgreSQL',
+    'Redis',
+    'Sidekiq',
+    'REST API',
+    'JavaScript'
+  ],
+  period: '',
+  startDate: dayjs('2026-04-01'),
+  endDate: null,
+  present: true,
+  occupation: 'Backend Rails Developer',
+  responsibilities: [
+    "Developing and maintaining the AI-powered unified messaging platform using Ruby on Rails.",
+    "Designing and implementing scalable backend services and RESTful APIs.",
+    "Integrating various communication channels like WhatsApp, Instagram, and SMS into a single dashboard."
+  ],
+  description: 'AI-Powered Unified Messaging & Live Chat Platform that consolidates customer communications into one interactive dashboard.',
+  projects: [],
+},
+{
   company: 'QAED (Quality Leaders)',
   logo: 'https://theqaed.com/wp-content/uploads/2025/08/theqaed-logo-e1675012115961-1024x761-1.png',
   url: 'https://theqaed.com/',
@@ -457,8 +496,8 @@ const jobs = [
   ],
   period: '',
   startDate: dayjs('2025-08-01'),
-  endDate: null,
-  present: true,
+  endDate: dayjs('2026-01-31'),
+  present: false,
   occupation: 'Backend web developer',
 responsibilities: [
   "Rebuilt and optimized the company website using WordPress and Elementor for improved UX and performance.",
@@ -740,8 +779,8 @@ responsibilities: [
 ];
 
 module.exports = {
-  siteTitle: 'Moataz Mohammady | Senior PHP Laravel Developer', // <title>
-  description: "Back-End Web Developer specializing in PHP and Laravel, with experience building scalable, secure applications and designing RESTful APIs. Skilled in MySQL, MongoDB, and third-party integrations. Proficient in authentication, security, and familiar with HTML, CSS, JavaScript, React, and Angular for effective front-end collaboration. Also familiar with basic DevOps practices such as Docker, server setup, and CI/CD pipelines.",
+  siteTitle: 'Moataz Mohammady | Senior Backend Developer (RoR, PHP, Laravel)', // <title>
+  description: "Senior Backend Developer specializing in Ruby on Rails, PHP, and Laravel, with 9+ years of experience building scalable, secure applications and designing RESTful APIs. Skilled in MySQL, MongoDB, and third-party integrations. Proficient in authentication, security, and familiar with HTML, CSS, JavaScript, React, and Angular for effective front-end collaboration. Also familiar with basic DevOps practices such as Docker, server setup, and CI/CD pipelines.",
   manifestName: 'Resume',
   manifestShortName: 'Moataz Mohammady', // max 12 characters
   manifestStartUrl: 'https://moatazabdalmageed.github.io/',
