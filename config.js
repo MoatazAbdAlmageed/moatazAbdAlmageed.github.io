@@ -335,6 +335,15 @@ const colors = [
 
 const projects = [
   {
+    title: 'Quranona Academy',
+    url: 'https://quranonaacademy.com/',
+    tools: ['WordPress', 'AI'],
+    year: '2026',
+    icon: 'fa-wordpress',
+    show: true,
+    description: 'Quranona Academy website built with WordPress and AI.',
+  },
+  {
     title: 'Learn Quran The Right Way',
     url: 'https://learnqurantherightway.com/',
     tools: ['WordPress', 'Elementor'],
