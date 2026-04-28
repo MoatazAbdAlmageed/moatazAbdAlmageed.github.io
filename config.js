@@ -341,7 +341,7 @@ const projects = [
     year: '2026',
     icon: 'fa-wordpress',
     show: true,
-    description: 'Quranona Academy website built with WordPress and AI.',
+    description: 'Quranona Academy website built with a custom WordPress theme, custom plugins, and AI integration.',
   },
   {
     title: 'Learn Quran The Right Way',
@@ -350,7 +350,7 @@ const projects = [
     year: '2026',
     icon: 'fa-wordpress',
     show: true,
-    description: 'Unlock the true depth of the Quran by understanding its original language. Stop relying on translations.',
+    description: 'Unlock the true depth of the Quran by understanding its original language. Built with a custom WordPress theme and custom plugins.',
   },
   {
     title: 'Ozn Waeiah Institute',
@@ -436,7 +436,7 @@ const projects = [
     icon: 'fa-laravel',
     year: '2024',
     show: true,
-    description: 'Our application is a comprehensive and innovative platform that aims to simplify your daily life and save time and effort by offering a wide range of services under one roof. The application is designed to be the perfect solution for all your daily needs, providing quick and easy access to a variety of services covering various aspects of life.',
+    description: 'A comprehensive platform simplifying daily services for the Mansouria community, built with a fully custom WordPress theme and custom plugins.',
   },
  
   {
@@ -789,7 +789,7 @@ responsibilities: [
 
 module.exports = {
   siteTitle: 'Moataz Mohammady | Senior Backend Developer (RoR, PHP, Laravel)', // <title>
-  description: "Senior Backend Developer specializing in Ruby on Rails, PHP, and Laravel, with 9+ years of experience building scalable, secure applications and designing RESTful APIs. Skilled in MySQL, MongoDB, and third-party integrations. Proficient in authentication, security, and familiar with HTML, CSS, JavaScript, React, and Angular for effective front-end collaboration. Also familiar with basic DevOps practices such as Docker, server setup, and CI/CD pipelines.",
+  description: `Senior Backend Developer specializing in Ruby on Rails, PHP, and Laravel, with ${new Date().getFullYear() - 2015}+ years of experience building scalable, secure applications and designing RESTful APIs. Skilled in MySQL, MongoDB, and third-party integrations. Proficient in authentication, security, and familiar with HTML, CSS, JavaScript, React, and Angular for effective front-end collaboration. Also familiar with basic DevOps practices such as Docker, server setup, and CI/CD pipelines.`,
   manifestName: 'Resume',
   manifestShortName: 'Moataz Mohammady', // max 12 characters
   manifestStartUrl: 'https://moatazabdalmageed.github.io/',
