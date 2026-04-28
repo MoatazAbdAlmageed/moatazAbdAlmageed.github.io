@@ -59,27 +59,37 @@
     <!-- Theme Color for mobile browsers -->
     <meta name="theme-color" content="#0f172a" />
 
-    <!-- Structured Data (JSON-LD) -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Moataz AbdAlmageed",
-        "url": "https://moatazabdalmageed.github.io/",
-        "image": "https://moatazabdalmageed.github.io/assets/img/avatar.png",
-        "sameAs": [
-          "https://github.com/MoatazAbdAlmageed",
-          "https://www.linkedin.com/in/moatazabdalmageed/",
-          "https://www.youtube.com/@moatazMohamady"
-        ],
-        "jobTitle": "Senior PHP Laravel Developer",
-        "worksFor": {
-          "@type": "Organization",
-          "name": "Loop Chat",
-          "url": "https://loopchat.sa/en/"
-        },
-        "description": "Senior Backend Developer with 10+ years of experience specializing in Ruby on Rails, PHP, and Laravel."
-      }
+    <!-- Structured Data (JSON-LD) dynamically generated for auto-calculating experience -->
+    <script>
+      (function () {
+        var expYears = new Date().getFullYear() - 2015;
+        var jsonLd = {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          name: "Moataz AbdAlmageed",
+          url: "https://moatazabdalmageed.github.io/",
+          image: "https://moatazabdalmageed.github.io/assets/img/avatar.png",
+          sameAs: [
+            "https://github.com/MoatazAbdAlmageed",
+            "https://www.linkedin.com/in/moatazabdalmageed/",
+            "https://www.youtube.com/@moatazMohamady",
+          ],
+          jobTitle: "Senior PHP Laravel Developer",
+          worksFor: {
+            "@type": "Organization",
+            name: "Loop Chat",
+            url: "https://loopchat.sa/en/",
+          },
+          description:
+            "Senior Backend Developer with " +
+            expYears +
+            "+ years of experience specializing in Ruby on Rails, PHP, and Laravel.",
+        };
+        var script = document.createElement("script");
+        script.type = "application/ld+json";
+        script.text = JSON.stringify(jsonLd);
+        document.head.appendChild(script);
+      })();
     </script>
 
     <style>
@@ -206,7 +216,7 @@
         <h1>Moataz AbdAlmageed</h1>
         <p style="max-width: 800px; margin: 1.5rem auto">
           Senior Backend Developer with
-          <span class="total-exp-years">10+</span> years of expertise in the PHP
+          <span class="total-exp-years">10</span> years of expertise in the PHP
           ecosystem, specializing in Laravel and custom WordPress development. I
           contribute to open-source on
           <a
@@ -671,7 +681,10 @@
             <div class="project-img"><i class="fab fa-wordpress"></i></div>
             <div class="project-content">
               <h3>Quranona Academy</h3>
-              <p>Quranona Academy website built with WordPress and AI.</p>
+              <p>
+                Quranona Academy website built with a custom WordPress theme,
+                custom plugins, and AI integration.
+              </p>
               <div class="project-tools">
                 <span class="tool-tag">WordPress</span>
                 <span class="tool-tag">AI</span>
@@ -693,7 +706,8 @@
               <h3>Learn Quran The Right Way</h3>
               <p>
                 Unlock the true depth of the Quran by understanding its original
-                language. Built with WordPress and Elementor.
+                language. Built with a custom WordPress theme and custom
+                plugins.
               </p>
               <div class="project-tools">
                 <span class="tool-tag">WordPress</span>
@@ -751,7 +765,8 @@
               <h3>Mansouria Directory</h3>
               <p>
                 A comprehensive platform simplifying daily services for the
-                Mansouria community, built with a fully custom WordPress theme.
+                Mansouria community, built with a fully custom WordPress theme
+                and custom plugins.
               </p>
               <div class="project-tools">
                 <span class="tool-tag">WordPress</span>
@@ -1531,9 +1546,30 @@
         const startYear = 2015;
         const currentYear = new Date().getFullYear();
         const years = currentYear - startYear;
+
         document.querySelectorAll(".total-exp-years").forEach((el) => {
-          el.textContent = years + "+";
+          el.textContent = years;
         });
+
+        // Update meta description
+        const metaDesc = document.querySelector('meta[name="description"]');
+        if (metaDesc && metaDesc.content) {
+          metaDesc.content = metaDesc.content.replace(
+            /with \d+\+? years/,
+            `with ${years}+ years`,
+          );
+        }
+
+        // Update JSON-LD schema
+        const ldJson = document.querySelector(
+          'script[type="application/ld+json"]',
+        );
+        if (ldJson && ldJson.textContent) {
+          ldJson.textContent = ldJson.textContent.replace(
+            /with \d+\+? years/,
+            `with ${years}+ years`,
+          );
+        }
       });
     </script>
   </body>
