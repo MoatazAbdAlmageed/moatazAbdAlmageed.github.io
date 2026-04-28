@@ -335,6 +335,15 @@ const colors = [
 
 const projects = [
   {
+    title: 'Egy Code Crafters',
+    url: 'https://egycodecrafters-com.vercel.app/#hero',
+    tools: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
+    year: '2026',
+    icon: 'fa-code',
+    show: true,
+    description: 'Official website for Egy Code Crafters software development agency, featuring modern design, internationalization, and interactive UI.',
+  },
+  {
     title: 'Quranona Academy',
     url: 'https://quranonaacademy.com/',
     tools: ['WordPress', 'AI'],

@@ -70,6 +70,7 @@ Dynamic and results-driven Senior Backend Developer with over 10 years of expert
 
 ## Key Projects
 
+- **Egy Code Crafters:** Built a high-end software development agency website using **Next.js**, TypeScript, and Tailwind CSS, featuring modern animations and internationalization.
 - **Mansouria Directory:** Developed a comprehensive community platform using a **fully custom WordPress theme** and Advanced Custom Fields (ACF), simplifying local service access.
 - **Fluent Cart Kashier:** Engineered a seamless PHP-based payment integration for Fluent Cart using the Kashier gateway.
 - **News Aggregator:** Built a full-stack real-time news platform using **Laravel** and React, featuring custom filtering and high-speed data fetching.
