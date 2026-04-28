@@ -432,7 +432,12 @@ section {
   content: "";
   position: absolute;
   width: 2px;
-  background: linear-gradient(to bottom, var(--primary), var(--accent-pink), var(--accent-blue));
+  background: linear-gradient(
+    to bottom,
+    var(--primary),
+    var(--accent-pink),
+    var(--accent-blue)
+  );
   top: 0;
   bottom: 0;
   left: 50%;
@@ -807,17 +812,22 @@ section {
 .form-control {
   width: 100%;
   background: var(--bg-dark);
-  border: 1px solid var(--glass-border);
+  border: 1px solid rgba(254, 186, 59, 0.2);
   padding: 0.8rem;
   border-radius: 8px;
-  color: white;
+  color: var(--primary);
+  caret-color: var(--primary);
   transition: var(--transition);
+}
+
+.form-control:hover {
+  border-color: rgba(254, 186, 59, 0.5);
 }
 
 .form-control:focus {
   outline: none;
   border-color: var(--primary);
-  box-shadow: 0 0 0 2px rgba(254, 111, 66, 0.2);
+  box-shadow: 0 0 0 4px rgba(254, 186, 59, 0.15);
 }
 
 @media (max-width: 768px) {
@@ -1214,8 +1224,12 @@ main {
 }
 
 @media (max-width: 1200px) {
-  .lightbox-prev { left: -80px; }
-  .lightbox-next { right: -80px; }
+  .lightbox-prev {
+    left: -80px;
+  }
+  .lightbox-next {
+    right: -80px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1227,10 +1241,30 @@ main {
     height: 50px;
     font-size: 2rem;
   }
-  .lightbox-prev { left: 10px; background: rgba(0,0,0,0.5); }
-  .lightbox-next { right: 10px; background: rgba(0,0,0,0.5); }
-  .lightbox-close { top: 10px; right: 10px; background: rgba(0,0,0,0.5); border-radius: 50%; }
-  .lightbox-caption { bottom: 20px; background: rgba(0,0,0,0.7); padding: 5px 15px; border-radius: 20px; width: auto; left: 50%; transform: translateX(-50%); font-size: 1rem; }
+  .lightbox-prev {
+    left: 10px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .lightbox-next {
+    right: 10px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .lightbox-close {
+    top: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+  }
+  .lightbox-caption {
+    bottom: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 5px 15px;
+    border-radius: 20px;
+    width: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1rem;
+  }
 }
 
 .cert-verify-btn {
