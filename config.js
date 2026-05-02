@@ -473,31 +473,7 @@ const projects = [
   },
 ];
 const jobs = [
-{
-  company: 'Loop Chat',
-  logo: 'https://loopchat.sa/wp-content/uploads/2025/10/loop-chat-logo-4.png',
-  url: 'https://loopchat.sa/en/',
-  technologies: [
-    'Ruby on Rails',
-    'PostgreSQL',
-    'Redis',
-    'Sidekiq',
-    'REST API',
-    'JavaScript'
-  ],
-  period: '',
-  startDate: dayjs('2026-04-01'),
-  endDate: null,
-  present: true,
-  occupation: 'Backend Rails Developer',
-  responsibilities: [
-    "Developing and maintaining the AI-powered unified messaging platform using Ruby on Rails.",
-    "Designing and implementing scalable backend services and RESTful APIs.",
-    "Integrating various communication channels like WhatsApp, Instagram, and SMS into a single dashboard."
-  ],
-  description: 'AI-Powered Unified Messaging & Live Chat Platform that consolidates customer communications into one interactive dashboard.',
-  projects: [],
-},
+
 {
   company: 'QAED (Quality Leaders)',
   logo: 'https://theqaed.com/wp-content/uploads/2025/08/theqaed-logo-e1675012115961-1024x761-1.png',

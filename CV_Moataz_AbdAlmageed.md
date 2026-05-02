@@ -24,13 +24,6 @@ Dynamic and results-driven Senior Backend Developer with over 10 years of expert
 
 ## Professional Experience
 
-### Loop Chat | Senior Backend Developer (Remote)
-
-*Apr 2026 – Present · 1 mo*
-
-- Spearheading the development of an AI-powered unified messaging and live chat platform.
-- Architecting scalable backend services using Ruby on Rails and PHP to handle high-concurrency real-time communications.
-- Integrating diverse social media and communication channels into a centralized hub, enhancing user reach and operational efficiency.
 
 ### QAED (Quality Leaders) | Senior Backend Web Developer
 
