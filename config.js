@@ -335,6 +335,15 @@ const colors = [
 
 const projects = [
   {
+    title: 'Reham Center',
+    url: 'https://reham-website.vercel.app/',
+    tools: ['Next.js', 'Tailwind CSS', 'Framer Motion'],
+    year: '2026',
+    icon: 'fa-code',
+    show: true,
+    description: 'A multilingual landing page for Reham Center, featuring Arabic RTL support, modern design, and optimized SEO.',
+  },
+  {
     title: 'Egy Code Crafters',
     url: 'https://egycodecrafters-com.vercel.app/#hero',
     tools: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
