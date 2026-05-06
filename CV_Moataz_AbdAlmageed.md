@@ -63,6 +63,7 @@ Dynamic and results-driven Senior Backend Developer with over 10 years of expert
 
 ## Key Projects
 
+- **Reham Center:** A multilingual landing page for Reham Center, featuring robust Arabic RTL support, modern design, and optimized SEO, built with **Next.js**, Tailwind CSS, and Framer Motion.
 - **Egy Code Crafters:** Built a high-end software development agency website using **Next.js**, TypeScript, and Tailwind CSS, featuring modern animations and internationalization.
 - **Mansouria Directory:** Developed a comprehensive community platform using a **fully custom WordPress theme** and Advanced Custom Fields (ACF), simplifying local service access.
 - **Fluent Cart Kashier:** Engineered a seamless PHP-based payment integration for Fluent Cart using the Kashier gateway.
