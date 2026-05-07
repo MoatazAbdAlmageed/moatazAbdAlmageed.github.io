@@ -335,6 +335,15 @@ const colors = [
 
 const projects = [
   {
+    title: 'Mansorya Directory',
+    url: 'https://mansorya-dir-frontend.vercel.app/',
+    tools: ['Next.js', 'WordPress', 'Tailwind CSS', 'PWA'],
+    year: '2026',
+    icon: 'fa-code',
+    show: true,
+    description: 'A professional Arabic directory platform for Mansorya, featuring headless WordPress integration, PWA support, and optimized RTL performance.',
+  },
+  {
     title: 'Reham Center',
     url: 'https://reham-website.vercel.app/',
     tools: ['Next.js', 'Tailwind CSS', 'Framer Motion'],
