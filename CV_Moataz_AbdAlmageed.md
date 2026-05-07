@@ -65,7 +65,8 @@ Dynamic and results-driven Senior Backend Developer with over 10 years of expert
 
 - **Reham Center:** A multilingual landing page for Reham Center, featuring robust Arabic RTL support, modern design, and optimized SEO, built with **Next.js**, Tailwind CSS, and Framer Motion.
 - **Egy Code Crafters:** Built a high-end software development agency website using **Next.js**, TypeScript, and Tailwind CSS, featuring modern animations and internationalization.
-- **Mansouria Directory:** Developed a comprehensive community platform using a **fully custom WordPress theme** and Advanced Custom Fields (ACF), simplifying local service access.
+- **Mansorya Directory (Next.js):** A professional Arabic directory platform featuring headless WordPress integration, PWA support, and optimized RTL performance. [Link](https://mansorya-dir-frontend.vercel.app/)
+- **Mansouria Directory (WordPress):** Developed a comprehensive community platform using a **fully custom WordPress theme** and Advanced Custom Fields (ACF), simplifying local service access.
 - **Fluent Cart Kashier:** Engineered a seamless PHP-based payment integration for Fluent Cart using the Kashier gateway.
 - **News Aggregator:** Built a full-stack real-time news platform using **Laravel** and React, featuring custom filtering and high-speed data fetching.
 - **Markdown to Kindle Automator:** Created a Node.js-based automation tool for technical documentation, demonstrating versatility in backend scripting.
