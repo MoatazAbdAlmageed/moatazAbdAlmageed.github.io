@@ -791,8 +791,8 @@ responsibilities: [
 ];
 
 module.exports = {
-  siteTitle: 'Moataz Mohammady | Senior Backend Developer (RoR, PHP, Laravel)', // <title>
-  description: `Senior Backend Developer specializing in Ruby on Rails, PHP, and Laravel, with ${new Date().getFullYear() - 2015}+ years of experience building scalable, secure applications and designing RESTful APIs. Skilled in MySQL, MongoDB, and third-party integrations. Proficient in authentication, security, and familiar with HTML, CSS, JavaScript, React, and Angular for effective front-end collaboration. Also familiar with basic DevOps practices such as Docker, server setup, and CI/CD pipelines.`,
+  siteTitle: 'Moataz Mohammady | Senior Backend Developer (PHP, Laravel, Node.js)', // <title>
+  description: `Senior Backend Developer specializing in PHP, Laravel, and Node.js, with ${new Date().getFullYear() - 2015}+ years of experience building scalable, secure applications and designing RESTful APIs. Skilled in MySQL, MongoDB, and third-party integrations. Proficient in authentication, security, and familiar with HTML, CSS, JavaScript, React, and Angular for effective front-end collaboration. Also familiar with basic DevOps practices such as Docker, server setup, and CI/CD pipelines.`,
   manifestName: 'Resume',
   manifestShortName: 'Moataz Mohammady', // max 12 characters
   manifestStartUrl: 'https://moatazabdalmageed.github.io/',
