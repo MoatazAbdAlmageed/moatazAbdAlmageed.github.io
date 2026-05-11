@@ -804,7 +804,7 @@ module.exports = {
   firstName: 'Moataz',
   lastName: 'Mohammady',
   githubUsername: 'MoatazAbdAlmageed',
-  position: 'Senior PHP Laravel Developer',
+  position: 'Senior Backend Developer (PHP, Laravel, Node.js)',
   site_img:
     'https://avatars2.githubusercontent.com/u/17373050?s=460&u=b26d5f5d825283b7b067e10a46add610b512cb26&v=4',
 
