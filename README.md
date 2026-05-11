@@ -1,6 +1,6 @@
 # Moataz Mohammady — Portfolio
 
-Senior PHP Laravel Developer.
+Senior Backend Developer (PHP, Laravel, Node.js).
 
 ## 🚀 Quick Links
 - **Live Demo:** [moatazabdalmageed.github.io](https://moatazabdalmageed.github.io/)
