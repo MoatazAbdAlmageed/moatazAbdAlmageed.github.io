@@ -335,6 +335,24 @@ const colors = [
 
 const projects = [
   {
+    title: 'Challenge Tracker',
+    url: 'https://moatazabdalmageed.github.io/Challenge-Tracker/',
+    tools: ['HTML', 'CSS', 'JavaScript', 'Chrome Extension'],
+    year: '2026',
+    icon: 'fa-tasks',
+    show: true,
+    description: 'Track your challenges, visualize your progress, and stay motivated every time you open a new tab. Minimalist, powerful, and completely private.',
+  },
+  {
+    title: 'Google Link Harvester',
+    url: 'https://moatazabdalmageed.github.io/google-link-harvester/',
+    tools: ['HTML', 'CSS', 'JavaScript', 'Chrome Extension'],
+    year: '2026',
+    icon: 'fa-link',
+    show: true,
+    description: 'A focused tool for collecting and exporting organic links from Google Search results, designed with privacy and productivity in mind.',
+  },
+  {
     title: 'Mansorya Directory',
     url: 'https://mansorya-dir-frontend.vercel.app/',
     tools: ['Next.js', 'WordPress', 'Tailwind CSS', 'PWA'],
