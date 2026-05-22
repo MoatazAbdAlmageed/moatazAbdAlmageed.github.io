@@ -55,11 +55,6 @@ const skills = [
         icon: 'laravel',
         url: 'https://laravel.com/',
       },
-      {
-        title: 'Ruby on Rails',
-        icon: 'gem fa',
-        url: 'https://rubyonrails.org/',
-      },
     ],
   },
   {
@@ -681,7 +676,6 @@ responsibilities: [
       'PHP',
       'mysql',
       'Laravel',
-      'rails',
       'angularjs',
     ],
     period: 'Sep 2016 - Jan 2017',
@@ -699,11 +693,6 @@ responsibilities: [
         name: 'la creation',
         url: 'https://www.instagram.com/la__creation/',
         technologies: ['PHP', 'Wordpress'],
-      },
-      {
-        name: 'Transportation project',
-        url: '#',
-        technologies: ['Ruby on Rails', 'angularjs'],
       },
     ],
   },
