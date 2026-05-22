@@ -15,12 +15,12 @@ Dynamic and results-driven Senior Backend Developer with over 11 years of expert
 
 ## Core Technical Skills
 
-- **Languages & Frameworks:** PHP (Expert), Laravel, Ruby on Rails, Zend Framework, Node.js, TypeScript.
+- **Languages & Frameworks:** PHP (Expert), Laravel, Zend Framework, Node.js, TypeScript.
 - **CMS Expertise:** Custom WordPress Theme & Plugin Development, Elementor, Advanced Custom Fields (ACF).
 - **Backend & Database:** MySQL, MongoDB, Redis, API Design (REST/GraphQL), Payment Gateway Integrations (Stripe, Kashier).
 - **Frontend Familiarity:** ReactJS, Vue.js, AngularJS, HTML5, CSS3, SCSS, JavaScript.
 - **DevOps & Tools:** Linux/Unix, Docker, Git, CI/CD, Cloud DevOps (Udacity Certified), Gatsby.
-- **Testing & Quality:** PHPUnit, RSpec, Code Review, Performance Optimization.
+- **Testing & Quality:** PHPUnit, Code Review, Performance Optimization.
 
 ## Professional Experience
 
