@@ -13,7 +13,7 @@
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Moataz Mohammady | Senior Backend Developer (PHP, Laravel, Node.js)</title>
+    <title>Moataz Mohammady | Senior PHP & Laravel Developer | Node.js & WordPress Specialist</title>
     <link rel="stylesheet" href="index.min.css" />
     <link
       rel="stylesheet"
@@ -21,7 +21,7 @@
     />
     <meta
       name="description"
-      content="Senior PHP & Laravel Developer with 11+ years of experience. Specialist in Node.js, custom WordPress themes, plugins, and scalable backend architecture."
+      content="Senior PHP & Laravel Developer. Specialist in Node.js, custom WordPress themes, plugins, and scalable backend architecture."
     />
     <meta
       name="keywords"
@@ -36,11 +36,11 @@
     <meta property="og:url" content="https://moatazabdalmageed.github.io/" />
     <meta
       property="og:title"
-      content="Moataz Mohammady | Senior Backend Developer (PHP, Laravel, Node.js)"
+      content="Moataz Mohammady | Senior PHP & Laravel Developer | Node.js & WordPress Specialist"
     />
     <meta
       property="og:description"
-      content="Senior Backend Developer (PHP, Laravel, Node.js) sharing expert coding tips and productivity tricks on YouTube."
+      content="Senior PHP & Laravel Developer, Node.js & WordPress Specialist sharing expert coding tips and productivity tricks on YouTube."
     />
     <meta
       property="og:image"
@@ -55,11 +55,11 @@
     />
     <meta
       property="twitter:title"
-      content="Moataz Mohammady | Senior Backend Developer (PHP, Laravel, Node.js)"
+      content="Moataz Mohammady | Senior PHP & Laravel Developer | Node.js & WordPress Specialist"
     />
     <meta
       property="twitter:description"
-      content="Senior Backend Developer (PHP, Laravel, Node.js) sharing expert coding tips and productivity tricks on YouTube."
+      content="Senior PHP & Laravel Developer, Node.js & WordPress Specialist sharing expert coding tips and productivity tricks on YouTube."
     />
     <meta
       property="twitter:image"
@@ -69,10 +69,9 @@
     <!-- Theme Color for mobile browsers -->
     <meta name="theme-color" content="#0f172a" />
 
-    <!-- Structured Data (JSON-LD) dynamically generated for auto-calculating experience -->
+    <!-- Structured Data (JSON-LD) -->
     <script>
       (function () {
-        var expYears = new Date().getFullYear() - 2015;
         var jsonLd = {
           "@context": "https://schema.org",
           "@type": "Person",
@@ -84,12 +83,10 @@
             "https://www.linkedin.com/in/moatazabdalmageed/",
             "https://www.youtube.com/@moatazMohamady",
           ],
-          jobTitle: "Senior Backend Developer (PHP, Laravel, Node.js)",
+          jobTitle: "Senior PHP & Laravel Developer | Node.js & WordPress Specialist",
 
           description:
-            "Senior Backend Developer with " +
-            expYears +
-            "+ years of experience specializing in PHP, Laravel, and Node.js.",
+            "Senior PHP & Laravel Developer. Specialist in Node.js, custom WordPress themes, plugins, and scalable backend architecture.",
         };
         var script = document.createElement("script");
         script.type = "application/ld+json";
@@ -220,9 +217,8 @@
         </div>
         <h1>Moataz AbdAlmageed</h1>
         <p style="max-width: 800px; margin: 1.5rem auto">
-          Senior Backend Developer with
-          <span class="total-exp-years">11</span> years of expertise in the PHP
-          ecosystem, specializing in Laravel, Node.js, and custom WordPress development. I
+          Senior PHP & Laravel Developer. Specialist in Node.js, custom WordPress themes,
+          plugins, and scalable backend architecture. I
           contribute to open-source on
           <a
             href="https://github.com/MoatazAbdAlmageed?tab=repositories"
@@ -242,11 +238,11 @@
           >
         </p>
         <div class="hero-badges">
-          <div class="badge"><i class="fab fa-laravel"></i> Laravel</div>
           <div class="badge"><i class="fab fa-php"></i> PHP</div>
+          <div class="badge"><i class="fab fa-laravel"></i> Laravel</div>
+          <div class="badge"><i class="fab fa-node-js"></i> Node.js</div>
           <div class="badge"><i class="fas fa-database"></i> MySQL</div>
           <div class="badge"><i class="fab fa-linux"></i> Linux</div>
-          <div class="badge"><i class="fab fa-node-js"></i> Node.js</div>
         </div>
         <div class="hero-actions">
           <a href="#projects" class="btn btn-primary"
@@ -1604,36 +1600,6 @@
           e.target.className === "lightbox-content"
         ) {
           closeLightbox();
-        }
-      });
-      // Experience Calculation
-      document.addEventListener("DOMContentLoaded", () => {
-        const startYear = 2015;
-        const currentYear = new Date().getFullYear();
-        const years = currentYear - startYear;
-
-        document.querySelectorAll(".total-exp-years").forEach((el) => {
-          el.textContent = years;
-        });
-
-        // Update meta description
-        const metaDesc = document.querySelector('meta[name="description"]');
-        if (metaDesc && metaDesc.content) {
-          metaDesc.content = metaDesc.content.replace(
-            /with \d+\+? years/,
-            `with ${years}+ years`,
-          );
-        }
-
-        // Update JSON-LD schema
-        const ldJson = document.querySelector(
-          'script[type="application/ld+json"]',
-        );
-        if (ldJson && ldJson.textContent) {
-          ldJson.textContent = ldJson.textContent.replace(
-            /with \d+\+? years/,
-            `with ${years}+ years`,
-          );
         }
       });
     </script>

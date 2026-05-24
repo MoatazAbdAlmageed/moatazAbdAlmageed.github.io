@@ -1,6 +1,6 @@
 # Moataz AbdAlmageed
 
-**Senior PHP & Laravel Developer | WordPress Specialist**  
+**Senior PHP & Laravel Developer | Node.js & WordPress Specialist**  
 📍 Mansouria, Giza, Egypt  
 📞 +201150064746  
 📧 [moataz.mohammady@gmail.com](mailto:moataz.mohammady@gmail.com)  
@@ -10,7 +10,7 @@
 
 ## Professional Summary
 
-Dynamic and results-driven Senior Backend Developer with over 11 years of expertise in the PHP ecosystem, specializing in Laravel, Node.js, and custom WordPress development. Proven track record of architecting scalable web applications and developing high-performance custom themes and plugins that drive user engagement. Adept at leading digital transformations, optimizing complex API integrations, and mentoring engineering teams to deliver state-of-the-art technical solutions.
+Dynamic and results-driven Senior PHP & Laravel Developer. Specialist in Node.js, custom WordPress themes, plugins, and scalable backend architecture. Proven track record of architecting scalable web applications and developing high-performance custom themes and plugins that drive user engagement. Adept at leading digital transformations, optimizing complex API integrations, and mentoring engineering teams to deliver state-of-the-art technical solutions.
 
 
 ## Core Technical Skills

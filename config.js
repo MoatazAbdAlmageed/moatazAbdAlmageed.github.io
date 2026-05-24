@@ -797,8 +797,8 @@ responsibilities: [
 ];
 
 module.exports = {
-  siteTitle: 'Moataz Mohammady | Senior Backend Developer (PHP, Laravel, Node.js)', // <title>
-  description: `Senior Backend Developer specializing in PHP, Laravel, and Node.js, with ${new Date().getFullYear() - 2015}+ years of experience building scalable, secure applications and designing RESTful APIs. Skilled in MySQL, MongoDB, and third-party integrations. Proficient in authentication, security, and familiar with HTML, CSS, JavaScript, React, and Angular for effective front-end collaboration. Also familiar with basic DevOps practices such as Docker, server setup, and CI/CD pipelines.`,
+  siteTitle: 'Moataz Mohammady | Senior PHP & Laravel Developer | Node.js & WordPress Specialist', // <title>
+  description: `Senior PHP & Laravel Developer. Specialist in Node.js, custom WordPress themes, plugins, and scalable backend architecture. Skilled in MySQL, MongoDB, and third-party integrations. Proficient in authentication, security, and familiar with HTML, CSS, JavaScript, React, and Angular for effective front-end collaboration. Also familiar with basic DevOps practices such as Docker, server setup, and CI/CD pipelines.`,
   manifestName: 'Resume',
   manifestShortName: 'Moataz Mohammady', // max 12 characters
   manifestStartUrl: 'https://moatazabdalmageed.github.io/',
@@ -810,7 +810,7 @@ module.exports = {
   firstName: 'Moataz',
   lastName: 'Mohammady',
   githubUsername: 'MoatazAbdAlmageed',
-  position: 'Senior Backend Developer (PHP, Laravel, Node.js)',
+  position: 'Senior PHP & Laravel Developer | Node.js & WordPress Specialist',
   site_img:
     'https://avatars2.githubusercontent.com/u/17373050?s=460&u=b26d5f5d825283b7b067e10a46add610b512cb26&v=4',
 
