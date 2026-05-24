@@ -798,7 +798,7 @@ responsibilities: [
 
 module.exports = {
   siteTitle: 'Moataz Mohammady | Senior PHP & Laravel Developer | Node.js & WordPress Specialist', // <title>
-  description: `Senior PHP & Laravel Developer. Specialist in PHP, Laravel, WordPress, Node.js and familiar with JS frontend frameworks. Skilled in MySQL, MongoDB, and third-party integrations. Proficient in authentication, security, and familiar with HTML, CSS, JavaScript, React, and Angular for effective front-end collaboration. Also familiar with basic DevOps practices such as Docker, server setup, and CI/CD pipelines.`,
+  description: `Senior Backend Developer. Specialist in PHP, Laravel, WordPress, Node.js and familiar with JS frontend frameworks. Skilled in MySQL, MongoDB, and third-party integrations. Proficient in authentication, security, and familiar with HTML, CSS, JavaScript, React, and Angular for effective front-end collaboration. Also familiar with basic DevOps practices such as Docker, server setup, and CI/CD pipelines.`,
   manifestName: 'Resume',
   manifestShortName: 'Moataz Mohammady', // max 12 characters
   manifestStartUrl: 'https://moatazabdalmageed.github.io/',
