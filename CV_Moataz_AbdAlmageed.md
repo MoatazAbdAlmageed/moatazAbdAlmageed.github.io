@@ -10,7 +10,7 @@
 
 ## Professional Summary
 
-Dynamic and results-driven Senior PHP & Laravel Developer. Specialist in PHP, Laravel, WordPress, Node.js and familiar with JS frontend frameworks. Proven track record of architecting scalable web applications and developing high-performance custom themes and plugins that drive user engagement. Adept at leading digital transformations, optimizing complex API integrations, and mentoring engineering teams to deliver state-of-the-art technical solutions.
+Dynamic and results-driven Senior Backend Developer. Specialist in PHP, Laravel, WordPress, Node.js and familiar with JS frontend frameworks. Proven track record of architecting scalable web applications and developing high-performance custom themes and plugins that drive user engagement. Adept at leading digital transformations, optimizing complex API integrations, and mentoring engineering teams to deliver state-of-the-art technical solutions.
 
 
 ## Core Technical Skills
