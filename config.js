@@ -332,7 +332,7 @@ const projects = [
   {
     title: 'Sahwa Candy',
     url: 'https://www.sahwa-candy.com/',
-    tools: ['WordPress'],
+    tools: ['HTML', 'CSS', 'JavaScript', 'Stitch'],
     year: '2026',
     icon: 'fa-wordpress',
     show: true,

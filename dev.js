@@ -32,8 +32,8 @@ fs.watch(path.join(__dirname, 'index.css'), (event, filename) => {
 // We watch index.html and index.min.css (triggered by the CSS watch above)
 console.log('[\x1b[35mServer\x1b[0m] Starting Live Reload Server...');
 
-const browserSync = spawn('npx', [
-  'browser-sync', 'start',
+const browserSync = spawn('node', [
+  'node_modules/browser-sync/dist/bin.js', 'start',
   '--server',
   '--files', 'index.html, index.min.css',
   '--no-notify',
