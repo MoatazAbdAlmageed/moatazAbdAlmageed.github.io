@@ -334,7 +334,7 @@ const projects = [
     url: 'https://www.sahwa-candy.com/',
     tools: ['HTML', 'CSS', 'JavaScript', 'Stitch'],
     year: '2026',
-    icon: 'fa-wordpress',
+    logo: 'https://www.sahwa-candy.com/assets/images/sahwa-logo.webp',
     show: true,
     description: 'Website for Sahwa Candy — food products, sweets, and raw ingredients for homes, bakeries, cafés, and hotels since 2011.',
   },
