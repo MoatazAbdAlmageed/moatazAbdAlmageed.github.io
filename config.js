@@ -383,15 +383,7 @@ const projects = [
     show: true,
     description: 'Official website for Egy Code Crafters software development agency, featuring modern design, internationalization, and interactive UI.',
   },
-  {
-    title: 'Quranona Academy',
-    url: 'https://quranonaacademy.com/',
-    tools: ['WordPress', 'AI'],
-    year: '2026',
-    icon: 'fa-wordpress',
-    show: true,
-    description: 'Quranona Academy website built with a custom WordPress theme, custom plugins, and AI integration.',
-  },
+
   {
     title: 'Learn Quran The Right Way',
     url: 'https://learnqurantherightway.com/',
