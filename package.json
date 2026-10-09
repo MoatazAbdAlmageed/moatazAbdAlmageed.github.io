@@ -9,6 +9,6 @@
     "start": "node dev.js"
   },
   "devDependencies": {
-    "browser-sync": "^3.0.0"
+    "browser-sync": "^2.29.3"
   }
 }

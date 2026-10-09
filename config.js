@@ -330,6 +330,15 @@ const colors = [
 
 const projects = [
   {
+    title: 'Sahwa Candy',
+    url: 'https://www.sahwa-candy.com/',
+    tools: ['WordPress'],
+    year: '2026',
+    icon: 'fa-wordpress',
+    show: true,
+    description: 'Website for Sahwa Candy — food products, sweets, and raw ingredients for homes, bakeries, cafés, and hotels since 2011.',
+  },
+  {
     title: 'Challenge Tracker',
     url: 'https://moatazabdalmageed.github.io/Challenge-Tracker/',
     tools: ['HTML', 'CSS', 'JavaScript', 'Chrome Extension'],
