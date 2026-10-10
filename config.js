@@ -332,7 +332,7 @@ const projects = [
   {
     title: 'Sahwa Candy',
     url: 'https://www.sahwa-candy.com/',
-    tools: ['HTML', 'CSS', 'JavaScript', 'Stitch'],
+    tools: ['HTML', 'CSS', 'JavaScript', 'PHP', 'Stitch'],
     year: '2026',
     logo: 'https://www.sahwa-candy.com/assets/images/sahwa-logo.webp',
     show: true,
@@ -597,7 +597,7 @@ responsibilities: [
       {
         name: 'Wuilt Store',
         url: 'http://store.wuilt.com/',
-        technologies: ['nodeJS', 'mondoDB', 'graphql', 'reactJS'],
+        technologies: ['nodeJS', 'mongoDB', 'graphql', 'reactJS'],
       },
     ],
   },
